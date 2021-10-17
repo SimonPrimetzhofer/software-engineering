@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_aLMscCXUEeybxdv-5Uc1kw" name="SubSystem1">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_aLMscCXUEeybxdv-5Uc1kw" name="SubSystem1">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_aLj40CXUEeybxdv-5Uc1kw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
@@ -11,5 +11,55 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_wKV6kC9nEeyh3rIBMqWRnw" name="&lt;&lt; access >>" client="_aLMscCXUEeybxdv-5Uc1kw">
     <supplier xmi:type="uml:Model" href="SubSystem5.uml#_SYGRoCXWEeybxdv-5Uc1kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="__z_BkC9qEeyL4sFy9uAMQw" name="Airside Management">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_rOLlwC9rEeyL4sFy9uAMQw" name="refuel aircraft"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="__PnTwC9rEeyL4sFy9uAMQw" name="land aircraft"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_LNbwoC9sEeyL4sFy9uAMQw" name="Take off"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Kq12YC9rEeyL4sFy9uAMQw" name="Aircraft marshaller"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_NKDDwC9rEeyL4sFy9uAMQw" name="Pilot"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_gM0xIC9rEeyL4sFy9uAMQw" name="Fuel truck driver"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_u_la0C9rEeyL4sFy9uAMQw" memberEnd="_u_nQAC9rEeyL4sFy9uAMQw _u_oeIC9rEeyL4sFy9uAMQw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u_mo8C9rEeyL4sFy9uAMQw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u_mo8S9rEeyL4sFy9uAMQw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_u_nQAC9rEeyL4sFy9uAMQw" name="refuel aircraft" type="_rOLlwC9rEeyL4sFy9uAMQw" association="_u_la0C9rEeyL4sFy9uAMQw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_u_oeIC9rEeyL4sFy9uAMQw" name="vehicle driver" type="_gM0xIC9rEeyL4sFy9uAMQw" association="_u_la0C9rEeyL4sFy9uAMQw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4zUlwC9rEeyL4sFy9uAMQw" memberEnd="_4zVz4C9rEeyL4sFy9uAMQw _4zVz4S9rEeyL4sFy9uAMQw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4zVM0C9rEeyL4sFy9uAMQw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4zVM0S9rEeyL4sFy9uAMQw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4zVz4C9rEeyL4sFy9uAMQw" name="refuel aircraft" type="_rOLlwC9rEeyL4sFy9uAMQw" association="_4zUlwC9rEeyL4sFy9uAMQw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4zVz4S9rEeyL4sFy9uAMQw" name="pilot" type="_NKDDwC9rEeyL4sFy9uAMQw" association="_4zUlwC9rEeyL4sFy9uAMQw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_BNLzsC9sEeyL4sFy9uAMQw" memberEnd="_BNMawS9sEeyL4sFy9uAMQw _BNMawi9sEeyL4sFy9uAMQw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BNLzsS9sEeyL4sFy9uAMQw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BNMawC9sEeyL4sFy9uAMQw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BNMawS9sEeyL4sFy9uAMQw" name="do landing" type="__PnTwC9rEeyL4sFy9uAMQw" association="_BNLzsC9sEeyL4sFy9uAMQw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BNMawi9sEeyL4sFy9uAMQw" name="aircraft marshaller" type="_Kq12YC9rEeyL4sFy9uAMQw" association="_BNLzsC9sEeyL4sFy9uAMQw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HHMUAC9sEeyL4sFy9uAMQw" memberEnd="_HHM7ES9sEeyL4sFy9uAMQw _HHM7Ei9sEeyL4sFy9uAMQw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HHMUAS9sEeyL4sFy9uAMQw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HHM7EC9sEeyL4sFy9uAMQw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HHM7ES9sEeyL4sFy9uAMQw" name="do landing" type="__PnTwC9rEeyL4sFy9uAMQw" association="_HHMUAC9sEeyL4sFy9uAMQw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HHM7Ei9sEeyL4sFy9uAMQw" name="pilot" type="_NKDDwC9rEeyL4sFy9uAMQw" association="_HHMUAC9sEeyL4sFy9uAMQw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_QpKZgC9sEeyL4sFy9uAMQw" memberEnd="_QpKZgy9sEeyL4sFy9uAMQw _QpLAkC9sEeyL4sFy9uAMQw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QpKZgS9sEeyL4sFy9uAMQw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QpKZgi9sEeyL4sFy9uAMQw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QpKZgy9sEeyL4sFy9uAMQw" name="take off" type="_LNbwoC9sEeyL4sFy9uAMQw" association="_QpKZgC9sEeyL4sFy9uAMQw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QpLAkC9sEeyL4sFy9uAMQw" name="pilot" type="_NKDDwC9rEeyL4sFy9uAMQw" association="_QpKZgC9sEeyL4sFy9uAMQw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TLt10C9sEeyL4sFy9uAMQw" memberEnd="_TLuc4i9sEeyL4sFy9uAMQw _TLuc4y9sEeyL4sFy9uAMQw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TLuc4C9sEeyL4sFy9uAMQw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TLuc4S9sEeyL4sFy9uAMQw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TLuc4i9sEeyL4sFy9uAMQw" name="take off" type="_LNbwoC9sEeyL4sFy9uAMQw" association="_TLt10C9sEeyL4sFy9uAMQw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TLuc4y9sEeyL4sFy9uAMQw" name="aircraft marshaller" type="_Kq12YC9rEeyL4sFy9uAMQw" association="_TLt10C9sEeyL4sFy9uAMQw"/>
   </packagedElement>
 </uml:Model>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Oaa7ICXWEeybxdv-5Uc1kw" name="SubSystem3">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Oaa7ICXWEeybxdv-5Uc1kw" name="SubSystem3">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_Oat2ECXWEeybxdv-5Uc1kw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
@@ -12,5 +12,127 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_rv0QAC9nEeyh3rIBMqWRnw" name="&lt;&lt; access >>" client="_Oaa7ICXWEeybxdv-5Uc1kw">
     <supplier xmi:type="uml:Model" href="SubSystem1.uml#_aLMscCXUEeybxdv-5Uc1kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_LQgIMC9rEeyIsKk5dxUS1A" name="Terminal Management">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_boHIcC9uEeyIsKk5dxUS1A" annotatedElement="_wfUdUC9tEeyIsKk5dxUS1A">
+      <body>Condition:&#xD;
+passenger has baggage&#xD;
+</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4_VPMC9wEeyIsKk5dxUS1A" annotatedElement="_4egaEC9wEeyIsKk5dxUS1A">
+      <body>Condition:&#xD;
+Forbidden items detected&#xD;
+</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_a3uF8C9xEeyIsKk5dxUS1A" annotatedElement="_Z0nDIC9xEeyIsKk5dxUS1A">
+      <body>Condition: &#xD;
+Passenger is not from EU&#xD;
+or EWR&#xD;
+</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_i9xj4C9tEeyIsKk5dxUS1A" name="Check-in flight">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_wfW5kC9tEeyIsKk5dxUS1A" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_rsdyUC9tEeyIsKk5dxUS1A" name="Hand over baggage" visibility="protected">
+      <extend xmi:type="uml:Extend" xmi:id="_wfUdUC9tEeyIsKk5dxUS1A" extendedCase="_i9xj4C9tEeyIsKk5dxUS1A" extensionLocation="_wfW5kC9tEeyIsKk5dxUS1A"/>
+      <include xmi:type="uml:Include" xmi:id="_IHB5AC9vEeyIsKk5dxUS1A" addition="_DFAwoC9vEeyIsKk5dxUS1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_s6z_UC9uEeyIsKk5dxUS1A" name="Enter security check">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_4ehoMC9wEeyIsKk5dxUS1A" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_DFAwoC9vEeyIsKk5dxUS1A" name="Tag baggage and forward"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_U_c88C9vEeyIsKk5dxUS1A" name="Gather flight information"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_muPdcC9wEeyIsKk5dxUS1A" name="Start individual security check">
+      <extend xmi:type="uml:Extend" xmi:id="_4egaEC9wEeyIsKk5dxUS1A" extendedCase="_s6z_UC9uEeyIsKk5dxUS1A" extensionLocation="_4ehoMC9wEeyIsKk5dxUS1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_INxIQC9xEeyIsKk5dxUS1A" name="Check passport">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Z0oRQC9xEeyIsKk5dxUS1A" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_SLn4gC9xEeyIsKk5dxUS1A" name="Confirm visa">
+      <extend xmi:type="uml:Extend" xmi:id="_Z0nDIC9xEeyIsKk5dxUS1A" extendedCase="_INxIQC9xEeyIsKk5dxUS1A" extensionLocation="_Z0oRQC9xEeyIsKk5dxUS1A"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Q3eXwC9rEeyIsKk5dxUS1A" name="Passenger"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_RNRooC9rEeyIsKk5dxUS1A" name="Security employee"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_cRerAC9tEeyIsKk5dxUS1A" name="Border police"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_gIyTwC9tEeyIsKk5dxUS1A" name="Flight information system"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lx0_4C9tEeyIsKk5dxUS1A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wRBGIC9uEeyIsKk5dxUS1A" memberEnd="_wRF-oC9uEeyIsKk5dxUS1A _wRGlsC9uEeyIsKk5dxUS1A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wRDiYC9uEeyIsKk5dxUS1A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wREJcC9uEeyIsKk5dxUS1A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wRF-oC9uEeyIsKk5dxUS1A" name="enter security check" type="_s6z_UC9uEeyIsKk5dxUS1A" association="_wRBGIC9uEeyIsKk5dxUS1A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wRGlsC9uEeyIsKk5dxUS1A" name="passenger" type="_Q3eXwC9rEeyIsKk5dxUS1A" association="_wRBGIC9uEeyIsKk5dxUS1A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_5komkC9uEeyIsKk5dxUS1A" name="Check-in employee"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8NKvEC9uEeyIsKk5dxUS1A" memberEnd="_8NMkQC9uEeyIsKk5dxUS1A _8NMkQS9uEeyIsKk5dxUS1A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8NL9MC9uEeyIsKk5dxUS1A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8NL9MS9uEeyIsKk5dxUS1A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8NMkQC9uEeyIsKk5dxUS1A" name="check-in employee" type="_5komkC9uEeyIsKk5dxUS1A" association="_8NKvEC9uEeyIsKk5dxUS1A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8NMkQS9uEeyIsKk5dxUS1A" name="check-in flight" type="_i9xj4C9tEeyIsKk5dxUS1A" association="_8NKvEC9uEeyIsKk5dxUS1A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-pWdoC9uEeyIsKk5dxUS1A" memberEnd="_-pXrwC9uEeyIsKk5dxUS1A _-pXrwS9uEeyIsKk5dxUS1A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-pXEsC9uEeyIsKk5dxUS1A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-pXEsS9uEeyIsKk5dxUS1A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-pXrwC9uEeyIsKk5dxUS1A" name="enter security check" type="_s6z_UC9uEeyIsKk5dxUS1A" association="_-pWdoC9uEeyIsKk5dxUS1A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-pXrwS9uEeyIsKk5dxUS1A" name="security employee" type="_RNRooC9rEeyIsKk5dxUS1A" association="_-pWdoC9uEeyIsKk5dxUS1A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_KwaWEC9vEeyIsKk5dxUS1A" memberEnd="_KwcLQC9vEeyIsKk5dxUS1A _KwcLQS9vEeyIsKk5dxUS1A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KwbkMC9vEeyIsKk5dxUS1A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KwbkMS9vEeyIsKk5dxUS1A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_KwcLQC9vEeyIsKk5dxUS1A" name="tag baggage and forward" type="_DFAwoC9vEeyIsKk5dxUS1A" association="_KwaWEC9vEeyIsKk5dxUS1A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_KwcLQS9vEeyIsKk5dxUS1A" name="check-in employee" type="_5komkC9uEeyIsKk5dxUS1A" association="_KwaWEC9vEeyIsKk5dxUS1A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_M5AaQC9vEeyIsKk5dxUS1A" memberEnd="_M5BoYi9vEeyIsKk5dxUS1A _M5CPcC9vEeyIsKk5dxUS1A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_M5BoYC9vEeyIsKk5dxUS1A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_M5BoYS9vEeyIsKk5dxUS1A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_M5BoYi9vEeyIsKk5dxUS1A" name="hand over baggage" type="_rsdyUC9tEeyIsKk5dxUS1A" association="_M5AaQC9vEeyIsKk5dxUS1A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_M5CPcC9vEeyIsKk5dxUS1A" name="passenger" type="_Q3eXwC9rEeyIsKk5dxUS1A" association="_M5AaQC9vEeyIsKk5dxUS1A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_drangC9vEeyIsKk5dxUS1A" memberEnd="_drb1oi9vEeyIsKk5dxUS1A _drccsC9vEeyIsKk5dxUS1A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_drb1oC9vEeyIsKk5dxUS1A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_drb1oS9vEeyIsKk5dxUS1A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_drb1oi9vEeyIsKk5dxUS1A" name="gather flight information" type="_U_c88C9vEeyIsKk5dxUS1A" association="_drangC9vEeyIsKk5dxUS1A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_drccsC9vEeyIsKk5dxUS1A" name="passenger" type="_Q3eXwC9rEeyIsKk5dxUS1A" association="_drangC9vEeyIsKk5dxUS1A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fqRg4C9vEeyIsKk5dxUS1A" memberEnd="_fqSvAi9vEeyIsKk5dxUS1A _fqTWEC9vEeyIsKk5dxUS1A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fqSvAC9vEeyIsKk5dxUS1A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fqSvAS9vEeyIsKk5dxUS1A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fqSvAi9vEeyIsKk5dxUS1A" name="gather flight information" type="_U_c88C9vEeyIsKk5dxUS1A" association="_fqRg4C9vEeyIsKk5dxUS1A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fqTWEC9vEeyIsKk5dxUS1A" name="flight information system" type="_gIyTwC9tEeyIsKk5dxUS1A" association="_fqRg4C9vEeyIsKk5dxUS1A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LAtJ8C9xEeyIsKk5dxUS1A" memberEnd="_LAvmMS9xEeyIsKk5dxUS1A _LAwNQC9xEeyIsKk5dxUS1A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LAu_IC9xEeyIsKk5dxUS1A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LAvmMC9xEeyIsKk5dxUS1A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LAvmMS9xEeyIsKk5dxUS1A" name="check passport" type="_INxIQC9xEeyIsKk5dxUS1A" association="_LAtJ8C9xEeyIsKk5dxUS1A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LAwNQC9xEeyIsKk5dxUS1A" name="passenger" type="_Q3eXwC9rEeyIsKk5dxUS1A" association="_LAtJ8C9xEeyIsKk5dxUS1A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LmleMC9xEeyIsKk5dxUS1A" memberEnd="_LmmsUi9xEeyIsKk5dxUS1A _LmnTYC9xEeyIsKk5dxUS1A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LmmsUC9xEeyIsKk5dxUS1A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LmmsUS9xEeyIsKk5dxUS1A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LmmsUi9xEeyIsKk5dxUS1A" name="check passport" type="_INxIQC9xEeyIsKk5dxUS1A" association="_LmleMC9xEeyIsKk5dxUS1A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LmnTYC9xEeyIsKk5dxUS1A" name="border police" type="_cRerAC9tEeyIsKk5dxUS1A" association="_LmleMC9xEeyIsKk5dxUS1A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wfanIC9xEeyIsKk5dxUS1A" memberEnd="_wfb1Qi9xEeyIsKk5dxUS1A _wfccUC9xEeyIsKk5dxUS1A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wfb1QC9xEeyIsKk5dxUS1A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wfb1QS9xEeyIsKk5dxUS1A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wfb1Qi9xEeyIsKk5dxUS1A" name="security employee" type="_RNRooC9rEeyIsKk5dxUS1A" association="_wfanIC9xEeyIsKk5dxUS1A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wfccUC9xEeyIsKk5dxUS1A" name="start individual security check" type="_muPdcC9wEeyIsKk5dxUS1A" association="_wfanIC9xEeyIsKk5dxUS1A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xVpEgC9xEeyIsKk5dxUS1A" memberEnd="_xVq5sC9xEeyIsKk5dxUS1A _xVq5sS9xEeyIsKk5dxUS1A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xVqSoC9xEeyIsKk5dxUS1A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xVqSoS9xEeyIsKk5dxUS1A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xVq5sC9xEeyIsKk5dxUS1A" name="confirm visa" type="_SLn4gC9xEeyIsKk5dxUS1A" association="_xVpEgC9xEeyIsKk5dxUS1A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xVq5sS9xEeyIsKk5dxUS1A" name="border police" type="_cRerAC9tEeyIsKk5dxUS1A" association="_xVpEgC9xEeyIsKk5dxUS1A"/>
   </packagedElement>
 </uml:Model>

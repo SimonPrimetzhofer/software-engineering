@@ -16,4 +16,11 @@
     <importedPackage xmi:type="uml:Model" href="SubSystem6.uml#_UjfyMCXWEeybxdv-5Uc1kw"/>
   </packageImport>
   <packagedElement xmi:type="uml:Class" xmi:id="_cjyfACXVEeybxdv-5Uc1kw" name="SystemClass"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_mu5eYC9oEeyh3rIBMqWRnw" name="Airport Management System"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_wWEM8C9oEeyh3rIBMqWRnw" name="Customer"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_y0mE4C9oEeyh3rIBMqWRnw" name="Financial Employee"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_5fPX8C9oEeyh3rIBMqWRnw" name="Landside Employee"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_7hGiAC9oEeyh3rIBMqWRnw" name="Airside Employee"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_AgKdAC9pEeyh3rIBMqWRnw" name="Terminal Employee"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_auFicC9pEeyh3rIBMqWRnw"/>
 </uml:Model>
