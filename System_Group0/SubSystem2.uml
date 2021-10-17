@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_cRcAMCXUEeybxdv-5Uc1kw" name="SubSystem2">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_cRcAMCXUEeybxdv-5Uc1kw" name="SubSystem2">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_cRxXYCXUEeybxdv-5Uc1kw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
@@ -12,5 +12,188 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_gGW5kC9nEeyh3rIBMqWRnw" name="&lt;&lt; access >>" client="_cRcAMCXUEeybxdv-5Uc1kw">
     <supplier xmi:type="uml:Model" href="SubSystem5.uml#_SYGRoCXWEeybxdv-5Uc1kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_K3IekC9uEeySLpI0QUwGkw" name="Landside Management">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_xHjTQC9zEeySLpI0QUwGkw" annotatedElement="_wQBDwC9yEeySLpI0QUwGkw">
+      <body>Condition:&#xD;
+maintenance task required</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_LBnokC90EeySLpI0QUwGkw" annotatedElement="_cT7v0C9yEeySLpI0QUwGkw">
+      <body>Condition:&#xD;
+emergency occured</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_d4XsIC90EeySLpI0QUwGkw" annotatedElement="_6dE_kC9wEeySLpI0QUwGkw">
+      <body>Condition:&#xD;
+low on fuel</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_jXCjAC9uEeySLpI0QUwGkw" name="transport baggage">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_s0QZcC9wEeySLpI0QUwGkw" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_niPYIC9uEeySLpI0QUwGkw" name="assign plane">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_0NNkAC9wEeySLpI0QUwGkw" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_EfMkwC9xEeySLpI0QUwGkw" name="ExtensionPoint2"/>
+      <include xmi:type="uml:Include" xmi:id="_VbEvsC90EeySLpI0QUwGkw" addition="_jXCjAC9uEeySLpI0QUwGkw"/>
+      <include xmi:type="uml:Include" xmi:id="_YAbBUC90EeySLpI0QUwGkw" addition="_WMh0EC9vEeySLpI0QUwGkw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_47QSYC9uEeySLpI0QUwGkw" name="request fuel status">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_6dFmoC9wEeySLpI0QUwGkw" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Jle0AC9vEeySLpI0QUwGkw" name="assign gate">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ybUIkC9wEeySLpI0QUwGkw" name="ExtensionPoint1"/>
+      <include xmi:type="uml:Include" xmi:id="_XDCMAC90EeySLpI0QUwGkw" addition="_WMh0EC9vEeySLpI0QUwGkw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_WMh0EC9vEeySLpI0QUwGkw" name="transport passengers">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_prG3MC9wEeySLpI0QUwGkw" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hWhAQC9vEeySLpI0QUwGkw" name="assign baggage deposit">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_wjKUIC9wEeySLpI0QUwGkw" name="ExtensionPoint1"/>
+      <include xmi:type="uml:Include" xmi:id="_T8jjQC90EeySLpI0QUwGkw" addition="_jXCjAC9uEeySLpI0QUwGkw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_4CwSMC9wEeySLpI0QUwGkw" name="Refuel">
+      <extend xmi:type="uml:Extend" xmi:id="_6dE_kC9wEeySLpI0QUwGkw" extendedCase="_47QSYC9uEeySLpI0QUwGkw" extensionLocation="_6dFmoC9wEeySLpI0QUwGkw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_0HPCYC9xEeySLpI0QUwGkw" name="refuel plane"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_2dvmwC9xEeySLpI0QUwGkw" name="check tire pressure"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_43ByUC9xEeySLpI0QUwGkw" name="maintain plane">
+      <extend xmi:type="uml:Extend" xmi:id="_wQBDwC9yEeySLpI0QUwGkw" extendedCase="_GLGQcC9yEeySLpI0QUwGkw" extensionLocation="_wQBDwS9yEeySLpI0QUwGkw"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_72f0IS9xEeySLpI0QUwGkw" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_9F-fAC9xEeySLpI0QUwGkw" name="ExtensionPoint2"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_c5-cIS9yEeySLpI0QUwGkw" name="ExtensionPoint3"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_do2UUS9yEeySLpI0QUwGkw" name="ExtensionPoint4"/>
+      <include xmi:type="uml:Include" xmi:id="_uxURIC9yEeySLpI0QUwGkw" addition="_0HPCYC9xEeySLpI0QUwGkw"/>
+      <include xmi:type="uml:Include" xmi:id="_vY_8MC9yEeySLpI0QUwGkw" addition="_2dvmwC9xEeySLpI0QUwGkw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_GLGQcC9yEeySLpI0QUwGkw" name="communicate needed services">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Rbm7YC9yEeySLpI0QUwGkw" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_cT8W4C9yEeySLpI0QUwGkw" name="ExtensionPoint3"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_wQBDwS9yEeySLpI0QUwGkw" name="ExtensionPoint3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_UBCFgC9yEeySLpI0QUwGkw" name="react to emergency">
+      <extend xmi:type="uml:Extend" xmi:id="_cT7v0C9yEeySLpI0QUwGkw" extendedCase="_GLGQcC9yEeySLpI0QUwGkw" extensionLocation="_cT8W4C9yEeySLpI0QUwGkw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_OBwngC9uEeySLpI0QUwGkw" name="Management"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_UH44QC9uEeySLpI0QUwGkw" name="Bus Driver"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Y_rtoC9uEeySLpI0QUwGkw" name="Baggage-Cart Driver"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_w5qagC9uEeySLpI0QUwGkw" memberEnd="_w5rBki9uEeySLpI0QUwGkw _w5rooC9uEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_w5rBkC9uEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_w5rBkS9uEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_w5rBki9uEeySLpI0QUwGkw" name="assign plane" type="_niPYIC9uEeySLpI0QUwGkw" association="_w5qagC9uEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_w5rooC9uEeySLpI0QUwGkw" name="management" type="_OBwngC9uEeySLpI0QUwGkw" association="_w5qagC9uEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_x3HhQC9uEeySLpI0QUwGkw" memberEnd="_x3IvYS9uEeySLpI0QUwGkw _x3IvYi9uEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_x3IIUC9uEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_x3IvYC9uEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_x3IvYS9uEeySLpI0QUwGkw" name="assign plane" type="_niPYIC9uEeySLpI0QUwGkw" association="_x3HhQC9uEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_x3IvYi9uEeySLpI0QUwGkw" name="bus driver" type="_UH44QC9uEeySLpI0QUwGkw" association="_x3HhQC9uEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1Pl48C9uEeySLpI0QUwGkw" memberEnd="_1PnHEi9uEeySLpI0QUwGkw _1PnuIC9uEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1PnHEC9uEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1PnHES9uEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1PnHEi9uEeySLpI0QUwGkw" name="get luggage" type="_jXCjAC9uEeySLpI0QUwGkw" association="_1Pl48C9uEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1PnuIC9uEeySLpI0QUwGkw" name="package-cart driver" type="_Y_rtoC9uEeySLpI0QUwGkw" association="_1Pl48C9uEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_2b7JMC9uEeySLpI0QUwGkw" memberEnd="_2b8XUS9uEeySLpI0QUwGkw _2b8-YC9uEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2b7wQC9uEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2b8XUC9uEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2b8XUS9uEeySLpI0QUwGkw" name="assign plane" type="_niPYIC9uEeySLpI0QUwGkw" association="_2b7JMC9uEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2b8-YC9uEeySLpI0QUwGkw" name="package-cart driver" type="_Y_rtoC9uEeySLpI0QUwGkw" association="_2b7JMC9uEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7iO7sC9uEeySLpI0QUwGkw" memberEnd="_7iPiwi9uEeySLpI0QUwGkw _7iQJ0C9uEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7iPiwC9uEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7iPiwS9uEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7iPiwi9uEeySLpI0QUwGkw" name="check fuel status" type="_47QSYC9uEeySLpI0QUwGkw" association="_7iO7sC9uEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7iQJ0C9uEeySLpI0QUwGkw" name="management" type="_OBwngC9uEeySLpI0QUwGkw" association="_7iO7sC9uEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-EnY4C9uEeySLpI0QUwGkw" memberEnd="_-En_8i9uEeySLpI0QUwGkw _-En_8y9uEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-En_8C9uEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-En_8S9uEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-En_8i9uEeySLpI0QUwGkw" name="request fuel status" type="_47QSYC9uEeySLpI0QUwGkw" association="_-EnY4C9uEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-En_8y9uEeySLpI0QUwGkw" name="package-cart driver" type="_Y_rtoC9uEeySLpI0QUwGkw" association="_-EnY4C9uEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_OOu3EC9vEeySLpI0QUwGkw" memberEnd="_OOveIC9vEeySLpI0QUwGkw _OOveIS9vEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OOu3ES9vEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OOu3Ei9vEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OOveIC9vEeySLpI0QUwGkw" name="assign gate" type="_Jle0AC9vEeySLpI0QUwGkw" association="_OOu3EC9vEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OOveIS9vEeySLpI0QUwGkw" name="management" type="_OBwngC9uEeySLpI0QUwGkw" association="_OOu3EC9vEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Pj-ywC9vEeySLpI0QUwGkw" memberEnd="_Pj_Z0i9vEeySLpI0QUwGkw _Pj_Z0y9vEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pj_Z0C9vEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pj_Z0S9vEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Pj_Z0i9vEeySLpI0QUwGkw" name="assign gate" type="_Jle0AC9vEeySLpI0QUwGkw" association="_Pj-ywC9vEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Pj_Z0y9vEeySLpI0QUwGkw" name="bus driver" type="_UH44QC9uEeySLpI0QUwGkw" association="_Pj-ywC9vEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RhOikC9vEeySLpI0QUwGkw" memberEnd="_RhPwsC9vEeySLpI0QUwGkw _RhPwsS9vEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RhPJoC9vEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RhPJoS9vEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RhPwsC9vEeySLpI0QUwGkw" name="request fuel status" type="_47QSYC9uEeySLpI0QUwGkw" association="_RhOikC9vEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RhPwsS9vEeySLpI0QUwGkw" name="bus driver" type="_UH44QC9uEeySLpI0QUwGkw" association="_RhOikC9vEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dDjWQC9vEeySLpI0QUwGkw" memberEnd="_dDj9UC9vEeySLpI0QUwGkw _dDj9US9vEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dDjWQS9vEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dDjWQi9vEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dDj9UC9vEeySLpI0QUwGkw" name="load passengers" type="_WMh0EC9vEeySLpI0QUwGkw" association="_dDjWQC9vEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dDj9US9vEeySLpI0QUwGkw" name="bus driver" type="_UH44QC9uEeySLpI0QUwGkw" association="_dDjWQC9vEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_p7AJ0C9vEeySLpI0QUwGkw" memberEnd="_p7BX8i9vEeySLpI0QUwGkw _p7B_AC9vEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_p7BX8C9vEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_p7BX8S9vEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_p7BX8i9vEeySLpI0QUwGkw" name="assign baggage deposit" type="_hWhAQC9vEeySLpI0QUwGkw" association="_p7AJ0C9vEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_p7B_AC9vEeySLpI0QUwGkw" name="management" type="_OBwngC9uEeySLpI0QUwGkw" association="_p7AJ0C9vEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_quk70C9vEeySLpI0QUwGkw" memberEnd="_qumJ8i9vEeySLpI0QUwGkw _qumJ8y9vEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qumJ8C9vEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qumJ8S9vEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qumJ8i9vEeySLpI0QUwGkw" name="assign baggage deposit" type="_hWhAQC9vEeySLpI0QUwGkw" association="_quk70C9vEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qumJ8y9vEeySLpI0QUwGkw" name="package-cart driver" type="_Y_rtoC9uEeySLpI0QUwGkw" association="_quk70C9vEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_mRcMsC9wEeySLpI0QUwGkw" name="Maintenance-Vehicle Driver"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gm7EcC9xEeySLpI0QUwGkw" memberEnd="_gm8Ski9xEeySLpI0QUwGkw _gm9gsC9xEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gm8SkC9xEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gm8SkS9xEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gm8Ski9xEeySLpI0QUwGkw" name="request fuel status" type="_47QSYC9uEeySLpI0QUwGkw" association="_gm7EcC9xEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gm9gsC9xEeySLpI0QUwGkw" name="emergency driver" type="_mRcMsC9wEeySLpI0QUwGkw" association="_gm7EcC9xEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NqtcoC9yEeySLpI0QUwGkw" memberEnd="_NquDsi9yEeySLpI0QUwGkw _NquDsy9yEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NquDsC9yEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NquDsS9yEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NquDsi9yEeySLpI0QUwGkw" name="communicate needed services" type="_GLGQcC9yEeySLpI0QUwGkw" association="_NqtcoC9yEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NquDsy9yEeySLpI0QUwGkw" name="management" type="_OBwngC9uEeySLpI0QUwGkw" association="_NqtcoC9yEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_P_7nkC9yEeySLpI0QUwGkw" memberEnd="_P_9cwi9yEeySLpI0QUwGkw _P_-D0C9yEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_P_9cwC9yEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_P_9cwS9yEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_P_9cwi9yEeySLpI0QUwGkw" name="maintain plane" type="_43ByUC9xEeySLpI0QUwGkw" association="_P_7nkC9yEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_P_-D0C9yEeySLpI0QUwGkw" name="maintenance-vehicle driver" type="_mRcMsC9wEeySLpI0QUwGkw" association="_P_7nkC9yEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_1MioIC9yEeySLpI0QUwGkw" name="Emergency Driver"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_22JqQC9yEeySLpI0QUwGkw" memberEnd="_22KRUS9yEeySLpI0QUwGkw _22KRUi9yEeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_22JqQS9yEeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_22KRUC9yEeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_22KRUS9yEeySLpI0QUwGkw" name="react to emergency" type="_UBCFgC9yEeySLpI0QUwGkw" association="_22JqQC9yEeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_22KRUi9yEeySLpI0QUwGkw" name="emergency driver" type="_1MioIC9yEeySLpI0QUwGkw" association="_22JqQC9yEeySLpI0QUwGkw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dE4ZsC90EeySLpI0QUwGkw" memberEnd="_dE5AwC90EeySLpI0QUwGkw _dE5AwS90EeySLpI0QUwGkw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dE4ZsS90EeySLpI0QUwGkw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dE4Zsi90EeySLpI0QUwGkw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dE5AwC90EeySLpI0QUwGkw" name="assign plane" type="_niPYIC9uEeySLpI0QUwGkw" association="_dE4ZsC90EeySLpI0QUwGkw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dE5AwS90EeySLpI0QUwGkw" name="maintenance-vehicle driver" type="_mRcMsC9wEeySLpI0QUwGkw" association="_dE4ZsC90EeySLpI0QUwGkw"/>
   </packagedElement>
 </uml:Model>
