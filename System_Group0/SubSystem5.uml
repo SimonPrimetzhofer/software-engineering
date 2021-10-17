@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_SYGRoCXWEeybxdv-5Uc1kw" name="SubSystem5">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_SYGRoCXWEeybxdv-5Uc1kw" name="SubSystem5">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_SYX-cCXWEeybxdv-5Uc1kw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
@@ -12,5 +12,74 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_uk8DAC9nEeyh3rIBMqWRnw" name="&lt;&lt; access >>" client="_SYGRoCXWEeybxdv-5Uc1kw">
     <supplier xmi:type="uml:Model" href="SubSystem3.uml#_Oaa7ICXWEeybxdv-5Uc1kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_aZLM8C9qEeya95RNdWV4gg" name="Financial Management">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ASydcC9rEeya95RNdWV4gg" name="register airline">
+      <include xmi:type="uml:Include" xmi:id="_C9V30C9uEeya95RNdWV4gg" addition="_6m6qUC9rEeya95RNdWV4gg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_0GDlYC9rEeya95RNdWV4gg" name="pay rent"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_6m6qUC9rEeya95RNdWV4gg" name="book facilites">
+      <include xmi:type="uml:Include" xmi:id="_wrSnUC9uEeya95RNdWV4gg" addition="_0GDlYC9rEeya95RNdWV4gg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_KkuK0C9sEeya95RNdWV4gg" name="update ticketinfo"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_cTNl0C9sEeya95RNdWV4gg" name="assign employees"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hM7GwC9sEeya95RNdWV4gg" name="manage maintenance"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_MI5d4C9tEeya95RNdWV4gg" name="give flightinfo">
+      <include xmi:type="uml:Include" xmi:id="_mgkfwC9uEeya95RNdWV4gg" addition="_KkuK0C9sEeya95RNdWV4gg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_-R8qQC9uEeya95RNdWV4gg" name="change flightinfo">
+      <include xmi:type="uml:Include" xmi:id="_DJ1mQC9vEeya95RNdWV4gg" addition="_KkuK0C9sEeya95RNdWV4gg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hQzZ0C9vEeya95RNdWV4gg" name="manage vehicles">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_jkJVcC9vEeya95RNdWV4gg" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_lfF_MC9vEeya95RNdWV4gg" name="manage fuel">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_oYuewS9vEeya95RNdWV4gg" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_u9oWMC9vEeya95RNdWV4gg" name="manage material">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_xFqZsS9vEeya95RNdWV4gg" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_0m9WMC9vEeya95RNdWV4gg" name="manage equiptment">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_4xigQS9vEeya95RNdWV4gg" name="ExtensionPoint1"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_hTJVcC9qEeya95RNdWV4gg" name="Airline "/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_aTNSYC9rEeya95RNdWV4gg" name="Financial Management Employee"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_q-tmYC9rEeya95RNdWV4gg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_S1-PUC9sEeya95RNdWV4gg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gPhDUC9sEeya95RNdWV4gg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nQWo0C9sEeya95RNdWV4gg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YyqawC9tEeya95RNdWV4gg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_d6poQC9tEeya95RNdWV4gg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_koXdcC9tEeya95RNdWV4gg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Avj8MC9vEeya95RNdWV4gg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_O3cc4C9vEeya95RNdWV4gg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XgPMwC9xEeya95RNdWV4gg" memberEnd="_XgPz0i9xEeya95RNdWV4gg _XgRB8C9xEeya95RNdWV4gg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XgPz0C9xEeya95RNdWV4gg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XgPz0S9xEeya95RNdWV4gg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XgPz0i9xEeya95RNdWV4gg" name="manage vehicles" type="_hQzZ0C9vEeya95RNdWV4gg" association="_XgPMwC9xEeya95RNdWV4gg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XgRB8C9xEeya95RNdWV4gg" name="manage maintenance" type="_hM7GwC9sEeya95RNdWV4gg" association="_XgPMwC9xEeya95RNdWV4gg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YHhPMC9xEeya95RNdWV4gg" memberEnd="_YHh2Qi9xEeya95RNdWV4gg _YHh2Qy9xEeya95RNdWV4gg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YHh2QC9xEeya95RNdWV4gg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YHh2QS9xEeya95RNdWV4gg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YHh2Qi9xEeya95RNdWV4gg" name="manage fuel" type="_lfF_MC9vEeya95RNdWV4gg" association="_YHhPMC9xEeya95RNdWV4gg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YHh2Qy9xEeya95RNdWV4gg" name="manage maintenance" type="_hM7GwC9sEeya95RNdWV4gg" association="_YHhPMC9xEeya95RNdWV4gg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YsN3sC9xEeya95RNdWV4gg" memberEnd="_YsOewi9xEeya95RNdWV4gg _YsOewy9xEeya95RNdWV4gg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YsOewC9xEeya95RNdWV4gg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YsOewS9xEeya95RNdWV4gg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YsOewi9xEeya95RNdWV4gg" name="manage material" type="_u9oWMC9vEeya95RNdWV4gg" association="_YsN3sC9xEeya95RNdWV4gg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YsOewy9xEeya95RNdWV4gg" name="manage maintenance" type="_hM7GwC9sEeya95RNdWV4gg" association="_YsN3sC9xEeya95RNdWV4gg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ZTmAwC9xEeya95RNdWV4gg" memberEnd="_ZTmAwy9xEeya95RNdWV4gg _ZTmAxC9xEeya95RNdWV4gg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZTmAwS9xEeya95RNdWV4gg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZTmAwi9xEeya95RNdWV4gg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ZTmAwy9xEeya95RNdWV4gg" name="manage equiptment" type="_0m9WMC9vEeya95RNdWV4gg" association="_ZTmAwC9xEeya95RNdWV4gg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ZTmAxC9xEeya95RNdWV4gg" name="manage maintenance" type="_hM7GwC9sEeya95RNdWV4gg" association="_ZTmAwC9xEeya95RNdWV4gg"/>
   </packagedElement>
 </uml:Model>
