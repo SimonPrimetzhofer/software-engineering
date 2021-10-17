@@ -7,4 +7,10 @@
   <packagedElement xmi:type="uml:Dependency" xmi:id="_FLaLgC9mEeyjpfG0hhe6ww" name="&lt;&lt; access >>" client="_Oaa7ICXWEeybxdv-5Uc1kw">
     <supplier xmi:type="uml:Model" href="SubSystem5.uml#_SYGRoCXWEeybxdv-5Uc1kw"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_mF9EgC9nEeyh3rIBMqWRnw" name="&lt;&lt; access >>" client="_Oaa7ICXWEeybxdv-5Uc1kw">
+    <supplier xmi:type="uml:Model" href="SubSystem2.uml#_cRcAMCXUEeybxdv-5Uc1kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_rv0QAC9nEeyh3rIBMqWRnw" name="&lt;&lt; access >>" client="_Oaa7ICXWEeybxdv-5Uc1kw">
+    <supplier xmi:type="uml:Model" href="SubSystem1.uml#_aLMscCXUEeybxdv-5Uc1kw"/>
+  </packagedElement>
 </uml:Model>
