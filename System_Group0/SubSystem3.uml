@@ -4,4 +4,7 @@
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
   <packagedElement xmi:type="uml:Package" xmi:id="_e5fVoCXWEeybxdv-5Uc1kw" name="SubSystem3MainPkg"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_FLaLgC9mEeyjpfG0hhe6ww" name="&lt;&lt; access >>" client="_Oaa7ICXWEeybxdv-5Uc1kw">
+    <supplier xmi:type="uml:Model" href="SubSystem5.uml#_SYGRoCXWEeybxdv-5Uc1kw"/>
+  </packagedElement>
 </uml:Model>
