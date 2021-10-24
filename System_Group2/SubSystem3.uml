@@ -31,24 +31,78 @@ or EWR&#xD;
 </body>
     </ownedComment>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_i9xj4C9tEeyIsKk5dxUS1A" name="Check-in flight">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_gkotwDUJEey8MvU2I0f-WQ">
+        <body>Step 1: Passenger approaches check-in counter&#xD;
+Step 2: Check-in employee asks for passport&#xD;
+Step 3: Passenger hands over passport&#xD;
+Step 4: Check-in employee checks identity&#xD;
+Step 5: Check-in employee prints out flight tickets&#xD;
+Step 6: If the passenger has some baggage, he/she hands it over to the check-in employee&#xD;
+Step 7: If Step 6 was executed, the check-in employee tags the baggage and forwards it&#xD;
+Step 8: Check-in employee gives back the passport including the flight tickets&#xD;
+Step 9: Passenger leaves counter</body>
+      </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_wfW5kC9tEeyIsKk5dxUS1A" name="ExtensionPoint1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_rsdyUC9tEeyIsKk5dxUS1A" name="Hand over baggage" visibility="protected">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_m6-kwDUJEey8MvU2I0f-WQ">
+        <body>Step 1: Passenger hands over baggage&#xD;
+Step 2: Check-in employee weighs every baggage item&#xD;
+Step 3: If the baggage is too heavy, an additional fee must be payed by the passenger&#xD;
+</body>
+      </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_wfUdUC9tEeyIsKk5dxUS1A" extendedCase="_i9xj4C9tEeyIsKk5dxUS1A" extensionLocation="_wfW5kC9tEeyIsKk5dxUS1A"/>
       <include xmi:type="uml:Include" xmi:id="_IHB5AC9vEeyIsKk5dxUS1A" addition="_DFAwoC9vEeyIsKk5dxUS1A"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_s6z_UC9uEeyIsKk5dxUS1A" name="Enter security check">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_-0PDcDUKEey8MvU2I0f-WQ">
+        <body>Step 1: Passenger enters security area with flight ticket&#xD;
+Step 2: Passenger throws all forbidden items into a bin&#xD;
+Step 3: Passenger puts all remaining personal items into a box&#xD;
+Step 4: Security employee scans personal items&#xD;
+Step 5: Passenger goes through metal detector&#xD;
+Step 6: If the passenger fails the metal detector test, an individual security check is initiated&#xD;
+Step 7: If forbidden items are detected, an individual security check is initiated&#xD;
+Step 8: Passenger takes back personal items&#xD;
+Step 9: Passenger leaves security area</body>
+      </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_4ehoMC9wEeyIsKk5dxUS1A" name="ExtensionPoint1"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_DFAwoC9vEeyIsKk5dxUS1A" name="Tag baggage and forward"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_DFAwoC9vEeyIsKk5dxUS1A" name="Tag baggage and forward">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Ba3j8DUKEey8MvU2I0f-WQ">
+        <body>Step 1: Check-in employee prints out one tag per baggage item&#xD;
+Step 2: Check-in employee puts on every baggage item&#xD;
+Step 3: Check-in employee forwards all baggage items via the conveyor to the transportation location&#xD;
+</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_U_c88C9vEeyIsKk5dxUS1A" name="Gather flight information"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_muPdcC9wEeyIsKk5dxUS1A" name="Start individual security check">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_cYaTADULEey8MvU2I0f-WQ">
+        <body>Step 1: Security employee removes forbidden items from the passenger's personal belongings if present&#xD;
+Step 2: Security employee performs an individual scan on the passengers' body&#xD;
+Step 3: Security employee asks relevant questions to resolve the situation&#xD;
+Step 4: If the situation is resolved, the passenger passes the security check; if not, the passenger is escorted away&#xD;
+Step 5: Passenger leaves individual security check</body>
+      </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_4egaEC9wEeyIsKk5dxUS1A" extendedCase="_s6z_UC9uEeyIsKk5dxUS1A" extensionLocation="_4ehoMC9wEeyIsKk5dxUS1A"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_INxIQC9xEeyIsKk5dxUS1A" name="Check passport">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_LBLE8DUMEey8MvU2I0f-WQ">
+        <body>Step 1: Passenger approaches border police&#xD;
+Step 2: Passenger hands over passport&#xD;
+Step 3: Border police checks nationality and possible warrants, fees, etc.&#xD;
+Step 4: If passenger is not an EU or EWR citizen, border police checks for a valid visa&#xD;
+Step 5: Border police gives back the passport&#xD;
+Step 6: Passenger leaves border police check</body>
+      </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Z0oRQC9xEeyIsKk5dxUS1A" name="ExtensionPoint1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_SLn4gC9xEeyIsKk5dxUS1A" name="Confirm visa">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Qk5MMDUMEey8MvU2I0f-WQ">
+        <body>Step 1: Border police searches for a valid visa&#xD;
+Step 2: If a valid visa is present, the passenger is allowed to go on; if not, further travelling gets denied</body>
+      </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_Z0nDIC9xEeyIsKk5dxUS1A" extendedCase="_INxIQC9xEeyIsKk5dxUS1A" extensionLocation="_Z0oRQC9xEeyIsKk5dxUS1A"/>
     </packagedElement>
   </packagedElement>
