@@ -76,7 +76,15 @@ Step 3: Check-in employee forwards all baggage items via the conveyor to the tra
 </body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_U_c88C9vEeyIsKk5dxUS1A" name="Gather flight information"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_U_c88C9vEeyIsKk5dxUS1A" name="Gather flight information">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_ICM88DUNEey8MvU2I0f-WQ">
+        <body>Step 1: Passenger spots flight information display&#xD;
+Step 2: Passenger looks for his/her own flight in the list of all upcoming flights&#xD;
+Step 3: Flight information provides flight number, departure/landing gate and time&#xD;
+Step 4: Passenger notes down important information&#xD;
+Step 5: Passenger leaves information area</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_muPdcC9wEeyIsKk5dxUS1A" name="Start individual security check">
       <ownedComment xmi:type="uml:Comment" xmi:id="_cYaTADULEey8MvU2I0f-WQ">
         <body>Step 1: Security employee removes forbidden items from the passenger's personal belongings if present&#xD;
