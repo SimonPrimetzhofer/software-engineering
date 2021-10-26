@@ -17,7 +17,13 @@
   </packageImport>
   <packagedElement xmi:type="uml:Class" xmi:id="_cjyfACXVEeybxdv-5Uc1kw" name="SystemClass"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_mu5eYC9oEeyh3rIBMqWRnw" name="Airport Management System">
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_QT5agC90Eeya95RNdWV4gg" name="manage employees"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_QT5agC90Eeya95RNdWV4gg" name="manage employees">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_GQ0WMDZ-EeyDAuvcSNBm6w">
+        <body>Step 1: Landside-, Airside and Terminal Management report desired amount of employees to Financial Management&#xD;
+Step 2: Financial Management assigns employees according to knowledge and abilities&#xD;
+Step 3: Financial Management handles payment, absence and working hours of employees from Landside-, Airside and Terminal Management</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_eLk8AC90Eeya95RNdWV4gg" name="manage airside emp">
       <include xmi:type="uml:Include" xmi:id="_n3oKkC90Eeya95RNdWV4gg" addition="_QT5agC90Eeya95RNdWV4gg"/>
     </packagedElement>
@@ -27,11 +33,35 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_kMt_EC90Eeya95RNdWV4gg" name="manage landside emp">
       <include xmi:type="uml:Include" xmi:id="_pM1qAC90Eeya95RNdWV4gg" addition="_QT5agC90Eeya95RNdWV4gg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_y-JMAC90Eeya95RNdWV4gg" name="update ticketinfo / pricing"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_IE_p8C91Eeya95RNdWV4gg" name="report costs"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_y-JMAC90Eeya95RNdWV4gg" name="update ticketinfo / pricing">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_pKhnYDZ7EeyDAuvcSNBm6w">
+        <body>Step 1: Terminal Management reports check-in status and payments to Financial Management&#xD;
+Step 2: Financial Management updates ticket prices, departure times and flight states&#xD;
+Step 3: Terminal Management displays updated data</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_IE_p8C91Eeya95RNdWV4gg" name="report costs">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Jsmn8DZ7EeyDAuvcSNBm6w">
+        <body></body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ZqzDAC91Eeya95RNdWV4gg" name="coordinate routes"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_lbbYcC91Eeya95RNdWV4gg" name="provide flightinfo (baggage, passanger, departure info)"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_lbbYcC91Eeya95RNdWV4gg" name="provide flightinfo (baggage, passenger, departure info)" visibility="protected">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_bxPnMDZ9EeyDAuvcSNBm6w">
+        <body>Step 1: Airside Management requests flight information from Terminal management (scheduled departure/arrival)&#xD;
+Step 2: Terminal Management adjusts departure/landing time according to check-in status of passengers&#xD;
+Step 3: Airside Management provides actual departure/landing time (possible delays)</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_1gtZ8C91Eeya95RNdWV4gg" name="provide gateinfo, transportinfo">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_FfbncDZ8EeyDAuvcSNBm6w">
+        <body>Step 1: Terminal management requests passenger/cargo transport from Landside Management&#xD;
+Step 2: Landside Management requests gate and transport information from Terminal Management&#xD;
+Step 3: Terminal management assigns gate&#xD;
+Step 4: Terminal management forwards baggage to transportation units&#xD;
+Step 5: Terminal management and Airside management coordinate flight details to ensure that baggage gets delivered correctly and on time&#xD;
+Step 6: Landside Management transports baggage and passengers to the airplane</body>
+      </ownedComment>
       <include xmi:type="uml:Include" xmi:id="_-WIigC91Eeya95RNdWV4gg" addition="_lbbYcC91Eeya95RNdWV4gg"/>
     </packagedElement>
   </packagedElement>
