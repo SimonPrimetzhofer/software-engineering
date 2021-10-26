@@ -28,9 +28,17 @@ Step 3: Financial Management handles payment, absence and working hours of emplo
       <include xmi:type="uml:Include" xmi:id="_n3oKkC90Eeya95RNdWV4gg" addition="_QT5agC90Eeya95RNdWV4gg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ifiEgC90Eeya95RNdWV4gg" name="manage terminal emp">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_oxhKIDZ-EeyDAuvcSNBm6w">
+        <body>Step 1: Terminal Management receives certain amount of employees from Financial Management&#xD;
+Step 2: Terminal Management requests changes if needed (amount of employees, ...)</body>
+      </ownedComment>
       <include xmi:type="uml:Include" xmi:id="_ooSygC90Eeya95RNdWV4gg" addition="_QT5agC90Eeya95RNdWV4gg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_kMt_EC90Eeya95RNdWV4gg" name="manage landside emp">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_cYpwADZ-EeyDAuvcSNBm6w">
+        <body>Step 1: Landside Management receives certain amount of employees from Financial Management&#xD;
+Step 2: Landside Management requests changes if needed (amount of employees, ...)</body>
+      </ownedComment>
       <include xmi:type="uml:Include" xmi:id="_pM1qAC90Eeya95RNdWV4gg" addition="_QT5agC90Eeya95RNdWV4gg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_y-JMAC90Eeya95RNdWV4gg" name="update ticketinfo / pricing">
