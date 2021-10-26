@@ -13,9 +13,39 @@
     <supplier xmi:type="uml:Model" href="SubSystem5.uml#_SYGRoCXWEeybxdv-5Uc1kw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="__z_BkC9qEeyL4sFy9uAMQw" name="Airside Management">
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_rOLlwC9rEeyL4sFy9uAMQw" name="refuel aircraft"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="__PnTwC9rEeyL4sFy9uAMQw" name="land aircraft"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_LNbwoC9sEeyL4sFy9uAMQw" name="Take off"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_rOLlwC9rEeyL4sFy9uAMQw" name="refuel aircraft">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_47WCUDZbEeyNa9cxjEG0mw">
+        <body>Step 1: Pilot requests fuel truck from landside management and provides location information&#xD;
+Step 2: Fuel truck driver gets information &#xD;
+Step 3: Fuel truck driver reports to pilot that the truck will refuel the aircraft&#xD;
+Step 4: Fuel truck moves to aircraft and refills it.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="__PnTwC9rEeyL4sFy9uAMQw" name="land aircraft">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_64rjoDZZEeyNa9cxjEG0mw">
+        <body>Step 1: Pilot requests landing clearance from the aircraft marshaller&#xD;
+Step 2: Pilot notifies cabin crew that the aircraft will land soon&#xD;
+Step 3: Cabin crew informs the passengers that they should put on their seatbelts&#xD;
+Step 4: Aircraft marshaller gives clearance and provides the landing strip&#xD;
+Step 5: Pilot performs landing&#xD;
+Step 6: Aircraft marshaller provides a gate number and the parking spot after the passengers left.&#xD;
+Step 7: Pilot acknowlegdes the information provided&#xD;
+Step 8: Cabin crew departs the passengers row-wise</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_LNbwoC9sEeyL4sFy9uAMQw" name="Take off">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_6585gDZaEeyNa9cxjEG0mw">
+        <body>Step 1: Pilot goes through all checklists&#xD;
+Step 2: Pilot requests start permission from aircraft marshaller&#xD;
+Step 3: Aircraft marshaller gives permission together with starting strip&#xD;
+Step 4: Pilot acknowlegdes the information provided&#xD;
+Step 5: Pilot informs cabin crew that the aircraft has started the take off procedure&#xD;
+Step 6: Cabin crew informs passengers that they should put on their seatbelts&#xD;
+Step 7: Pilot moves the aircraft to the designated starting strip&#xD;
+Step 8: Pilot performs take-off</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_J0SVYDZcEeyNa9cxjEG0mw" name="&lt;&lt;includes>>" client="__PnTwC9rEeyL4sFy9uAMQw" supplier="_rOLlwC9rEeyL4sFy9uAMQw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_Kq12YC9rEeyL4sFy9uAMQw" name="Aircraft marshaller"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_NKDDwC9rEeyL4sFy9uAMQw" name="Pilot"/>
@@ -61,5 +91,20 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_TLuc4i9sEeyL4sFy9uAMQw" name="take off" type="_LNbwoC9sEeyL4sFy9uAMQw" association="_TLt10C9sEeyL4sFy9uAMQw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_TLuc4y9sEeyL4sFy9uAMQw" name="aircraft marshaller" type="_Kq12YC9rEeyL4sFy9uAMQw" association="_TLt10C9sEeyL4sFy9uAMQw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_FBvMYDZcEeyNa9cxjEG0mw" name="Cabin crew"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HdT28DZcEeyNa9cxjEG0mw" memberEnd="_HdakoDZcEeyNa9cxjEG0mw _HdbLsDZcEeyNa9cxjEG0mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HdYIYDZcEeyNa9cxjEG0mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HdYvcDZcEeyNa9cxjEG0mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HdakoDZcEeyNa9cxjEG0mw" name="land aircraft" type="__PnTwC9rEeyL4sFy9uAMQw" association="_HdT28DZcEeyNa9cxjEG0mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HdbLsDZcEeyNa9cxjEG0mw" name="cabin crew" type="_FBvMYDZcEeyNa9cxjEG0mw" association="_HdT28DZcEeyNa9cxjEG0mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Ipq8YDZcEeyNa9cxjEG0mw" memberEnd="_Ipt_sDZcEeyNa9cxjEG0mw _IpumwDZcEeyNa9cxjEG0mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IpsxkDZcEeyNa9cxjEG0mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IpsxkTZcEeyNa9cxjEG0mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ipt_sDZcEeyNa9cxjEG0mw" name="take off" type="_LNbwoC9sEeyL4sFy9uAMQw" association="_Ipq8YDZcEeyNa9cxjEG0mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IpumwDZcEeyNa9cxjEG0mw" name="cabin crew" type="_FBvMYDZcEeyNa9cxjEG0mw" association="_Ipq8YDZcEeyNa9cxjEG0mw"/>
   </packagedElement>
 </uml:Model>
