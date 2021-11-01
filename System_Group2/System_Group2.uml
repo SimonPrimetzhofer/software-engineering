@@ -42,17 +42,24 @@ Step 3: Terminal Management displays updated data</body>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_IE_p8C91Eeya95RNdWV4gg" name="report costs">
       <ownedComment xmi:type="uml:Comment" xmi:id="_Jsmn8DZ7EeyDAuvcSNBm6w">
-        <body>Step 1: financial management requests a cost report from landside management (e.g. fuel cost)&#xD;
-Step 2: financial management requests a cost report from airside management&#xD;
-Step 3: airside and landside management send cost report</body>
+        <body>Step 1: Landside management gathers all costs from refueling, maintenance and facility usage&#xD;
+Step 2: Airside management gathers all costs for using the runway&#xD;
+Step 3: Financial management requests a cost report from Landside management&#xD;
+Step 4: Financial management requests a cost report from Airside management&#xD;
+Step 5: Airside and Landside management send cost report&#xD;
+Step 6: Financial Management sends out bills to airlines&#xD;
+Step 7: Financial Management monitors payment of the bills</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ZqzDAC91Eeya95RNdWV4gg" name="coordinate routes">
       <ownedComment xmi:type="uml:Comment" xmi:id="_Sz2jgDZ_Eeyw4v4tUi5WGg">
-        <body>Step 1: airside management requests services&#xD;
-Step 2: landside management assigns drivers&#xD;
-Step 3: airside management confirms flight arrival/departure time and destination&#xD;
-Step 4: landside management sends drivers</body>
+        <body>Step 1: Airside management requests fuel truck, stair truck, etc. from Landside Management&#xD;
+Step 2: Landside Management requests parking location of aircraft&#xD;
+Step 3: Airside Management provides parking location and arrival/departure time&#xD;
+Step 4: Landside Management calculates needed resources&#xD;
+Step 5: Landside Management plans best route for vehicles&#xD;
+Step 6: Landside Management assigns driver&#xD;
+Step 7: Landside Management executes requested service</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_lbbYcC91Eeya95RNdWV4gg" name="provide flightinfo (baggage, passenger, departure info)" visibility="protected">
