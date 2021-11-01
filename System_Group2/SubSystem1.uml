@@ -18,7 +18,8 @@
         <body>Step 1: Pilot requests fuel truck from landside management and provides location information&#xD;
 Step 2: Fuel truck driver gets information &#xD;
 Step 3: Fuel truck driver reports to pilot that the truck will refuel the aircraft&#xD;
-Step 4: Fuel truck moves to aircraft and refills it.</body>
+Step 4: Fuel truck moves to aircraft&#xD;
+Step 5: Fuel truck refills aircraft</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="__PnTwC9rEeyL4sFy9uAMQw" name="land aircraft">
@@ -29,8 +30,9 @@ Step 3: Cabin crew informs the passengers that they should put on their seatbelt
 Step 4: Aircraft marshaller gives clearance and provides the landing strip&#xD;
 Step 5: Pilot performs landing&#xD;
 Step 6: Aircraft marshaller provides a gate number and the parking spot after the passengers left.&#xD;
-Step 7: Pilot acknowlegdes the information provided&#xD;
-Step 8: Cabin crew departs the passengers row-wise</body>
+Step 7: Aircraft marshaller signals instructions to the pilot to ease parking.&#xD;
+Step 8: Pilot acknowlegdes the information provided&#xD;
+Step 9: Cabin crew departs the passengers row-wise</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_LNbwoC9sEeyL4sFy9uAMQw" name="Take off">
