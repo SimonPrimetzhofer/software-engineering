@@ -14,26 +14,16 @@
     <supplier xmi:type="uml:Model" href="SubSystem3.uml#_Oaa7ICXWEeybxdv-5Uc1kw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_aZLM8C9qEeya95RNdWV4gg" name="Financial Management">
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_ASydcC9rEeya95RNdWV4gg" name="register airline">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_YbTZcDWpEeyM6b7kgSNcUA">
-        <body>Step 1: FME registers the facilities as booked</body>
-      </ownedComment>
-      <include xmi:type="uml:Include" xmi:id="_C9V30C9uEeya95RNdWV4gg" addition="_6m6qUC9rEeya95RNdWV4gg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_0GDlYC9rEeya95RNdWV4gg" name="pay rent">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_QAH84DWpEeyM6b7kgSNcUA">
-        <body>Step 1: Airline pays the discussed amount </body>
-      </ownedComment>
-    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_6m6qUC9rEeya95RNdWV4gg" name="book facilites">
       <ownedComment xmi:type="uml:Comment" xmi:id="_M7jYoDWpEeyM6b7kgSNcUA">
         <body>Step 1: Airline contacts FME&#xD;
 Step 2: Airline gives info about which facilities they want to book&#xD;
 Step 3: FME checks if facilities are free to book&#xD;
 Step 4: FME gives Airline a contract about the booking&#xD;
-Step 5: Airline accepts and signs contract</body>
+Step 5: Airline accepts and signs contract&#xD;
+Step 6: Airline pays the discussed amount &#xD;
+Step 7: FME registers the facilities as booked</body>
       </ownedComment>
-      <include xmi:type="uml:Include" xmi:id="_wrSnUC9uEeya95RNdWV4gg" addition="_0GDlYC9rEeya95RNdWV4gg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_KkuK0C9sEeya95RNdWV4gg" name="update ticketinfo">
       <ownedComment xmi:type="uml:Comment" xmi:id="_lsrI4DWpEeyM6b7kgSNcUA">
@@ -50,8 +40,9 @@ Step 3: FM assigns Employees to the Managements</body>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_hM7GwC9sEeya95RNdWV4gg" name="manage maintenance">
       <ownedComment xmi:type="uml:Comment" xmi:id="_2bKfcDWpEeyM6b7kgSNcUA">
-        <body>Step 1: Some other Management needs Maintanence&#xD;
-Step 2: Other Management tells what the Maintance is (vehicle, fuel, material or equiptment)</body>
+        <body>Step 1: Some other management needs maintanence&#xD;
+Step 2: Other management tells what the maintance is (vehicle, fuel, material or equiptment)&#xD;
+Step 3 (look into destinated use-case)</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_MI5d4C9tEeya95RNdWV4gg" name="give flightinfo">
@@ -71,7 +62,7 @@ Step 2: Airline gives info to FME</body>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_hQzZ0C9vEeya95RNdWV4gg" name="manage vehicles">
       <ownedComment xmi:type="uml:Comment" xmi:id="_G0Hq4DWqEeyM6b7kgSNcUA">
         <body>Step 1: FME gets info about vehicle&#xD;
-Step 2: FME pays repair or buys new car</body>
+Step 2: FME pays repair or buys new vehicles</body>
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_jkJVcC9vEeya95RNdWV4gg" name="ExtensionPoint1"/>
     </packagedElement>
@@ -90,6 +81,10 @@ Step 2: FME pays for new material</body>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_xFqZsS9vEeya95RNdWV4gg" name="ExtensionPoint1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_0m9WMC9vEeya95RNdWV4gg" name="manage equiptment">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_p0NB4DsuEeyT6ZfYmwKttw">
+        <body>Step 1: FME gets info about needed/broken equiptment&#xD;
+Step 2: FME pays for repairment or new equiptment</body>
+      </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_4xigQS9vEeya95RNdWV4gg" name="ExtensionPoint1"/>
     </packagedElement>
   </packagedElement>
