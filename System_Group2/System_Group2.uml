@@ -33,7 +33,9 @@ Step 7: Financial Management regulates hours of labor according to working hours
         <body>Step 1: Landside Management requests security clothing for its employees from Financial Management&#xD;
 Step 2: Financial Management buys requested clothing from an external vendor&#xD;
 Step 3: Airside Management requests courses for air traffic controllers, tower personnel, etc. from Financial Management in order to ensure operability&#xD;
-Step 4: </body>
+Step 4: Financial Management books instructors and coordinates appointments&#xD;
+Step 5: Financial Management supervises attendance of employees at appointments&#xD;
+Step 6: Financial Management pays for course and requests driving licence for Airside Management employees</body>
       </ownedComment>
       <include xmi:type="uml:Include" xmi:id="_n3oKkC90Eeya95RNdWV4gg" addition="_QT5agC90Eeya95RNdWV4gg"/>
     </packagedElement>
@@ -92,7 +94,9 @@ Step 7: Landside Management executes requested service</body>
       <ownedComment xmi:type="uml:Comment" xmi:id="_bxPnMDZ9EeyDAuvcSNBm6w">
         <body>Step 1: Airside Management requests flight information from Terminal management (scheduled departure/arrival)&#xD;
 Step 2: Terminal Management adjusts departure/landing time according to check-in status of passengers&#xD;
-Step 3: Airside Management provides actual departure/landing time (possible delays)</body>
+Step 3: Airside Management provides actual departure/landing time (possible delays)&#xD;
+Step 4: Terminal Management displays possibly changed flight information to passengers&#xD;
+Step 5: Terminal Management coordinates baggage and passenger transportation according to air craft status</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_1gtZ8C91Eeya95RNdWV4gg" name="provide gateinfo, transportinfo">
