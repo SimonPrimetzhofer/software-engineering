@@ -28,16 +28,16 @@ low on fuel</body>
     </ownedComment>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_jXCjAC9uEeySLpI0QUwGkw" name="transport baggage">
       <ownedComment xmi:type="uml:Comment" xmi:id="_i6u5wDZ6Eeyw4v4tUi5WGg">
-        <body>Step 1: driver opens baggage hatch&#xD;
-Step 2: driver waits until baggage is fully depositted inside the vehicle&#xD;
-Step 3: driver requests clearance from management&#xD;
-Step 4: driver closes and locks baggage hatch&#xD;
-Step 5: driver drives to destination&#xD;
-Step 6: driver arrives at destination&#xD;
-Step 7: driver opens hatch&#xD;
-Step 8: driver waits until baggage is unloaded&#xD;
-Step 9: driver reports status back to management&#xD;
-Step 10: driver closes hatch&#xD;
+        <body>Step 1: baggage-cart driver opens baggage hatch&#xD;
+Step 2: baggage-cart driver waits until baggage is fully depositted inside the vehicle&#xD;
+Step 3: baggage-cart driver requests clearance from management&#xD;
+Step 4: baggage-cart driver closes and locks baggage hatch&#xD;
+Step 5: baggage-cart driver drives to destination&#xD;
+Step 6: baggage-cart driver arrives at destination&#xD;
+Step 7: baggage-cart driver opens hatch&#xD;
+Step 8: baggage-cart driver waits until baggage is unloaded&#xD;
+Step 9: baggage-cart driver reports status back to management&#xD;
+Step 10: baggage-cart driver closes hatch&#xD;
 </body>
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_s0QZcC9wEeySLpI0QUwGkw" name="ExtensionPoint1"/>
@@ -68,39 +68,39 @@ Step 3: INCLUDE USE CASE refuel</body>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Jle0AC9vEeySLpI0QUwGkw" name="assign gate">
       <ownedComment xmi:type="uml:Comment" xmi:id="_1o0Q4DZ3Eeyw4v4tUi5WGg">
         <body>Step 1: management assigns a gate to a bus driver&#xD;
-Step 2: driver drives to the gate&#xD;
-Step 3: driver arrives at gate&#xD;
+Step 2: bus driver drives to the gate&#xD;
+Step 3: bus driver arrives at gate&#xD;
 Step 4: INCLUDE USE CASE transport passengers&#xD;
-Step 5: driver drives back to garage&#xD;
-Step 6: driver awaits new orders</body>
+Step 5: bus driver drives back to garage&#xD;
+Step 6: bus driver awaits new orders</body>
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ybUIkC9wEeySLpI0QUwGkw" name="ExtensionPoint1"/>
       <include xmi:type="uml:Include" xmi:id="_XDCMAC90EeySLpI0QUwGkw" addition="_WMh0EC9vEeySLpI0QUwGkw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_WMh0EC9vEeySLpI0QUwGkw" name="transport passengers">
       <ownedComment xmi:type="uml:Comment" xmi:id="_oJ2U4DZ4Eeyw4v4tUi5WGg">
-        <body>Step 1: driver opens bus doors&#xD;
-Step 2: driver waits until bus is full or no more people are left&#xD;
-Step 3: driver requests clearance from management&#xD;
-Step 4: driver closes doors&#xD;
-Step 5: driver drives to destination&#xD;
-Step 6: driver arrives at destination&#xD;
-Step 7: driver opens doors&#xD;
-Step 8: driver waits until bus is empty&#xD;
-Step 9: driver reports status back to management&#xD;
-Step 10: driver closes doors&#xD;
+        <body>Step 1: bus driver opens bus doors&#xD;
+Step 2: bus driver waits until bus is full or no more people are left&#xD;
+Step 3: bus driver requests clearance from management&#xD;
+Step 4: bus driver closes doors&#xD;
+Step 5: bus driver drives to destination&#xD;
+Step 6: bus driver arrives at destination&#xD;
+Step 7: bus driver opens doors&#xD;
+Step 8: bus driver waits until bus is empty&#xD;
+Step 9: bus driver reports status back to management&#xD;
+Step 10: bus driver closes doors&#xD;
 </body>
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_prG3MC9wEeySLpI0QUwGkw" name="ExtensionPoint1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_hWhAQC9vEeySLpI0QUwGkw" name="assign baggage deposit">
       <ownedComment xmi:type="uml:Comment" xmi:id="_3oW_YDZ6Eeyw4v4tUi5WGg">
-        <body>Step 1: management assigns a baggage deposit to  a driver&#xD;
-Step 2: driver drives to the baggage deposit&#xD;
-Step 3: driver arrives at baggage deposit&#xD;
+        <body>Step 1: management assigns a baggage deposit to a baggage-cart driver&#xD;
+Step 2: baggage-cart driver drives to the baggage deposit&#xD;
+Step 3: baggage-cart driver arrives at baggage deposit&#xD;
 Step 5: INCLUDE USE CASE transport baggage&#xD;
-Step 5: driver drives back to garage&#xD;
-Step 6: driver awaits new orders</body>
+Step 5: baggage-cart driver drives back to garage&#xD;
+Step 6: baggage-cart driver awaits new orders</body>
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_wjKUIC9wEeySLpI0QUwGkw" name="ExtensionPoint1"/>
       <include xmi:type="uml:Include" xmi:id="_T8jjQC90EeySLpI0QUwGkw" addition="_jXCjAC9uEeySLpI0QUwGkw"/>
@@ -116,48 +116,47 @@ Step 6: driver starts pumping gasoline&#xD;
 Step 7: driver waits until the tank is full&#xD;
 Step 8: driver stops pumping gasoline&#xD;
 Step 9: driver puts gasoline hose back&#xD;
-Step 10: driver closes the fuel cap&#xD;
-Step 11: driver reports consumed litres back to the management&#xD;
-Step 12: </body>
+Step 10: driver closes the fuel cap  &#xD;
+Step 11: driver reports consumed liters back to the management</body>
       </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_6dE_kC9wEeySLpI0QUwGkw" extendedCase="_47QSYC9uEeySLpI0QUwGkw" extensionLocation="_6dFmoC9wEeySLpI0QUwGkw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_0HPCYC9xEeySLpI0QUwGkw" name="refuel plane">
       <ownedComment xmi:type="uml:Comment" xmi:id="_uyh14DZ0Eeyw4v4tUi5WGg">
-        <body>Step 1: driver opens fuel hatch of plane&#xD;
-Step 2: driver attaches gasoline hose to hatch&#xD;
-Step 3: driver starts pumping cerosine&#xD;
-Step 4: driver stops pumping&#xD;
-Step 5: driver disconnect gasoline hose&#xD;
-Step 6: driver closes hatch&#xD;
-Step 7: driver reports amount of gasoline used to management&#xD;
-Step 8: driver double checks if planes fuel hatch is closed</body>
+        <body>Step 1: maintenance vehicle driver opens fuel hatch of plane&#xD;
+Step 2: maintenance vehicle driver attaches gasoline hose to hatch&#xD;
+Step 3: maintenance vehicle driver starts pumping kerosine&#xD;
+Step 4: maintenance vehicle driver stops pumping&#xD;
+Step 5: maintenance vehicle driver disconnects gasoline hose&#xD;
+Step 6: maintenance vehicle driver closes hatch&#xD;
+Step 7: maintenance vehicle driver reports amount of gasoline used to management&#xD;
+Step 8: maintenance vehicle driver double checks if planes fuel hatch is closed</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_2dvmwC9xEeySLpI0QUwGkw" name="check tire pressure">
       <ownedComment xmi:type="uml:Comment" xmi:id="_0fmQ8DZ1Eeyw4v4tUi5WGg">
-        <body>Step 1: driver starts compressor to fill the land vehicles high pressure air tank&#xD;
-Step 2: driver retrieves tire pressure gauge from vehicle&#xD;
-Step 3: driver connects tire pressure gauge to the vehicles high pressure air tank&#xD;
-Step 4: driver connects tire pressure gauge to the plane´s tire&#xD;
-Step 5: driver uses the tire pressure gauge to meassure tire pressure&#xD;
-Step 6: driver pumps air into the tire until pressure is high enough&#xD;
-Step 7: driver stops the pump&#xD;
-Step 8: driver stops the compressor&#xD;
-Step 9: driver disconnects the tyre pressure gauge from the tire&#xD;
-Step 10: driver puts the tire pressure gauge back into the vehicle&#xD;
+        <body>Step 1: maintenance vehicle driver starts compressor to fill the land vehicles high pressure air tank&#xD;
+Step 2: maintenance vehicle driver retrieves tire pressure gauge from vehicle&#xD;
+Step 3: maintenance vehicle driver connects tire pressure gauge to the vehicles high pressure air tank&#xD;
+Step 4: maintenance vehicle driver connects tire pressure gauge to the plane´s tire&#xD;
+Step 5: maintenance vehicle driver uses the tire pressure gauge to measures tire pressure&#xD;
+Step 6: maintenance vehicle driver pumps air into the tire until pressure is high enough&#xD;
+Step 7: maintenance vehicle driver stops the pump&#xD;
+Step 8: maintenance vehicle driver stops the compressor&#xD;
+Step 9: maintenance vehicle driver disconnects the tire pressure gauge from the tire&#xD;
+Step 10: maintenance vehicle driver puts the tire pressure gauge back into the vehicle&#xD;
 </body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_43ByUC9xEeySLpI0QUwGkw" name="maintain plane">
       <ownedComment xmi:type="uml:Comment" xmi:id="_WPQ7cDZ0Eeyw4v4tUi5WGg">
-        <body>Step 1: driver drives to plane&#xD;
-Step 2: driver arrives&#xD;
+        <body>Step 1: maintenance vehicle driver drives to plane&#xD;
+Step 2: maintenance vehicle driver arrives&#xD;
 Step 3: INCLUDE USE CASE refuel plane&#xD;
 Step 4: INCLUDE USE CASE check tire pressure&#xD;
-Step 5: driver reports status back to management&#xD;
-Step 6: driver drives back to garage&#xD;
-Step 7: driver awaits new orders</body>
+Step 5: maintenance vehicle driver reports status back to management&#xD;
+Step 6: maintenance vehicle driver drives back to garage&#xD;
+Step 7: maintenance vehicle driver awaits new orders</body>
       </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_wQBDwC9yEeySLpI0QUwGkw" extendedCase="_GLGQcC9yEeySLpI0QUwGkw" extensionLocation="_wQBDwS9yEeySLpI0QUwGkw"/>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_72f0IS9xEeySLpI0QUwGkw" name="ExtensionPoint1"/>
@@ -178,16 +177,16 @@ Step 2: management tells the driver what to do</body>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_UBCFgC9yEeySLpI0QUwGkw" name="react to emergency">
       <ownedComment xmi:type="uml:Comment" xmi:id="_901FgDZ2Eeyw4v4tUi5WGg">
-        <body>Step 1: driver drives to plane&#xD;
-Step 2: driver arrives&#xD;
-Step 3: driver starts water pump&#xD;
-Step 4: driver extinguishes fire&#xD;
-Step 5: driver stays until all passengers are brought to safety&#xD;
-Step 6: driver stops water pump&#xD;
-Step 7: report status back to management&#xD;
-Step 8: drive back to garage&#xD;
-Step 9: refill water tank&#xD;
-Step 10: await new orders</body>
+        <body>Step 1: firetruck driver drives to plane&#xD;
+Step 2: firetruck driver arrives&#xD;
+Step 3: firetruck driver starts water pump&#xD;
+Step 4: firetruck driver extinguishes fire&#xD;
+Step 5: firetruck driver stays until all passengers are brought to safety&#xD;
+Step 6: firetruck driver stops water pump&#xD;
+Step 7: firetruck driver reports status back to management&#xD;
+Step 8: firetruck driver drives back to garage&#xD;
+Step 9: firetruck driver refills water tank&#xD;
+Step 10: firetruck driver awaits new orders</body>
       </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_cT7v0C9yEeySLpI0QUwGkw" extendedCase="_GLGQcC9yEeySLpI0QUwGkw" extensionLocation="_cT8W4C9yEeySLpI0QUwGkw"/>
     </packagedElement>
