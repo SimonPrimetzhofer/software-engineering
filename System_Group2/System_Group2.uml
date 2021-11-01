@@ -20,17 +20,43 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_QT5agC90Eeya95RNdWV4gg" name="manage employees">
       <ownedComment xmi:type="uml:Comment" xmi:id="_GQ0WMDZ-EeyDAuvcSNBm6w">
         <body>Step 1: Landside-, Airside and Terminal Management report desired amount of employees to Financial Management&#xD;
-Step 2: Financial Management assigns employees according to knowledge and abilities&#xD;
-Step 3: Financial Management handles payment, absence and working hours of employees from Landside-, Airside and Terminal Management</body>
+Step 2: Financial Management searches for suitable employees according to knowledge and abilities&#xD;
+Step 3: Financial Management assigns employees to Landside, Airside and Terminal Management&#xD;
+Step 4: Landside, Airside and Terminal Management report working hours of employees to Financial Management&#xD;
+Step 5: Landside, Airside and Terminal Management report absences to Financial Management&#xD;
+Step 6: Financial Management pays salaries to employees&#xD;
+Step 7: Financial Management regulates hours of labor according to working hours</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_eLk8AC90Eeya95RNdWV4gg" name="manage airside emp">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_VrKGoDtHEeyUIaYvnBpfVA">
+        <body>Step 1: Landside Management requests security clothing for its employees from Financial Management&#xD;
+Step 2: Financial Management buys requested clothing from an external vendor&#xD;
+Step 3: Airside Management requests courses for air traffic controllers, tower personnel, etc. from Financial Management in order to ensure operability&#xD;
+Step 4: </body>
+      </ownedComment>
       <include xmi:type="uml:Include" xmi:id="_n3oKkC90Eeya95RNdWV4gg" addition="_QT5agC90Eeya95RNdWV4gg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ifiEgC90Eeya95RNdWV4gg" name="manage terminal emp">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_qWKykDtGEeyUIaYvnBpfVA">
+        <body>Step 1: Terminal Management requests adequate clothing for employees from Financial Management&#xD;
+Step 2: Financial Management buys requested clothing from an external vendor&#xD;
+Step 3: Terminal Management requests computers with access to flight information and passenger data in order to do work&#xD;
+Step 4: Terminal Management requests security utils (meta detector, scanner, ...) from Financial Management&#xD;
+Step 5: Terminal Management requests big screens for display flight information from Financial Management&#xD;
+Step 6: Financial Management provides requested utils and buys the from an external vendor if needed</body>
+      </ownedComment>
       <include xmi:type="uml:Include" xmi:id="_ooSygC90Eeya95RNdWV4gg" addition="_QT5agC90Eeya95RNdWV4gg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_kMt_EC90Eeya95RNdWV4gg" name="manage landside emp">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_es63gDtGEeyUIaYvnBpfVA">
+        <body>Step 1: Landside Management requests security clothing for its employees from Financial Management&#xD;
+Step 2: Financial Management buys requested clothing from an external vendor&#xD;
+Step 3: Landside Mangement requests driving licence courses for the drivers for being able to drive the vehicles&#xD;
+Step 4: Financial Management books driving instructor and coordinates appointments&#xD;
+Step 5: Financial Management supervises attendance of employees at appointments&#xD;
+Step 6: Financial Management pays for course and requests driving licence for Landside Management employees</body>
+      </ownedComment>
       <include xmi:type="uml:Include" xmi:id="_pM1qAC90Eeya95RNdWV4gg" addition="_QT5agC90Eeya95RNdWV4gg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_y-JMAC90Eeya95RNdWV4gg" name="update ticketinfo / pricing">
