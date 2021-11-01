@@ -63,9 +63,12 @@ Step 6: Financial Management pays for course and requests driving licence for La
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_y-JMAC90Eeya95RNdWV4gg" name="update ticketinfo / pricing">
       <ownedComment xmi:type="uml:Comment" xmi:id="_pKhnYDZ7EeyDAuvcSNBm6w">
-        <body>Step 1: Terminal Management reports check-in status and payments to Financial Management&#xD;
-Step 2: Financial Management updates ticket prices, departure times and flight states&#xD;
-Step 3: Terminal Management displays updated data</body>
+        <body>Step 1: Terminal Management reports check-in status of flights to Financial Management&#xD;
+Step 2: Terminal Management reports payments (too heavy baggage, better seat category, ...) to Financial Management&#xD;
+Step 3: Financial Management updates ticket prices, departure times and flight states&#xD;
+
+Step 4: Terminal Management displays updated data on flight information system&#xD;
+Step 5: Financial Management executes payments depending on the payment method (excluding cash since that is payed immediately)</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_IE_p8C91Eeya95RNdWV4gg" name="report costs">
