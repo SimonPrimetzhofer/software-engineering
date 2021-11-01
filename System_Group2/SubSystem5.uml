@@ -40,8 +40,8 @@ Step 3: FM assigns Employees to the Managements</body>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_hM7GwC9sEeya95RNdWV4gg" name="manage maintenance">
       <ownedComment xmi:type="uml:Comment" xmi:id="_2bKfcDWpEeyM6b7kgSNcUA">
-        <body>Step 1: Some other management needs maintanence&#xD;
-Step 2: Other management tells what the maintance is (vehicle, fuel, material or equiptment)&#xD;
+        <body>Step 1: Some other management needs maintenance&#xD;
+Step 2: Other management tells what the maintenance is (vehicle, fuel, material or equiptment)&#xD;
 Step 3 (look into destinated use-case)</body>
       </ownedComment>
     </packagedElement>
@@ -80,10 +80,10 @@ Step 2: FME pays for new material</body>
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_xFqZsS9vEeya95RNdWV4gg" name="ExtensionPoint1"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_0m9WMC9vEeya95RNdWV4gg" name="manage equiptment">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_0m9WMC9vEeya95RNdWV4gg" name="manage equipment">
       <ownedComment xmi:type="uml:Comment" xmi:id="_p0NB4DsuEeyT6ZfYmwKttw">
-        <body>Step 1: FME gets info about needed/broken equiptment&#xD;
-Step 2: FME pays for repairment or new equiptment</body>
+        <body>Step 1: FME gets info about needed/broken equipment&#xD;
+Step 2: FME pays for repairment or new equipment</body>
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_4xigQS9vEeya95RNdWV4gg" name="ExtensionPoint1"/>
     </packagedElement>
