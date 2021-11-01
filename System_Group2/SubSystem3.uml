@@ -48,7 +48,7 @@ Step 9: Passenger leaves counter</body>
       <ownedComment xmi:type="uml:Comment" xmi:id="_m6-kwDUJEey8MvU2I0f-WQ">
         <body>Step 1: Passenger hands over baggage&#xD;
 Step 2: Check-in employee weighs every baggage item&#xD;
-Step 3: If the baggage is too heavy, an additional fee must be payed by the passenger&#xD;
+Step 3: If the baggage is too heavy, passenger pays an additional fee&#xD;
 </body>
       </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_wfUdUC9tEeyIsKk5dxUS1A" extendedCase="_i9xj4C9tEeyIsKk5dxUS1A" extensionLocation="_wfW5kC9tEeyIsKk5dxUS1A"/>
@@ -71,9 +71,8 @@ Step 9: Passenger leaves security area</body>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_DFAwoC9vEeyIsKk5dxUS1A" name="Tag baggage and forward">
       <ownedComment xmi:type="uml:Comment" xmi:id="_Ba3j8DUKEey8MvU2I0f-WQ">
         <body>Step 1: Check-in employee prints out one tag per baggage item&#xD;
-Step 2: Check-in employee puts on every baggage item&#xD;
-Step 3: Check-in employee forwards all baggage items via the conveyor to the transportation location&#xD;
-</body>
+Step 2: Check-in employee puts tag on every baggage item&#xD;
+Step 3: Check-in employee forwards all baggage items via the conveyor to the transportation location</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_U_c88C9vEeyIsKk5dxUS1A" name="Gather flight information">
@@ -108,8 +107,12 @@ Step 6: Passenger leaves border police check</body>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_SLn4gC9xEeyIsKk5dxUS1A" name="Confirm visa">
       <ownedComment xmi:type="uml:Comment" xmi:id="_Qk5MMDUMEey8MvU2I0f-WQ">
-        <body>Step 1: Border police searches for a valid visa&#xD;
-Step 2: If a valid visa is present, the passenger is allowed to go on; if not, further travelling gets denied</body>
+        <body>Step 1: Border police inspects passport for visa&#xD;
+Step 2: Border police checks if visa is valid&#xD;
+Step 3: Border police confirms identity of passenger&#xD;
+Step 4: If passenger passes visa check, he/she is allowed to go on&#xD;
+Step 5: If check is not passed, border police denies further travelling&#xD;
+Step 6: If security concerns are raised, the passenger gets arrested</body>
       </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_Z0nDIC9xEeyIsKk5dxUS1A" extendedCase="_INxIQC9xEeyIsKk5dxUS1A" extensionLocation="_Z0oRQC9xEeyIsKk5dxUS1A"/>
     </packagedElement>
