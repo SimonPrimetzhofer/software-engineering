@@ -14,78 +14,112 @@
     <supplier xmi:type="uml:Model" href="SubSystem3.uml#_Oaa7ICXWEeybxdv-5Uc1kw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_aZLM8C9qEeya95RNdWV4gg" name="Financial Management">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_vd4UADvaEeyuBfcSnmLTMw" annotatedElement="_tfxBgDvaEeyuBfcSnmLTMw">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_56ya8DveEeyuBfcSnmLTMw">
+        <body>maintenance is&#xD;
+for equipment</body>
+      </ownedComment>
+      <body>maintenance is&#xD;
+for equipment</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="__DCD8DvaEeyuBfcSnmLTMw" annotatedElement="_890q8DvaEeyuBfcSnmLTMw">
+      <body>maintenance is &#xD;
+for material</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_IEut8DvbEeyuBfcSnmLTMw" annotatedElement="_9s5-gDvaEeyuBfcSnmLTMw">
+      <body>maintenance is &#xD;
+for fuel</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_WNhNkDvbEeyuBfcSnmLTMw" annotatedElement="_-VpZgDvaEeyuBfcSnmLTMw">
+      <body>maintenance is&#xD;
+for vehicle</body>
+    </ownedComment>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_6m6qUC9rEeya95RNdWV4gg" name="book facilites">
       <ownedComment xmi:type="uml:Comment" xmi:id="_M7jYoDWpEeyM6b7kgSNcUA">
         <body>Step 1: Airline contacts FME&#xD;
-Step 2: Airline gives info about which facilities they want to book&#xD;
-Step 3: FME checks if facilities are free to book&#xD;
+Step 2: FME gives Airline information about which facilities are free&#xD;
+Step 3: Airline gives info about which facilities they would like to book&#xD;
 Step 4: FME gives Airline a contract about the booking&#xD;
 Step 5: Airline accepts and signs contract&#xD;
 Step 6: Airline pays the discussed amount &#xD;
-Step 7: FME registers the facilities as booked</body>
+Step 7: FME registers the facilities as booked&#xD;
+</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_KkuK0C9sEeya95RNdWV4gg" name="update ticketinfo">
       <ownedComment xmi:type="uml:Comment" xmi:id="_lsrI4DWpEeyM6b7kgSNcUA">
-        <body>Step 1: FME gets info about tickets&#xD;
-Step 2: FME changes prices and date of tickets</body>
+        <body>Step 1: Airline prepares a flight or changes a scheduled flight&#xD;
+Step 2: Airline gives the information to the FME&#xD;
+Step 3: FME checks info and (re-)schedules the flight&#xD;
+Step 4: FME calculates new ticket prices&#xD;
+Step 5: FME publishes new ticket information</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_cTNl0C9sEeya95RNdWV4gg" name="assign employees">
       <ownedComment xmi:type="uml:Comment" xmi:id="_tekX4DWpEeyM6b7kgSNcUA">
-        <body>Step 1: FM looks into the other Managements&#xD;
-Step 2: FM calculates which Employees will be needed in which Management&#xD;
-Step 3: FM assigns Employees to the Managements</body>
+        <body>Step 1: FME checks the employee lists of the different managements&#xD;
+Step 2: FME gathers info about the work rate of the other managements&#xD;
+Step 3: FME checks if any employee left the airside or one of the managements work rates is dropping or has dropped&#xD;
+Step 4: FME signs new employees &#xD;
+Step 5: FME assigns these employees to the management</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_hM7GwC9sEeya95RNdWV4gg" name="manage maintenance">
       <ownedComment xmi:type="uml:Comment" xmi:id="_2bKfcDWpEeyM6b7kgSNcUA">
-        <body>Step 1: Some other management needs maintenance&#xD;
-Step 2: Other management tells what the maintenance is (vehicle, fuel, material or equiptment)&#xD;
-Step 3 (look into destinated use-case)</body>
+        <body>Step 1: Another management informs FME about needed maintenance&#xD;
+Step 2: FME checks which kind of maintenance it is&#xD;
+Step 3: (look into destinated use-case)</body>
       </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_MI5d4C9tEeya95RNdWV4gg" name="give flightinfo">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_claCYDWpEeyM6b7kgSNcUA">
-        <body>Step 1: Airline gets info about flight&#xD;
-Step 2: Airline gives info to FME</body>
-      </ownedComment>
-      <include xmi:type="uml:Include" xmi:id="_mgkfwC9uEeya95RNdWV4gg" addition="_KkuK0C9sEeya95RNdWV4gg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_-R8qQC9uEeya95RNdWV4gg" name="change flightinfo">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_c8Xw4DWpEeyM6b7kgSNcUA">
-        <body>Step 1: Airline gets info about flight&#xD;
-Step 2: Airline gives info to FME</body>
-      </ownedComment>
-      <include xmi:type="uml:Include" xmi:id="_DJ1mQC9vEeya95RNdWV4gg" addition="_KkuK0C9sEeya95RNdWV4gg"/>
+      <extend xmi:type="uml:Extend" xmi:id="_tfxBgDvaEeyuBfcSnmLTMw" extendedCase="_0m9WMC9vEeya95RNdWV4gg" extensionLocation="_tfxokDvaEeyuBfcSnmLTMw"/>
+      <extend xmi:type="uml:Extend" xmi:id="_890q8DvaEeyuBfcSnmLTMw" extendedCase="_u9oWMC9vEeya95RNdWV4gg" extensionLocation="_891SADvaEeyuBfcSnmLTMw"/>
+      <extend xmi:type="uml:Extend" xmi:id="_9s5-gDvaEeyuBfcSnmLTMw" extendedCase="_lfF_MC9vEeya95RNdWV4gg" extensionLocation="_9s5-gTvaEeyuBfcSnmLTMw"/>
+      <extend xmi:type="uml:Extend" xmi:id="_-VpZgDvaEeyuBfcSnmLTMw" extendedCase="_hQzZ0C9vEeya95RNdWV4gg" extensionLocation="_-VpZgTvaEeyuBfcSnmLTMw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_hQzZ0C9vEeya95RNdWV4gg" name="manage vehicles">
       <ownedComment xmi:type="uml:Comment" xmi:id="_G0Hq4DWqEeyM6b7kgSNcUA">
         <body>Step 1: FME gets info about vehicle&#xD;
-Step 2: FME pays repair or buys new vehicles</body>
+Step 2: FME sends vehicle to inspection&#xD;
+Step 3: FME get info about the cost of repairment&#xD;
+Step 4: If repairment cost is too much FME pays for new vehicle&#xD;
+Step 5: FME accounts the cost of repariment / new vehicle</body>
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_jkJVcC9vEeya95RNdWV4gg" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_-VpZgTvaEeyuBfcSnmLTMw" name="ExtensionPoint3"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_lfF_MC9vEeya95RNdWV4gg" name="manage fuel">
       <ownedComment xmi:type="uml:Comment" xmi:id="_JeQV4DWqEeyM6b7kgSNcUA">
-        <body>Step 1: FME gets info about fuel&#xD;
-Step 2: FME buys new fuel</body>
+        <body>Step 1: FME checks which fuel is needed&#xD;
+Step 2: FME checks if the needed fuel is stored in a depo of ours&#xD;
+Step 3: If fuel is in our depo it gets delivered&#xD;
+Step 4: FME calculates how much fuel is left&#xD;
+Step 5: if fuel is low or no fuel was found in depo FME orders new &#xD;
+Step 6: FME accounts the cost of the new fuel</body>
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_oYuewS9vEeya95RNdWV4gg" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_9s5-gTvaEeyuBfcSnmLTMw" name="ExtensionPoint3"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_u9oWMC9vEeya95RNdWV4gg" name="manage material">
       <ownedComment xmi:type="uml:Comment" xmi:id="_MCS_8DWqEeyM6b7kgSNcUA">
-        <body>Step 1: FME gets info about needed material&#xD;
-Step 2: FME pays for new material</body>
+        <body>Step 1: FME checks which material is needed&#xD;
+Step 2: FME checks if the needed material is stored in a depo of ours&#xD;
+Step 3: If material is in our depo it gets delivered&#xD;
+Step 4: FME calculates how much material is left&#xD;
+Step 5: if material is low or no material was found in depo FME orders new &#xD;
+Step 6: FME accounts the cost of the new material</body>
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_xFqZsS9vEeya95RNdWV4gg" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_891SADvaEeyuBfcSnmLTMw" name="ExtensionPoint3"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_0m9WMC9vEeya95RNdWV4gg" name="manage equipment">
       <ownedComment xmi:type="uml:Comment" xmi:id="_p0NB4DsuEeyT6ZfYmwKttw">
-        <body>Step 1: FME gets info about needed/broken equipment&#xD;
-Step 2: FME pays for repairment or new equipment</body>
+        <body>Step 1: FME gets info about equipment&#xD;
+Step 2: FME checks if equipment can be repaired&#xD;
+Step 3: FME get info about the cost of repairment&#xD;
+Step 4: If repairment cost is too much FME pays for new equipment&#xD;
+Step 5: FME accounts the cost of repariment / new equipment</body>
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_4xigQS9vEeya95RNdWV4gg" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_tfxokDvaEeyuBfcSnmLTMw" name="ExtensionPoint3"/>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_hTJVcC9qEeya95RNdWV4gg" name="Airline "/>
@@ -99,32 +133,11 @@ Step 2: FME pays for repairment or new equipment</body>
   <packagedElement xmi:type="uml:Association" xmi:id="_koXdcC9tEeya95RNdWV4gg"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_Avj8MC9vEeya95RNdWV4gg"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_O3cc4C9vEeya95RNdWV4gg"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_XgPMwC9xEeya95RNdWV4gg" memberEnd="_XgPz0i9xEeya95RNdWV4gg _XgRB8C9xEeya95RNdWV4gg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XgPz0C9xEeya95RNdWV4gg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XgPz0S9xEeya95RNdWV4gg" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Du_5QDvaEeyuBfcSnmLTMw" memberEnd="_DvCVgTvaEeyuBfcSnmLTMw _DvC8kDvaEeyuBfcSnmLTMw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DvBucDvaEeyuBfcSnmLTMw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DvCVgDvaEeyuBfcSnmLTMw" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_XgPz0i9xEeya95RNdWV4gg" name="manage vehicles" type="_hQzZ0C9vEeya95RNdWV4gg" association="_XgPMwC9xEeya95RNdWV4gg"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_XgRB8C9xEeya95RNdWV4gg" name="manage maintenance" type="_hM7GwC9sEeya95RNdWV4gg" association="_XgPMwC9xEeya95RNdWV4gg"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_YHhPMC9xEeya95RNdWV4gg" memberEnd="_YHh2Qi9xEeya95RNdWV4gg _YHh2Qy9xEeya95RNdWV4gg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YHh2QC9xEeya95RNdWV4gg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YHh2QS9xEeya95RNdWV4gg" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_YHh2Qi9xEeya95RNdWV4gg" name="manage fuel" type="_lfF_MC9vEeya95RNdWV4gg" association="_YHhPMC9xEeya95RNdWV4gg"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_YHh2Qy9xEeya95RNdWV4gg" name="manage maintenance" type="_hM7GwC9sEeya95RNdWV4gg" association="_YHhPMC9xEeya95RNdWV4gg"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_YsN3sC9xEeya95RNdWV4gg" memberEnd="_YsOewi9xEeya95RNdWV4gg _YsOewy9xEeya95RNdWV4gg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YsOewC9xEeya95RNdWV4gg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YsOewS9xEeya95RNdWV4gg" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_YsOewi9xEeya95RNdWV4gg" name="manage material" type="_u9oWMC9vEeya95RNdWV4gg" association="_YsN3sC9xEeya95RNdWV4gg"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_YsOewy9xEeya95RNdWV4gg" name="manage maintenance" type="_hM7GwC9sEeya95RNdWV4gg" association="_YsN3sC9xEeya95RNdWV4gg"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_ZTmAwC9xEeya95RNdWV4gg" memberEnd="_ZTmAwy9xEeya95RNdWV4gg _ZTmAxC9xEeya95RNdWV4gg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZTmAwS9xEeya95RNdWV4gg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZTmAwi9xEeya95RNdWV4gg" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_ZTmAwy9xEeya95RNdWV4gg" name="manage equiptment" type="_0m9WMC9vEeya95RNdWV4gg" association="_ZTmAwC9xEeya95RNdWV4gg"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_ZTmAxC9xEeya95RNdWV4gg" name="manage maintenance" type="_hM7GwC9sEeya95RNdWV4gg" association="_ZTmAwC9xEeya95RNdWV4gg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DvCVgTvaEeyuBfcSnmLTMw" name="airline " type="_hTJVcC9qEeya95RNdWV4gg" association="_Du_5QDvaEeyuBfcSnmLTMw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DvC8kDvaEeyuBfcSnmLTMw" name="update ticketinfo" type="_KkuK0C9sEeya95RNdWV4gg" association="_Du_5QDvaEeyuBfcSnmLTMw"/>
   </packagedElement>
 </uml:Model>
