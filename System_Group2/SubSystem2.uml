@@ -42,7 +42,7 @@ Step 10: baggage-cart driver closes hatch&#xD;
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_s0QZcC9wEeySLpI0QUwGkw" name="ExtensionPoint1"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_niPYIC9uEeySLpI0QUwGkw" name="conduct bus to plane">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_niPYIC9uEeySLpI0QUwGkw" name="conduct vehicle to plane">
       <ownedComment xmi:type="uml:Comment" xmi:id="_b2pd4DZ4Eeyw4v4tUi5WGg">
         <body>Step 1: management assigns a plane to a driver&#xD;
 Step 2: driver drives to the plane&#xD;
@@ -93,7 +93,7 @@ Step 10: bus driver closes doors&#xD;
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_prG3MC9wEeySLpI0QUwGkw" name="ExtensionPoint1"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_hWhAQC9vEeySLpI0QUwGkw" name="conduct bus to baggage deposit">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hWhAQC9vEeySLpI0QUwGkw" name="conduct baggage cart to baggage deposit">
       <ownedComment xmi:type="uml:Comment" xmi:id="_3oW_YDZ6Eeyw4v4tUi5WGg">
         <body>Step 1: management assigns a baggage deposit to a baggage-cart driver&#xD;
 Step 2: baggage-cart driver drives to the baggage deposit&#xD;

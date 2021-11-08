@@ -157,7 +157,7 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UBQH-C9yEeySLpI0QUwGkw"/>
         </children>
         <element xmi:type="uml:UseCase" href="SubSystem2.uml#_UBCFgC9yEeySLpI0QUwGkw"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UBQH8S9yEeySLpI0QUwGkw" x="394" y="968"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UBQH8S9yEeySLpI0QUwGkw" x="394" y="928"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_xH54kC9zEeySLpI0QUwGkw" type="Comment_Shape_CN">
         <children xmi:type="notation:DecorationNode" xmi:id="_xH6foC9zEeySLpI0QUwGkw" type="Comment_BodyLabel_CN"/>
