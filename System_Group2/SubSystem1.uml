@@ -47,18 +47,10 @@ Step 7: Pilot moves the aircraft to the designated starting strip&#xD;
 Step 8: Pilot performs take-off</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_J0SVYDZcEeyNa9cxjEG0mw" name="&lt;&lt;includes>>" client="__PnTwC9rEeyL4sFy9uAMQw" supplier="_rOLlwC9rEeyL4sFy9uAMQw"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_J0SVYDZcEeyNa9cxjEG0mw" name="&lt;&lt;includes>>" client="_LNbwoC9sEeyL4sFy9uAMQw" supplier="_rOLlwC9rEeyL4sFy9uAMQw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_Kq12YC9rEeyL4sFy9uAMQw" name="Aircraft marshaller"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_NKDDwC9rEeyL4sFy9uAMQw" name="Pilot"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_gM0xIC9rEeyL4sFy9uAMQw" name="Fuel truck driver"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_u_la0C9rEeyL4sFy9uAMQw" memberEnd="_u_nQAC9rEeyL4sFy9uAMQw _u_oeIC9rEeyL4sFy9uAMQw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u_mo8C9rEeyL4sFy9uAMQw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u_mo8S9rEeyL4sFy9uAMQw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_u_nQAC9rEeyL4sFy9uAMQw" name="refuel aircraft" type="_rOLlwC9rEeyL4sFy9uAMQw" association="_u_la0C9rEeyL4sFy9uAMQw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_u_oeIC9rEeyL4sFy9uAMQw" name="vehicle driver" type="_gM0xIC9rEeyL4sFy9uAMQw" association="_u_la0C9rEeyL4sFy9uAMQw"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_4zUlwC9rEeyL4sFy9uAMQw" memberEnd="_4zVz4C9rEeyL4sFy9uAMQw _4zVz4S9rEeyL4sFy9uAMQw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4zVM0C9rEeyL4sFy9uAMQw" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4zVM0S9rEeyL4sFy9uAMQw" key="nature" value="UML_Nature"/>
@@ -108,5 +100,14 @@ Step 8: Pilot performs take-off</body>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_Ipt_sDZcEeyNa9cxjEG0mw" name="take off" type="_LNbwoC9sEeyL4sFy9uAMQw" association="_Ipq8YDZcEeyNa9cxjEG0mw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_IpumwDZcEeyNa9cxjEG0mw" name="cabin crew" type="_FBvMYDZcEeyNa9cxjEG0mw" association="_Ipq8YDZcEeyNa9cxjEG0mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oniMcECqEeyKssj01PaSVg" memberEnd="_onkBoECqEeyKssj01PaSVg _onkBoUCqEeyKssj01PaSVg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_onizgECqEeyKssj01PaSVg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_onizgUCqEeyKssj01PaSVg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_onkBoECqEeyKssj01PaSVg" name="maintenance-vehicle driver" association="_oniMcECqEeyKssj01PaSVg">
+      <type xmi:type="uml:Actor" href="SubSystem2.uml#_mRcMsC9wEeySLpI0QUwGkw"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_onkBoUCqEeyKssj01PaSVg" name="refuel aircraft" type="_rOLlwC9rEeyL4sFy9uAMQw" association="_oniMcECqEeyKssj01PaSVg"/>
   </packagedElement>
 </uml:Model>
