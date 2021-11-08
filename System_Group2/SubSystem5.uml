@@ -36,7 +36,7 @@ for vehicle</body>
     </ownedComment>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_6m6qUC9rEeya95RNdWV4gg" name="book facilites">
       <ownedComment xmi:type="uml:Comment" xmi:id="_M7jYoDWpEeyM6b7kgSNcUA">
-        <body>Step 1: Airline contacts FME&#xD;
+        <body>Step 1: Airline gets information about which facilities can be booked through the system&#xD;
 Step 2: FME gives Airline information about which facilities are free&#xD;
 Step 3: Airline gives info about which facilities they would like to book&#xD;
 Step 4: FME gives Airline a contract about the booking&#xD;
