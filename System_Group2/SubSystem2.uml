@@ -315,4 +315,145 @@ Step 10: firetruck driver awaits new orders</body>
     <ownedEnd xmi:type="uml:Property" xmi:id="_dE5AwC90EeySLpI0QUwGkw" name="assign plane" type="_niPYIC9uEeySLpI0QUwGkw" association="_dE4ZsC90EeySLpI0QUwGkw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_dE5AwS90EeySLpI0QUwGkw" name="maintenance-vehicle driver" type="_mRcMsC9wEeySLpI0QUwGkw" association="_dE4ZsC90EeySLpI0QUwGkw"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_DEjzwEVfEeybjKjyLz0qtQ" name="FuelDepot">
+    <generalization xmi:type="uml:Generalization" xmi:id="_eisHYEVgEeybjKjyLz0qtQ" general="_VF41wEVgEeybjKjyLz0qtQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tTN1QEWIEeyH9qy55V0YNw" name="fueltankCapacity">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EZ-HgEVfEeybjKjyLz0qtQ" name="Gate">
+    <generalization xmi:type="uml:Generalization" xmi:id="_dhZpgEVgEeybjKjyLz0qtQ" general="_VF41wEVgEeybjKjyLz0qtQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NQ_BIEWDEey5WIGISipCYg" name="gateNr">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_O3RawEWJEeyH9qy55V0YNw" name="passengerCapacity">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_RvSwwEWJEeyH9qy55V0YNw" name="isOpen">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_FE7wEEVfEeybjKjyLz0qtQ" name="Deposit">
+    <generalization xmi:type="uml:Generalization" xmi:id="_cy5kwEVgEeybjKjyLz0qtQ" general="_VF41wEVgEeybjKjyLz0qtQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WtTxoEWDEey5WIGISipCYg" name="depositNr">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IxbTUEWIEeyH9qy55V0YNw" name="storageCapacity">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QeCAYEWNEeyH9qy55V0YNw" name="storedCases">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Gq8roEVfEeybjKjyLz0qtQ" name="Vehicle" visibility="public" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__ASDAEV_Eey5WIGISipCYg" name="inGarage" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vWMBUkWCEey5WIGISipCYg" name="destination" type="_VF41wEVgEeybjKjyLz0qtQ" association="_vWLaQEWCEey5WIGISipCYg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vWVLQEWCEey5WIGISipCYg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vWaq0EWCEey5WIGISipCYg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_nIGwIEWDEey5WIGISipCYg" name="fuel">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yl-sMEWEEey5WIGISipCYg" name="isReady">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HSLDsEVfEeybjKjyLz0qtQ" name="EmergencyVehicle">
+    <generalization xmi:type="uml:Generalization" xmi:id="_M7s4AEVfEeybjKjyLz0qtQ" general="_Gq8roEVfEeybjKjyLz0qtQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_uXUL0EViEeybjKjyLz0qtQ" name="staff" type="_ldj84EViEeybjKjyLz0qtQ" association="_uXCfAEViEeybjKjyLz0qtQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v863sEViEeybjKjyLz0qtQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_u6-2kEWDEey5WIGISipCYg" name="extinguishingWater" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JH8SgEVfEeybjKjyLz0qtQ" name="BaggageCart">
+    <generalization xmi:type="uml:Generalization" xmi:id="_OmzH4EVfEeybjKjyLz0qtQ" general="_Gq8roEVfEeybjKjyLz0qtQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BXVdIEWEEey5WIGISipCYg" name="storedCases">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QIm5EEWEEey5WIGISipCYg" name="numOfCasesStoreable">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_effiQEWIEeyH9qy55V0YNw" name="hatchClosed">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KIvoMEVfEeybjKjyLz0qtQ" name="Bus">
+    <generalization xmi:type="uml:Generalization" xmi:id="_PPjxAEVfEeybjKjyLz0qtQ" general="_Gq8roEVfEeybjKjyLz0qtQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_MYD_oEWEEey5WIGISipCYg" name="passengersLoaded">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VhoMMEWEEey5WIGISipCYg" name="numOfSeats">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zV3wgkViEeybjKjyLz0qtQ" name="staff" type="_ldj84EViEeybjKjyLz0qtQ" association="_zV17UEViEeybjKjyLz0qtQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_g8qIQEWIEeyH9qy55V0YNw" name="doorsClosed">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_VF41wEVgEeybjKjyLz0qtQ" name="Destination">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NZVvEEWHEeyH9qy55V0YNw" name="buildingNr">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_n9sz0EVhEeybjKjyLz0qtQ" name="MaintenanceVehicle">
+    <generalization xmi:type="uml:Generalization" xmi:id="_p-0XAEVhEeybjKjyLz0qtQ" general="_Gq8roEVfEeybjKjyLz0qtQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0qVpEkViEeybjKjyLz0qtQ" name="staff" type="_ldj84EViEeybjKjyLz0qtQ" association="_0qTz4EViEeybjKjyLz0qtQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qa72AEWHEeyH9qy55V0YNw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gDclIEWEEey5WIGISipCYg" name="refuelTankCapacity">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7KxeIEWMEeyH9qy55V0YNw" name="airPressure">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ldj84EViEeybjKjyLz0qtQ" name="Staff">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3pAZ0EWHEeyH9qy55V0YNw" name="firstname">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_65q5UEWHEeyH9qy55V0YNw" name="lastname">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BS5sQEWIEeyH9qy55V0YNw" name="isDriver">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uXCfAEViEeybjKjyLz0qtQ" name="driven by" memberEnd="_uXUL0EViEeybjKjyLz0qtQ _uXUy4EViEeybjKjyLz0qtQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uXTkwEViEeybjKjyLz0qtQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uXTkwUViEeybjKjyLz0qtQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uXUy4EViEeybjKjyLz0qtQ" name="emergencyvehicle" type="_HSLDsEVfEeybjKjyLz0qtQ" association="_uXCfAEViEeybjKjyLz0qtQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xxfMoEViEeybjKjyLz0qtQ" name="driven by" memberEnd="_xxfzskViEeybjKjyLz0qtQ _xxgawEViEeybjKjyLz0qtQ" navigableOwnedEnd="_xxfzskViEeybjKjyLz0qtQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xxfzsEViEeybjKjyLz0qtQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xxfzsUViEeybjKjyLz0qtQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xxfzskViEeybjKjyLz0qtQ" name="staff" type="_ldj84EViEeybjKjyLz0qtQ" association="_xxfMoEViEeybjKjyLz0qtQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xxgawEViEeybjKjyLz0qtQ" name="baggagecart" type="_JH8SgEVfEeybjKjyLz0qtQ" association="_xxfMoEViEeybjKjyLz0qtQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zV17UEViEeybjKjyLz0qtQ" name="driven by" memberEnd="_zV3wgkViEeybjKjyLz0qtQ _zV4XkEViEeybjKjyLz0qtQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zV3wgEViEeybjKjyLz0qtQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zV3wgUViEeybjKjyLz0qtQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zV4XkEViEeybjKjyLz0qtQ" name="bus" type="_KIvoMEVfEeybjKjyLz0qtQ" association="_zV17UEViEeybjKjyLz0qtQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0qTz4EViEeybjKjyLz0qtQ" name="driven by" memberEnd="_0qVpEkViEeybjKjyLz0qtQ _0qW3MEViEeybjKjyLz0qtQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0qVpEEViEeybjKjyLz0qtQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0qVpEUViEeybjKjyLz0qtQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0qW3MEViEeybjKjyLz0qtQ" name="maintenancevehicle" type="_n9sz0EVhEeybjKjyLz0qtQ" association="_0qTz4EViEeybjKjyLz0qtQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vWLaQEWCEey5WIGISipCYg" name="drives to" memberEnd="_vWMBUkWCEey5WIGISipCYg _vWe8QEWCEey5WIGISipCYg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vWMBUEWCEey5WIGISipCYg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vWMBUUWCEey5WIGISipCYg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vWe8QEWCEey5WIGISipCYg" name="vehicle" type="_Gq8roEVfEeybjKjyLz0qtQ" association="_vWLaQEWCEey5WIGISipCYg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_E06vkEWKEeyH9qy55V0YNw" name="Plane" visibility="package">
+    <generalization xmi:type="uml:Generalization" xmi:id="_dG9XIEWKEeyH9qy55V0YNw" general="_VF41wEVgEeybjKjyLz0qtQ"/>
+  </packagedElement>
 </uml:Model>

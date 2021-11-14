@@ -128,6 +128,9 @@ Step 8: Pilot performs take-off</body>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_u5wBIEV7EeywAt9CR0nlpw" name="pilot" type="_-XA20EVvEeywAt9CR0nlpw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_y1y_8EV7EeywAt9CR0nlpw" name="cabinCrew" type="__HTrUEVvEeywAt9CR0nlpw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_CFso4EWNEeyH9qy55V0YNw" name="tirePressure">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_-XA20EVvEeywAt9CR0nlpw" name="Pilot">
     <generalization xmi:type="uml:Generalization" xmi:id="_8p37YEV2EeywAt9CR0nlpw">
