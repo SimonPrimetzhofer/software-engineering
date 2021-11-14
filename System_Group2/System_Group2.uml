@@ -224,4 +224,17 @@ Step 6: Landside Management transports baggage and passengers to the airplane</b
     <ownedEnd xmi:type="uml:Property" xmi:id="_8H7lki91Eeya95RNdWV4gg" type="_5fPX8C9oEeyh3rIBMqWRnw" association="_8H6-gC91Eeya95RNdWV4gg"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_8H7lky91Eeya95RNdWV4gg" name="provide gateinfo, transportinfo" type="_1gtZ8C91Eeya95RNdWV4gg" association="_8H6-gC91Eeya95RNdWV4gg"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Ue13UEV1EeywAt9CR0nlpw" name="Employee">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_V2GlMEV1EeywAt9CR0nlpw" name="firstName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_a4SssEV1EeywAt9CR0nlpw" name="lastName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eR_zcEV1EeywAt9CR0nlpw" name="salary">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1qoGwEV1EeywAt9CR0nlpw" name="department" type="_s6wMkEV1EeywAt9CR0nlpw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_s6wMkEV1EeywAt9CR0nlpw" name="AirportSubsystem"/>
 </uml:Model>

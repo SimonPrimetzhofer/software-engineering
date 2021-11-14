@@ -110,4 +110,101 @@ Step 8: Pilot performs take-off</body>
     </ownedEnd>
     <ownedEnd xmi:type="uml:Property" xmi:id="_onkBoUCqEeyKssj01PaSVg" name="refuel aircraft" type="_rOLlwC9rEeyL4sFy9uAMQw" association="_oniMcECqEeyKssj01PaSVg"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_v_9RsEVvEeywAt9CR0nlpw" name="Plane" visibility="protected">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zmLNoEVzEeywAt9CR0nlpw" name="name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WBZrsEV0EeywAt9CR0nlpw" name="manufacturer">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eVMG0EV0EeywAt9CR0nlpw" name="numSeats">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_oxXjEEV6EeywAt9CR0nlpw" name="maxFuelCapacity">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_s7Z6kEV6EeywAt9CR0nlpw" name="currentFuel">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_u5wBIEV7EeywAt9CR0nlpw" name="pilot" type="_-XA20EVvEeywAt9CR0nlpw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_y1y_8EV7EeywAt9CR0nlpw" name="cabinCrew" type="__HTrUEVvEeywAt9CR0nlpw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-XA20EVvEeywAt9CR0nlpw" name="Pilot">
+    <generalization xmi:type="uml:Generalization" xmi:id="_8p37YEV2EeywAt9CR0nlpw">
+      <general xmi:type="uml:Class" href="System_Group2.uml#_Ue13UEV1EeywAt9CR0nlpw"/>
+    </generalization>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BxMLwUV9EeywAt9CR0nlpw" type="_v_9RsEVvEeywAt9CR0nlpw" association="_BxKWkEV9EeywAt9CR0nlpw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hGMqUEV-EeywAt9CR0nlpw" name="checklist">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="__HTrUEVvEeywAt9CR0nlpw" name="CabinCrew">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IUirYEV6EeywAt9CR0nlpw" name="members">
+      <type xmi:type="uml:Class" href="System_Group2.uml#_Ue13UEV1EeywAt9CR0nlpw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YjYRgEV6EeywAt9CR0nlpw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_cm6_cEV6EeywAt9CR0nlpw" association="_cm3VEEV6EeywAt9CR0nlpw">
+      <type xmi:type="uml:Class" href="System_Group2.uml#_Ue13UEV1EeywAt9CR0nlpw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sU63ckV8EeywAt9CR0nlpw" type="_v_9RsEVvEeywAt9CR0nlpw" association="_sU6QYEV8EeywAt9CR0nlpw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_15LSYEVwEeywAt9CR0nlpw" name="AircraftMarshaller">
+    <generalization xmi:type="uml:Generalization" xmi:id="_9DPdoEV2EeywAt9CR0nlpw">
+      <general xmi:type="uml:Class" href="System_Group2.uml#_Ue13UEV1EeywAt9CR0nlpw"/>
+    </generalization>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Ni3DAkV9EeywAt9CR0nlpw" type="_KtWgYEV7EeywAt9CR0nlpw" association="_Ni2b8EV9EeywAt9CR0nlpw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3DQM8EV9EeywAt9CR0nlpw" name="strips">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eAig8EV-EeywAt9CR0nlpw" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cm3VEEV6EeywAt9CR0nlpw" name="consists of" memberEnd="_cm6_cEV6EeywAt9CR0nlpw _cm8NkUV6EeywAt9CR0nlpw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cm5KQEV6EeywAt9CR0nlpw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cm5xUEV6EeywAt9CR0nlpw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cm8NkUV6EeywAt9CR0nlpw" type="__HTrUEVvEeywAt9CR0nlpw" association="_cm3VEEV6EeywAt9CR0nlpw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KtWgYEV7EeywAt9CR0nlpw" name="AirsideManagement">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bz7m0EV7EeywAt9CR0nlpw" name="planes" visibility="private" type="_v_9RsEVvEeywAt9CR0nlpw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f3kbYEV7EeywAt9CR0nlpw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jBn8kEV7EeywAt9CR0nlpw" name="marshallers" type="_15LSYEVwEeywAt9CR0nlpw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k5KF8EV7EeywAt9CR0nlpw" value="*"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_WiKyQEV7EeywAt9CR0nlpw" client="_KtWgYEV7EeywAt9CR0nlpw">
+      <supplier xmi:type="uml:Interface" href="System_Group2.uml#_s6wMkEV1EeywAt9CR0nlpw"/>
+      <contract xmi:type="uml:Interface" href="System_Group2.uml#_s6wMkEV1EeywAt9CR0nlpw"/>
+    </interfaceRealization>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-N6uwEV7EeywAt9CR0nlpw" name="manages" visibility="public" memberEnd="_-N8j8EV7EeywAt9CR0nlpw _-N9LAkV7EeywAt9CR0nlpw" navigableOwnedEnd="_-N8j8EV7EeywAt9CR0nlpw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-N784EV7EeywAt9CR0nlpw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-N784UV7EeywAt9CR0nlpw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-N9LAkV7EeywAt9CR0nlpw" type="_v_9RsEVvEeywAt9CR0nlpw" association="_-N6uwEV7EeywAt9CR0nlpw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-N8j8EV7EeywAt9CR0nlpw" type="_KtWgYEV7EeywAt9CR0nlpw" association="_-N6uwEV7EeywAt9CR0nlpw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sU6QYEV8EeywAt9CR0nlpw" name="works on" memberEnd="_sU63ckV8EeywAt9CR0nlpw _sU7egUV8EeywAt9CR0nlpw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sU63cEV8EeywAt9CR0nlpw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sU63cUV8EeywAt9CR0nlpw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_sU7egUV8EeywAt9CR0nlpw" type="__HTrUEVvEeywAt9CR0nlpw" association="_sU6QYEV8EeywAt9CR0nlpw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_BxKWkEV9EeywAt9CR0nlpw" name="controls" memberEnd="_BxMLwUV9EeywAt9CR0nlpw _BxMy0kV9EeywAt9CR0nlpw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BxLksEV9EeywAt9CR0nlpw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BxMLwEV9EeywAt9CR0nlpw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BxMy0kV9EeywAt9CR0nlpw" type="_-XA20EVvEeywAt9CR0nlpw" association="_BxKWkEV9EeywAt9CR0nlpw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Ni2b8EV9EeywAt9CR0nlpw" name="manages" memberEnd="_Ni3DAkV9EeywAt9CR0nlpw _Ni44MUV9EeywAt9CR0nlpw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ni3DAEV9EeywAt9CR0nlpw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ni3DAUV9EeywAt9CR0nlpw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ni44MUV9EeywAt9CR0nlpw" type="_15LSYEVwEeywAt9CR0nlpw" association="_Ni2b8EV9EeywAt9CR0nlpw"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_KqdeEEVzEeywAt9CR0nlpw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KqesMEVzEeywAt9CR0nlpw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
 </uml:Model>
