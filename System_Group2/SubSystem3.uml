@@ -212,8 +212,26 @@ Step 5: Passenger leaves border police office</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_5FNQ4EVtEeyuwuc0dTQ-tQ" name="duration">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_6Ltl8EVtEeyuwuc0dTQ-tQ" name="gateNumber">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gO7LYEY_EeyzvZaWA2zpUQ" name="firstClassPrice" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bbnNYEY_EeyzvZaWA2zpUQ" name="economyClassPrice" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZrFq8EY_EeyzvZaWA2zpUQ" name="businessClassPrice" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6Ltl8EVtEeyuwuc0dTQ-tQ" name="gate" visibility="public">
+      <type xmi:type="uml:Class" href="SubSystem2.uml#_EZ-HgEVfEeybjKjyLz0qtQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_F-BN8EZAEeyzvZaWA2zpUQ" name="baggageDeposit">
+      <type xmi:type="uml:Class" href="SubSystem2.uml#_FE7wEEVfEeybjKjyLz0qtQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zmgEEkY_EeyzvZaWA2zpUQ" name="" association="_zmfdAEY_EeyzvZaWA2zpUQ">
+      <type xmi:type="uml:Class" href="SubSystem2.uml#_EZ-HgEVfEeybjKjyLz0qtQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rVFyEkZAEeyzvZaWA2zpUQ" name="" association="_rVFLAEZAEeyzvZaWA2zpUQ">
+      <type xmi:type="uml:Class" href="SubSystem2.uml#_FE7wEEVfEeybjKjyLz0qtQ"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="__GhvkEVsEeyuwuc0dTQ-tQ" name="Passport">
@@ -281,11 +299,10 @@ Step 5: Passenger leaves border police office</body>
       </ownedComment>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_sYxDYEWBEeyuwuc0dTQ-tQ" name="transportationLocation">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_EdoKkEWCEeyuwuc0dTQ-tQ">
-        <body>Pickup location for transportation</body>
-      </ownedComment>
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eNebkkZAEeyzvZaWA2zpUQ" name="" association="_eNd0gEZAEeyzvZaWA2zpUQ">
+      <type xmi:type="uml:Class" href="SubSystem1.uml#_3pXj8EY8EeyzvZaWA2zpUQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eNebk0ZAEeyzvZaWA2zpUQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eNfCoEZAEeyzvZaWA2zpUQ" value="1"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_T0zVcEVtEeyuwuc0dTQ-tQ" name="Passenger">
@@ -398,6 +415,28 @@ Step 5: Passenger leaves border police office</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pZCGYEWCEeyuwuc0dTQ-tQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pZCGYUWCEeyuwuc0dTQ-tQ" value="*"/>
     </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_idyo8EY6EeyzvZaWA2zpUQ" name="TerminalManagement"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_sgRagEY6EeyzvZaWA2zpUQ" client="_idyo8EY6EeyzvZaWA2zpUQ">
+    <supplier xmi:type="uml:Interface" href="System_Group2.uml#_s6wMkEV1EeywAt9CR0nlpw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zmfdAEY_EeyzvZaWA2zpUQ" name="has a" memberEnd="_zmgEEkY_EeyzvZaWA2zpUQ _zmgrIkY_EeyzvZaWA2zpUQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zmgEEEY_EeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zmgEEUY_EeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zmgrIkY_EeyzvZaWA2zpUQ" name="" type="_ncQ5sEVsEeyuwuc0dTQ-tQ" association="_zmfdAEY_EeyzvZaWA2zpUQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eNd0gEZAEeyzvZaWA2zpUQ" memberEnd="_eNebkkZAEeyzvZaWA2zpUQ _eNfCoUZAEeyzvZaWA2zpUQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eNebkEZAEeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eNebkUZAEeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eNfCoUZAEeyzvZaWA2zpUQ" name="" type="_TBLgIEVtEeyuwuc0dTQ-tQ" association="_eNd0gEZAEeyzvZaWA2zpUQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rVFLAEZAEeyzvZaWA2zpUQ" name="has a" memberEnd="_rVFyEkZAEeyzvZaWA2zpUQ _rVGZIkZAEeyzvZaWA2zpUQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rVFyEEZAEeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rVFyEUZAEeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rVGZIkZAEeyzvZaWA2zpUQ" name="" type="_ncQ5sEVsEeyuwuc0dTQ-tQ" association="_rVFLAEZAEeyzvZaWA2zpUQ"/>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SY23sEV0Eeyuwuc0dTQ-tQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SY57AEV0Eeyuwuc0dTQ-tQ" source="http://www.eclipse.org/uml2/2.0.0/UML">

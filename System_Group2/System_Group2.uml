@@ -15,6 +15,9 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_k78AQCXWEeybxdv-5Uc1kw">
     <importedPackage xmi:type="uml:Model" href="SubSystem6.uml#_UjfyMCXWEeybxdv-5Uc1kw"/>
   </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_ibxk0EY8EeyzvZaWA2zpUQ">
+    <importedPackage xmi:type="uml:Model" href="SubSystem2.uml#_cRcAMCXUEeybxdv-5Uc1kw"/>
+  </packageImport>
   <packagedElement xmi:type="uml:Class" xmi:id="_cjyfACXVEeybxdv-5Uc1kw" name="SystemClass"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_mu5eYC9oEeyh3rIBMqWRnw" name="Airport Management System">
     <packagedElement xmi:type="uml:UseCase" xmi:id="_QT5agC90Eeya95RNdWV4gg" name="manage employees">
@@ -237,4 +240,54 @@ Step 6: Landside Management transports baggage and passengers to the airplane</b
     <ownedAttribute xmi:type="uml:Property" xmi:id="_1qoGwEV1EeywAt9CR0nlpw" name="department" type="_s6wMkEV1EeywAt9CR0nlpw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_s6wMkEV1EeywAt9CR0nlpw" name="AirportSubsystem"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_OkdNYEZCEeyzvZaWA2zpUQ" name="AirportManagement">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_S6xGUEZCEeyzvZaWA2zpUQ" name="AM">
+      <type xmi:type="uml:Class" href="SubSystem1.uml#_KtWgYEV7EeywAt9CR0nlpw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_UfQX4EZCEeyzvZaWA2zpUQ" name="LM">
+      <type xmi:type="uml:Class" href="SubSystem2.uml#_5pHyAEY4EeyzvZaWA2zpUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VZKbYEZCEeyzvZaWA2zpUQ" name="FM">
+      <type xmi:type="uml:Class" href="SubSystem5.uml#_rhkogEY4EeyzvZaWA2zpUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_V11wUEZCEeyzvZaWA2zpUQ" name="TM">
+      <type xmi:type="uml:Class" href="SubSystem3.uml#_idyo8EY6EeyzvZaWA2zpUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jmF0IkZCEeyzvZaWA2zpUQ" name="" association="_jmFNEEZCEeyzvZaWA2zpUQ">
+      <type xmi:type="uml:Class" href="SubSystem3.uml#_idyo8EY6EeyzvZaWA2zpUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pYZxAkZCEeyzvZaWA2zpUQ" name="" association="_pYZJ8EZCEeyzvZaWA2zpUQ">
+      <type xmi:type="uml:Class" href="SubSystem5.uml#_rhkogEY4EeyzvZaWA2zpUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qEvSkUZCEeyzvZaWA2zpUQ" name="" association="_qEurgEZCEeyzvZaWA2zpUQ">
+      <type xmi:type="uml:Class" href="SubSystem2.uml#_5pHyAEY4EeyzvZaWA2zpUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_q0MZkkZCEeyzvZaWA2zpUQ" name="" association="_q0LygEZCEeyzvZaWA2zpUQ">
+      <type xmi:type="uml:Class" href="SubSystem1.uml#_KtWgYEV7EeywAt9CR0nlpw"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jmFNEEZCEeyzvZaWA2zpUQ" memberEnd="_jmF0IkZCEeyzvZaWA2zpUQ _jmF0JUZCEeyzvZaWA2zpUQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jmF0IEZCEeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jmF0IUZCEeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jmF0JUZCEeyzvZaWA2zpUQ" name="" type="_OkdNYEZCEeyzvZaWA2zpUQ" association="_jmFNEEZCEeyzvZaWA2zpUQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pYZJ8EZCEeyzvZaWA2zpUQ" visibility="public" memberEnd="_pYZxAkZCEeyzvZaWA2zpUQ _pYaYEkZCEeyzvZaWA2zpUQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pYZxAEZCEeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pYZxAUZCEeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pYaYEkZCEeyzvZaWA2zpUQ" name="" type="_OkdNYEZCEeyzvZaWA2zpUQ" association="_pYZJ8EZCEeyzvZaWA2zpUQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qEurgEZCEeyzvZaWA2zpUQ" memberEnd="_qEvSkUZCEeyzvZaWA2zpUQ _qEvSlEZCEeyzvZaWA2zpUQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qEurgUZCEeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qEvSkEZCEeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qEvSlEZCEeyzvZaWA2zpUQ" name="" type="_OkdNYEZCEeyzvZaWA2zpUQ" association="_qEurgEZCEeyzvZaWA2zpUQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_q0LygEZCEeyzvZaWA2zpUQ" memberEnd="_q0MZkkZCEeyzvZaWA2zpUQ _q0MZlUZCEeyzvZaWA2zpUQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q0MZkEZCEeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q0MZkUZCEeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_q0MZlUZCEeyzvZaWA2zpUQ" name="" type="_OkdNYEZCEeyzvZaWA2zpUQ" association="_q0LygEZCEeyzvZaWA2zpUQ"/>
+  </packagedElement>
 </uml:Model>

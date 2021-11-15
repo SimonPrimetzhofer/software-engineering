@@ -111,6 +111,9 @@ Step 8: Pilot performs take-off</body>
     <ownedEnd xmi:type="uml:Property" xmi:id="_onkBoUCqEeyKssj01PaSVg" name="refuel aircraft" type="_rOLlwC9rEeyL4sFy9uAMQw" association="_oniMcECqEeyKssj01PaSVg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_v_9RsEVvEeywAt9CR0nlpw" name="Plane" visibility="protected">
+    <generalization xmi:type="uml:Generalization" xmi:id="_WrRZ8EY2EeyzvZaWA2zpUQ">
+      <general xmi:type="uml:Interface" href="SubSystem2.uml#_5CJjgEY2EeyzvZaWA2zpUQ"/>
+    </generalization>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_zmLNoEVzEeywAt9CR0nlpw" name="name">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
@@ -160,6 +163,14 @@ Step 8: Pilot performs take-off</body>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eAig8EV-EeywAt9CR0nlpw" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7p8dcEY8EeyzvZaWA2zpUQ" name="parkingspots" type="_3pXj8EY8EeyzvZaWA2zpUQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BRhxAEY9EeyzvZaWA2zpUQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BR16EEY9EeyzvZaWA2zpUQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLKAkkY9EeyzvZaWA2zpUQ" name="" type="_3pXj8EY8EeyzvZaWA2zpUQ" association="_SLJZgEY9EeyzvZaWA2zpUQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SLKAk0Y9EeyzvZaWA2zpUQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SLKAlEY9EeyzvZaWA2zpUQ" value="*"/>
+    </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_cm3VEEV6EeywAt9CR0nlpw" name="consists of" memberEnd="_cm6_cEV6EeywAt9CR0nlpw _cm8NkUV6EeywAt9CR0nlpw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cm5KQEV6EeywAt9CR0nlpw" source="org.eclipse.papyrus">
@@ -203,6 +214,33 @@ Step 8: Pilot performs take-off</body>
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ni3DAUV9EeywAt9CR0nlpw" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_Ni44MUV9EeywAt9CR0nlpw" type="_15LSYEVwEeywAt9CR0nlpw" association="_Ni2b8EV9EeywAt9CR0nlpw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3pXj8EY8EeyzvZaWA2zpUQ" name="ParkingSpot">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_GnFgcEY9EeyzvZaWA2zpUQ" name="plane" type="_v_9RsEVvEeywAt9CR0nlpw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HyQ6IEY9EeyzvZaWA2zpUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WtOdkkY9EeyzvZaWA2zpUQ" name="" type="_v_9RsEVvEeywAt9CR0nlpw" association="_WtN2gEY9EeyzvZaWA2zpUQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WtOdk0Y9EeyzvZaWA2zpUQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WtOdlEY9EeyzvZaWA2zpUQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_6tYHgEY8EeyzvZaWA2zpUQ" client="_3pXj8EY8EeyzvZaWA2zpUQ">
+    <supplier xmi:type="uml:Interface" href="SubSystem2.uml#_5CJjgEY2EeyzvZaWA2zpUQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLJZgEY9EeyzvZaWA2zpUQ" memberEnd="_SLKAkkY9EeyzvZaWA2zpUQ _SLKAlUY9EeyzvZaWA2zpUQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SLKAkEY9EeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SLKAkUY9EeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLKAlUY9EeyzvZaWA2zpUQ" name="" type="_15LSYEVwEeywAt9CR0nlpw" association="_SLJZgEY9EeyzvZaWA2zpUQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WtN2gEY9EeyzvZaWA2zpUQ" memberEnd="_WtOdkkY9EeyzvZaWA2zpUQ _WtOdlUY9EeyzvZaWA2zpUQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WtOdkEY9EeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WtOdkUY9EeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WtOdlUY9EeyzvZaWA2zpUQ" name="" type="_3pXj8EY8EeyzvZaWA2zpUQ" association="_WtN2gEY9EeyzvZaWA2zpUQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_xGsrsEY9EeyzvZaWA2zpUQ" client="_3pXj8EY8EeyzvZaWA2zpUQ">
+    <supplier xmi:type="uml:Interface" href="SubSystem2.uml#_5CJjgEY2EeyzvZaWA2zpUQ"/>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_KqdeEEVzEeywAt9CR0nlpw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KqesMEVzEeywAt9CR0nlpw" source="http://www.eclipse.org/uml2/2.0.0/UML">
