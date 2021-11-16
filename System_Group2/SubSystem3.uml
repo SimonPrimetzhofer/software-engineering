@@ -230,9 +230,6 @@ Step 5: Passenger leaves border police office</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_zmgEEkY_EeyzvZaWA2zpUQ" name="" association="_zmfdAEY_EeyzvZaWA2zpUQ">
       <type xmi:type="uml:Class" href="SubSystem2.uml#_EZ-HgEVfEeybjKjyLz0qtQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_rVFyEkZAEeyzvZaWA2zpUQ" name="" association="_rVFLAEZAEeyzvZaWA2zpUQ">
-      <type xmi:type="uml:Class" href="SubSystem2.uml#_FE7wEEVfEeybjKjyLz0qtQ"/>
-    </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="__GhvkEVsEeyuwuc0dTQ-tQ" name="Passport">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_WBp4cEV2Eeyuwuc0dTQ-tQ" name="passportNumber">
@@ -250,7 +247,7 @@ Step 5: Passenger leaves border police office</body>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_psncoEV1Eeyuwuc0dTQ-tQ" name="issuedFor" type="_T0zVcEVtEeyuwuc0dTQ-tQ"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_xALw4EV1Eeyuwuc0dTQ-tQ" name="reasonOfStay">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xALw4EV1Eeyuwuc0dTQ-tQ" name="issueReason">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_MBYsYEWBEeyuwuc0dTQ-tQ" name="validFromDate">
@@ -264,9 +261,7 @@ Step 5: Passenger leaves border police office</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_DL27UEVvEeyuwuc0dTQ-tQ" name="numberOfItems">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_ORHYgEVvEeyuwuc0dTQ-tQ" name="checkPassed">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_9uJYsEcfEeyJqrRVtgiYew" client="_DNaFYEVtEeyuwuc0dTQ-tQ" supplier="_pPtloEcfEeyJqrRVtgiYew" contract="_pPtloEcfEeyJqrRVtgiYew"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_IINygEVtEeyuwuc0dTQ-tQ" name="IndividualSecurityCheck">
     <generalization xmi:type="uml:Generalization" xmi:id="_LZ9QEEVtEeyuwuc0dTQ-tQ" general="_DNaFYEVtEeyuwuc0dTQ-tQ"/>
@@ -354,7 +349,7 @@ Step 5: Passenger leaves border police office</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tJfWsEV2Eeyuwuc0dTQ-tQ" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_3avuoEV3Eeyuwuc0dTQ-tQ" memberEnd="_3axj0kV3Eeyuwuc0dTQ-tQ _3azZAEV3Eeyuwuc0dTQ-tQ">
+  <packagedElement xmi:type="uml:Association" xmi:id="_3avuoEV3Eeyuwuc0dTQ-tQ" name="hands over" memberEnd="_3axj0kV3Eeyuwuc0dTQ-tQ _3azZAEV3Eeyuwuc0dTQ-tQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3axj0EV3Eeyuwuc0dTQ-tQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3axj0UV3Eeyuwuc0dTQ-tQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
@@ -381,12 +376,12 @@ Step 5: Passenger leaves border police office</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6ur84UV9Eeyuwuc0dTQ-tQ" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_8FleYEV9Eeyuwuc0dTQ-tQ" name="performs" memberEnd="_8FnTkkV9Eeyuwuc0dTQ-tQ _8FohsUV9Eeyuwuc0dTQ-tQ">
+  <packagedElement xmi:type="uml:Association" xmi:id="_8FleYEV9Eeyuwuc0dTQ-tQ" name="enters" memberEnd="_8FnTkkV9Eeyuwuc0dTQ-tQ _8FohsUV9Eeyuwuc0dTQ-tQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8FnTkEV9Eeyuwuc0dTQ-tQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8FnTkUV9Eeyuwuc0dTQ-tQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_8FohsUV9Eeyuwuc0dTQ-tQ" type="_T0zVcEVtEeyuwuc0dTQ-tQ" association="_8FleYEV9Eeyuwuc0dTQ-tQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_8FnTkkV9Eeyuwuc0dTQ-tQ" type="_RThEcEVtEeyuwuc0dTQ-tQ" aggregation="composite" association="_8FleYEV9Eeyuwuc0dTQ-tQ">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8FohsUV9Eeyuwuc0dTQ-tQ" type="_T0zVcEVtEeyuwuc0dTQ-tQ" aggregation="composite" association="_8FleYEV9Eeyuwuc0dTQ-tQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8FnTkkV9Eeyuwuc0dTQ-tQ" type="_RThEcEVtEeyuwuc0dTQ-tQ" association="_8FleYEV9Eeyuwuc0dTQ-tQ">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3Q5K4EV-Eeyuwuc0dTQ-tQ" value="*"/>
     </ownedEnd>
   </packagedElement>
@@ -399,7 +394,7 @@ Step 5: Passenger leaves border police office</body>
     </ownedEnd>
     <ownedEnd xmi:type="uml:Property" xmi:id="_l8YWIkV-Eeyuwuc0dTQ-tQ" type="_ncQ5sEVsEeyuwuc0dTQ-tQ" aggregation="shared" association="_l8XIAEV-Eeyuwuc0dTQ-tQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_ksLAkEWAEeyuwuc0dTQ-tQ" name="enters" memberEnd="_ksMOskWAEeyuwuc0dTQ-tQ _ksNc0EWAEeyuwuc0dTQ-tQ">
+  <packagedElement xmi:type="uml:Association" xmi:id="_ksLAkEWAEeyuwuc0dTQ-tQ" name="goes through" memberEnd="_ksMOskWAEeyuwuc0dTQ-tQ _ksNc0EWAEeyuwuc0dTQ-tQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ksMOsEWAEeyuwuc0dTQ-tQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ksMOsUWAEeyuwuc0dTQ-tQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
@@ -420,7 +415,7 @@ Step 5: Passenger leaves border police office</body>
   <packagedElement xmi:type="uml:Realization" xmi:id="_sgRagEY6EeyzvZaWA2zpUQ" client="_idyo8EY6EeyzvZaWA2zpUQ">
     <supplier xmi:type="uml:Interface" href="System_Group2.uml#_s6wMkEV1EeywAt9CR0nlpw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_zmfdAEY_EeyzvZaWA2zpUQ" name="has a" memberEnd="_zmgEEkY_EeyzvZaWA2zpUQ _zmgrIkY_EeyzvZaWA2zpUQ">
+  <packagedElement xmi:type="uml:Association" xmi:id="_zmfdAEY_EeyzvZaWA2zpUQ" name="contains" memberEnd="_zmgEEkY_EeyzvZaWA2zpUQ _zmgrIkY_EeyzvZaWA2zpUQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zmgEEEY_EeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zmgEEUY_EeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
@@ -432,11 +427,98 @@ Step 5: Passenger leaves border police office</body>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_eNfCoUZAEeyzvZaWA2zpUQ" name="" type="_TBLgIEVtEeyuwuc0dTQ-tQ" association="_eNd0gEZAEeyzvZaWA2zpUQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_rVFLAEZAEeyzvZaWA2zpUQ" name="has a" memberEnd="_rVFyEkZAEeyzvZaWA2zpUQ _rVGZIkZAEeyzvZaWA2zpUQ">
+  <packagedElement xmi:type="uml:Association" xmi:id="_rVFLAEZAEeyzvZaWA2zpUQ" name="delivers baggage to" memberEnd="_rVFyEkZAEeyzvZaWA2zpUQ _rVGZIkZAEeyzvZaWA2zpUQ" navigableOwnedEnd="_rVFyEkZAEeyzvZaWA2zpUQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rVFyEEZAEeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rVFyEUZAEeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_rVGZIkZAEeyzvZaWA2zpUQ" name="" type="_ncQ5sEVsEeyuwuc0dTQ-tQ" association="_rVFLAEZAEeyzvZaWA2zpUQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rVGZIkZAEeyzvZaWA2zpUQ" name="" type="_RThEcEVtEeyuwuc0dTQ-tQ" association="_rVFLAEZAEeyzvZaWA2zpUQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cW-_sEcfEeyJqrRVtgiYew" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rVFyEkZAEeyzvZaWA2zpUQ" name="" association="_rVFLAEZAEeyzvZaWA2zpUQ">
+      <type xmi:type="uml:Class" href="SubSystem2.uml#_FE7wEEVfEeybjKjyLz0qtQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZTbIEEcfEeyJqrRVtgiYew" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bfmMEEccEeyJqrRVtgiYew" name="performs" visibility="private" memberEnd="_bfooUEccEeyJqrRVtgiYew _bfp2cEccEeyJqrRVtgiYew">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bfoBQEccEeyJqrRVtgiYew" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bfoBQUccEeyJqrRVtgiYew" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bfp2cEccEeyJqrRVtgiYew" type="_RThEcEVtEeyuwuc0dTQ-tQ" association="_bfmMEEccEeyJqrRVtgiYew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lPGXQEccEeyJqrRVtgiYew" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bfooUEccEeyJqrRVtgiYew" type="_idyo8EY6EeyzvZaWA2zpUQ" aggregation="shared" association="_bfmMEEccEeyJqrRVtgiYew"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4GUU4EccEeyJqrRVtgiYew" name="executes" memberEnd="_4GWKEEccEeyJqrRVtgiYew _4GWKE0ccEeyJqrRVtgiYew">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4GVjAEccEeyJqrRVtgiYew" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4GVjAUccEeyJqrRVtgiYew" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4GWKE0ccEeyJqrRVtgiYew" type="_DNaFYEVtEeyuwuc0dTQ-tQ" association="_4GUU4EccEeyJqrRVtgiYew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6ZNkkEccEeyJqrRVtgiYew" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4GWKEEccEeyJqrRVtgiYew" type="_idyo8EY6EeyzvZaWA2zpUQ" aggregation="shared" association="_4GUU4EccEeyJqrRVtgiYew"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7O29sEcdEeyJqrRVtgiYew" name="displays" memberEnd="_7O4L0kcdEeyJqrRVtgiYew _7O5Z8UcdEeyJqrRVtgiYew">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7O4L0EcdEeyJqrRVtgiYew" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7O4L0UcdEeyJqrRVtgiYew" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7O5Z8UcdEeyJqrRVtgiYew" type="_ncQ5sEVsEeyuwuc0dTQ-tQ" association="_7O29sEcdEeyJqrRVtgiYew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-w79UEcdEeyJqrRVtgiYew" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7O4L0kcdEeyJqrRVtgiYew" type="_idyo8EY6EeyzvZaWA2zpUQ" aggregation="shared" association="_7O29sEcdEeyJqrRVtgiYew"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kUBuwEcfEeyJqrRVtgiYew" name="BorderPoliceCheck">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jK6VIEcgEeyJqrRVtgiYew" name="reasonOfStay">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o9FvIEcgEeyJqrRVtgiYew" value="*"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Bba7sEcgEeyJqrRVtgiYew" client="_kUBuwEcfEeyJqrRVtgiYew" supplier="_pPtloEcfEeyJqrRVtgiYew" contract="_pPtloEcfEeyJqrRVtgiYew"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_pPtloEcfEeyJqrRVtgiYew" name="Check">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tGlJgEcfEeyJqrRVtgiYew" name="checkPassed">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_s3tKkEcgEeyJqrRVtgiYew" name="is performed on" memberEnd="_s3uYsUcgEeyJqrRVtgiYew _s3u_wUcgEeyJqrRVtgiYew">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_s3txoEcgEeyJqrRVtgiYew" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_s3uYsEcgEeyJqrRVtgiYew" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_s3u_wUcgEeyJqrRVtgiYew" type="_kUBuwEcfEeyJqrRVtgiYew" aggregation="composite" association="_s3tKkEcgEeyJqrRVtgiYew">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_voURAEcgEeyJqrRVtgiYew"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_voq2UEcgEeyJqrRVtgiYew" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_s3uYsUcgEeyJqrRVtgiYew" type="_T0zVcEVtEeyuwuc0dTQ-tQ" association="_s3tKkEcgEeyJqrRVtgiYew"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4wsKwEcgEeyJqrRVtgiYew" name="inspects" memberEnd="_4wtY4kcgEeyJqrRVtgiYew _4wunAEcgEeyJqrRVtgiYew" navigableOwnedEnd="_4wtY4kcgEeyJqrRVtgiYew">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4wtY4EcgEeyJqrRVtgiYew" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4wtY4UcgEeyJqrRVtgiYew" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4wunAEcgEeyJqrRVtgiYew" type="_kUBuwEcfEeyJqrRVtgiYew" association="_4wsKwEcgEeyJqrRVtgiYew">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cu-_4EchEeyJqrRVtgiYew"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CvDRUEchEeyJqrRVtgiYew" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4wtY4kcgEeyJqrRVtgiYew" type="__GhvkEVsEeyuwuc0dTQ-tQ" association="_4wsKwEcgEeyJqrRVtgiYew"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LSEbQEchEeyJqrRVtgiYew" name="checks validity of" memberEnd="_LSFpYEchEeyJqrRVtgiYew _LSGQcUchEeyJqrRVtgiYew" navigableOwnedEnd="_LSFpYEchEeyJqrRVtgiYew">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LSFCUEchEeyJqrRVtgiYew" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LSFCUUchEeyJqrRVtgiYew" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LSGQcUchEeyJqrRVtgiYew" type="_kUBuwEcfEeyJqrRVtgiYew" association="_LSEbQEchEeyJqrRVtgiYew">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Sf0bYEchEeyJqrRVtgiYew"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SgOrEEchEeyJqrRVtgiYew" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LSFpYEchEeyJqrRVtgiYew" type="_AR59kEVtEeyuwuc0dTQ-tQ" association="_LSEbQEchEeyJqrRVtgiYew">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LSFpYUchEeyJqrRVtgiYew"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LSGQcEchEeyJqrRVtgiYew" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bKR0oEciEeyJqrRVtgiYew" name="executes" memberEnd="_bKSbskciEeyJqrRVtgiYew _bKSbtUciEeyJqrRVtgiYew">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bKSbsEciEeyJqrRVtgiYew" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bKSbsUciEeyJqrRVtgiYew" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bKSbtUciEeyJqrRVtgiYew" type="_kUBuwEcfEeyJqrRVtgiYew" association="_bKR0oEciEeyJqrRVtgiYew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kfFn4EciEeyJqrRVtgiYew" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bKSbskciEeyJqrRVtgiYew" type="_idyo8EY6EeyzvZaWA2zpUQ" aggregation="shared" association="_bKR0oEciEeyJqrRVtgiYew"/>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SY23sEV0Eeyuwuc0dTQ-tQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SY57AEV0Eeyuwuc0dTQ-tQ" source="http://www.eclipse.org/uml2/2.0.0/UML">

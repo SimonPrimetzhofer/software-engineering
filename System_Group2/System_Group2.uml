@@ -253,41 +253,41 @@ Step 6: Landside Management transports baggage and passengers to the airplane</b
     <ownedAttribute xmi:type="uml:Property" xmi:id="_V11wUEZCEeyzvZaWA2zpUQ" name="TM">
       <type xmi:type="uml:Class" href="SubSystem3.uml#_idyo8EY6EeyzvZaWA2zpUQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_jmF0IkZCEeyzvZaWA2zpUQ" name="" association="_jmFNEEZCEeyzvZaWA2zpUQ">
-      <type xmi:type="uml:Class" href="SubSystem3.uml#_idyo8EY6EeyzvZaWA2zpUQ"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_pYZxAkZCEeyzvZaWA2zpUQ" name="" association="_pYZJ8EZCEeyzvZaWA2zpUQ">
-      <type xmi:type="uml:Class" href="SubSystem5.uml#_rhkogEY4EeyzvZaWA2zpUQ"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_qEvSkUZCEeyzvZaWA2zpUQ" name="" association="_qEurgEZCEeyzvZaWA2zpUQ">
-      <type xmi:type="uml:Class" href="SubSystem2.uml#_5pHyAEY4EeyzvZaWA2zpUQ"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_q0MZkkZCEeyzvZaWA2zpUQ" name="" association="_q0LygEZCEeyzvZaWA2zpUQ">
-      <type xmi:type="uml:Class" href="SubSystem1.uml#_KtWgYEV7EeywAt9CR0nlpw"/>
-    </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_jmFNEEZCEeyzvZaWA2zpUQ" memberEnd="_jmF0IkZCEeyzvZaWA2zpUQ _jmF0JUZCEeyzvZaWA2zpUQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jmF0IEZCEeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jmF0IUZCEeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_jmF0JUZCEeyzvZaWA2zpUQ" name="" type="_OkdNYEZCEeyzvZaWA2zpUQ" association="_jmFNEEZCEeyzvZaWA2zpUQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jmF0IkZCEeyzvZaWA2zpUQ" name="" aggregation="shared" association="_jmFNEEZCEeyzvZaWA2zpUQ">
+      <type xmi:type="uml:Class" href="SubSystem3.uml#_idyo8EY6EeyzvZaWA2zpUQ"/>
+    </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_pYZJ8EZCEeyzvZaWA2zpUQ" visibility="public" memberEnd="_pYZxAkZCEeyzvZaWA2zpUQ _pYaYEkZCEeyzvZaWA2zpUQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pYZxAEZCEeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pYZxAUZCEeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_pYaYEkZCEeyzvZaWA2zpUQ" name="" type="_OkdNYEZCEeyzvZaWA2zpUQ" association="_pYZJ8EZCEeyzvZaWA2zpUQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pYZxAkZCEeyzvZaWA2zpUQ" name="" aggregation="shared" association="_pYZJ8EZCEeyzvZaWA2zpUQ">
+      <type xmi:type="uml:Class" href="SubSystem5.uml#_rhkogEY4EeyzvZaWA2zpUQ"/>
+    </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_qEurgEZCEeyzvZaWA2zpUQ" memberEnd="_qEvSkUZCEeyzvZaWA2zpUQ _qEvSlEZCEeyzvZaWA2zpUQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qEurgUZCEeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qEvSkEZCEeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_qEvSlEZCEeyzvZaWA2zpUQ" name="" type="_OkdNYEZCEeyzvZaWA2zpUQ" association="_qEurgEZCEeyzvZaWA2zpUQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qEvSkUZCEeyzvZaWA2zpUQ" name="" aggregation="shared" association="_qEurgEZCEeyzvZaWA2zpUQ">
+      <type xmi:type="uml:Class" href="SubSystem2.uml#_5pHyAEY4EeyzvZaWA2zpUQ"/>
+    </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_q0LygEZCEeyzvZaWA2zpUQ" memberEnd="_q0MZkkZCEeyzvZaWA2zpUQ _q0MZlUZCEeyzvZaWA2zpUQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q0MZkEZCEeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q0MZkUZCEeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_q0MZlUZCEeyzvZaWA2zpUQ" name="" type="_OkdNYEZCEeyzvZaWA2zpUQ" association="_q0LygEZCEeyzvZaWA2zpUQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_q0MZkkZCEeyzvZaWA2zpUQ" name="" aggregation="shared" association="_q0LygEZCEeyzvZaWA2zpUQ">
+      <type xmi:type="uml:Class" href="SubSystem1.uml#_KtWgYEV7EeywAt9CR0nlpw"/>
+    </ownedEnd>
   </packagedElement>
 </uml:Model>
