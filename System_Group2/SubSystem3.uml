@@ -566,6 +566,49 @@ Step 5: Passenger leaves border police office</body>
     <message xmi:type="uml:Message" xmi:id="_s2TZAEvZEeyOoNG3x3u_Yw" name="4.1: handOverBaggageItems()" messageSort="reply" receiveEvent="_s2UAEUvZEeyOoNG3x3u_Yw" sendEvent="_s2UAEEvZEeyOoNG3x3u_Yw"/>
     <message xmi:type="uml:Message" xmi:id="_l5h-sEvaEeyOoNG3x3u_Yw" name="5: leave()" messageSort="reply" receiveEvent="_l5jM0EvaEeyOoNG3x3u_Yw" sendEvent="_l5ilwEvaEeyOoNG3x3u_Yw"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_ClSYgEvbEeyOoNG3x3u_Yw" name="Hand over baggage">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_GN3BsEvbEeyOoNG3x3u_Yw" name="Passenger" coveredBy="_Kph7wEvbEeyOoNG3x3u_Yw _KqEuUEvbEeyOoNG3x3u_Yw _wJsxgUvbEeyOoNG3x3u_Yw _rmByAEvbEeyOoNG3x3u_Yw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_G_tVYEvbEeyOoNG3x3u_Yw" name="Check-in employee" coveredBy="_KpjJ4EvbEeyOoNG3x3u_Yw _OUOE0EvbEeyOoNG3x3u_Yw _OUPS8EvbEeyOoNG3x3u_Yw _W7Yu8EvbEeyOoNG3x3u_Yw _W7ZWAEvbEeyOoNG3x3u_Yw _KqEHQEvbEeyOoNG3x3u_Yw _wJtYkEvbEeyOoNG3x3u_Yw _KqAc4EvbEeyOoNG3x3u_Yw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Kph7wEvbEeyOoNG3x3u_Yw" name="Message3SendEvent" covered="_GN3BsEvbEeyOoNG3x3u_Yw" message="_KpgGkEvbEeyOoNG3x3u_Yw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_KpjJ4EvbEeyOoNG3x3u_Yw" name="Message3ReceiveEvent" covered="_G_tVYEvbEeyOoNG3x3u_Yw" message="_KpgGkEvbEeyOoNG3x3u_Yw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_KqAc4EvbEeyOoNG3x3u_Yw" name="BehaviorExecutionSpecification6" covered="_G_tVYEvbEeyOoNG3x3u_Yw" finish="_KqEHQEvbEeyOoNG3x3u_Yw" start="_KpjJ4EvbEeyOoNG3x3u_Yw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_OUOE0EvbEeyOoNG3x3u_Yw" name="Message10SendEvent" covered="_G_tVYEvbEeyOoNG3x3u_Yw" message="_OUMPoEvbEeyOoNG3x3u_Yw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_OUPS8EvbEeyOoNG3x3u_Yw" name="Message10ReceiveEvent" covered="_G_tVYEvbEeyOoNG3x3u_Yw" message="_OUMPoEvbEeyOoNG3x3u_Yw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_W7Yu8EvbEeyOoNG3x3u_Yw" name="Message13SendEvent" covered="_G_tVYEvbEeyOoNG3x3u_Yw" message="_W7W5wEvbEeyOoNG3x3u_Yw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_W7ZWAEvbEeyOoNG3x3u_Yw" name="Message13ReceiveEvent" covered="_G_tVYEvbEeyOoNG3x3u_Yw" message="_W7W5wEvbEeyOoNG3x3u_Yw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_KqEHQEvbEeyOoNG3x3u_Yw" name="Message8SendEvent" covered="_G_tVYEvbEeyOoNG3x3u_Yw" message="_KqDgMEvbEeyOoNG3x3u_Yw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_KqEuUEvbEeyOoNG3x3u_Yw" name="Message8ReceiveEvent" covered="_GN3BsEvbEeyOoNG3x3u_Yw" message="_KqDgMEvbEeyOoNG3x3u_Yw"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_rmByAEvbEeyOoNG3x3u_Yw" name="ActionExecutionSpecification16" covered="_GN3BsEvbEeyOoNG3x3u_Yw" finish="_wJsxgUvbEeyOoNG3x3u_Yw" start="_KqEuUEvbEeyOoNG3x3u_Yw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wJsxgUvbEeyOoNG3x3u_Yw" name="Message18SendEvent" covered="_GN3BsEvbEeyOoNG3x3u_Yw" message="_wJsxgEvbEeyOoNG3x3u_Yw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wJtYkEvbEeyOoNG3x3u_Yw" name="Message18ReceiveEvent" covered="_G_tVYEvbEeyOoNG3x3u_Yw" message="_wJsxgEvbEeyOoNG3x3u_Yw"/>
+    <message xmi:type="uml:Message" xmi:id="_KpgGkEvbEeyOoNG3x3u_Yw" name="1: handOverBaggage()" receiveEvent="_KpjJ4EvbEeyOoNG3x3u_Yw" sendEvent="_Kph7wEvbEeyOoNG3x3u_Yw"/>
+    <message xmi:type="uml:Message" xmi:id="_KqDgMEvbEeyOoNG3x3u_Yw" name="reportWeightLimitExceedance()" messageSort="reply" receiveEvent="_KqEuUEvbEeyOoNG3x3u_Yw" sendEvent="_KqEHQEvbEeyOoNG3x3u_Yw"/>
+    <message xmi:type="uml:Message" xmi:id="_OUMPoEvbEeyOoNG3x3u_Yw" name="weighBaggageItems()" receiveEvent="_OUPS8EvbEeyOoNG3x3u_Yw" sendEvent="_OUOE0EvbEeyOoNG3x3u_Yw"/>
+    <message xmi:type="uml:Message" xmi:id="_W7W5wEvbEeyOoNG3x3u_Yw" name="checkOverallWeightLimit()" receiveEvent="_W7ZWAEvbEeyOoNG3x3u_Yw" sendEvent="_W7Yu8EvbEeyOoNG3x3u_Yw"/>
+    <message xmi:type="uml:Message" xmi:id="_wJsxgEvbEeyOoNG3x3u_Yw" name="payExceededWeightFee()" messageSort="reply" receiveEvent="_wJtYkEvbEeyOoNG3x3u_Yw" sendEvent="_wJsxgUvbEeyOoNG3x3u_Yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_kwPJcEvcEeyHF9epGOU4zg" name="Tag baggage and forward">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_nvUJsEvcEeyHF9epGOU4zg" name="Passenger" coveredBy="_5ze5wEvcEeyHF9epGOU4zg _5zdroEvcEeyHF9epGOU4zg _o9aUgEvcEeyHF9epGOU4zg _rfiTAEvcEeyHF9epGOU4zg _F4PFEEvdEeyHF9epGOU4zg _F4PFEUvdEeyHF9epGOU4zg _M5L_UEvdEeyHF9epGOU4zg _M5MmYEvdEeyHF9epGOU4zg _UnrVAEvdEeyHF9epGOU4zg _Unr8EEvdEeyHF9epGOU4zg _5zfg0EvcEeyHF9epGOU4zg"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_5ze5wEvcEeyHF9epGOU4zg" name="ActionExecutionSpecification3Start" covered="_nvUJsEvcEeyHF9epGOU4zg" execution="_5zdroEvcEeyHF9epGOU4zg"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_5zdroEvcEeyHF9epGOU4zg" name="ActionExecutionSpecification3" covered="_nvUJsEvcEeyHF9epGOU4zg" finish="_5zfg0EvcEeyHF9epGOU4zg" start="_5ze5wEvcEeyHF9epGOU4zg"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_o9aUgEvcEeyHF9epGOU4zg" name="CombinedFragment2" covered="_nvUJsEvcEeyHF9epGOU4zg" interactionOperator="loop">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_rfiTAEvcEeyHF9epGOU4zg" name="InteractionOperand2" covered="_nvUJsEvcEeyHF9epGOU4zg">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_F4PFEEvdEeyHF9epGOU4zg" name="Message6SendEvent" covered="_nvUJsEvcEeyHF9epGOU4zg" message="_F4NP4EvdEeyHF9epGOU4zg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_F4PFEUvdEeyHF9epGOU4zg" name="Message6ReceiveEvent" covered="_nvUJsEvcEeyHF9epGOU4zg" message="_F4NP4EvdEeyHF9epGOU4zg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_M5L_UEvdEeyHF9epGOU4zg" name="Message7SendEvent" covered="_nvUJsEvcEeyHF9epGOU4zg" message="_M5KxMEvdEeyHF9epGOU4zg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_M5MmYEvdEeyHF9epGOU4zg" name="Message7ReceiveEvent" covered="_nvUJsEvcEeyHF9epGOU4zg" message="_M5KxMEvdEeyHF9epGOU4zg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UnrVAEvdEeyHF9epGOU4zg" name="Message8SendEvent" covered="_nvUJsEvcEeyHF9epGOU4zg" message="_Unpf0EvdEeyHF9epGOU4zg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Unr8EEvdEeyHF9epGOU4zg" name="Message8ReceiveEvent" covered="_nvUJsEvcEeyHF9epGOU4zg" message="_Unpf0EvdEeyHF9epGOU4zg"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_rfjhIEvcEeyHF9epGOU4zg" name="guard">
+          <specification xmi:type="uml:LiteralString" xmi:id="_sZgn8EvcEeyHF9epGOU4zg" value="for every baggageitem"/>
+        </guard>
+      </operand>
+    </fragment>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_5zfg0EvcEeyHF9epGOU4zg" name="ActionExecutionSpecification3Finish" covered="_nvUJsEvcEeyHF9epGOU4zg" execution="_5zdroEvcEeyHF9epGOU4zg"/>
+    <message xmi:type="uml:Message" xmi:id="_F4NP4EvdEeyHF9epGOU4zg" name="printTag()" receiveEvent="_F4PFEUvdEeyHF9epGOU4zg" sendEvent="_F4PFEEvdEeyHF9epGOU4zg"/>
+    <message xmi:type="uml:Message" xmi:id="_M5KxMEvdEeyHF9epGOU4zg" name="tagBaggage(tag)" receiveEvent="_M5MmYEvdEeyHF9epGOU4zg" sendEvent="_M5L_UEvdEeyHF9epGOU4zg"/>
+    <message xmi:type="uml:Message" xmi:id="_Unpf0EvdEeyHF9epGOU4zg" name="forwardBaggage(baggage)" receiveEvent="_Unr8EEvdEeyHF9epGOU4zg" sendEvent="_UnrVAEvdEeyHF9epGOU4zg"/>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SY23sEV0Eeyuwuc0dTQ-tQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SY57AEV0Eeyuwuc0dTQ-tQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
