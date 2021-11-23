@@ -773,6 +773,23 @@ Step 5: Passenger leaves border police office</body>
     <message xmi:type="uml:Message" xmi:id="_j8z0EExuEey77OiPVLUrtw" name="1.2: confirmIdentity()" receiveEvent="_j83ecExuEey77OiPVLUrtw" sendEvent="_j82QUExuEey77OiPVLUrtw"/>
     <message xmi:type="uml:Message" xmi:id="_an2k8ExwEey77OiPVLUrtw" name="1.4: answerReasonAndDuration()" messageSort="reply" receiveEvent="_an5oQExwEey77OiPVLUrtw" sendEvent="_an4aIExwEey77OiPVLUrtw"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_r5sDsExxEey77OiPVLUrtw" name="Interaction65">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_tpLEUExxEey77OiPVLUrtw" name="Passenger" coveredBy="_1UaRsExxEey77OiPVLUrtw _1U_ggExxEey77OiPVLUrtw _nTCMMExyEey77OiPVLUrtw _nTA-EExyEey77OiPVLUrtw _n3DfQExyEey77OiPVLUrtw _n3EtYExyEey77OiPVLUrtw _nTCMMUxyEey77OiPVLUrtw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_uOUYwExxEey77OiPVLUrtw" name="Flight information system" coveredBy="_1Ubf0ExxEey77OiPVLUrtw _1U-5cExxEey77OiPVLUrtw _1U6oAExxEey77OiPVLUrtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1UaRsExxEey77OiPVLUrtw" name="Message3SendEvent" covered="_tpLEUExxEey77OiPVLUrtw" message="_1UYcgExxEey77OiPVLUrtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1Ubf0ExxEey77OiPVLUrtw" name="Message3ReceiveEvent" covered="_uOUYwExxEey77OiPVLUrtw" message="_1UYcgExxEey77OiPVLUrtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_1U6oAExxEey77OiPVLUrtw" name="BehaviorExecutionSpecification6" covered="_uOUYwExxEey77OiPVLUrtw" finish="_1U-5cExxEey77OiPVLUrtw" start="_1Ubf0ExxEey77OiPVLUrtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1U-5cExxEey77OiPVLUrtw" name="Message8SendEvent" covered="_uOUYwExxEey77OiPVLUrtw" message="_1U-SYExxEey77OiPVLUrtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1U_ggExxEey77OiPVLUrtw" name="Message8ReceiveEvent" covered="_tpLEUExxEey77OiPVLUrtw" message="_1U-SYExxEey77OiPVLUrtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_nTCMMExyEey77OiPVLUrtw" name="ActionExecutionSpecification10Start" covered="_tpLEUExxEey77OiPVLUrtw" execution="_nTA-EExyEey77OiPVLUrtw"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_nTA-EExyEey77OiPVLUrtw" name="ActionExecutionSpecification10" covered="_tpLEUExxEey77OiPVLUrtw" finish="_nTCMMUxyEey77OiPVLUrtw" start="_nTCMMExyEey77OiPVLUrtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n3DfQExyEey77OiPVLUrtw" name="Message13SendEvent" covered="_tpLEUExxEey77OiPVLUrtw" message="_n3BqEExyEey77OiPVLUrtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n3EtYExyEey77OiPVLUrtw" name="Message13ReceiveEvent" covered="_tpLEUExxEey77OiPVLUrtw" message="_n3BqEExyEey77OiPVLUrtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_nTCMMUxyEey77OiPVLUrtw" name="ActionExecutionSpecification10Finish" covered="_tpLEUExxEey77OiPVLUrtw" execution="_nTA-EExyEey77OiPVLUrtw"/>
+    <message xmi:type="uml:Message" xmi:id="_1UYcgExxEey77OiPVLUrtw" name="1: findFlight(flightNumber)" receiveEvent="_1Ubf0ExxEey77OiPVLUrtw" sendEvent="_1UaRsExxEey77OiPVLUrtw"/>
+    <message xmi:type="uml:Message" xmi:id="_1U-SYExxEey77OiPVLUrtw" name="1.1: displayFlightInformation()" messageSort="reply" receiveEvent="_1U_ggExxEey77OiPVLUrtw" sendEvent="_1U-5cExxEey77OiPVLUrtw"/>
+    <message xmi:type="uml:Message" xmi:id="_n3BqEExyEey77OiPVLUrtw" name="2: saveFlightInfo(flightInfo)" receiveEvent="_n3EtYExyEey77OiPVLUrtw" sendEvent="_n3DfQExyEey77OiPVLUrtw"/>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SY23sEV0Eeyuwuc0dTQ-tQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SY57AEV0Eeyuwuc0dTQ-tQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
