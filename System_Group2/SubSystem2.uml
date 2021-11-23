@@ -475,6 +475,10 @@ Step 10: firetruck driver awaits new orders</body>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_qlRsIEyKEeyxf8Jv68VPeA" name="gatherMaintenanceCost"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_snA6YEyKEeyxf8Jv68VPeA" name="provideLandsideCost"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5NA8IEyLEeyxf8Jv68VPeA" name="requestParkingLocation"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-M7LsEyLEeyxf8Jv68VPeA" name="calculateRessources"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="__bTqYEyLEeyxf8Jv68VPeA" name="calculateRoute"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BHXjkEyMEeyxf8Jv68VPeA" name="executeRefuel()"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_PbeEAEY5EeyzvZaWA2zpUQ" name="contains" memberEnd="_PberEkY5EeyzvZaWA2zpUQ _PbfSIUY5EeyzvZaWA2zpUQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PberEEY5EeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
