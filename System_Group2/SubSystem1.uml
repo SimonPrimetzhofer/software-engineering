@@ -211,6 +211,12 @@ Step 8: Pilot performs take-off</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_l7VFgEyKEeyxf8Jv68VPeA" name="provideAirsideCost"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_u3HfUEyLEeyxf8Jv68VPeA" name="provideParkingLocation"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_yA1pUEyLEeyxf8Jv68VPeA" name="requestRefuel"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_KTeZ4EykEeykW7qwzvpppQ" name="requestFlightInformation"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_UVq3kEykEeykW7qwzvpppQ" name="provideDelays">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_bJ7ZoEykEeykW7qwzvpppQ" direction="return" effect="update">
+        <type xmi:type="uml:Class" href="SubSystem3.uml#_ncQ5sEVsEeyuwuc0dTQ-tQ"/>
+      </ownedParameter>
+    </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_-N6uwEV7EeywAt9CR0nlpw" name="manages" visibility="public" memberEnd="_-N8j8EV7EeywAt9CR0nlpw _-N9LAkV7EeywAt9CR0nlpw" navigableOwnedEnd="_-N8j8EV7EeywAt9CR0nlpw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-N784EV7EeywAt9CR0nlpw" source="org.eclipse.papyrus">

@@ -503,7 +503,13 @@ Step 5: Passenger leaves border police office</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pZCGYUWCEeyuwuc0dTQ-tQ" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_idyo8EY6EeyzvZaWA2zpUQ" name="TerminalManagement"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_idyo8EY6EeyzvZaWA2zpUQ" name="TerminalManagement">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_KwKo0EyXEeySoNHEBsVkaA" name="getFlightInformation"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bgGv4EyiEeySoNHEBsVkaA" name="coordinateBaggageDeposit"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_f23p4EykEeykW7qwzvpppQ" name="adjustTime">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_jKwcgEykEeykW7qwzvpppQ" name="flight" type="_ncQ5sEVsEeyuwuc0dTQ-tQ" effect="read"/>
+    </ownedOperation>
+  </packagedElement>
   <packagedElement xmi:type="uml:Realization" xmi:id="_sgRagEY6EeyzvZaWA2zpUQ" client="_idyo8EY6EeyzvZaWA2zpUQ">
     <supplier xmi:type="uml:Interface" href="System_Group2.uml#_s6wMkEV1EeywAt9CR0nlpw"/>
   </packagedElement>
