@@ -509,6 +509,10 @@ Step 5: Passenger leaves border police office</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_f23p4EykEeykW7qwzvpppQ" name="adjustTime">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_jKwcgEykEeykW7qwzvpppQ" name="flight" type="_ncQ5sEVsEeyuwuc0dTQ-tQ" effect="read"/>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_aMcy0EymEeykW7qwzvpppQ" name="getPayments">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_fC1S8EymEeykW7qwzvpppQ" type="_RThEcEVtEeyuwuc0dTQ-tQ" direction="return" effect="read"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_GR8WwEynEeykW7qwzvpppQ" name="displayFlightInformation"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Realization" xmi:id="_sgRagEY6EeyzvZaWA2zpUQ" client="_idyo8EY6EeyzvZaWA2zpUQ">
     <supplier xmi:type="uml:Interface" href="System_Group2.uml#_s6wMkEV1EeywAt9CR0nlpw"/>

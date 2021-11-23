@@ -71,7 +71,7 @@ Step 2: Terminal Management reports payments (too heavy baggage, better seat cat
 Step 3: Financial Management updates ticket prices, departure times and flight states&#xD;
 
 Step 4: Terminal Management displays updated data on flight information system&#xD;
-Step 5: Financial Management executes payments depending on the payment method (excluding cash since that is paid immediately)</body>
+Step 5: Financial Management executes payments depending on the payment method</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_IE_p8C91Eeya95RNdWV4gg" name="report costs">
@@ -386,5 +386,47 @@ Step 6: Landside Management transports baggage and passengers to the airplane</b
     <message xmi:type="uml:Message" xmi:id="_8GHSYEyaEeySoNHEBsVkaA" name="2: adjustTime()" receiveEvent="_8GH5cUyaEeySoNHEBsVkaA" sendEvent="_8GH5cEyaEeySoNHEBsVkaA"/>
     <message xmi:type="uml:Message" xmi:id="_8GgT8EyaEeySoNHEBsVkaA" name="2.1: provideDelays()" messageSort="reply" receiveEvent="_8Gg7AEyaEeySoNHEBsVkaA" sendEvent="_8GgT8UyaEeySoNHEBsVkaA"/>
     <message xmi:type="uml:Message" xmi:id="_zFlwQEyeEeySoNHEBsVkaA" name="3: displayFlightInformation()" receiveEvent="_zFmXUUyeEeySoNHEBsVkaA" sendEvent="_zFmXUEyeEeySoNHEBsVkaA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_EULUcEylEeykW7qwzvpppQ" name="Update ticketinfo / pricing">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_qcqHYEylEeykW7qwzvpppQ" name="Terminal Management" coveredBy="_OXSisEymEeykW7qwzvpppQ _PjEZUEymEeykW7qwzvpppQ _TG33QEymEeykW7qwzvpppQ _tuWFIEymEeykW7qwzvpppQ _THSuAEymEeykW7qwzvpppQ _hlJz0EyoEeyCzoWXdzROgA _ozuTUEyoEeyCzoWXdzROgA _iv8zAEyoEeyCzoWXdzROgA _iv8L8EyoEeyCzoWXdzROgA _yZJVcEyoEeyCzoWXdzROgA _yZJVcUyoEeyCzoWXdzROgA _iv8zAUyoEeyCzoWXdzROgA _obzikEyoEeyCzoWXdzROgA _1tDBEEymEeykW7qwzvpppQ"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_rd7XIEylEeykW7qwzvpppQ" name="Financial Management" coveredBy="_OXSisEymEeykW7qwzvpppQ _PjEZUEymEeykW7qwzvpppQ _TG33QUymEeykW7qwzvpppQ _tuWFIUymEeykW7qwzvpppQ _THSG8UymEeykW7qwzvpppQ _hlJz0EyoEeyCzoWXdzROgA _ozuTUEyoEeyCzoWXdzROgA _obzikEyoEeyCzoWXdzROgA _9TuMoEyoEeyCzoWXdzROgA _9Ts-gEyoEeyCzoWXdzROgA _92pTgEyoEeyCzoWXdzROgA _92pTgUyoEeyCzoWXdzROgA _9TuzsEyoEeyCzoWXdzROgA _THNOcEymEeykW7qwzvpppQ"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_OXSisEymEeykW7qwzvpppQ" name="CombinedFragment3" covered="_qcqHYEylEeykW7qwzvpppQ _rd7XIEylEeykW7qwzvpppQ" interactionOperator="loop">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_PjEZUEymEeykW7qwzvpppQ" name="InteractionOperand2" covered="_qcqHYEylEeykW7qwzvpppQ _rd7XIEylEeykW7qwzvpppQ">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TG33QEymEeykW7qwzvpppQ" name="Message4SendEvent" covered="_qcqHYEylEeykW7qwzvpppQ" message="_TG2pIEymEeykW7qwzvpppQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TG33QUymEeykW7qwzvpppQ" name="Message4ReceiveEvent" covered="_rd7XIEylEeykW7qwzvpppQ" message="_TG2pIEymEeykW7qwzvpppQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_THNOcEymEeykW7qwzvpppQ" name="BehaviorExecutionSpecification7" covered="_rd7XIEylEeykW7qwzvpppQ" finish="_THSG8UymEeykW7qwzvpppQ" start="_TG33QUymEeykW7qwzvpppQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tuWFIEymEeykW7qwzvpppQ" name="Message6SendEvent" covered="_qcqHYEylEeykW7qwzvpppQ" message="_tuVeEEymEeykW7qwzvpppQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tuWFIUymEeykW7qwzvpppQ" name="Message6ReceiveEvent" covered="_rd7XIEylEeykW7qwzvpppQ" message="_tuVeEEymEeykW7qwzvpppQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_THSG8UymEeykW7qwzvpppQ" name="Message9SendEvent" covered="_rd7XIEylEeykW7qwzvpppQ" message="_THSG8EymEeykW7qwzvpppQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_THSuAEymEeykW7qwzvpppQ" name="Message9ReceiveEvent" covered="_qcqHYEylEeykW7qwzvpppQ" message="_THSG8EymEeykW7qwzvpppQ"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_hlJz0EyoEeyCzoWXdzROgA" name="CombinedFragment7" covered="_qcqHYEylEeykW7qwzvpppQ _rd7XIEylEeykW7qwzvpppQ" interactionOperator="par">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_ozuTUEyoEeyCzoWXdzROgA" name="InteractionOperand3" covered="_qcqHYEylEeykW7qwzvpppQ _rd7XIEylEeykW7qwzvpppQ">
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_iv8zAEyoEeyCzoWXdzROgA" name="ActionExecutionSpecification7Start" covered="_qcqHYEylEeykW7qwzvpppQ" execution="_iv8L8EyoEeyCzoWXdzROgA"/>
+            <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_iv8L8EyoEeyCzoWXdzROgA" name="ActionExecutionSpecification7" covered="_qcqHYEylEeykW7qwzvpppQ" finish="_iv8zAUyoEeyCzoWXdzROgA" start="_iv8zAEyoEeyCzoWXdzROgA"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_yZJVcEyoEeyCzoWXdzROgA" name="Message7SendEvent" covered="_qcqHYEylEeykW7qwzvpppQ" message="_yZHgQEyoEeyCzoWXdzROgA"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_yZJVcUyoEeyCzoWXdzROgA" name="Message7ReceiveEvent" covered="_qcqHYEylEeykW7qwzvpppQ" message="_yZHgQEyoEeyCzoWXdzROgA"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_iv8zAUyoEeyCzoWXdzROgA" name="ActionExecutionSpecification7Finish" covered="_qcqHYEylEeykW7qwzvpppQ" execution="_iv8L8EyoEeyCzoWXdzROgA"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1tDBEEymEeykW7qwzvpppQ" name="Message7SendEvent" covered="_qcqHYEylEeykW7qwzvpppQ"/>
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_ozu6YEyoEeyCzoWXdzROgA" name="guard"/>
+          </operand>
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_obzikEyoEeyCzoWXdzROgA" name="InteractionOperand2" covered="_qcqHYEylEeykW7qwzvpppQ _rd7XIEylEeykW7qwzvpppQ">
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_9TuMoEyoEeyCzoWXdzROgA" name="ActionExecutionSpecification8Start" covered="_rd7XIEylEeykW7qwzvpppQ" execution="_9Ts-gEyoEeyCzoWXdzROgA"/>
+            <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_9Ts-gEyoEeyCzoWXdzROgA" name="ActionExecutionSpecification8" covered="_rd7XIEylEeykW7qwzvpppQ" finish="_9TuzsEyoEeyCzoWXdzROgA" start="_9TuMoEyoEeyCzoWXdzROgA"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_92pTgEyoEeyCzoWXdzROgA" name="Message8SendEvent" covered="_rd7XIEylEeykW7qwzvpppQ" message="_92oscEyoEeyCzoWXdzROgA"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_92pTgUyoEeyCzoWXdzROgA" name="Message8ReceiveEvent" covered="_rd7XIEylEeykW7qwzvpppQ" message="_92oscEyoEeyCzoWXdzROgA"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_9TuzsEyoEeyCzoWXdzROgA" name="ActionExecutionSpecification8Finish" covered="_rd7XIEylEeykW7qwzvpppQ" execution="_9Ts-gEyoEeyCzoWXdzROgA"/>
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_ob0JoEyoEeyCzoWXdzROgA" name="guard"/>
+          </operand>
+        </fragment>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_PjFncEymEeykW7qwzvpppQ" name="guard">
+          <specification xmi:type="uml:LiteralString" xmi:id="_Qho6YEymEeykW7qwzvpppQ" value="for every flight repeatedly"/>
+        </guard>
+      </operand>
+    </fragment>
+    <message xmi:type="uml:Message" xmi:id="_TG2pIEymEeykW7qwzvpppQ" name="1: getFlightInformation()" receiveEvent="_TG33QUymEeykW7qwzvpppQ" sendEvent="_TG33QEymEeykW7qwzvpppQ"/>
+    <message xmi:type="uml:Message" xmi:id="_THSG8EymEeykW7qwzvpppQ" name="3: updateTicketInfo()" messageSort="reply" receiveEvent="_THSuAEymEeykW7qwzvpppQ" sendEvent="_THSG8UymEeykW7qwzvpppQ"/>
+    <message xmi:type="uml:Message" xmi:id="_tuVeEEymEeykW7qwzvpppQ" name="2: getPayments()" receiveEvent="_tuWFIUymEeykW7qwzvpppQ" sendEvent="_tuWFIEymEeykW7qwzvpppQ"/>
+    <message xmi:type="uml:Message" xmi:id="_yZHgQEyoEeyCzoWXdzROgA" name="4: displayFlightInformation()" receiveEvent="_yZJVcUyoEeyCzoWXdzROgA" sendEvent="_yZJVcEyoEeyCzoWXdzROgA"/>
+    <message xmi:type="uml:Message" xmi:id="_92oscEyoEeyCzoWXdzROgA" name="executePayments(checkins)" receiveEvent="_92pTgUyoEeyCzoWXdzROgA" sendEvent="_92pTgEyoEeyCzoWXdzROgA"/>
   </packagedElement>
 </uml:Model>

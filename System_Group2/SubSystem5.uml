@@ -256,6 +256,13 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_yhtqcEY4EeyzvZaWA2zpUQ" name="fmes" type="_1npBMEWWEey0q6TXOapbVg">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0ZiuwEY4EeyzvZaWA2zpUQ" value="*"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_N6GJAEypEeyCzoWXdzROgA" name="executePayments">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Pkue0EypEeyCzoWXdzROgA" name="checkins">
+        <type xmi:type="uml:Class" href="SubSystem3.uml#_RThEcEVtEeyuwuc0dTQ-tQ"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q70NkEypEeyCzoWXdzROgA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q8QScEypEeyCzoWXdzROgA" value="*"/>
+      </ownedParameter>
+    </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_uOoEoEY4EeyzvZaWA2zpUQ" name="contains" visibility="package" memberEnd="_uOorsUY4EeyzvZaWA2zpUQ _uOortEY4EeyzvZaWA2zpUQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uOoEoUY4EeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
