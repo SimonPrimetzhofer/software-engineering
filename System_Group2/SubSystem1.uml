@@ -144,6 +144,17 @@ Step 8: Pilot performs take-off</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_hGMqUEV-EeywAt9CR0nlpw" name="checklist">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_VG_-8EyFEeyxf8Jv68VPeA" name="requestFuel" visibility="public"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_INReAEyGEeyxf8Jv68VPeA" name="requestLandingClearance"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_MJLS4EyGEeyxf8Jv68VPeA" name="landingDone"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PKdSkEyGEeyxf8Jv68VPeA" name="acknowledgeGate"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_TDL3oEyGEeyxf8Jv68VPeA" name="startLanding"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_U4fzcEyGEeyxf8Jv68VPeA" name="docked"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Za9SAEyGEeyxf8Jv68VPeA" name="doChecklist"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_cfidUEyGEeyxf8Jv68VPeA" name="requestStartingClearance()"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_hQkjYEyGEeyxf8Jv68VPeA" name="startTakeOff"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ixx3cEyGEeyxf8Jv68VPeA" name="moveToStrip"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_j0X84EyGEeyxf8Jv68VPeA" name="takeOff"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="__HTrUEVvEeywAt9CR0nlpw" name="CabinCrew">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_IUirYEV6EeywAt9CR0nlpw" name="members">
@@ -154,6 +165,8 @@ Step 8: Pilot performs take-off</body>
       <type xmi:type="uml:Class" href="System_Group2.uml#_Ue13UEV1EeywAt9CR0nlpw"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_sU63ckV8EeywAt9CR0nlpw" type="_v_9RsEVvEeywAt9CR0nlpw" association="_sU6QYEV8EeywAt9CR0nlpw"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_mGLAYEyGEeyxf8Jv68VPeA" name="informPassengers"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_u-XJEEyGEeyxf8Jv68VPeA" name="departPassengers"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_15LSYEVwEeywAt9CR0nlpw" name="AircraftMarshaller">
     <generalization xmi:type="uml:Generalization" xmi:id="_9DPdoEV2EeywAt9CR0nlpw">
@@ -172,6 +185,10 @@ Step 8: Pilot performs take-off</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SLKAk0Y9EeyzvZaWA2zpUQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SLKAlEY9EeyzvZaWA2zpUQ" value="*"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_xndSQEyGEeyxf8Jv68VPeA" name="provideLandingClearance"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3NkmMEyGEeyxf8Jv68VPeA" name="provideGateAndParking"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5oDEkEyGEeyxf8Jv68VPeA" name="provideNavigationAssistance"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Dul2wEyHEeyxf8Jv68VPeA" name="grantPermission"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_cm3VEEV6EeywAt9CR0nlpw" name="consists of" memberEnd="_cm6_cEV6EeywAt9CR0nlpw _cm8NkUV6EeywAt9CR0nlpw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cm5KQEV6EeywAt9CR0nlpw" source="org.eclipse.papyrus">
@@ -190,6 +207,10 @@ Step 8: Pilot performs take-off</body>
       <supplier xmi:type="uml:Interface" href="System_Group2.uml#_s6wMkEV1EeywAt9CR0nlpw"/>
       <contract xmi:type="uml:Interface" href="System_Group2.uml#_s6wMkEV1EeywAt9CR0nlpw"/>
     </interfaceRealization>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kE_2AEyKEeyxf8Jv68VPeA" name="gatherRunwayCost"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_l7VFgEyKEeyxf8Jv68VPeA" name="provideAirsideCost"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_u3HfUEyLEeyxf8Jv68VPeA" name="provideParkingLocation"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_yA1pUEyLEeyxf8Jv68VPeA" name="requestRefuel"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_-N6uwEV7EeywAt9CR0nlpw" name="manages" visibility="public" memberEnd="_-N8j8EV7EeywAt9CR0nlpw _-N9LAkV7EeywAt9CR0nlpw" navigableOwnedEnd="_-N8j8EV7EeywAt9CR0nlpw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-N784EV7EeywAt9CR0nlpw" source="org.eclipse.papyrus">
@@ -244,15 +265,13 @@ Step 8: Pilot performs take-off</body>
     <supplier xmi:type="uml:Interface" href="SubSystem2.uml#_5CJjgEY2EeyzvZaWA2zpUQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_3pX-8ExmEeyl-rkq-YrpDQ" name="land aircraft">
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_GQlf8ExnEeyl-rkq-YrpDQ" name="Pilot" coveredBy="_-dRfMExnEeyl-rkq-YrpDQ _0K53gUxnEeyl-rkq-YrpDQ _yH7dsExoEeyl-rkq-YrpDQ _yH7dsUxoEeyl-rkq-YrpDQ _L4mUgExrEeyl-rkq-YrpDQ _v0sPwUxoEeyl-rkq-YrpDQ _v0sPwExoEeyl-rkq-YrpDQ _U6wRgkxrEeyl-rkq-YrpDQ _9Ml9oExrEeyl-rkq-YrpDQ _kYjcQExrEeyl-rkq-YrpDQ _kYi1MExrEeyl-rkq-YrpDQ _9NHiEUxrEeyl-rkq-YrpDQ _NDasYExsEeyl-rkq-YrpDQ _Ima8oExsEeyl-rkq-YrpDQ _8dW14ExnEeyl-rkq-YrpDQ"/>
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_IK3bUExnEeyl-rkq-YrpDQ" name="Cabin crew" coveredBy="_jt6rMExoEeyl-rkq-YrpDQ _jt6rMUxoEeyl-rkq-YrpDQ _NDasYUxsEeyl-rkq-YrpDQ _LTe_0ExsEeyl-rkq-YrpDQ _LTeYwExsEeyl-rkq-YrpDQ _TehHkExsEeyl-rkq-YrpDQ _TehHkUxsEeyl-rkq-YrpDQ _LTe_0UxsEeyl-rkq-YrpDQ"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_GQlf8ExnEeyl-rkq-YrpDQ" name="Pilot" coveredBy="_0K53gUxnEeyl-rkq-YrpDQ _-dRfMExnEeyl-rkq-YrpDQ _yH7dsExoEeyl-rkq-YrpDQ _yH7dsUxoEeyl-rkq-YrpDQ _L4mUgExrEeyl-rkq-YrpDQ _v0sPwUxoEeyl-rkq-YrpDQ _v0sPwExoEeyl-rkq-YrpDQ _U6wRgkxrEeyl-rkq-YrpDQ _9Ml9oExrEeyl-rkq-YrpDQ _9NHiEUxrEeyl-rkq-YrpDQ _NDasYExsEeyl-rkq-YrpDQ _kYjcQExrEeyl-rkq-YrpDQ _kYi1MExrEeyl-rkq-YrpDQ _Ima8oExsEeyl-rkq-YrpDQ _8dW14ExnEeyl-rkq-YrpDQ"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_IK3bUExnEeyl-rkq-YrpDQ" name="Cabin crew" coveredBy="_NDasYUxsEeyl-rkq-YrpDQ _jt6rMExoEeyl-rkq-YrpDQ _jt6rMUxoEeyl-rkq-YrpDQ _LTe_0ExsEeyl-rkq-YrpDQ _LTeYwExsEeyl-rkq-YrpDQ _TehHkExsEeyl-rkq-YrpDQ _TehHkUxsEeyl-rkq-YrpDQ _LTe_0UxsEeyl-rkq-YrpDQ"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_NkrYoExnEeyl-rkq-YrpDQ" name="Aircraft marshaller" coveredBy="_9Ml9oUxrEeyl-rkq-YrpDQ _9NHiEExrEeyl-rkq-YrpDQ _pm8MsExrEeyl-rkq-YrpDQ _pm7loExrEeyl-rkq-YrpDQ _eStfYExrEeyl-rkq-YrpDQ _eSs4UExrEeyl-rkq-YrpDQ _dIhkMExrEeyl-rkq-YrpDQ _dIg9IExrEeyl-rkq-YrpDQ _9ND3sExrEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0K53gUxnEeyl-rkq-YrpDQ" name="Message7SendEvent" covered="_GQlf8ExnEeyl-rkq-YrpDQ" message="_0K53gExnEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-dRfMExnEeyl-rkq-YrpDQ" name="Message16SendEvent" covered="_GQlf8ExnEeyl-rkq-YrpDQ" message="_-dQ4IExnEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_v0sPwExoEeyl-rkq-YrpDQ" name="ActionExecutionSpecification23" covered="_GQlf8ExnEeyl-rkq-YrpDQ" finish="_v0sPwUxoEeyl-rkq-YrpDQ" start="_-dRfMExnEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0K53gUxnEeyl-rkq-YrpDQ" name="Message7SendEvent" covered="_GQlf8ExnEeyl-rkq-YrpDQ" message="_0K53gExnEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_jt6rMExoEeyl-rkq-YrpDQ" name="Message20SendEvent" covered="_IK3bUExnEeyl-rkq-YrpDQ" message="_jt6EIExoEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_yH7dsExoEeyl-rkq-YrpDQ" name="Message25SendEvent" covered="_GQlf8ExnEeyl-rkq-YrpDQ" message="_yH62oExoEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_jt6rMUxoEeyl-rkq-YrpDQ" name="Message20ReceiveEvent" covered="_IK3bUExnEeyl-rkq-YrpDQ" message="_jt6EIExoEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_yH7dsUxoEeyl-rkq-YrpDQ" name="Message25ReceiveEvent" covered="_GQlf8ExnEeyl-rkq-YrpDQ" message="_yH62oExoEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_L4mUgExrEeyl-rkq-YrpDQ" name="Message30SendEvent" covered="_GQlf8ExnEeyl-rkq-YrpDQ" message="_L4ltcExrEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_K9qWQExrEeyl-rkq-YrpDQ" name="ActionExecutionSpecification27" start="_L4mUgExrEeyl-rkq-YrpDQ"/>
@@ -260,14 +279,16 @@ Step 8: Pilot performs take-off</body>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_U6wRgkxrEeyl-rkq-YrpDQ" name="Message32ReceiveEvent" covered="_GQlf8ExnEeyl-rkq-YrpDQ" message="_U6wRgExrEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_kYi1MExrEeyl-rkq-YrpDQ" name="ActionExecutionSpecification35" covered="_GQlf8ExnEeyl-rkq-YrpDQ" start="_U6wRgkxrEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9Ml9oExrEeyl-rkq-YrpDQ" name="Message37SendEvent" covered="_GQlf8ExnEeyl-rkq-YrpDQ" message="_9MlWkExrEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9NHiEUxrEeyl-rkq-YrpDQ" name="Message42ReceiveEvent" covered="_GQlf8ExnEeyl-rkq-YrpDQ" message="_9NG7AExrEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_Ima8oExsEeyl-rkq-YrpDQ" name="ActionExecutionSpecification44" covered="_GQlf8ExnEeyl-rkq-YrpDQ" finish="_NDasYExsEeyl-rkq-YrpDQ" start="_9NHiEUxrEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NDasYExsEeyl-rkq-YrpDQ" name="Message49SendEvent" covered="_GQlf8ExnEeyl-rkq-YrpDQ" message="_NDaFUExsEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NDasYUxsEeyl-rkq-YrpDQ" name="Message49ReceiveEvent" covered="_IK3bUExnEeyl-rkq-YrpDQ" message="_NDaFUExsEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_jt6rMExoEeyl-rkq-YrpDQ" name="Message20SendEvent" covered="_IK3bUExnEeyl-rkq-YrpDQ" message="_jt6EIExoEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_jt6rMUxoEeyl-rkq-YrpDQ" name="Message20ReceiveEvent" covered="_IK3bUExnEeyl-rkq-YrpDQ" message="_jt6EIExoEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_kYjcQExrEeyl-rkq-YrpDQ" name="ActionExecutionSpecification35Finish" covered="_GQlf8ExnEeyl-rkq-YrpDQ" execution="_kYi1MExrEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9Ml9oUxrEeyl-rkq-YrpDQ" name="Message37ReceiveEvent" covered="_NkrYoExnEeyl-rkq-YrpDQ" message="_9MlWkExrEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_9ND3sExrEeyl-rkq-YrpDQ" name="BehaviorExecutionSpecification40" covered="_NkrYoExnEeyl-rkq-YrpDQ" finish="_9NHiEExrEeyl-rkq-YrpDQ" start="_9Ml9oUxrEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9NHiEExrEeyl-rkq-YrpDQ" name="Message42SendEvent" covered="_NkrYoExnEeyl-rkq-YrpDQ" message="_9NG7AExrEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9NHiEUxrEeyl-rkq-YrpDQ" name="Message42ReceiveEvent" covered="_GQlf8ExnEeyl-rkq-YrpDQ" message="_9NG7AExrEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_Ima8oExsEeyl-rkq-YrpDQ" name="ActionExecutionSpecification44" covered="_GQlf8ExnEeyl-rkq-YrpDQ" finish="_NDasYExsEeyl-rkq-YrpDQ" start="_9NHiEUxrEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NDasYUxsEeyl-rkq-YrpDQ" name="Message49ReceiveEvent" covered="_IK3bUExnEeyl-rkq-YrpDQ" message="_NDaFUExsEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NDasYExsEeyl-rkq-YrpDQ" name="Message49SendEvent" covered="_GQlf8ExnEeyl-rkq-YrpDQ" message="_NDaFUExsEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_LTe_0ExsEeyl-rkq-YrpDQ" name="ActionExecutionSpecification46Start" covered="_IK3bUExnEeyl-rkq-YrpDQ" execution="_LTeYwExsEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_LTeYwExsEeyl-rkq-YrpDQ" name="ActionExecutionSpecification46" covered="_IK3bUExnEeyl-rkq-YrpDQ" finish="_LTe_0UxsEeyl-rkq-YrpDQ" start="_LTe_0ExsEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TehHkExsEeyl-rkq-YrpDQ" name="Message51SendEvent" covered="_IK3bUExnEeyl-rkq-YrpDQ" message="_TegggExsEeyl-rkq-YrpDQ"/>
@@ -299,22 +320,26 @@ Step 8: Pilot performs take-off</body>
     <message xmi:type="uml:Message" xmi:id="_TegggExsEeyl-rkq-YrpDQ" name="departPassengers()" receiveEvent="_TehHkUxsEeyl-rkq-YrpDQ" sendEvent="_TehHkExsEeyl-rkq-YrpDQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_oIajwExsEeyl-rkq-YrpDQ" name="take off">
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_uKKDwExsEeyl-rkq-YrpDQ" name="Pilot" coveredBy="_PxmCgExvEeyl-rkq-YrpDQ _Z_97AExvEeyl-rkq-YrpDQ _ZIQP4ExvEeyl-rkq-YrpDQ _ZIPo0ExvEeyl-rkq-YrpDQ _aASEEExvEeyl-rkq-YrpDQ _t-0PEExvEeyl-rkq-YrpDQ _Clc74ExwEeyl-rkq-YrpDQ _ZIQ28ExvEeyl-rkq-YrpDQ _Cldi8ExwEeyl-rkq-YrpDQ _BUmYAExwEeyl-rkq-YrpDQ _BUlw8ExwEeyl-rkq-YrpDQ _HsnC8ExwEeyl-rkq-YrpDQ _Hsmb4ExwEeyl-rkq-YrpDQ _II6kcExwEeyl-rkq-YrpDQ _II7LgExwEeyl-rkq-YrpDQ _HsnqAExwEeyl-rkq-YrpDQ _m4hh0ExvEeyl-rkq-YrpDQ _My75AExvEeyl-rkq-YrpDQ _aAPn0ExvEeyl-rkq-YrpDQ"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_uKKDwExsEeyl-rkq-YrpDQ" name="Pilot" coveredBy="_PxmCgExvEeyl-rkq-YrpDQ _Z_97AExvEeyl-rkq-YrpDQ _aASEEExvEeyl-rkq-YrpDQ _t-0PEExvEeyl-rkq-YrpDQ _BUmYAExwEeyl-rkq-YrpDQ _BUlw8ExwEeyl-rkq-YrpDQ _HsnC8ExwEeyl-rkq-YrpDQ _Hsmb4ExwEeyl-rkq-YrpDQ _HsnqAExwEeyl-rkq-YrpDQ _ZIQP4ExvEeyl-rkq-YrpDQ _ZIPo0ExvEeyl-rkq-YrpDQ _Clc74ExwEeyl-rkq-YrpDQ _ZIQ28ExvEeyl-rkq-YrpDQ _Cldi8ExwEeyl-rkq-YrpDQ _II6kcExwEeyl-rkq-YrpDQ _II7LgExwEeyl-rkq-YrpDQ _m4hh0ExvEeyl-rkq-YrpDQ _My75AExvEeyl-rkq-YrpDQ _aAPn0ExvEeyl-rkq-YrpDQ"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_uyqOMExsEeyl-rkq-YrpDQ" name="Cabin crew" coveredBy="_t-02IExvEeyl-rkq-YrpDQ _5oPwUExvEeyl-rkq-YrpDQ _3_zL0ExvEeyl-rkq-YrpDQ _3_ykwExvEeyl-rkq-YrpDQ _5oQXYExvEeyl-rkq-YrpDQ"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_vlag0ExsEeyl-rkq-YrpDQ" name="Aircraft marshaller" coveredBy="_PxmCgUxvEeyl-rkq-YrpDQ _Z_9T8UxvEeyl-rkq-YrpDQ _aASEEUxvEeyl-rkq-YrpDQ _O_wV4ExvEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_PxmCgExvEeyl-rkq-YrpDQ" name="Message11SendEvent" covered="_uKKDwExsEeyl-rkq-YrpDQ" message="_PxlbcExvEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Z_97AExvEeyl-rkq-YrpDQ" name="Message15ReceiveEvent" covered="_uKKDwExsEeyl-rkq-YrpDQ" message="_Z_9T8ExvEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_aAPn0ExvEeyl-rkq-YrpDQ" name="BehaviorExecutionSpecification17" covered="_uKKDwExsEeyl-rkq-YrpDQ" finish="_aASEEExvEeyl-rkq-YrpDQ" start="_Z_97AExvEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aASEEExvEeyl-rkq-YrpDQ" name="Message19SendEvent" covered="_uKKDwExsEeyl-rkq-YrpDQ" message="_aARdAExvEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_m4hh0ExvEeyl-rkq-YrpDQ" name="ActionExecutionSpecification21" covered="_uKKDwExsEeyl-rkq-YrpDQ" finish="_t-0PEExvEeyl-rkq-YrpDQ" start="_aASEEExvEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_t-0PEExvEeyl-rkq-YrpDQ" name="Message23SendEvent" covered="_uKKDwExsEeyl-rkq-YrpDQ" message="_t-zoAExvEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_BUlw8ExwEeyl-rkq-YrpDQ" name="ActionExecutionSpecification30" covered="_uKKDwExsEeyl-rkq-YrpDQ" finish="_BUmYAExwEeyl-rkq-YrpDQ" start="_t-0PEExvEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_BUmYAExwEeyl-rkq-YrpDQ" name="ActionExecutionSpecification30Finish" covered="_uKKDwExsEeyl-rkq-YrpDQ" execution="_BUlw8ExwEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_HsnC8ExwEeyl-rkq-YrpDQ" name="ActionExecutionSpecification35Start" covered="_uKKDwExsEeyl-rkq-YrpDQ" execution="_Hsmb4ExwEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_Hsmb4ExwEeyl-rkq-YrpDQ" name="ActionExecutionSpecification35" covered="_uKKDwExsEeyl-rkq-YrpDQ" finish="_HsnqAExwEeyl-rkq-YrpDQ" start="_HsnC8ExwEeyl-rkq-YrpDQ"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_HsnqAExwEeyl-rkq-YrpDQ" name="ActionExecutionSpecification35Finish" covered="_uKKDwExsEeyl-rkq-YrpDQ" execution="_Hsmb4ExwEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_PxmCgUxvEeyl-rkq-YrpDQ" name="Message11ReceiveEvent" covered="_vlag0ExsEeyl-rkq-YrpDQ" message="_PxlbcExvEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_O_wV4ExvEeyl-rkq-YrpDQ" name="ActionExecutionSpecification8" covered="_vlag0ExsEeyl-rkq-YrpDQ" finish="_Z_9T8UxvEeyl-rkq-YrpDQ" start="_PxmCgUxvEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Z_9T8UxvEeyl-rkq-YrpDQ" name="Message15SendEvent" covered="_vlag0ExsEeyl-rkq-YrpDQ" message="_Z_9T8ExvEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Z_97AExvEeyl-rkq-YrpDQ" name="Message15ReceiveEvent" covered="_uKKDwExsEeyl-rkq-YrpDQ" message="_Z_9T8ExvEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_aAPn0ExvEeyl-rkq-YrpDQ" name="BehaviorExecutionSpecification17" covered="_uKKDwExsEeyl-rkq-YrpDQ" finish="_aASEEExvEeyl-rkq-YrpDQ" start="_Z_97AExvEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ZIQP4ExvEeyl-rkq-YrpDQ" name="ActionExecutionSpecification12Start" covered="_uKKDwExsEeyl-rkq-YrpDQ" execution="_ZIPo0ExvEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_ZIPo0ExvEeyl-rkq-YrpDQ" name="ActionExecutionSpecification12" covered="_uKKDwExsEeyl-rkq-YrpDQ" finish="_ZIQ28ExvEeyl-rkq-YrpDQ" start="_ZIQP4ExvEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aASEEExvEeyl-rkq-YrpDQ" name="Message19SendEvent" covered="_uKKDwExsEeyl-rkq-YrpDQ" message="_aARdAExvEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_m4hh0ExvEeyl-rkq-YrpDQ" name="ActionExecutionSpecification21" covered="_uKKDwExsEeyl-rkq-YrpDQ" finish="_t-0PEExvEeyl-rkq-YrpDQ" start="_aASEEExvEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aASEEUxvEeyl-rkq-YrpDQ" name="Message19ReceiveEvent" covered="_vlag0ExsEeyl-rkq-YrpDQ" message="_aARdAExvEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_t-0PEExvEeyl-rkq-YrpDQ" name="Message23SendEvent" covered="_uKKDwExsEeyl-rkq-YrpDQ" message="_t-zoAExvEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_BUlw8ExwEeyl-rkq-YrpDQ" name="ActionExecutionSpecification30" covered="_uKKDwExsEeyl-rkq-YrpDQ" finish="_BUmYAExwEeyl-rkq-YrpDQ" start="_t-0PEExvEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_t-02IExvEeyl-rkq-YrpDQ" name="Message23ReceiveEvent" covered="_uyqOMExsEeyl-rkq-YrpDQ" message="_t-zoAExvEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_3_ykwExvEeyl-rkq-YrpDQ" name="ActionExecutionSpecification25" covered="_uyqOMExsEeyl-rkq-YrpDQ" finish="_3_zL0ExvEeyl-rkq-YrpDQ" start="_t-02IExvEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5oPwUExvEeyl-rkq-YrpDQ" name="Message27SendEvent" covered="_uyqOMExsEeyl-rkq-YrpDQ" message="_5oPJQExvEeyl-rkq-YrpDQ"/>
@@ -323,12 +348,8 @@ Step 8: Pilot performs take-off</body>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_3_zL0ExvEeyl-rkq-YrpDQ" name="ActionExecutionSpecification25Finish" covered="_uyqOMExsEeyl-rkq-YrpDQ" execution="_3_ykwExvEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5oQXYExvEeyl-rkq-YrpDQ" name="Message27ReceiveEvent" covered="_uyqOMExsEeyl-rkq-YrpDQ" message="_5oPJQExvEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Cldi8ExwEeyl-rkq-YrpDQ" name="Message32ReceiveEvent" covered="_uKKDwExsEeyl-rkq-YrpDQ" message="_ClcU0ExwEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_BUmYAExwEeyl-rkq-YrpDQ" name="ActionExecutionSpecification30Finish" covered="_uKKDwExsEeyl-rkq-YrpDQ" execution="_BUlw8ExwEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_HsnC8ExwEeyl-rkq-YrpDQ" name="ActionExecutionSpecification35Start" covered="_uKKDwExsEeyl-rkq-YrpDQ" execution="_Hsmb4ExwEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_Hsmb4ExwEeyl-rkq-YrpDQ" name="ActionExecutionSpecification35" covered="_uKKDwExsEeyl-rkq-YrpDQ" finish="_HsnqAExwEeyl-rkq-YrpDQ" start="_HsnC8ExwEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_II6kcExwEeyl-rkq-YrpDQ" name="Message38SendEvent" covered="_uKKDwExsEeyl-rkq-YrpDQ" message="_II59YExwEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_II7LgExwEeyl-rkq-YrpDQ" name="Message38ReceiveEvent" covered="_uKKDwExsEeyl-rkq-YrpDQ" message="_II59YExwEeyl-rkq-YrpDQ"/>
-    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_HsnqAExwEeyl-rkq-YrpDQ" name="ActionExecutionSpecification35Finish" covered="_uKKDwExsEeyl-rkq-YrpDQ" execution="_Hsmb4ExwEeyl-rkq-YrpDQ"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_My75AExvEeyl-rkq-YrpDQ" name="ActionExecutionSpecification6" covered="_uKKDwExsEeyl-rkq-YrpDQ" finish="_PxmCgExvEeyl-rkq-YrpDQ"/>
     <message xmi:type="uml:Message" xmi:id="_17qRMExsEeyl-rkq-YrpDQ" name="doChecklists()"/>
     <message xmi:type="uml:Message" xmi:id="_GcTuIExvEeyl-rkq-YrpDQ" name="Message8"/>
@@ -341,7 +362,23 @@ Step 8: Pilot performs take-off</body>
     <message xmi:type="uml:Message" xmi:id="_II59YExwEeyl-rkq-YrpDQ" name="takeOff()" receiveEvent="_II7LgExwEeyl-rkq-YrpDQ" sendEvent="_II6kcExwEeyl-rkq-YrpDQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_RXFkMExwEeyl-rkq-YrpDQ" name="Refuel aircraft">
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_izLLIExxEeyl-rkq-YrpDQ" name="Pilot"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_izLLIExxEeyl-rkq-YrpDQ" name="Pilot" coveredBy="_2AdkwEyEEeyxf8Jv68VPeA _2AvRkUyEEeyxf8Jv68VPeA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_xHK6kEyEEeyxf8Jv68VPeA" name="Maintenance-Vehicle Driver" coveredBy="_2AdkwUyEEeyxf8Jv68VPeA _2AvRkEyEEeyxf8Jv68VPeA _9hklwEyEEeyxf8Jv68VPeA _9hklwUyEEeyxf8Jv68VPeA _BWMG4UyFEeyxf8Jv68VPeA _BWMt8EyFEeyxf8Jv68VPeA _6FZZ0EyEEeyxf8Jv68VPeA _6FYywEyEEeyxf8Jv68VPeA _2As1UEyEEeyxf8Jv68VPeA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2AdkwEyEEeyxf8Jv68VPeA" name="Message3SendEvent" covered="_izLLIExxEeyl-rkq-YrpDQ" message="_2Ac9sEyEEeyxf8Jv68VPeA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2AdkwUyEEeyxf8Jv68VPeA" name="Message3ReceiveEvent" covered="_xHK6kEyEEeyxf8Jv68VPeA" message="_2Ac9sEyEEeyxf8Jv68VPeA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_2As1UEyEEeyxf8Jv68VPeA" name="BehaviorExecutionSpecification6" covered="_xHK6kEyEEeyxf8Jv68VPeA" finish="_2AvRkEyEEeyxf8Jv68VPeA" start="_2AdkwUyEEeyxf8Jv68VPeA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2AvRkEyEEeyxf8Jv68VPeA" name="Message8SendEvent" covered="_xHK6kEyEEeyxf8Jv68VPeA" message="_2AuqgEyEEeyxf8Jv68VPeA"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_6FYywEyEEeyxf8Jv68VPeA" name="ActionExecutionSpecification10" covered="_xHK6kEyEEeyxf8Jv68VPeA" start="_2AvRkEyEEeyxf8Jv68VPeA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2AvRkUyEEeyxf8Jv68VPeA" name="Message8ReceiveEvent" covered="_izLLIExxEeyl-rkq-YrpDQ" message="_2AuqgEyEEeyxf8Jv68VPeA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9hklwEyEEeyxf8Jv68VPeA" name="Message12SendEvent" covered="_xHK6kEyEEeyxf8Jv68VPeA" message="_9hj-sEyEEeyxf8Jv68VPeA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9hklwUyEEeyxf8Jv68VPeA" name="Message12ReceiveEvent" covered="_xHK6kEyEEeyxf8Jv68VPeA" message="_9hj-sEyEEeyxf8Jv68VPeA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BWMG4UyFEeyxf8Jv68VPeA" name="Message15SendEvent" covered="_xHK6kEyEEeyxf8Jv68VPeA" message="_BWMG4EyFEeyxf8Jv68VPeA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BWMt8EyFEeyxf8Jv68VPeA" name="Message15ReceiveEvent" covered="_xHK6kEyEEeyxf8Jv68VPeA" message="_BWMG4EyFEeyxf8Jv68VPeA"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_6FZZ0EyEEeyxf8Jv68VPeA" name="ActionExecutionSpecification10Finish" covered="_xHK6kEyEEeyxf8Jv68VPeA" execution="_6FYywEyEEeyxf8Jv68VPeA"/>
+    <message xmi:type="uml:Message" xmi:id="_2Ac9sEyEEeyxf8Jv68VPeA" name="requestRefuel()" receiveEvent="_2AdkwUyEEeyxf8Jv68VPeA" sendEvent="_2AdkwEyEEeyxf8Jv68VPeA"/>
+    <message xmi:type="uml:Message" xmi:id="_2AuqgEyEEeyxf8Jv68VPeA" name="acknowledgeRefuelRequest()" messageSort="reply" receiveEvent="_2AvRkUyEEeyxf8Jv68VPeA" sendEvent="_2AvRkEyEEeyxf8Jv68VPeA"/>
+    <message xmi:type="uml:Message" xmi:id="_9hj-sEyEEeyxf8Jv68VPeA" name="moveToPlane()" receiveEvent="_9hklwUyEEeyxf8Jv68VPeA" sendEvent="_9hklwEyEEeyxf8Jv68VPeA"/>
+    <message xmi:type="uml:Message" xmi:id="_BWMG4EyFEeyxf8Jv68VPeA" name="refuelPlane()" receiveEvent="_BWMt8EyFEeyxf8Jv68VPeA" sendEvent="_BWMG4UyFEeyxf8Jv68VPeA"/>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_KqdeEEVzEeywAt9CR0nlpw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KqesMEVzEeywAt9CR0nlpw" source="http://www.eclipse.org/uml2/2.0.0/UML">
