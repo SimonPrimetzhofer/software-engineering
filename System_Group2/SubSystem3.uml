@@ -230,6 +230,16 @@ Step 5: Passenger leaves border police office</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_zmgEEkY_EeyzvZaWA2zpUQ" name="" association="_zmfdAEY_EeyzvZaWA2zpUQ">
       <type xmi:type="uml:Class" href="SubSystem2.uml#_EZ-HgEVfEeybjKjyLz0qtQ"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_CoDAEEx0Eey77OiPVLUrtw" name="findFlight">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_L-PTYEx0Eey77OiPVLUrtw" name="flightNumber" effect="read">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_T9JqsEx0Eey77OiPVLUrtw" name="displayFlightInformation">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_a6JSAEx0Eey77OiPVLUrtw" direction="return" effect="read">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="__GhvkEVsEeyuwuc0dTQ-tQ" name="Passport">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_WBp4cEV2Eeyuwuc0dTQ-tQ" name="passportNumber">
@@ -262,6 +272,7 @@ Step 5: Passenger leaves border police office</body>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_9uJYsEcfEeyJqrRVtgiYew" client="_DNaFYEVtEeyuwuc0dTQ-tQ" supplier="_pPtloEcfEeyJqrRVtgiYew" contract="_pPtloEcfEeyJqrRVtgiYew"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_11fPYEx6EeykRZQxHWQHxg" name="enter"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_IINygEVtEeyuwuc0dTQ-tQ" name="IndividualSecurityCheck">
     <generalization xmi:type="uml:Generalization" xmi:id="_LZ9QEEVtEeyuwuc0dTQ-tQ" general="_DNaFYEVtEeyuwuc0dTQ-tQ"/>
@@ -273,6 +284,13 @@ Step 5: Passenger leaves border police office</body>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QYoIgEV4Eeyuwuc0dTQ-tQ" value="*"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BhGCQEx4Eey77OiPVLUrtw" name="removeForbiddenItems"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FW7rYEx4Eey77OiPVLUrtw" name="scanPassenger"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_aWnxYEx4Eey77OiPVLUrtw" name="askQuestion">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_e5Ny0Ex4Eey77OiPVLUrtw" name="question" effect="read">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_RThEcEVtEeyuwuc0dTQ-tQ" name="CheckIn">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_bSeKcEV5Eeyuwuc0dTQ-tQ" name="checkInCounter">
@@ -310,6 +328,35 @@ Step 5: Passenger leaves border police office</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_YZxRQEV0Eeyuwuc0dTQ-tQ" name="birthdate">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_cuOewEx0Eey77OiPVLUrtw" name="saveFlightInfo">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_iMFOkEx0Eey77OiPVLUrtw" name="flightInfo" type="_ncQ5sEVsEeyuwuc0dTQ-tQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_pSpBkEx0Eey77OiPVLUrtw" name="handOverPassport">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_1R1XcEx0Eey77OiPVLUrtw" type="__GhvkEVsEeyuwuc0dTQ-tQ" direction="return" effect="read"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FWJIkEx1Eey77OiPVLUrtw" name="saveFlightInfo">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_NR-9wEx1Eey77OiPVLUrtw" name="flightInfo" type="_ncQ5sEVsEeyuwuc0dTQ-tQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_miVnsEx1Eey77OiPVLUrtw" name="handOverPassport">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_p1fagEx1Eey77OiPVLUrtw" type="__GhvkEVsEeyuwuc0dTQ-tQ" direction="return" effect="read"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_OmoAAEx2Eey77OiPVLUrtw" name="reasonAndDurationOfStay">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Tojo0Ex2Eey77OiPVLUrtw" direction="return" effect="read">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_GnvL8Ex4Eey77OiPVLUrtw" name="handOverForbiddenItems"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gecrQEx4Eey77OiPVLUrtw" name="answerQuestion">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_kSwDUEx4Eey77OiPVLUrtw" direction="return" effect="read">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_yT30sEx4Eey77OiPVLUrtw" name="question">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4YTKYEx6EeykRZQxHWQHxg" name="throwAway">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_D46t4Ex7EeykRZQxHWQHxg" name="item" type="_IX56sEV1Eeyuwuc0dTQ-tQ" effect="read"/>
+    </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_kFiuIEVvEeyuwuc0dTQ-tQ" name="is performed on" visibility="public" memberEnd="_kLY3cEVvEeyuwuc0dTQ-tQ _kLm54EVvEeyuwuc0dTQ-tQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kLTX4EVvEeyuwuc0dTQ-tQ" source="org.eclipse.papyrus">
@@ -472,6 +519,16 @@ Step 5: Passenger leaves border police office</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o9FvIEcgEeyJqrRVtgiYew" value="*"/>
     </ownedAttribute>
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Bba7sEcgEeyJqrRVtgiYew" client="_kUBuwEcfEeyJqrRVtgiYew" supplier="_pPtloEcfEeyJqrRVtgiYew" contract="_pPtloEcfEeyJqrRVtgiYew"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_2vtDoEx0Eey77OiPVLUrtw" name="checkVisaValidity"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5z5NYEx0Eey77OiPVLUrtw" name="confirmIdentity"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7nlYkEx0Eey77OiPVLUrtw" name="getReasonAndDurationOfStay"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_rEgLUEx1Eey77OiPVLUrtw" name="checkVisaValidity"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_46ZkIEx1Eey77OiPVLUrtw" name="confirmIdentity"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_MdVYQEx2Eey77OiPVLUrtw" name="getReasonAndDurationOfStay"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_pCp9cEx3Eey77OiPVLUrtw" name="returnPassport"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ZjWMQEx2Eey77OiPVLUrtw" name="checkNationality"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_c9f-8Ex2Eey77OiPVLUrtw" name="checkWarrants"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_d6LpoEx2Eey77OiPVLUrtw" name="checkFees"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_pPtloEcfEeyJqrRVtgiYew" name="Check">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_tGlJgEcfEeyJqrRVtgiYew" name="checkPassed">
@@ -547,13 +604,13 @@ Step 5: Passenger leaves border police office</body>
     <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_s2Rj0EvZEeyOoNG3x3u_Yw" name="BehaviorExecutionSpecification31" covered="_cGEvUEvUEeyOoNG3x3u_Yw" finish="_s2UAEEvZEeyOoNG3x3u_Yw" start="_s15JUUvZEeyOoNG3x3u_Yw"/>
     <fragment xmi:type="uml:CombinedFragment" xmi:id="_IecEkEvYEeyOoNG3x3u_Yw" name="CombinedFragment27" covered="_cGEvUEvUEeyOoNG3x3u_Yw _c6bkcEvUEeyOoNG3x3u_Yw" interactionOperator="alt">
       <operand xmi:type="uml:InteractionOperand" xmi:id="_7BwnkEvYEeyOoNG3x3u_Yw" name="InteractionOperand2" covered="_cGEvUEvUEeyOoNG3x3u_Yw _c6bkcEvUEeyOoNG3x3u_Yw">
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_s2UAEEvZEeyOoNG3x3u_Yw" name="Message33SendEvent" covered="_cGEvUEvUEeyOoNG3x3u_Yw" message="_s2TZAEvZEeyOoNG3x3u_Yw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_s2UAEUvZEeyOoNG3x3u_Yw" name="Message33ReceiveEvent" covered="_c6bkcEvUEeyOoNG3x3u_Yw" message="_s2TZAEvZEeyOoNG3x3u_Yw"/>
         <guard xmi:type="uml:InteractionConstraint" xmi:id="_7BxOoEvYEeyOoNG3x3u_Yw" name="guard">
           <specification xmi:type="uml:LiteralString" xmi:id="_8CHRUEvYEeyOoNG3x3u_Yw" value="has baggage items"/>
         </guard>
       </operand>
     </fragment>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_s2UAEEvZEeyOoNG3x3u_Yw" name="Message33SendEvent" covered="_cGEvUEvUEeyOoNG3x3u_Yw" message="_s2TZAEvZEeyOoNG3x3u_Yw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_s2UAEUvZEeyOoNG3x3u_Yw" name="Message33ReceiveEvent" covered="_c6bkcEvUEeyOoNG3x3u_Yw" message="_s2TZAEvZEeyOoNG3x3u_Yw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_l5ilwEvaEeyOoNG3x3u_Yw" name="Message34SendEvent" covered="_c6bkcEvUEeyOoNG3x3u_Yw" message="_l5h-sEvaEeyOoNG3x3u_Yw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_l5jM0EvaEeyOoNG3x3u_Yw" name="Message34ReceiveEvent" covered="_cGEvUEvUEeyOoNG3x3u_Yw" message="_l5h-sEvaEeyOoNG3x3u_Yw"/>
     <fragment xmi:type="uml:InteractionUse" xmi:id="_S86l4EvpEeyHF9epGOU4zg" name="InteractionUse39" covered="_c6bkcEvUEeyOoNG3x3u_Yw" refersTo="_ClSYgEvbEeyOoNG3x3u_Yw"/>
@@ -706,23 +763,23 @@ Step 5: Passenger leaves border police office</body>
     <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_WdWmUExjEey77OiPVLUrtw" name="BehaviorExecutionSpecification9" covered="_JllCoExjEey77OiPVLUrtw" finish="_WdZCkUxjEey77OiPVLUrtw" start="_Wc-L0ExjEey77OiPVLUrtw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_WdZCkUxjEey77OiPVLUrtw" name="Message11SendEvent" covered="_JllCoExjEey77OiPVLUrtw" message="_WdZCkExjEey77OiPVLUrtw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_WdZpoExjEey77OiPVLUrtw" name="Message11ReceiveEvent" covered="_IYK0UExjEey77OiPVLUrtw" message="_WdZCkExjEey77OiPVLUrtw"/>
-    <fragment xmi:type="uml:CombinedFragment" xmi:id="_m_9dAExjEey77OiPVLUrtw" name="CombinedFragment13" visibility="public" covered="_JllCoExjEey77OiPVLUrtw _IYK0UExjEey77OiPVLUrtw" interactionOperator="loop">
-      <operand xmi:type="uml:InteractionOperand" xmi:id="_uG8GwExjEey77OiPVLUrtw" name="InteractionOperand2" covered="_JllCoExjEey77OiPVLUrtw _IYK0UExjEey77OiPVLUrtw">
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_m_9dAExjEey77OiPVLUrtw" name="CombinedFragment13" visibility="public" covered="_IYK0UExjEey77OiPVLUrtw _JllCoExjEey77OiPVLUrtw" interactionOperator="loop">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_uG8GwExjEey77OiPVLUrtw" name="InteractionOperand2" covered="_IYK0UExjEey77OiPVLUrtw _JllCoExjEey77OiPVLUrtw">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_yc-58ExjEey77OiPVLUrtw" name="Message14SendEvent" covered="_IYK0UExjEey77OiPVLUrtw" message="_yc-S4ExjEey77OiPVLUrtw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_yc-58UxjEey77OiPVLUrtw" name="Message14ReceiveEvent" covered="_JllCoExjEey77OiPVLUrtw" message="_yc-S4ExjEey77OiPVLUrtw"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ydVfQExjEey77OiPVLUrtw" name="BehaviorExecutionSpecification17" covered="_JllCoExjEey77OiPVLUrtw" finish="_ydX7gExjEey77OiPVLUrtw" start="_yc-58UxjEey77OiPVLUrtw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ydX7gExjEey77OiPVLUrtw" name="Message19SendEvent" covered="_JllCoExjEey77OiPVLUrtw" message="_ydXUcExjEey77OiPVLUrtw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ydX7gUxjEey77OiPVLUrtw" name="Message19ReceiveEvent" covered="_IYK0UExjEey77OiPVLUrtw" message="_ydXUcExjEey77OiPVLUrtw"/>
         <guard xmi:type="uml:InteractionConstraint" xmi:id="_uG8GwUxjEey77OiPVLUrtw" name="guard">
           <specification xmi:type="uml:LiteralString" xmi:id="_xmHjYExjEey77OiPVLUrtw" value="for every relevant security question"/>
         </guard>
       </operand>
     </fragment>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_yc-58ExjEey77OiPVLUrtw" name="Message14SendEvent" covered="_IYK0UExjEey77OiPVLUrtw" message="_yc-S4ExjEey77OiPVLUrtw"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_yc-58UxjEey77OiPVLUrtw" name="Message14ReceiveEvent" covered="_JllCoExjEey77OiPVLUrtw" message="_yc-S4ExjEey77OiPVLUrtw"/>
-    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ydVfQExjEey77OiPVLUrtw" name="BehaviorExecutionSpecification17" covered="_JllCoExjEey77OiPVLUrtw" finish="_ydX7gExjEey77OiPVLUrtw" start="_yc-58UxjEey77OiPVLUrtw"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ydX7gExjEey77OiPVLUrtw" name="Message19SendEvent" covered="_JllCoExjEey77OiPVLUrtw" message="_ydXUcExjEey77OiPVLUrtw"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ydX7gUxjEey77OiPVLUrtw" name="Message19ReceiveEvent" covered="_IYK0UExjEey77OiPVLUrtw" message="_ydXUcExjEey77OiPVLUrtw"/>
     <message xmi:type="uml:Message" xmi:id="_KjCJYExjEey77OiPVLUrtw" name="1: removeForbiddenItems()" receiveEvent="_KjSoEExjEey77OiPVLUrtw" sendEvent="_KjSBAExjEey77OiPVLUrtw"/>
     <message xmi:type="uml:Message" xmi:id="_Wc8WoExjEey77OiPVLUrtw" name="2: scanPassenger()" receiveEvent="_Wc-L0ExjEey77OiPVLUrtw" sendEvent="_Wc9kwExjEey77OiPVLUrtw"/>
     <message xmi:type="uml:Message" xmi:id="_WdZCkExjEey77OiPVLUrtw" name="handOverForbiddenItems()" messageSort="reply" receiveEvent="_WdZpoExjEey77OiPVLUrtw" sendEvent="_WdZCkUxjEey77OiPVLUrtw"/>
     <message xmi:type="uml:Message" xmi:id="_yc-S4ExjEey77OiPVLUrtw" name="askQuestion(question)" receiveEvent="_yc-58UxjEey77OiPVLUrtw" sendEvent="_yc-58ExjEey77OiPVLUrtw"/>
-    <message xmi:type="uml:Message" xmi:id="_ydXUcExjEey77OiPVLUrtw" name="answerQuestion()" messageSort="reply" receiveEvent="_ydX7gUxjEey77OiPVLUrtw" sendEvent="_ydX7gExjEey77OiPVLUrtw"/>
+    <message xmi:type="uml:Message" xmi:id="_ydXUcExjEey77OiPVLUrtw" name="answerQuestion(question)" messageSort="reply" receiveEvent="_ydX7gUxjEey77OiPVLUrtw" sendEvent="_ydX7gExjEey77OiPVLUrtw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_bWwZsExtEey77OiPVLUrtw" name="Check passport">
     <lifeline xmi:type="uml:Lifeline" xmi:id="_nROgQExwEey77OiPVLUrtw" name="Passenger" coveredBy="_u9fBUExwEey77OiPVLUrtw _u94p8ExwEey77OiPVLUrtw"/>
@@ -755,9 +812,9 @@ Step 5: Passenger leaves border police office</body>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_Nis-gExuEey77OiPVLUrtw" name="Confirm visa">
     <lifeline xmi:type="uml:Lifeline" xmi:id="_UJXJcExuEey77OiPVLUrtw" name="Border police" coveredBy="_dQUG4ExuEey77OiPVLUrtw _gOxcEExuEey77OiPVLUrtw _gOyqMExuEey77OiPVLUrtw _j82QUExuEey77OiPVLUrtw _j83ecExuEey77OiPVLUrtw _dQlMoExuEey77OiPVLUrtw _an5oQExwEey77OiPVLUrtw _dQhiQExuEey77OiPVLUrtw"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_W2vVsExuEey77OiPVLUrtw" name="Passenger" coveredBy="_dQTf0ExuEey77OiPVLUrtw _dQlzsExuEey77OiPVLUrtw _an4aIExwEey77OiPVLUrtw _Yb5DsExwEey77OiPVLUrtw"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_dQTf0ExuEey77OiPVLUrtw" name="Message3SendEvent" covered="_W2vVsExuEey77OiPVLUrtw" message="_dQS4wExuEey77OiPVLUrtw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_dQUG4ExuEey77OiPVLUrtw" name="Message3ReceiveEvent" covered="_UJXJcExuEey77OiPVLUrtw" message="_dQS4wExuEey77OiPVLUrtw"/>
     <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_dQhiQExuEey77OiPVLUrtw" name="BehaviorExecutionSpecification6" covered="_UJXJcExuEey77OiPVLUrtw" finish="_dQlMoExuEey77OiPVLUrtw" start="_dQUG4ExuEey77OiPVLUrtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_dQTf0ExuEey77OiPVLUrtw" name="Message3SendEvent" covered="_W2vVsExuEey77OiPVLUrtw" message="_dQS4wExuEey77OiPVLUrtw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_gOxcEExuEey77OiPVLUrtw" name="Message10SendEvent" covered="_UJXJcExuEey77OiPVLUrtw" message="_gOvm4ExuEey77OiPVLUrtw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_gOyqMExuEey77OiPVLUrtw" name="Message10ReceiveEvent" covered="_UJXJcExuEey77OiPVLUrtw" message="_gOvm4ExuEey77OiPVLUrtw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_j82QUExuEey77OiPVLUrtw" name="Message13SendEvent" covered="_UJXJcExuEey77OiPVLUrtw" message="_j8z0EExuEey77OiPVLUrtw"/>
@@ -767,13 +824,13 @@ Step 5: Passenger leaves border police office</body>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_Yb5DsExwEey77OiPVLUrtw" name="ActionExecutionSpecification16" covered="_W2vVsExuEey77OiPVLUrtw" finish="_an4aIExwEey77OiPVLUrtw" start="_dQlzsExuEey77OiPVLUrtw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_an4aIExwEey77OiPVLUrtw" name="Message18SendEvent" covered="_W2vVsExuEey77OiPVLUrtw" message="_an2k8ExwEey77OiPVLUrtw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_an5oQExwEey77OiPVLUrtw" name="Message18ReceiveEvent" covered="_UJXJcExuEey77OiPVLUrtw" message="_an2k8ExwEey77OiPVLUrtw"/>
-    <message xmi:type="uml:Message" xmi:id="_dQS4wExuEey77OiPVLUrtw" name="1: handOverPassport" receiveEvent="_dQUG4ExuEey77OiPVLUrtw" sendEvent="_dQTf0ExuEey77OiPVLUrtw"/>
+    <message xmi:type="uml:Message" xmi:id="_dQS4wExuEey77OiPVLUrtw" name="1: handOverPassport()" receiveEvent="_dQUG4ExuEey77OiPVLUrtw" sendEvent="_dQTf0ExuEey77OiPVLUrtw"/>
     <message xmi:type="uml:Message" xmi:id="_dQj-gExuEey77OiPVLUrtw" name="1.3: getReasonAndDurationOfStay()" receiveEvent="_dQlzsExuEey77OiPVLUrtw" sendEvent="_dQlMoExuEey77OiPVLUrtw"/>
     <message xmi:type="uml:Message" xmi:id="_gOvm4ExuEey77OiPVLUrtw" name="1.1: checkVisaValidity()" receiveEvent="_gOyqMExuEey77OiPVLUrtw" sendEvent="_gOxcEExuEey77OiPVLUrtw"/>
     <message xmi:type="uml:Message" xmi:id="_j8z0EExuEey77OiPVLUrtw" name="1.2: confirmIdentity()" receiveEvent="_j83ecExuEey77OiPVLUrtw" sendEvent="_j82QUExuEey77OiPVLUrtw"/>
-    <message xmi:type="uml:Message" xmi:id="_an2k8ExwEey77OiPVLUrtw" name="1.4: answerReasonAndDuration()" messageSort="reply" receiveEvent="_an5oQExwEey77OiPVLUrtw" sendEvent="_an4aIExwEey77OiPVLUrtw"/>
+    <message xmi:type="uml:Message" xmi:id="_an2k8ExwEey77OiPVLUrtw" name="1.4:reasonAndDuration()" messageSort="reply" receiveEvent="_an5oQExwEey77OiPVLUrtw" sendEvent="_an4aIExwEey77OiPVLUrtw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interaction" xmi:id="_r5sDsExxEey77OiPVLUrtw" name="Interaction65">
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_r5sDsExxEey77OiPVLUrtw" name="Gather flight information">
     <lifeline xmi:type="uml:Lifeline" xmi:id="_tpLEUExxEey77OiPVLUrtw" name="Passenger" coveredBy="_1UaRsExxEey77OiPVLUrtw _1U_ggExxEey77OiPVLUrtw _nTCMMExyEey77OiPVLUrtw _nTA-EExyEey77OiPVLUrtw _n3DfQExyEey77OiPVLUrtw _n3EtYExyEey77OiPVLUrtw _nTCMMUxyEey77OiPVLUrtw"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_uOUYwExxEey77OiPVLUrtw" name="Flight information system" coveredBy="_1Ubf0ExxEey77OiPVLUrtw _1U-5cExxEey77OiPVLUrtw _1U6oAExxEey77OiPVLUrtw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1UaRsExxEey77OiPVLUrtw" name="Message3SendEvent" covered="_tpLEUExxEey77OiPVLUrtw" message="_1UYcgExxEey77OiPVLUrtw"/>
