@@ -207,6 +207,8 @@ Step 8: Pilot performs take-off</body>
       <supplier xmi:type="uml:Interface" href="System_Group2.uml#_s6wMkEV1EeywAt9CR0nlpw"/>
       <contract xmi:type="uml:Interface" href="System_Group2.uml#_s6wMkEV1EeywAt9CR0nlpw"/>
     </interfaceRealization>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kE_2AEyKEeyxf8Jv68VPeA" name="gatherRunwayCost"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_l7VFgEyKEeyxf8Jv68VPeA" name="provideAirsideCost"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_-N6uwEV7EeywAt9CR0nlpw" name="manages" visibility="public" memberEnd="_-N8j8EV7EeywAt9CR0nlpw _-N9LAkV7EeywAt9CR0nlpw" navigableOwnedEnd="_-N8j8EV7EeywAt9CR0nlpw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-N784EV7EeywAt9CR0nlpw" source="org.eclipse.papyrus">

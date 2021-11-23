@@ -539,6 +539,14 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ktb_9kV7EeywAt9CR0nlpw"/>
       </children>
       <children xmi:type="notation:BasicCompartment" xmi:id="_Ktb_90V7EeywAt9CR0nlpw" type="Class_OperationCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_kFTYAEyKEeyxf8Jv68VPeA" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem1.uml#_kE_2AEyKEeyxf8Jv68VPeA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_kFTYAUyKEeyxf8Jv68VPeA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_l7jH8EyKEeyxf8Jv68VPeA" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem1.uml#_l7VFgEyKEeyxf8Jv68VPeA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_l7jH8UyKEeyxf8Jv68VPeA"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_Ktb_-EV7EeywAt9CR0nlpw"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_Ktb_-UV7EeywAt9CR0nlpw"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_Ktb_-kV7EeywAt9CR0nlpw"/>

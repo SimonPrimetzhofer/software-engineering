@@ -1064,6 +1064,14 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5pIZGUY4EeyzvZaWA2zpUQ"/>
       </children>
       <children xmi:type="notation:BasicCompartment" xmi:id="_5pIZGkY4EeyzvZaWA2zpUQ" type="Class_OperationCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_qlix4EyKEeyxf8Jv68VPeA" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem2.uml#_qlRsIEyKEeyxf8Jv68VPeA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_qlix4UyKEeyxf8Jv68VPeA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_snT1UEyKEeyxf8Jv68VPeA" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem2.uml#_snA6YEyKEeyxf8Jv68VPeA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_snT1UUyKEeyxf8Jv68VPeA"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_5pIZG0Y4EeyzvZaWA2zpUQ"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_5pIZHEY4EeyzvZaWA2zpUQ"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_5pIZHUY4EeyzvZaWA2zpUQ"/>

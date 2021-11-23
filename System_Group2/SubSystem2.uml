@@ -473,6 +473,8 @@ Step 10: firetruck driver awaits new orders</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TQOvFEY5EeyzvZaWA2zpUQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TQOvFUY5EeyzvZaWA2zpUQ" value="1"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qlRsIEyKEeyxf8Jv68VPeA" name="gatherMaintenanceCost"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_snA6YEyKEeyxf8Jv68VPeA" name="provideLandsideCost"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_PbeEAEY5EeyzvZaWA2zpUQ" name="contains" memberEnd="_PberEkY5EeyzvZaWA2zpUQ _PbfSIUY5EeyzvZaWA2zpUQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PberEEY5EeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
