@@ -1088,6 +1088,26 @@
           <element xmi:type="uml:Operation" href="SubSystem2.uml#_BHXjkEyMEeyxf8Jv68VPeA"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_BHpQYUyMEeyxf8Jv68VPeA"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_Mn9LsEypEeyAJcn3Jqu6tg" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem2.uml#_Mnre4EypEeyAJcn3Jqu6tg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Mn9LsUypEeyAJcn3Jqu6tg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_RDrwIEypEeyAJcn3Jqu6tg" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem2.uml#_RDaDUEypEeyAJcn3Jqu6tg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_RDrwIUypEeyAJcn3Jqu6tg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_VPpaQEypEeyAJcn3Jqu6tg" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem2.uml#_VPXGYEypEeyAJcn3Jqu6tg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_VPpaQUypEeyAJcn3Jqu6tg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_WYXV0EypEeyAJcn3Jqu6tg" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem2.uml#_WYJ6cEypEeyAJcn3Jqu6tg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_WYXV0UypEeyAJcn3Jqu6tg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_YUY9oEypEeyAJcn3Jqu6tg" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem2.uml#_YUMJUEypEeyAJcn3Jqu6tg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_YUY9oUypEeyAJcn3Jqu6tg"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_5pIZG0Y4EeyzvZaWA2zpUQ"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_5pIZHEY4EeyzvZaWA2zpUQ"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_5pIZHUY4EeyzvZaWA2zpUQ"/>
