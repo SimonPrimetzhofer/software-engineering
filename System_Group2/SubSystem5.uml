@@ -159,6 +159,13 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_W9-eUkWYEey0q6TXOapbVg" name="" type="_1npBMEWWEey0q6TXOapbVg" association="_W993QEWYEey0q6TXOapbVg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v-_rwEWYEey0q6TXOapbVg"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_MZw4UEyhEeyAJcn3Jqu6tg" name="getAvailableFacilities"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_TKWbUEyhEeyAJcn3Jqu6tg" name="requestFacility"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_UNmBAEyhEeyAJcn3Jqu6tg" name="signContract"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_VGkQYEyhEeyAJcn3Jqu6tg" name="payPrice"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Wgl-YEyhEeyAJcn3Jqu6tg" name="sendSignedContract"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ZNwvQEyhEeyAJcn3Jqu6tg" name="changeFlightInfo"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_agjz4EyhEeyAJcn3Jqu6tg" name="sendFlightInfo"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_ujnB8EWPEey0q6TXOapbVg" name="Facility">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_wZJAMEWPEey0q6TXOapbVg" name="name">
@@ -225,6 +232,32 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yFaQUEY1EeyzvZaWA2zpUQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yFcFgEY1EeyzvZaWA2zpUQ" value="*"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_OCTY4EygEeyAJcn3Jqu6tg" name="getMaintenanceType"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RhAUYEygEeyAJcn3Jqu6tg" name="getVehicleInfo"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Sp2y0EygEeyAJcn3Jqu6tg" name="sendToInspection"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_UWvLYEygEeyAJcn3Jqu6tg" name="payRepairment"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Vcst4EygEeyAJcn3Jqu6tg" name="payNew"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_XFwWYEygEeyAJcn3Jqu6tg" name="getFuelInfo"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Zcm5AEygEeyAJcn3Jqu6tg" name="checkDepot"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_apuzcEygEeyAJcn3Jqu6tg" name="deliverFuel"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_cev0UEygEeyAJcn3Jqu6tg" name="reorderFuel"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_eQeQoEygEeyAJcn3Jqu6tg" name="getMaterialInfo"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gK0dcEygEeyAJcn3Jqu6tg" name="deliverMaterial()"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_hAh9cEygEeyAJcn3Jqu6tg" name="reorderMaterial"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_itKeYEygEeyAJcn3Jqu6tg" name="getEquipmentInfo"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_jpm4gEygEeyAJcn3Jqu6tg" name="checkRepairmentCost"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_peNUYEygEeyAJcn3Jqu6tg" name="accountPayment"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_uZYN4EygEeyAJcn3Jqu6tg" name="getLists"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_vI60cEygEeyAJcn3Jqu6tg" name="getWorkrates"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_vzQx8EygEeyAJcn3Jqu6tg" name="signEmps"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_xhWEYEygEeyAJcn3Jqu6tg" name="assignEmps"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3am90EygEeyAJcn3Jqu6tg" name="scheduleFlight"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4iWpAEygEeyAJcn3Jqu6tg" name="calcTicketPrices"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5jMa8EygEeyAJcn3Jqu6tg" name="publishTicketPrices"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7PF8EEygEeyAJcn3Jqu6tg" name="allAvailableFacilities"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Bz5F0EyhEeyAJcn3Jqu6tg" name="makeContract"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_C6QQ8EyhEeyAJcn3Jqu6tg" name="sendContract"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DyKJUEyhEeyAJcn3Jqu6tg" name="registerBooking"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_W993QEWYEey0q6TXOapbVg" name="contacts" memberEnd="_W9-eUkWYEey0q6TXOapbVg _W-CvwEWYEey0q6TXOapbVg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_W9-eUEWYEey0q6TXOapbVg" source="org.eclipse.papyrus">
@@ -263,6 +296,17 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q8QScEypEeyCzoWXdzROgA" value="*"/>
       </ownedParameter>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_g_x14EyoEeyAJcn3Jqu6tg" name="buyClothing"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_iqlx4EyoEeyAJcn3Jqu6tg" name="buyUtils"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_j4aP4EyoEeyAJcn3Jqu6tg" name="bookCourses"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_l3Ne4EyoEeyAJcn3Jqu6tg" name="superviseEmps"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_myHA4EyoEeyAJcn3Jqu6tg" name="payCourses"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ndPBgEyoEeyAJcn3Jqu6tg" name="requestLicenses"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_oZVdYEyoEeyAJcn3Jqu6tg" name="sendLicences"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_peUvgEyoEeyAJcn3Jqu6tg" name="searchEmps"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_sWG08EyoEeyAJcn3Jqu6tg" name="assignEmps"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_s58h0EyoEeyAJcn3Jqu6tg" name="paySalaries"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_urYDMEyoEeyAJcn3Jqu6tg" name="regulateHours"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_uOoEoEY4EeyzvZaWA2zpUQ" name="contains" visibility="package" memberEnd="_uOorsUY4EeyzvZaWA2zpUQ _uOortEY4EeyzvZaWA2zpUQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uOoEoUY4EeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
@@ -274,8 +318,8 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
     <supplier xmi:type="uml:Interface" href="System_Group2.uml#_s6wMkEV1EeywAt9CR0nlpw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_oszAMEyNEey7npMCh8nXqw" name="Interaction31">
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_KEkdMEyOEey7npMCh8nXqw" name="Airline" coveredBy="_RJM9kEyOEey7npMCh8nXqw _RJn0UUyOEey7npMCh8nXqw _XlY94EyOEey7npMCh8nXqw _ucjtcEyPEeyAJcn3Jqu6tg _uccYsEyPEeyAJcn3Jqu6tg _XltuAUyOEey7npMCh8nXqw _wRaWQEyPEeyAJcn3Jqu6tg _wRaWQUyPEeyAJcn3Jqu6tg _z3RCoEyPEeyAJcn3Jqu6tg _z3RpsEyPEeyAJcn3Jqu6tg _56JyIUyPEeyAJcn3Jqu6tg"/>
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_MLxaQEyOEey7npMCh8nXqw" name="FME" coveredBy="_RJNkoEyOEey7npMCh8nXqw _RJn0UEyOEey7npMCh8nXqw _XlZk8EyOEey7npMCh8nXqw _c8oIUEyOEey7npMCh8nXqw _c8oIUUyOEey7npMCh8nXqw _XltuAEyOEey7npMCh8nXqw _56KZMEyPEeyAJcn3Jqu6tg _A7ef0EyQEeyAJcn3Jqu6tg _A7d4wEyQEeyAJcn3Jqu6tg _B94_EUyQEeyAJcn3Jqu6tg _B95mIEyQEeyAJcn3Jqu6tg _A7ef0UyQEeyAJcn3Jqu6tg _RJji4EyOEey7npMCh8nXqw _XlrRwEyOEey7npMCh8nXqw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_KEkdMEyOEey7npMCh8nXqw" name="Airline" coveredBy="_RJM9kEyOEey7npMCh8nXqw _RJn0UUyOEey7npMCh8nXqw _XlY94EyOEey7npMCh8nXqw _ucjtcEyPEeyAJcn3Jqu6tg _uccYsEyPEeyAJcn3Jqu6tg _wRaWQEyPEeyAJcn3Jqu6tg _XltuAUyOEey7npMCh8nXqw _wRaWQUyPEeyAJcn3Jqu6tg _z3RCoEyPEeyAJcn3Jqu6tg _z3RpsEyPEeyAJcn3Jqu6tg _56JyIUyPEeyAJcn3Jqu6tg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_MLxaQEyOEey7npMCh8nXqw" name="FME" coveredBy="_RJNkoEyOEey7npMCh8nXqw _RJn0UEyOEey7npMCh8nXqw _XlZk8EyOEey7npMCh8nXqw _c8oIUEyOEey7npMCh8nXqw _c8oIUUyOEey7npMCh8nXqw _XltuAEyOEey7npMCh8nXqw _A7ef0EyQEeyAJcn3Jqu6tg _A7d4wEyQEeyAJcn3Jqu6tg _56KZMEyPEeyAJcn3Jqu6tg _B94_EUyQEeyAJcn3Jqu6tg _B95mIEyQEeyAJcn3Jqu6tg _A7ef0UyQEeyAJcn3Jqu6tg _RJji4EyOEey7npMCh8nXqw _XlrRwEyOEey7npMCh8nXqw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RJM9kEyOEey7npMCh8nXqw" name="Message3SendEvent" covered="_KEkdMEyOEey7npMCh8nXqw" message="_RJJ6QEyOEey7npMCh8nXqw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RJNkoEyOEey7npMCh8nXqw" name="Message3ReceiveEvent" covered="_MLxaQEyOEey7npMCh8nXqw" message="_RJJ6QEyOEey7npMCh8nXqw"/>
     <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_RJji4EyOEey7npMCh8nXqw" name="BehaviorExecutionSpecification6" covered="_MLxaQEyOEey7npMCh8nXqw" finish="_RJn0UEyOEey7npMCh8nXqw" start="_RJNkoEyOEey7npMCh8nXqw"/>
@@ -289,19 +333,19 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XltuAEyOEey7npMCh8nXqw" name="Message15SendEvent" covered="_MLxaQEyOEey7npMCh8nXqw" message="_XltG8EyOEey7npMCh8nXqw"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ucjtcEyPEeyAJcn3Jqu6tg" name="ActionExecutionSpecification20Start" covered="_KEkdMEyOEey7npMCh8nXqw" execution="_uccYsEyPEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_uccYsEyPEeyAJcn3Jqu6tg" name="ActionExecutionSpecification20" covered="_KEkdMEyOEey7npMCh8nXqw" finish="_56JyIUyPEeyAJcn3Jqu6tg" start="_ucjtcEyPEeyAJcn3Jqu6tg"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XltuAUyOEey7npMCh8nXqw" name="Message15ReceiveEvent" covered="_KEkdMEyOEey7npMCh8nXqw" message="_XltG8EyOEey7npMCh8nXqw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wRaWQEyPEeyAJcn3Jqu6tg" name="Message23SendEvent" covered="_KEkdMEyOEey7npMCh8nXqw" message="_wRU2sEyPEeyAJcn3Jqu6tg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XltuAUyOEey7npMCh8nXqw" name="Message15ReceiveEvent" covered="_KEkdMEyOEey7npMCh8nXqw" message="_XltG8EyOEey7npMCh8nXqw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wRaWQUyPEeyAJcn3Jqu6tg" name="Message23ReceiveEvent" covered="_KEkdMEyOEey7npMCh8nXqw" message="_wRU2sEyPEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_z3RCoEyPEeyAJcn3Jqu6tg" name="Message26SendEvent" covered="_KEkdMEyOEey7npMCh8nXqw" message="_z3QbkEyPEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_z3RpsEyPEeyAJcn3Jqu6tg" name="Message26ReceiveEvent" covered="_KEkdMEyOEey7npMCh8nXqw" message="_z3QbkEyPEeyAJcn3Jqu6tg"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_56KZMEyPEeyAJcn3Jqu6tg" name="Message29ReceiveEvent" covered="_MLxaQEyOEey7npMCh8nXqw" message="_56JyIEyPEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_56JyIUyPEeyAJcn3Jqu6tg" name="Message29SendEvent" covered="_KEkdMEyOEey7npMCh8nXqw" message="_56JyIEyPEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_A7ef0EyQEeyAJcn3Jqu6tg" name="ActionExecutionSpecification31Start" covered="_MLxaQEyOEey7npMCh8nXqw" execution="_A7d4wEyQEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_A7d4wEyQEeyAJcn3Jqu6tg" name="ActionExecutionSpecification31" covered="_MLxaQEyOEey7npMCh8nXqw" finish="_A7ef0UyQEeyAJcn3Jqu6tg" start="_A7ef0EyQEeyAJcn3Jqu6tg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_56KZMEyPEeyAJcn3Jqu6tg" name="Message29ReceiveEvent" covered="_MLxaQEyOEey7npMCh8nXqw" message="_56JyIEyPEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_B94_EUyQEeyAJcn3Jqu6tg" name="Message34SendEvent" covered="_MLxaQEyOEey7npMCh8nXqw" message="_B94_EEyQEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_B95mIEyQEeyAJcn3Jqu6tg" name="Message34ReceiveEvent" covered="_MLxaQEyOEey7npMCh8nXqw" message="_B94_EEyQEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_A7ef0UyQEeyAJcn3Jqu6tg" name="ActionExecutionSpecification31Finish" covered="_MLxaQEyOEey7npMCh8nXqw" execution="_A7d4wEyQEeyAJcn3Jqu6tg"/>
-    <message xmi:type="uml:Message" xmi:id="_RJJ6QEyOEey7npMCh8nXqw" name="1: getFacilities()" receiveEvent="_RJNkoEyOEey7npMCh8nXqw" sendEvent="_RJM9kEyOEey7npMCh8nXqw"/>
+    <message xmi:type="uml:Message" xmi:id="_RJJ6QEyOEey7npMCh8nXqw" name="1: getAvailableFacilities()" receiveEvent="_RJNkoEyOEey7npMCh8nXqw" sendEvent="_RJM9kEyOEey7npMCh8nXqw"/>
     <message xmi:type="uml:Message" xmi:id="_RJnNQEyOEey7npMCh8nXqw" name="2: allAvailableFacilities()" messageSort="reply" receiveEvent="_RJn0UUyOEey7npMCh8nXqw" sendEvent="_RJn0UEyOEey7npMCh8nXqw"/>
     <message xmi:type="uml:Message" xmi:id="_XlYW0EyOEey7npMCh8nXqw" name="3: requestFacility()" receiveEvent="_XlZk8EyOEey7npMCh8nXqw" sendEvent="_XlY94EyOEey7npMCh8nXqw"/>
     <message xmi:type="uml:Message" xmi:id="_XltG8EyOEey7npMCh8nXqw" name="5: sendContract()" messageSort="reply" receiveEvent="_XltuAUyOEey7npMCh8nXqw" sendEvent="_XltuAEyOEey7npMCh8nXqw"/>
@@ -314,14 +358,14 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_TfYf4EyQEeyAJcn3Jqu6tg" name="Interaction32">
     <lifeline xmi:type="uml:Lifeline" xmi:id="_XIjmAEyQEeyAJcn3Jqu6tg" name="Airline" coveredBy="_yjKhAEyQEeyAJcn3Jqu6tg _yjJ58EyQEeyAJcn3Jqu6tg _1hEckEyQEeyAJcn3Jqu6tg _1hFDoEyQEeyAJcn3Jqu6tg _cwhUEEyQEeyAJcn3Jqu6tg _yjKhAUyQEeyAJcn3Jqu6tg"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_YLUDgEyQEeyAJcn3Jqu6tg" name="FME" coveredBy="_cwhUEUyQEeyAJcn3Jqu6tg _5VH9AEyQEeyAJcn3Jqu6tg _5VH9AUyQEeyAJcn3Jqu6tg _9SfxgEyQEeyAJcn3Jqu6tg _9SfxgUyQEeyAJcn3Jqu6tg _BI2YAUyREeyAJcn3Jqu6tg _BI2YAkyREeyAJcn3Jqu6tg _mVUrIEyQEeyAJcn3Jqu6tg _mVUEEEyQEeyAJcn3Jqu6tg"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_cwhUEUyQEeyAJcn3Jqu6tg" name="Message3ReceiveEvent" covered="_YLUDgEyQEeyAJcn3Jqu6tg" message="_cwgtAEyQEeyAJcn3Jqu6tg"/>
-    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_mVUEEEyQEeyAJcn3Jqu6tg" name="ActionExecutionSpecification6" covered="_YLUDgEyQEeyAJcn3Jqu6tg" finish="_mVUrIEyQEeyAJcn3Jqu6tg" start="_cwhUEUyQEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_yjKhAEyQEeyAJcn3Jqu6tg" name="ActionExecutionSpecification8Start" covered="_XIjmAEyQEeyAJcn3Jqu6tg" execution="_yjJ58EyQEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_yjJ58EyQEeyAJcn3Jqu6tg" name="ActionExecutionSpecification8" covered="_XIjmAEyQEeyAJcn3Jqu6tg" finish="_yjKhAUyQEeyAJcn3Jqu6tg" start="_yjKhAEyQEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1hEckEyQEeyAJcn3Jqu6tg" name="Message11SendEvent" covered="_XIjmAEyQEeyAJcn3Jqu6tg" message="_1hD1gEyQEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1hFDoEyQEeyAJcn3Jqu6tg" name="Message11ReceiveEvent" covered="_XIjmAEyQEeyAJcn3Jqu6tg" message="_1hD1gEyQEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_cwhUEEyQEeyAJcn3Jqu6tg" name="Message3SendEvent" covered="_XIjmAEyQEeyAJcn3Jqu6tg" message="_cwgtAEyQEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_yjKhAUyQEeyAJcn3Jqu6tg" name="ActionExecutionSpecification8Finish" covered="_XIjmAEyQEeyAJcn3Jqu6tg" execution="_yjJ58EyQEeyAJcn3Jqu6tg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_cwhUEUyQEeyAJcn3Jqu6tg" name="Message3ReceiveEvent" covered="_YLUDgEyQEeyAJcn3Jqu6tg" message="_cwgtAEyQEeyAJcn3Jqu6tg"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_mVUEEEyQEeyAJcn3Jqu6tg" name="ActionExecutionSpecification6" covered="_YLUDgEyQEeyAJcn3Jqu6tg" finish="_mVUrIEyQEeyAJcn3Jqu6tg" start="_cwhUEUyQEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5VH9AEyQEeyAJcn3Jqu6tg" name="Message14SendEvent" covered="_YLUDgEyQEeyAJcn3Jqu6tg" message="_5VHV8EyQEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5VH9AUyQEeyAJcn3Jqu6tg" name="Message14ReceiveEvent" covered="_YLUDgEyQEeyAJcn3Jqu6tg" message="_5VHV8EyQEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9SfxgEyQEeyAJcn3Jqu6tg" name="Message17SendEvent" covered="_YLUDgEyQEeyAJcn3Jqu6tg" message="_9SfKcEyQEeyAJcn3Jqu6tg"/>
@@ -364,7 +408,7 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
     <message xmi:type="uml:Message" xmi:id="_n2j-8EyREeyAJcn3Jqu6tg" name="4: assignEmps()" receiveEvent="_n2kmAUyREeyAJcn3Jqu6tg" sendEvent="_n2kmAEyREeyAJcn3Jqu6tg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_6E7M0EyREeyAJcn3Jqu6tg" name="Interaction34">
-    <lifeline xmi:type="uml:Lifeline" xmi:id="__7YC0EyREeyAJcn3Jqu6tg" name="FME" coveredBy="_XsEQ0EySEeyAJcn3Jqu6tg _XsDpwEySEeyAJcn3Jqu6tg _Y8Cq8UySEeyAJcn3Jqu6tg _Y8DSAEySEeyAJcn3Jqu6tg _XsEQ0UySEeyAJcn3Jqu6tg _3HtYUEySEeyAJcn3Jqu6tg _3HsxQEySEeyAJcn3Jqu6tg __qvwYEySEeyAJcn3Jqu6tg __qvwYUySEeyAJcn3Jqu6tg _EyqFYEyTEeyAJcn3Jqu6tg _EyqFYUyTEeyAJcn3Jqu6tg _3HtYUUySEeyAJcn3Jqu6tg _6Hl0YEyTEeyAJcn3Jqu6tg _6Hl0YUyTEeyAJcn3Jqu6tg _Qct4wEyTEeyAJcn3Jqu6tg _Qct4wUyTEeyAJcn3Jqu6tg _xcg6oEyTEeyAJcn3Jqu6tg _ZL4BQUyTEeyAJcn3Jqu6tg _ZL3aMEyTEeyAJcn3Jqu6tg _OpCfMEyUEeyAJcn3Jqu6tg _OpDGQEyUEeyAJcn3Jqu6tg _m3cj8EyUEeyAJcn3Jqu6tg _GigDoEyZEeyAJcn3Jqu6tg _hyus4UyUEeyAJcn3Jqu6tg _GigDoUyZEeyAJcn3Jqu6tg _Zp8A0UyUEeyAJcn3Jqu6tg _Zp7ZwEyUEeyAJcn3Jqu6tg _ytKNsEyUEeyAJcn3Jqu6tg _ytKNsUyUEeyAJcn3Jqu6tg _-GgrkEyUEeyAJcn3Jqu6tg _-GgrkUyUEeyAJcn3Jqu6tg _67dE0EyUEeyAJcn3Jqu6tg _DleOoEyVEeyAJcn3Jqu6tg _DleOoUyVEeyAJcn3Jqu6tg _5tLT0EyUEeyAJcn3Jqu6tg _5tKFsEyUEeyAJcn3Jqu6tg _LYe38EyVEeyAJcn3Jqu6tg _LYffAEyVEeyAJcn3Jqu6tg _VTuZEEyVEeyAJcn3Jqu6tg _VTtyAEyVEeyAJcn3Jqu6tg _XRXKcEyVEeyAJcn3Jqu6tg _XRXKcUyVEeyAJcn3Jqu6tg _VTuZEUyVEeyAJcn3Jqu6tg _dEb8UEyVEeyAJcn3Jqu6tg _dEbVQEyVEeyAJcn3Jqu6tg _fCF70EyVEeyAJcn3Jqu6tg _fCF70UyVEeyAJcn3Jqu6tg _dEb8UUyVEeyAJcn3Jqu6tg _DnhAkEyWEeyAJcn3Jqu6tg _DnhnoEyWEeyAJcn3Jqu6tg _HPP8QEyWEeyAJcn3Jqu6tg _HPPVMEyWEeyAJcn3Jqu6tg _KRm6AEyWEeyAJcn3Jqu6tg _KRm6AUyWEeyAJcn3Jqu6tg _VEgb4EyWEeyAJcn3Jqu6tg _VEgb4UyWEeyAJcn3Jqu6tg _HPQjUEyWEeyAJcn3Jqu6tg _jaC-EEyWEeyAJcn3Jqu6tg _jaDlIEyWEeyAJcn3Jqu6tg _zugrEEyWEeyAJcn3Jqu6tg _zugEAEyWEeyAJcn3Jqu6tg _tBQv8EyWEeyAJcn3Jqu6tg _tBQv8UyWEeyAJcn3Jqu6tg _zuhSIEyWEeyAJcn3Jqu6tg _okozoEyWEeyAJcn3Jqu6tg _okoMkEyWEeyAJcn3Jqu6tg _7hNyYEyWEeyAJcn3Jqu6tg _7hOZcEyWEeyAJcn3Jqu6tg _okpasEyWEeyAJcn3Jqu6tg _RtAfIEyXEeyAJcn3Jqu6tg _RtBGMEyXEeyAJcn3Jqu6tg _YUYbwEyXEeyAJcn3Jqu6tg _YUX0sEyXEeyAJcn3Jqu6tg _EmnT0EybEeyAJcn3Jqu6tg _EmnT0UybEeyAJcn3Jqu6tg _KNxwoEybEeyAJcn3Jqu6tg _KNxwoUybEeyAJcn3Jqu6tg _YUZC0EyXEeyAJcn3Jqu6tg _bYu9kEyXEeyAJcn3Jqu6tg _bYvkoEyXEeyAJcn3Jqu6tg _q-6g4EyaEeyAJcn3Jqu6tg _q-5SwEyaEeyAJcn3Jqu6tg _QNsEoEybEeyAJcn3Jqu6tg _QNsrsEybEeyAJcn3Jqu6tg _q-6g4UyaEeyAJcn3Jqu6tg _sc46wEyaEeyAJcn3Jqu6tg _sc6I4EyaEeyAJcn3Jqu6tg _tJ2HYEyaEeyAJcn3Jqu6tg _tJ1gUEyaEeyAJcn3Jqu6tg _UOIbQEybEeyAJcn3Jqu6tg _UOIbQUybEeyAJcn3Jqu6tg _tJ2ucEyaEeyAJcn3Jqu6tg _trUAQEybEeyAJcn3Jqu6tg _trSyIEybEeyAJcn3Jqu6tg _v8uCMEybEeyAJcn3Jqu6tg _v8upQEybEeyAJcn3Jqu6tg _trUnUEybEeyAJcn3Jqu6tg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="__7YC0EyREeyAJcn3Jqu6tg" name="FME" coveredBy="_XsEQ0EySEeyAJcn3Jqu6tg _XsDpwEySEeyAJcn3Jqu6tg _Y8Cq8UySEeyAJcn3Jqu6tg _Y8DSAEySEeyAJcn3Jqu6tg _XsEQ0UySEeyAJcn3Jqu6tg _3HtYUEySEeyAJcn3Jqu6tg _3HsxQEySEeyAJcn3Jqu6tg __qvwYEySEeyAJcn3Jqu6tg __qvwYUySEeyAJcn3Jqu6tg _EyqFYEyTEeyAJcn3Jqu6tg _EyqFYUyTEeyAJcn3Jqu6tg _3HtYUUySEeyAJcn3Jqu6tg _Qct4wEyTEeyAJcn3Jqu6tg _Qct4wUyTEeyAJcn3Jqu6tg _xcg6oEyTEeyAJcn3Jqu6tg _6Hl0YEyTEeyAJcn3Jqu6tg _6Hl0YUyTEeyAJcn3Jqu6tg _ZL4BQUyTEeyAJcn3Jqu6tg _ZL3aMEyTEeyAJcn3Jqu6tg _OpCfMEyUEeyAJcn3Jqu6tg _OpDGQEyUEeyAJcn3Jqu6tg _hyus4UyUEeyAJcn3Jqu6tg _GigDoEyZEeyAJcn3Jqu6tg _GigDoUyZEeyAJcn3Jqu6tg _Zp8A0UyUEeyAJcn3Jqu6tg _Zp7ZwEyUEeyAJcn3Jqu6tg _ytKNsEyUEeyAJcn3Jqu6tg _ytKNsUyUEeyAJcn3Jqu6tg _67dE0EyUEeyAJcn3Jqu6tg _-GgrkEyUEeyAJcn3Jqu6tg _-GgrkUyUEeyAJcn3Jqu6tg _DleOoEyVEeyAJcn3Jqu6tg _DleOoUyVEeyAJcn3Jqu6tg _5tLT0EyUEeyAJcn3Jqu6tg _5tKFsEyUEeyAJcn3Jqu6tg _LYe38EyVEeyAJcn3Jqu6tg _LYffAEyVEeyAJcn3Jqu6tg _VTuZEEyVEeyAJcn3Jqu6tg _VTtyAEyVEeyAJcn3Jqu6tg _XRXKcEyVEeyAJcn3Jqu6tg _XRXKcUyVEeyAJcn3Jqu6tg _VTuZEUyVEeyAJcn3Jqu6tg _dEb8UEyVEeyAJcn3Jqu6tg _dEbVQEyVEeyAJcn3Jqu6tg _fCF70EyVEeyAJcn3Jqu6tg _fCF70UyVEeyAJcn3Jqu6tg _dEb8UUyVEeyAJcn3Jqu6tg _DnhAkEyWEeyAJcn3Jqu6tg _DnhnoEyWEeyAJcn3Jqu6tg _HPP8QEyWEeyAJcn3Jqu6tg _HPPVMEyWEeyAJcn3Jqu6tg _KRm6AEyWEeyAJcn3Jqu6tg _KRm6AUyWEeyAJcn3Jqu6tg _VEgb4EyWEeyAJcn3Jqu6tg _VEgb4UyWEeyAJcn3Jqu6tg _HPQjUEyWEeyAJcn3Jqu6tg _jaC-EEyWEeyAJcn3Jqu6tg _jaDlIEyWEeyAJcn3Jqu6tg _zugrEEyWEeyAJcn3Jqu6tg _zugEAEyWEeyAJcn3Jqu6tg _tBQv8EyWEeyAJcn3Jqu6tg _tBQv8UyWEeyAJcn3Jqu6tg _zuhSIEyWEeyAJcn3Jqu6tg _okozoEyWEeyAJcn3Jqu6tg _okoMkEyWEeyAJcn3Jqu6tg _7hNyYEyWEeyAJcn3Jqu6tg _7hOZcEyWEeyAJcn3Jqu6tg _okpasEyWEeyAJcn3Jqu6tg _RtAfIEyXEeyAJcn3Jqu6tg _RtBGMEyXEeyAJcn3Jqu6tg _YUYbwEyXEeyAJcn3Jqu6tg _YUX0sEyXEeyAJcn3Jqu6tg _EmnT0EybEeyAJcn3Jqu6tg _EmnT0UybEeyAJcn3Jqu6tg _KNxwoEybEeyAJcn3Jqu6tg _KNxwoUybEeyAJcn3Jqu6tg _YUZC0EyXEeyAJcn3Jqu6tg _bYu9kEyXEeyAJcn3Jqu6tg _bYvkoEyXEeyAJcn3Jqu6tg _q-6g4EyaEeyAJcn3Jqu6tg _q-5SwEyaEeyAJcn3Jqu6tg _QNsEoEybEeyAJcn3Jqu6tg _QNsrsEybEeyAJcn3Jqu6tg _q-6g4UyaEeyAJcn3Jqu6tg _sc46wEyaEeyAJcn3Jqu6tg _sc6I4EyaEeyAJcn3Jqu6tg _tJ2HYEyaEeyAJcn3Jqu6tg _tJ1gUEyaEeyAJcn3Jqu6tg _UOIbQEybEeyAJcn3Jqu6tg _UOIbQUybEeyAJcn3Jqu6tg _tJ2ucEyaEeyAJcn3Jqu6tg _trUAQEybEeyAJcn3Jqu6tg _trSyIEybEeyAJcn3Jqu6tg _v8uCMEybEeyAJcn3Jqu6tg _v8upQEybEeyAJcn3Jqu6tg _trUnUEybEeyAJcn3Jqu6tg _m3cj8EyUEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_XsEQ0EySEeyAJcn3Jqu6tg" name="ActionExecutionSpecification2Start" covered="__7YC0EyREeyAJcn3Jqu6tg" execution="_XsDpwEySEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_XsDpwEySEeyAJcn3Jqu6tg" name="ActionExecutionSpecification2" covered="__7YC0EyREeyAJcn3Jqu6tg" finish="_XsEQ0UySEeyAJcn3Jqu6tg" start="_XsEQ0EySEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y8Cq8UySEeyAJcn3Jqu6tg" name="Message5SendEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_Y8Cq8EySEeyAJcn3Jqu6tg"/>
@@ -372,10 +416,10 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_XsEQ0UySEeyAJcn3Jqu6tg" name="ActionExecutionSpecification2Finish" covered="__7YC0EyREeyAJcn3Jqu6tg" execution="_XsDpwEySEeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:CombinedFragment" xmi:id="_ytKNsEyUEeyAJcn3Jqu6tg" name="CombinedFragment14" covered="__7YC0EyREeyAJcn3Jqu6tg" interactionOperator="opt">
       <operand xmi:type="uml:InteractionOperand" xmi:id="_ytKNsUyUEeyAJcn3Jqu6tg" name="InteractionOperand0" covered="__7YC0EyREeyAJcn3Jqu6tg">
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-GgrkEyUEeyAJcn3Jqu6tg" name="Message15SendEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_-GgEgEyUEeyAJcn3Jqu6tg"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-GgrkUyUEeyAJcn3Jqu6tg" name="Message15ReceiveEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_-GgEgEyUEeyAJcn3Jqu6tg"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_67dE0EyUEeyAJcn3Jqu6tg" name="Message15SendEvent" covered="__7YC0EyREeyAJcn3Jqu6tg"/>
         <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_5tKFsEyUEeyAJcn3Jqu6tg" name="ActionExecutionSpecification15" covered="__7YC0EyREeyAJcn3Jqu6tg" finish="_5tLT0EyUEeyAJcn3Jqu6tg" start="_67dE0EyUEeyAJcn3Jqu6tg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-GgrkEyUEeyAJcn3Jqu6tg" name="Message15SendEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_-GgEgEyUEeyAJcn3Jqu6tg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-GgrkUyUEeyAJcn3Jqu6tg" name="Message15ReceiveEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_-GgEgEyUEeyAJcn3Jqu6tg"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DleOoEyVEeyAJcn3Jqu6tg" name="Message16SendEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_DldnkEyVEeyAJcn3Jqu6tg"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DleOoUyVEeyAJcn3Jqu6tg" name="Message16ReceiveEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_DldnkEyVEeyAJcn3Jqu6tg"/>
         <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_5tLT0EyUEeyAJcn3Jqu6tg" name="ActionExecutionSpecification15Finish" covered="__7YC0EyREeyAJcn3Jqu6tg" execution="_5tKFsEyUEeyAJcn3Jqu6tg"/>
@@ -484,26 +528,26 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EyqFYEyTEeyAJcn3Jqu6tg" name="Message11SendEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_EypeUEyTEeyAJcn3Jqu6tg"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EyqFYUyTEeyAJcn3Jqu6tg" name="Message11ReceiveEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_EypeUEyTEeyAJcn3Jqu6tg"/>
         <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_3HtYUUySEeyAJcn3Jqu6tg" name="ActionExecutionSpecification10Finish" covered="__7YC0EyREeyAJcn3Jqu6tg" execution="_3HsxQEySEeyAJcn3Jqu6tg"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6Hl0YEyTEeyAJcn3Jqu6tg" name="Message12SendEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_6HlNUEyTEeyAJcn3Jqu6tg"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6Hl0YUyTEeyAJcn3Jqu6tg" name="Message12ReceiveEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_6HlNUEyTEeyAJcn3Jqu6tg"/>
         <fragment xmi:type="uml:CombinedFragment" xmi:id="_Qct4wEyTEeyAJcn3Jqu6tg" name="CombinedFragment12" covered="__7YC0EyREeyAJcn3Jqu6tg" interactionOperator="opt">
           <operand xmi:type="uml:InteractionOperand" xmi:id="_Qct4wUyTEeyAJcn3Jqu6tg" name="InteractionOperand0" covered="__7YC0EyREeyAJcn3Jqu6tg">
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xcg6oEyTEeyAJcn3Jqu6tg" name="Message12SendEvent" covered="__7YC0EyREeyAJcn3Jqu6tg"/>
+            <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_ZL3aMEyTEeyAJcn3Jqu6tg" name="ActionExecutionSpecification12" covered="__7YC0EyREeyAJcn3Jqu6tg" finish="_ZL4BQUyTEeyAJcn3Jqu6tg" start="_xcg6oEyTEeyAJcn3Jqu6tg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6Hl0YEyTEeyAJcn3Jqu6tg" name="Message12SendEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_6HlNUEyTEeyAJcn3Jqu6tg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6Hl0YUyTEeyAJcn3Jqu6tg" name="Message12ReceiveEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_6HlNUEyTEeyAJcn3Jqu6tg"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ZL4BQUyTEeyAJcn3Jqu6tg" name="ActionExecutionSpecification12Finish" covered="__7YC0EyREeyAJcn3Jqu6tg" execution="_ZL3aMEyTEeyAJcn3Jqu6tg"/>
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_Qct4wkyTEeyAJcn3Jqu6tg" name="guard">
               <specification xmi:type="uml:LiteralString" xmi:id="_X9sW4EyTEeyAJcn3Jqu6tg" value="repaircost &lt; cost for new"/>
             </guard>
           </operand>
         </fragment>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xcg6oEyTEeyAJcn3Jqu6tg" name="Message12SendEvent" covered="__7YC0EyREeyAJcn3Jqu6tg"/>
-        <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_ZL3aMEyTEeyAJcn3Jqu6tg" name="ActionExecutionSpecification12" covered="__7YC0EyREeyAJcn3Jqu6tg" finish="_ZL4BQUyTEeyAJcn3Jqu6tg" start="_xcg6oEyTEeyAJcn3Jqu6tg"/>
-        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ZL4BQUyTEeyAJcn3Jqu6tg" name="ActionExecutionSpecification12Finish" covered="__7YC0EyREeyAJcn3Jqu6tg" execution="_ZL3aMEyTEeyAJcn3Jqu6tg"/>
         <fragment xmi:type="uml:CombinedFragment" xmi:id="_OpCfMEyUEeyAJcn3Jqu6tg" name="CombinedFragment13" covered="__7YC0EyREeyAJcn3Jqu6tg" interactionOperator="opt">
           <operand xmi:type="uml:InteractionOperand" xmi:id="_OpDGQEyUEeyAJcn3Jqu6tg" name="InteractionOperand0" covered="__7YC0EyREeyAJcn3Jqu6tg">
-            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_m3cj8EyUEeyAJcn3Jqu6tg" name="Message13SendEvent" covered="__7YC0EyREeyAJcn3Jqu6tg"/>
-            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GigDoEyZEeyAJcn3Jqu6tg" name="Message29SendEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_GifckEyZEeyAJcn3Jqu6tg"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_hyus4UyUEeyAJcn3Jqu6tg" name="Message13SendEvent" covered="__7YC0EyREeyAJcn3Jqu6tg"/>
             <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_Zp7ZwEyUEeyAJcn3Jqu6tg" name="ActionExecutionSpecification13" covered="__7YC0EyREeyAJcn3Jqu6tg" finish="_Zp8A0UyUEeyAJcn3Jqu6tg" start="_hyus4UyUEeyAJcn3Jqu6tg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GigDoEyZEeyAJcn3Jqu6tg" name="Message29SendEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_GifckEyZEeyAJcn3Jqu6tg"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GigDoUyZEeyAJcn3Jqu6tg" name="Message29ReceiveEvent" covered="__7YC0EyREeyAJcn3Jqu6tg" message="_GifckEyZEeyAJcn3Jqu6tg"/>
             <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Zp8A0UyUEeyAJcn3Jqu6tg" name="ActionExecutionSpecification13Finish" covered="__7YC0EyREeyAJcn3Jqu6tg" execution="_Zp7ZwEyUEeyAJcn3Jqu6tg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_m3cj8EyUEeyAJcn3Jqu6tg" name="Message13SendEvent" covered="__7YC0EyREeyAJcn3Jqu6tg"/>
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_OpDGQUyUEeyAJcn3Jqu6tg" name="guard">
               <specification xmi:type="uml:LiteralString" xmi:id="_ftW70EyUEeyAJcn3Jqu6tg" value="cost for new &lt; reparicost"/>
             </guard>

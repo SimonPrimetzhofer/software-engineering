@@ -217,6 +217,11 @@ Step 8: Pilot performs take-off</body>
         <type xmi:type="uml:Class" href="SubSystem3.uml#_ncQ5sEVsEeyuwuc0dTQ-tQ"/>
       </ownedParameter>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zwQ5YEyoEeyAJcn3Jqu6tg" name="desiredEmps"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_2bUxcEyoEeyAJcn3Jqu6tg" name="reportWorkingHours"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4Zz3YEyoEeyAJcn3Jqu6tg" name="reportAbsences"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-jyGUEyoEeyAJcn3Jqu6tg" name="requestClothing"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="__3tMUEyoEeyAJcn3Jqu6tg" name="requestCourses"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_-N6uwEV7EeywAt9CR0nlpw" name="manages" visibility="public" memberEnd="_-N8j8EV7EeywAt9CR0nlpw _-N9LAkV7EeywAt9CR0nlpw" navigableOwnedEnd="_-N8j8EV7EeywAt9CR0nlpw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-N784EV7EeywAt9CR0nlpw" source="org.eclipse.papyrus">
