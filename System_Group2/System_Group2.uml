@@ -428,6 +428,7 @@ Step 6: Landside Management transports baggage and passengers to the airplane</b
     <message xmi:type="uml:Message" xmi:id="_tuVeEEymEeykW7qwzvpppQ" name="2: getPayments()" receiveEvent="_tuWFIUymEeykW7qwzvpppQ" sendEvent="_tuWFIEymEeykW7qwzvpppQ"/>
     <message xmi:type="uml:Message" xmi:id="_yZHgQEyoEeyCzoWXdzROgA" name="4: displayFlightInformation()" receiveEvent="_yZJVcUyoEeyCzoWXdzROgA" sendEvent="_yZJVcEyoEeyCzoWXdzROgA"/>
     <message xmi:type="uml:Message" xmi:id="_92oscEyoEeyCzoWXdzROgA" name="executePayments(checkins)" receiveEvent="_92pTgUyoEeyCzoWXdzROgA" sendEvent="_92pTgEyoEeyCzoWXdzROgA"/>
+    </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_KgIaAEydEeyAJcn3Jqu6tg" name="Interaction38">
     <lifeline xmi:type="uml:Lifeline" xmi:id="_RSzAoEydEeyAJcn3Jqu6tg" name="Financial Management" coveredBy="_7hKD0EydEeyAJcn3Jqu6tg _-84j0EydEeyAJcn3Jqu6tg _6B1wsEyeEeyAJcn3Jqu6tg _7PcMQEyeEeyAJcn3Jqu6tg _6CJ5wUyeEeyAJcn3Jqu6tg _SZtI4UyeEeyAJcn3Jqu6tg _njDrwEyfEeyAJcn3Jqu6tg _pn0_4EyfEeyAJcn3Jqu6tg _q5W5MUyfEeyAJcn3Jqu6tg _s33NQEyfEeyAJcn3Jqu6tg _s330UEyfEeyAJcn3Jqu6tg _z1HTQEyfEeyAJcn3Jqu6tg _z1H6UEyfEeyAJcn3Jqu6tg _ZD7IsEyfEeyAJcn3Jqu6tg _ZD56kEyfEeyAJcn3Jqu6tg _WJ19MEyfEeyAJcn3Jqu6tg _WJ1WIEyfEeyAJcn3Jqu6tg _R5tkwEyfEeyAJcn3Jqu6tg _R5s9sEyfEeyAJcn3Jqu6tg _b_OHEEydEeyAJcn3Jqu6tg"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_TtHG8EydEeyAJcn3Jqu6tg" name="Landside Management" coveredBy="_6B1wsUyeEeyAJcn3Jqu6tg _6CJ5wEyeEeyAJcn3Jqu6tg _pn0Y0EyfEeyAJcn3Jqu6tg _6CG2cEyeEeyAJcn3Jqu6tg"/>

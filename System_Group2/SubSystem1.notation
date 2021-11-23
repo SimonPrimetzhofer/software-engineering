@@ -582,6 +582,26 @@
           <element xmi:type="uml:Operation" href="SubSystem1.uml#__3tMUEyoEeyAJcn3Jqu6tg"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="__33kYUyoEeyAJcn3Jqu6tg"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_zwgJ8EyoEeyAJcn3Jqu6tg" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem1.uml#_zwQ5YEyoEeyAJcn3Jqu6tg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_zwgJ8UyoEeyAJcn3Jqu6tg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_2beicEyoEeyAJcn3Jqu6tg" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem1.uml#_2bUxcEyoEeyAJcn3Jqu6tg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_2beicUyoEeyAJcn3Jqu6tg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_4Z-PcEyoEeyAJcn3Jqu6tg" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem1.uml#_4Zz3YEyoEeyAJcn3Jqu6tg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_4Z-PcUyoEeyAJcn3Jqu6tg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_-kAIwEyoEeyAJcn3Jqu6tg" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem1.uml#_-jyGUEyoEeyAJcn3Jqu6tg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-kAv0EyoEeyAJcn3Jqu6tg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="__33kYEyoEeyAJcn3Jqu6tg" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem1.uml#__3tMUEyoEeyAJcn3Jqu6tg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="__33kYUyoEeyAJcn3Jqu6tg"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_Ktb_-EV7EeywAt9CR0nlpw"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_Ktb_-UV7EeywAt9CR0nlpw"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_Ktb_-kV7EeywAt9CR0nlpw"/>
