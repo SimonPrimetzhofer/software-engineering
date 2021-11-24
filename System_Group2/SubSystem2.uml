@@ -362,7 +362,9 @@ Step 10: firetruck driver awaits new orders</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_u6-2kEWDEey5WIGISipCYg" name="extinguishingWater" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_Tou7QEyzEey2xa6rLkscgA" name="extinguishFire"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Tou7QEyzEey2xa6rLkscgA" name="startWaterPump"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PwtlwE1AEeyYo7zM14HCZw" name="refillWaterTank"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_fAZcAE1AEeyYo7zM14HCZw" name="stopWaterPump"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_JH8SgEVfEeybjKjyLz0qtQ" name="BaggageCart">
     <generalization xmi:type="uml:Generalization" xmi:id="_OmzH4EVfEeybjKjyLz0qtQ" general="_Gq8roEVfEeybjKjyLz0qtQ"/>
@@ -685,15 +687,13 @@ Step 10: firetruck driver awaits new orders</body>
     <message xmi:type="uml:Message" xmi:id="_SBvDoE00EeyXleny4KBDAA" name="requestFuelStatus()" receiveEvent="_SBwRwE00EeyXleny4KBDAA" sendEvent="_SBvqsE00EeyXleny4KBDAA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_73CtoE00EeyXleny4KBDAA" name="refuel">
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_-xUtcE00EeyXleny4KBDAA" name="Bus/Baggage/Maintenance/Emergency Driver" coveredBy="_dzcS8E07EeyTpNq6XJJzcw _dzbE0E07EeyTpNq6XJJzcw _TGnLkE01EeyXleny4KBDAA _TGnyoE01EeyXleny4KBDAA _krwOkE07EeyTpNq6XJJzcw _krw1oE07EeyTpNq6XJJzcw _rfEVcE07EeyTpNq6XJJzcw _rfEVcU07EeyTpNq6XJJzcw _t1Sl8E07EeyTpNq6XJJzcw _t1Sl8U07EeyTpNq6XJJzcw _9cX3QE01EeyXleny4KBDAA _dzc6AE07EeyTpNq6XJJzcw _RfomsE01EeyXleny4KBDAA _RfpNwE01EeyXleny4KBDAA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_-xUtcE00EeyXleny4KBDAA" name="Bus/Baggage/Maintenance/Emergency Driver" coveredBy="_dzcS8E07EeyTpNq6XJJzcw _dzbE0E07EeyTpNq6XJJzcw _TGnLkE01EeyXleny4KBDAA _TGnyoE01EeyXleny4KBDAA _krwOkE07EeyTpNq6XJJzcw _krw1oE07EeyTpNq6XJJzcw _rfEVcE07EeyTpNq6XJJzcw _rfEVcU07EeyTpNq6XJJzcw _t1Sl8E07EeyTpNq6XJJzcw _t1Sl8U07EeyTpNq6XJJzcw _9cX3QE01EeyXleny4KBDAA _dzc6AE07EeyTpNq6XJJzcw"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_X1ZO4E01EeyXleny4KBDAA" name="Landside Management" coveredBy="_9cYeUE01EeyXleny4KBDAA"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_dzcS8E07EeyTpNq6XJJzcw" name="ActionExecutionSpecification20Start" covered="_-xUtcE00EeyXleny4KBDAA" execution="_dzbE0E07EeyTpNq6XJJzcw"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_dzbE0E07EeyTpNq6XJJzcw" name="ActionExecutionSpecification20" covered="_-xUtcE00EeyXleny4KBDAA" finish="_dzc6AE07EeyTpNq6XJJzcw" start="_dzcS8E07EeyTpNq6XJJzcw"/>
-    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_RfpNwE01EeyXleny4KBDAA" name="ActionExecutionSpecification2Start" covered="_-xUtcE00EeyXleny4KBDAA" execution="_RfomsE01EeyXleny4KBDAA"/>
-    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_RfomsE01EeyXleny4KBDAA" name="ActionExecutionSpecification2" covered="_-xUtcE00EeyXleny4KBDAA" finish="_9cX3QE01EeyXleny4KBDAA" start="_RfpNwE01EeyXleny4KBDAA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TGnLkE01EeyXleny4KBDAA" name="Message5SendEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_TGmkgE01EeyXleny4KBDAA"/>
     <fragment xmi:type="uml:CombinedFragment" xmi:id="_zeSOwE07EeyTpNq6XJJzcw" name="CombinedFragment23" interactionOperator="alt">
       <operand xmi:type="uml:InteractionOperand" xmi:id="_0g9zwE07EeyTpNq6XJJzcw" name="InteractionOperand2">
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TGnLkE01EeyXleny4KBDAA" name="Message5SendEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_TGmkgE01EeyXleny4KBDAA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TGnyoE01EeyXleny4KBDAA" name="Message5ReceiveEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_TGmkgE01EeyXleny4KBDAA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_krwOkE07EeyTpNq6XJJzcw" name="Message14SendEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_krvAcE07EeyTpNq6XJJzcw"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_krw1oE07EeyTpNq6XJJzcw" name="Message14ReceiveEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_krvAcE07EeyTpNq6XJJzcw"/>
@@ -721,5 +721,74 @@ Step 10: firetruck driver awaits new orders</body>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_IPt6gE01EeyXleny4KBDAA" name="firetruck driver" type="_1MioIC9yEeySLpI0QUwGkw" association="_IPc0wE01EeyXleny4KBDAA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_IPt6gU01EeyXleny4KBDAA" name="request fuel status" type="_47QSYC9uEeySLpI0QUwGkw" association="_IPc0wE01EeyXleny4KBDAA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_KEveQE08EeyTpNq6XJJzcw" name="communicateNeededServices">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_ZDNBoE08EeyTpNq6XJJzcw" name="Landside Management" coveredBy="_gueEME08EeyTpNq6XJJzcw _hOV3EE08EeyTpNq6XJJzcw _3_bpQU08EeyTpNq6XJJzcw _6HBn4U08EeyTpNq6XJJzcw _hfB-cE08EeyTpNq6XJJzcw _-ApIUE09EeyyX4I_jy_gEQ _E0eMkE0-EeyyX4I_jy_gEQ"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_aYv4QE08EeyTpNq6XJJzcw" name="Maintenance-Vehicle Driver" coveredBy="_gueEME08EeyTpNq6XJJzcw _hOV3EE08EeyTpNq6XJJzcw _3_cQUE08EeyTpNq6XJJzcw _6HCO8E08EeyTpNq6XJJzcw _3_4VMU08EeyTpNq6XJJzcw _hfB-cE08EeyTpNq6XJJzcw _3_0DwE08EeyTpNq6XJJzcw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_cMTgkE08EeyTpNq6XJJzcw" name="Firetruck Driver" coveredBy="_gueEME08EeyTpNq6XJJzcw _hOV3EE08EeyTpNq6XJJzcw _hfB-cE08EeyTpNq6XJJzcw _-ApIUU09EeyyX4I_jy_gEQ _E0ezoE0-EeyyX4I_jy_gEQ _-B2pQE09EeyyX4I_jy_gEQ _-BvUgE09EeyyX4I_jy_gEQ"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_gueEME08EeyTpNq6XJJzcw" name="CombinedFragment4" covered="_cMTgkE08EeyTpNq6XJJzcw _aYv4QE08EeyTpNq6XJJzcw _ZDNBoE08EeyTpNq6XJJzcw">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_hOV3EE08EeyTpNq6XJJzcw" name="InteractionOperand2" covered="_cMTgkE08EeyTpNq6XJJzcw _aYv4QE08EeyTpNq6XJJzcw _ZDNBoE08EeyTpNq6XJJzcw">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3_bpQU08EeyTpNq6XJJzcw" name="Message5SendEvent" covered="_ZDNBoE08EeyTpNq6XJJzcw" message="_3_bpQE08EeyTpNq6XJJzcw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3_cQUE08EeyTpNq6XJJzcw" name="Message5ReceiveEvent" covered="_aYv4QE08EeyTpNq6XJJzcw" message="_3_bpQE08EeyTpNq6XJJzcw"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_3_0DwE08EeyTpNq6XJJzcw" name="BehaviorExecutionSpecification8" covered="_aYv4QE08EeyTpNq6XJJzcw" finish="_3_4VMU08EeyTpNq6XJJzcw" start="_3_cQUE08EeyTpNq6XJJzcw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6HBn4U08EeyTpNq6XJJzcw" name="Message12SendEvent" covered="_ZDNBoE08EeyTpNq6XJJzcw" message="_6HBn4E08EeyTpNq6XJJzcw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6HCO8E08EeyTpNq6XJJzcw" name="Message12ReceiveEvent" covered="_aYv4QE08EeyTpNq6XJJzcw" message="_6HBn4E08EeyTpNq6XJJzcw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3_4VMU08EeyTpNq6XJJzcw" name="Message10SendEvent" covered="_aYv4QE08EeyTpNq6XJJzcw"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_hOWeIE08EeyTpNq6XJJzcw" name="guard">
+          <specification xmi:type="uml:LiteralString" xmi:id="_oFXR4E0_EeyYo7zM14HCZw" value="maintenance task required"/>
+        </guard>
+      </operand>
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_hfB-cE08EeyTpNq6XJJzcw" name="InteractionOperand3" covered="_cMTgkE08EeyTpNq6XJJzcw _aYv4QE08EeyTpNq6XJJzcw _ZDNBoE08EeyTpNq6XJJzcw">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-ApIUE09EeyyX4I_jy_gEQ" name="Message8SendEvent" covered="_ZDNBoE08EeyTpNq6XJJzcw" message="_-AnTIE09EeyyX4I_jy_gEQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-ApIUU09EeyyX4I_jy_gEQ" name="Message8ReceiveEvent" covered="_cMTgkE08EeyTpNq6XJJzcw" message="_-AnTIE09EeyyX4I_jy_gEQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_-BvUgE09EeyyX4I_jy_gEQ" name="BehaviorExecutionSpecification11" covered="_cMTgkE08EeyTpNq6XJJzcw" finish="_-B2pQE09EeyyX4I_jy_gEQ" start="_-ApIUU09EeyyX4I_jy_gEQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_E0eMkE0-EeyyX4I_jy_gEQ" name="Message10SendEvent" covered="_ZDNBoE08EeyTpNq6XJJzcw" message="_E0dlgE0-EeyyX4I_jy_gEQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_E0ezoE0-EeyyX4I_jy_gEQ" name="Message10ReceiveEvent" covered="_cMTgkE08EeyTpNq6XJJzcw" message="_E0dlgE0-EeyyX4I_jy_gEQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-B2pQE09EeyyX4I_jy_gEQ" name="Message13SendEvent" covered="_cMTgkE08EeyTpNq6XJJzcw"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_hfClgE08EeyTpNq6XJJzcw" name="guard">
+          <specification xmi:type="uml:LiteralString" xmi:id="_q2XZ4E0_EeyYo7zM14HCZw" value="emergency occured"/>
+        </guard>
+      </operand>
+    </fragment>
+    <fragment xmi:type="uml:InteractionUse" xmi:id="_uDu_sE09EeyyX4I_jy_gEQ" name="InteractionUse8" refersTo="_Rk75QE08EeyTpNq6XJJzcw"/>
+    <fragment xmi:type="uml:InteractionUse" xmi:id="_ANYssE0-EeyyX4I_jy_gEQ" name="InteractionUse9" refersTo="_T0ruUE08EeyTpNq6XJJzcw"/>
+    <message xmi:type="uml:Message" xmi:id="_3_bpQE08EeyTpNq6XJJzcw" name="assignPlane()" receiveEvent="_3_cQUE08EeyTpNq6XJJzcw" sendEvent="_3_bpQU08EeyTpNq6XJJzcw"/>
+    <message xmi:type="uml:Message" xmi:id="_6HBn4E08EeyTpNq6XJJzcw" name="communicateServices()" receiveEvent="_6HCO8E08EeyTpNq6XJJzcw" sendEvent="_6HBn4U08EeyTpNq6XJJzcw"/>
+    <message xmi:type="uml:Message" xmi:id="_-AnTIE09EeyyX4I_jy_gEQ" name="assignPlane()" receiveEvent="_-ApIUU09EeyyX4I_jy_gEQ" sendEvent="_-ApIUE09EeyyX4I_jy_gEQ"/>
+    <message xmi:type="uml:Message" xmi:id="_E0dlgE0-EeyyX4I_jy_gEQ" name="comunicateServices()" receiveEvent="_E0ezoE0-EeyyX4I_jy_gEQ" sendEvent="_E0eMkE0-EeyyX4I_jy_gEQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_Rk75QE08EeyTpNq6XJJzcw" name="maintainPlane">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Ad6mkE0_EeyyX4I_jy_gEQ" name="Maintenance-Vehicle Driver"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_T0ruUE08EeyTpNq6XJJzcw" name="reactToEmergency">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_u-K8wE0_EeyYo7zM14HCZw" name="Firetruck Driver" coveredBy="_FJmAoE1BEeyYo7zM14HCZw _FJkygE1BEeyYo7zM14HCZw _DLX14E1AEeyYo7zM14HCZw _DLYc8E1AEeyYo7zM14HCZw _Hh6YUE1AEeyYo7zM14HCZw _Hh6YUU1AEeyYo7zM14HCZw _tOmAEE1AEeyYo7zM14HCZw _tyQGwE1AEeyYo7zM14HCZw _aZXmgE1AEeyYo7zM14HCZw _aZYNkE1AEeyYo7zM14HCZw _MVj4EE1BEeyYo7zM14HCZw _MVkfIE1BEeyYo7zM14HCZw _PvuR0E1BEeyYo7zM14HCZw _PvuR0U1BEeyYo7zM14HCZw _TIK0UE1BEeyYo7zM14HCZw _TIK0UU1BEeyYo7zM14HCZw _FJmAoU1BEeyYo7zM14HCZw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_FJmAoE1BEeyYo7zM14HCZw" name="ActionExecutionSpecification15Start" covered="_u-K8wE0_EeyYo7zM14HCZw" execution="_FJkygE1BEeyYo7zM14HCZw"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_FJkygE1BEeyYo7zM14HCZw" name="ActionExecutionSpecification15" covered="_u-K8wE0_EeyYo7zM14HCZw" finish="_FJmAoU1BEeyYo7zM14HCZw" start="_FJmAoE1BEeyYo7zM14HCZw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DLX14E1AEeyYo7zM14HCZw" name="Message5SendEvent" covered="_u-K8wE0_EeyYo7zM14HCZw" message="_DLVZoE1AEeyYo7zM14HCZw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DLYc8E1AEeyYo7zM14HCZw" name="Message5ReceiveEvent" covered="_u-K8wE0_EeyYo7zM14HCZw" message="_DLVZoE1AEeyYo7zM14HCZw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Hh6YUE1AEeyYo7zM14HCZw" name="Message8SendEvent" covered="_u-K8wE0_EeyYo7zM14HCZw" message="_Hh5xQE1AEeyYo7zM14HCZw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Hh6YUU1AEeyYo7zM14HCZw" name="Message8ReceiveEvent" covered="_u-K8wE0_EeyYo7zM14HCZw" message="_Hh5xQE1AEeyYo7zM14HCZw"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_tOmAEE1AEeyYo7zM14HCZw" name="CombinedFragment23" covered="_u-K8wE0_EeyYo7zM14HCZw" interactionOperator="alt">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_tyQGwE1AEeyYo7zM14HCZw" name="InteractionOperand2" covered="_u-K8wE0_EeyYo7zM14HCZw">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aZXmgE1AEeyYo7zM14HCZw" name="Message14SendEvent" covered="_u-K8wE0_EeyYo7zM14HCZw" message="_aZW_cE1AEeyYo7zM14HCZw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aZYNkE1AEeyYo7zM14HCZw" name="Message14ReceiveEvent" covered="_u-K8wE0_EeyYo7zM14HCZw" message="_aZW_cE1AEeyYo7zM14HCZw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MVj4EE1BEeyYo7zM14HCZw" name="Message12SendEvent" covered="_u-K8wE0_EeyYo7zM14HCZw" message="_MVip8E1BEeyYo7zM14HCZw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MVkfIE1BEeyYo7zM14HCZw" name="Message12ReceiveEvent" covered="_u-K8wE0_EeyYo7zM14HCZw" message="_MVip8E1BEeyYo7zM14HCZw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_PvuR0E1BEeyYo7zM14HCZw" name="Message13SendEvent" covered="_u-K8wE0_EeyYo7zM14HCZw" message="_PvtqwE1BEeyYo7zM14HCZw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_PvuR0U1BEeyYo7zM14HCZw" name="Message13ReceiveEvent" covered="_u-K8wE0_EeyYo7zM14HCZw" message="_PvtqwE1BEeyYo7zM14HCZw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TIK0UE1BEeyYo7zM14HCZw" name="Message14SendEvent" covered="_u-K8wE0_EeyYo7zM14HCZw" message="_TIKNQE1BEeyYo7zM14HCZw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TIK0UU1BEeyYo7zM14HCZw" name="Message14ReceiveEvent" covered="_u-K8wE0_EeyYo7zM14HCZw" message="_TIKNQE1BEeyYo7zM14HCZw"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_FJmAoU1BEeyYo7zM14HCZw" name="ActionExecutionSpecification15Finish" covered="_u-K8wE0_EeyYo7zM14HCZw" execution="_FJkygE1BEeyYo7zM14HCZw"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_tyRU4E1AEeyYo7zM14HCZw" name="guard">
+          <specification xmi:type="uml:LiteralString" xmi:id="_z_8YEE1AEeyYo7zM14HCZw" value="fire is extinguished"/>
+        </guard>
+      </operand>
+    </fragment>
+    <message xmi:type="uml:Message" xmi:id="_DLVZoE1AEeyYo7zM14HCZw" name="driveToDestination()" receiveEvent="_DLYc8E1AEeyYo7zM14HCZw" sendEvent="_DLX14E1AEeyYo7zM14HCZw"/>
+    <message xmi:type="uml:Message" xmi:id="_Hh5xQE1AEeyYo7zM14HCZw" name="startWaterPump()" receiveEvent="_Hh6YUU1AEeyYo7zM14HCZw" sendEvent="_Hh6YUE1AEeyYo7zM14HCZw"/>
+    <message xmi:type="uml:Message" xmi:id="_aZW_cE1AEeyYo7zM14HCZw" name="stopWaterPump()" receiveEvent="_aZYNkE1AEeyYo7zM14HCZw" sendEvent="_aZXmgE1AEeyYo7zM14HCZw"/>
+    <message xmi:type="uml:Message" xmi:id="_MVip8E1BEeyYo7zM14HCZw" name="reportStatus()" receiveEvent="_MVkfIE1BEeyYo7zM14HCZw" sendEvent="_MVj4EE1BEeyYo7zM14HCZw"/>
+    <message xmi:type="uml:Message" xmi:id="_PvtqwE1BEeyYo7zM14HCZw" name="driveToGarage()" receiveEvent="_PvuR0U1BEeyYo7zM14HCZw" sendEvent="_PvuR0E1BEeyYo7zM14HCZw"/>
+    <message xmi:type="uml:Message" xmi:id="_TIKNQE1BEeyYo7zM14HCZw" name="refillWaterTank()" receiveEvent="_TIK0UU1BEeyYo7zM14HCZw" sendEvent="_TIK0UE1BEeyYo7zM14HCZw"/>
   </packagedElement>
 </uml:Model>
