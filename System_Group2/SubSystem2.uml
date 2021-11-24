@@ -413,6 +413,7 @@ Step 10: firetruck driver awaits new orders</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_GR6BoE1DEeyYo7zM14HCZw" name="openPlaneFuelHatch"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_HXzSsE1DEeyYo7zM14HCZw" name="closePlaneFuelHatch"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_L4G1IE1DEeyYo7zM14HCZw" name="reportFuelUsage"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_OUdGUE1EEeyYo7zM14HCZw" name="toggleCompressor"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_ldj84EViEeybjKjyLz0qtQ" name="Driver">
     <generalization xmi:type="uml:Generalization" xmi:id="_sm3ukEY2EeyzvZaWA2zpUQ">
@@ -841,6 +842,27 @@ Step 10: firetruck driver awaits new orders</body>
     <message xmi:type="uml:Message" xmi:id="_9qSPEE1DEeyYo7zM14HCZw" name="reportFuelUsage()" receiveEvent="_9qS2IU1DEeyYo7zM14HCZw" sendEvent="_9qS2IE1DEeyYo7zM14HCZw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_5-Df0E1BEeyYo7zM14HCZw" name="checkTirePressure">
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_WDUhYE1CEeyYo7zM14HCZw" name="Meintenance-Vehicle Driver"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_WDUhYE1CEeyYo7zM14HCZw" name="Meintenance-Vehicle Driver" coveredBy="_SjOz4E1EEeyYo7zM14HCZw _SjPa8E1EEeyYo7zM14HCZw _UDOnAE1EEeyYo7zM14HCZw _UDPOEE1EEeyYo7zM14HCZw _WlnrQE1EEeyYo7zM14HCZw _XBoR0E1EEeyYo7zM14HCZw _o5uUwU1EEeyYo7zM14HCZw _o5u70E1EEeyYo7zM14HCZw _q7LPIE1EEeyYo7zM14HCZw _q7LPIU1EEeyYo7zM14HCZw _jRXlIU1EEeyYo7zM14HCZw _jRXlIE1EEeyYo7zM14HCZw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SjOz4E1EEeyYo7zM14HCZw" name="Message5SendEvent" covered="_WDUhYE1CEeyYo7zM14HCZw" message="_SjOM0E1EEeyYo7zM14HCZw"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_jRXlIE1EEeyYo7zM14HCZw" name="ActionExecutionSpecification11" covered="_WDUhYE1CEeyYo7zM14HCZw" finish="_jRXlIU1EEeyYo7zM14HCZw" start="_SjOz4E1EEeyYo7zM14HCZw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SjPa8E1EEeyYo7zM14HCZw" name="Message5ReceiveEvent" covered="_WDUhYE1CEeyYo7zM14HCZw" message="_SjOM0E1EEeyYo7zM14HCZw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UDOnAE1EEeyYo7zM14HCZw" name="Message8SendEvent" covered="_WDUhYE1CEeyYo7zM14HCZw" message="_UDNY4E1EEeyYo7zM14HCZw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UDPOEE1EEeyYo7zM14HCZw" name="Message8ReceiveEvent" covered="_WDUhYE1CEeyYo7zM14HCZw" message="_UDNY4E1EEeyYo7zM14HCZw"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_WlnrQE1EEeyYo7zM14HCZw" name="CombinedFragment11" covered="_WDUhYE1CEeyYo7zM14HCZw" interactionOperator="alt">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_XBoR0E1EEeyYo7zM14HCZw" name="InteractionOperand2" covered="_WDUhYE1CEeyYo7zM14HCZw">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_o5uUwU1EEeyYo7zM14HCZw" name="Message10SendEvent" covered="_WDUhYE1CEeyYo7zM14HCZw" message="_o5uUwE1EEeyYo7zM14HCZw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_o5u70E1EEeyYo7zM14HCZw" name="Message10ReceiveEvent" covered="_WDUhYE1CEeyYo7zM14HCZw" message="_o5uUwE1EEeyYo7zM14HCZw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_q7LPIE1EEeyYo7zM14HCZw" name="Message11SendEvent" covered="_WDUhYE1CEeyYo7zM14HCZw" message="_q7KoEE1EEeyYo7zM14HCZw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_q7LPIU1EEeyYo7zM14HCZw" name="Message11ReceiveEvent" covered="_WDUhYE1CEeyYo7zM14HCZw" message="_q7KoEE1EEeyYo7zM14HCZw"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_jRXlIU1EEeyYo7zM14HCZw" name="ActionExecutionSpecification11Finish" covered="_WDUhYE1CEeyYo7zM14HCZw" execution="_jRXlIE1EEeyYo7zM14HCZw"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_XBo44E1EEeyYo7zM14HCZw" name="guard">
+          <specification xmi:type="uml:LiteralString" xmi:id="_Z_gYME1EEeyYo7zM14HCZw" value="tire pressure is high enough"/>
+        </guard>
+      </operand>
+    </fragment>
+    <message xmi:type="uml:Message" xmi:id="_SjOM0E1EEeyYo7zM14HCZw" name="toggleCompressor()" receiveEvent="_SjPa8E1EEeyYo7zM14HCZw" sendEvent="_SjOz4E1EEeyYo7zM14HCZw"/>
+    <message xmi:type="uml:Message" xmi:id="_UDNY4E1EEeyYo7zM14HCZw" name="startAirPump()" receiveEvent="_UDPOEE1EEeyYo7zM14HCZw" sendEvent="_UDOnAE1EEeyYo7zM14HCZw"/>
+    <message xmi:type="uml:Message" xmi:id="_o5uUwE1EEeyYo7zM14HCZw" name="stopAirPump()" receiveEvent="_o5u70E1EEeyYo7zM14HCZw" sendEvent="_o5uUwU1EEeyYo7zM14HCZw"/>
+    <message xmi:type="uml:Message" xmi:id="_q7KoEE1EEeyYo7zM14HCZw" name="toggleCompressor()" receiveEvent="_q7LPIU1EEeyYo7zM14HCZw" sendEvent="_q7LPIE1EEeyYo7zM14HCZw"/>
   </packagedElement>
 </uml:Model>
