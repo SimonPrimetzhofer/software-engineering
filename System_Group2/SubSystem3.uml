@@ -513,6 +513,11 @@ Step 5: Passenger leaves border police office</body>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_fC1S8EymEeykW7qwzvpppQ" type="_RThEcEVtEeyuwuc0dTQ-tQ" direction="return" effect="read"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_GR8WwEynEeykW7qwzvpppQ" name="displayFlightInformation"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_lbKw8E1JEeylrtBNYek5mA" name="requestPassengerTransport"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_oHQjwE1JEeylrtBNYek5mA" name="requestBaggageTransport"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BNtDwE1KEeylrtBNYek5mA" name="requestBaggageTransport"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DGJzIE1KEeylrtBNYek5mA" name="requestPassengerTransport"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LTVP8E1KEeylrtBNYek5mA" name="assignGate"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Realization" xmi:id="_sgRagEY6EeyzvZaWA2zpUQ" client="_idyo8EY6EeyzvZaWA2zpUQ">
     <supplier xmi:type="uml:Interface" href="System_Group2.uml#_s6wMkEV1EeywAt9CR0nlpw"/>
@@ -647,16 +652,16 @@ Step 5: Passenger leaves border police office</body>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_fJ5ssUvUEeyOoNG3x3u_Yw" name="Message8SendEvent" covered="_c6bkcEvUEeyOoNG3x3u_Yw" message="_fJ5ssEvUEeyOoNG3x3u_Yw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_fJ6TwEvUEeyOoNG3x3u_Yw" name="Message8ReceiveEvent" covered="_cGEvUEvUEeyOoNG3x3u_Yw" message="_fJ5ssEvUEeyOoNG3x3u_Yw"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_8K6vYEvVEeyOoNG3x3u_Yw" name="ActionExecutionSpecification10" covered="_cGEvUEvUEeyOoNG3x3u_Yw" finish="_FcdzQEvWEeyOoNG3x3u_Yw" start="_fJ6TwEvUEeyOoNG3x3u_Yw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FcdzQEvWEeyOoNG3x3u_Yw" name="Message12SendEvent" covered="_cGEvUEvUEeyOoNG3x3u_Yw" message="_FcclIEvWEeyOoNG3x3u_Yw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FceaUEvWEeyOoNG3x3u_Yw" name="Message12ReceiveEvent" covered="_c6bkcEvUEeyOoNG3x3u_Yw" message="_FcclIEvWEeyOoNG3x3u_Yw"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_O3h_gEvWEeyOoNG3x3u_Yw" name="ActionExecutionSpecification14" covered="_c6bkcEvUEeyOoNG3x3u_Yw" finish="_hRCtcEvWEeyOoNG3x3u_Yw" start="_FceaUEvWEeyOoNG3x3u_Yw"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FcdzQEvWEeyOoNG3x3u_Yw" name="Message12SendEvent" covered="_cGEvUEvUEeyOoNG3x3u_Yw" message="_FcclIEvWEeyOoNG3x3u_Yw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Q-FcUEvWEeyOoNG3x3u_Yw" name="Message16SendEvent" covered="_c6bkcEvUEeyOoNG3x3u_Yw" message="_Q-EOMEvWEeyOoNG3x3u_Yw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Q-FcUUvWEeyOoNG3x3u_Yw" name="Message16ReceiveEvent" covered="_c6bkcEvUEeyOoNG3x3u_Yw" message="_Q-EOMEvWEeyOoNG3x3u_Yw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_hRCGYEvWEeyOoNG3x3u_Yw" name="Message19SendEvent" covered="_c6bkcEvUEeyOoNG3x3u_Yw" message="_hRA4QEvWEeyOoNG3x3u_Yw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_hRCtcEvWEeyOoNG3x3u_Yw" name="Message19ReceiveEvent" covered="_c6bkcEvUEeyOoNG3x3u_Yw" message="_hRA4QEvWEeyOoNG3x3u_Yw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_s15JUEvZEeyOoNG3x3u_Yw" name="Message28SendEvent" covered="_c6bkcEvUEeyOoNG3x3u_Yw" message="_s14iQEvZEeyOoNG3x3u_Yw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_s15JUUvZEeyOoNG3x3u_Yw" name="Message28ReceiveEvent" covered="_cGEvUEvUEeyOoNG3x3u_Yw" message="_s14iQEvZEeyOoNG3x3u_Yw"/>
     <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_s2Rj0EvZEeyOoNG3x3u_Yw" name="BehaviorExecutionSpecification31" covered="_cGEvUEvUEeyOoNG3x3u_Yw" finish="_s2UAEEvZEeyOoNG3x3u_Yw" start="_s15JUUvZEeyOoNG3x3u_Yw"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_s15JUEvZEeyOoNG3x3u_Yw" name="Message28SendEvent" covered="_c6bkcEvUEeyOoNG3x3u_Yw" message="_s14iQEvZEeyOoNG3x3u_Yw"/>
     <fragment xmi:type="uml:CombinedFragment" xmi:id="_IecEkEvYEeyOoNG3x3u_Yw" name="CombinedFragment27" covered="_cGEvUEvUEeyOoNG3x3u_Yw _c6bkcEvUEeyOoNG3x3u_Yw" interactionOperator="alt">
       <operand xmi:type="uml:InteractionOperand" xmi:id="_7BwnkEvYEeyOoNG3x3u_Yw" name="InteractionOperand2" covered="_cGEvUEvUEeyOoNG3x3u_Yw _c6bkcEvUEeyOoNG3x3u_Yw">
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_s2UAEEvZEeyOoNG3x3u_Yw" name="Message33SendEvent" covered="_cGEvUEvUEeyOoNG3x3u_Yw" message="_s2TZAEvZEeyOoNG3x3u_Yw"/>
