@@ -595,11 +595,12 @@ Step 6: Landside Management transports baggage and passengers to the airplane</b
     <fragment xmi:type="uml:InteractionUse" xmi:id="_bNFW4E1KEeylrtBNYek5mA" name="InteractionUse18" covered="_H9YdQE1JEeylrtBNYek5mA">
       <refersTo xmi:type="uml:Interaction" href="SubSystem2.uml#_o_gR0E0yEeyXleny4KBDAA"/>
     </fragment>
+    <fragment xmi:type="uml:InteractionUse" xmi:id="_5fESME1LEeyZGe5dLh4LrQ" name="InteractionUse27" refersTo="_pVZXoEyVEeySoNHEBsVkaA"/>
     <message xmi:type="uml:Message" xmi:id="_PiIoIE1JEeylrtBNYek5mA" name="requestPassengerTransport()" receiveEvent="_PiLrcE1JEeylrtBNYek5mA" sendEvent="_PiLEYE1JEeylrtBNYek5mA"/>
     <message xmi:type="uml:Message" xmi:id="_Pi4PAE1JEeylrtBNYek5mA" name="requestDestination()" messageSort="reply" receiveEvent="_Pi42EU1JEeylrtBNYek5mA" sendEvent="_Pi42EE1JEeylrtBNYek5mA"/>
     <message xmi:type="uml:Message" xmi:id="_RQ0XgE1JEeylrtBNYek5mA" name="requestBaggageTransport()" receiveEvent="_RQ1loE1JEeylrtBNYek5mA" sendEvent="_RQ0-kE1JEeylrtBNYek5mA"/>
     <message xmi:type="uml:Message" xmi:id="_9ZRv4E1JEeylrtBNYek5mA" name="assignGate()" receiveEvent="_9ZS-AE1JEeylrtBNYek5mA" sendEvent="_9ZSW8E1JEeylrtBNYek5mA"/>
-    <message xmi:type="uml:Message" xmi:id="_3ulBcE1KEeylrtBNYek5mA" name="getFlightInformation()" receiveEvent="_3umPkE1KEeylrtBNYek5mA" sendEvent="_3ulogE1KEeylrtBNYek5mA"/>
+    <message xmi:type="uml:Message" xmi:id="_3ulBcE1KEeylrtBNYek5mA" name="requestDestination()" receiveEvent="_3umPkE1KEeylrtBNYek5mA" sendEvent="_3ulogE1KEeylrtBNYek5mA"/>
     <message xmi:type="uml:Message" xmi:id="_3vKQQE1KEeylrtBNYek5mA" name="Message25" messageSort="reply" receiveEvent="_3vK3UU1KEeylrtBNYek5mA" sendEvent="_3vK3UE1KEeylrtBNYek5mA"/>
   </packagedElement>
 </uml:Model>

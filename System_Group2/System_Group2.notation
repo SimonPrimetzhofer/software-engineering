@@ -2382,6 +2382,13 @@
           <element xmi:type="uml:Lifeline" href="System_Group2.uml#_0KxjgE1KEeylrtBNYek5mA"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0K3qIU1KEeylrtBNYek5mA" x="34" y="10" width="161"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_5fUw4E1LEeyZGe5dLh4LrQ" type="InteractionUse_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_5fVX8E1LEeyZGe5dLh4LrQ" type="InteractionUse_NameLabel"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_5fVX8U1LEeyZGe5dLh4LrQ" type="InteractionUse_TypeLabel"/>
+          <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_5fUw4U1LEeyZGe5dLh4LrQ"/>
+          <element xmi:type="uml:InteractionUse" href="System_Group2.uml#_5fESME1LEeyZGe5dLh4LrQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5fUw4k1LEeyZGe5dLh4LrQ" x="14" y="271" width="141" height="61"/>
+        </children>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pkxVhE1HEeylrtBNYek5mA"/>
       </children>
       <element xmi:type="uml:Interaction" href="System_Group2.uml#_neMDgE1HEeylrtBNYek5mA"/>
@@ -2447,7 +2454,7 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_3urvIE1KEeylrtBNYek5mA" type="Message_SynchEdge" source="_JVp3wE1JEeylrtBNYek5mA" target="_0K3qIE1KEeylrtBNYek5mA">
       <children xmi:type="notation:DecorationNode" xmi:id="_3urvI01KEeylrtBNYek5mA" type="Message_SynchNameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_3urvJE1KEeylrtBNYek5mA" x="1" y="-13"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_3urvJE1KEeylrtBNYek5mA" x="-18" y="-10"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_3urvJU1KEeylrtBNYek5mA" type="Message_SynchStereotypeLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_3urvJk1KEeylrtBNYek5mA" x="1" y="-33"/>
