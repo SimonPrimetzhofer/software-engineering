@@ -991,6 +991,14 @@
           <element xmi:type="uml:Operation" href="SubSystem3.uml#_LTVP8E1KEeylrtBNYek5mA"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_LT4CgU1KEeylrtBNYek5mA"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_CKPNQFFXEeyyJ56jypuNLg" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem3.uml#_CJFWsFFXEeyyJ56jypuNLg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_CKPNQVFXEeyyJ56jypuNLg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_a-o7AFFXEeyyJ56jypuNLg" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem3.uml#_a-LA8FFXEeyyJ56jypuNLg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_a-o7AVFXEeyyJ56jypuNLg"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_idz3GUY6EeyzvZaWA2zpUQ"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_idz3GkY6EeyzvZaWA2zpUQ"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_idz3G0Y6EeyzvZaWA2zpUQ"/>

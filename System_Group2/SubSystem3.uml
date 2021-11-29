@@ -518,6 +518,8 @@ Step 5: Passenger leaves border police office</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_BNtDwE1KEeylrtBNYek5mA" name="requestBaggageTransport"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_DGJzIE1KEeylrtBNYek5mA" name="requestPassengerTransport"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_LTVP8E1KEeylrtBNYek5mA" name="assignGate"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_CJFWsFFXEeyyJ56jypuNLg" name="requestClothing"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_a-LA8FFXEeyyJ56jypuNLg" name="requestUtils"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Realization" xmi:id="_sgRagEY6EeyzvZaWA2zpUQ" client="_idyo8EY6EeyzvZaWA2zpUQ">
     <supplier xmi:type="uml:Interface" href="System_Group2.uml#_s6wMkEV1EeywAt9CR0nlpw"/>
