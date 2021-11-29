@@ -354,9 +354,17 @@ Step 10: firetruck driver awaits new orders</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_yl-sMEWEEey5WIGISipCYg" name="isReady">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_MT1KQEyzEey2xa6rLkscgA" name="reportFuelConsumption"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_MT1KQEyzEey2xa6rLkscgA" name="reportFuelConsumption">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_M_SxoFFfEeyg4ZuSxEY4fw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_fk6UwE00EeyXleny4KBDAA" name="openFuelCap"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_WDSuQFFKEeyg4ZuSxEY4fw" name="sendFuelStatus"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WDSuQFFKEeyg4ZuSxEY4fw" name="sendFuelStatus">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_LB1mcFFfEeyg4ZuSxEY4fw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_HSLDsEVfEeybjKjyLz0qtQ" name="EmergencyVehicle">
     <generalization xmi:type="uml:Generalization" xmi:id="_M7s4AEVfEeybjKjyLz0qtQ" general="_Gq8roEVfEeybjKjyLz0qtQ"/>
@@ -413,7 +421,11 @@ Step 10: firetruck driver awaits new orders</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_CX3N8E1DEeyYo7zM14HCZw" name="stopFuelPump"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_GR6BoE1DEeyYo7zM14HCZw" name="openPlaneFuelHatch"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_HXzSsE1DEeyYo7zM14HCZw" name="closePlaneFuelHatch"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_L4G1IE1DEeyYo7zM14HCZw" name="reportFuelUsage"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_L4G1IE1DEeyYo7zM14HCZw" name="reportFuelUsage">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QBW0cFFfEeyg4ZuSxEY4fw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_OUdGUE1EEeyYo7zM14HCZw" name="toggleCompressor"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_ldj84EViEeybjKjyLz0qtQ" name="Driver">
