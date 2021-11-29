@@ -356,6 +356,7 @@ Step 10: firetruck driver awaits new orders</body>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_MT1KQEyzEey2xa6rLkscgA" name="reportFuelConsumption"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_fk6UwE00EeyXleny4KBDAA" name="openFuelCap"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WDSuQFFKEeyg4ZuSxEY4fw" name="sendFuelStatus"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_HSLDsEVfEeybjKjyLz0qtQ" name="EmergencyVehicle">
     <generalization xmi:type="uml:Generalization" xmi:id="_M7s4AEVfEeybjKjyLz0qtQ" general="_Gq8roEVfEeybjKjyLz0qtQ"/>
@@ -708,6 +709,7 @@ Step 10: firetruck driver awaits new orders</body>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SBwRwE00EeyXleny4KBDAA" name="Message3ReceiveEvent" covered="_N7dKwE00EeyXleny4KBDAA" message="_SBvDoE00EeyXleny4KBDAA"/>
     <fragment xmi:type="uml:InteractionUse" xmi:id="_aRxAIE00EeyXleny4KBDAA" name="InteractionUse6" covered="_N7dKwE00EeyXleny4KBDAA" refersTo="_73CtoE00EeyXleny4KBDAA"/>
     <message xmi:type="uml:Message" xmi:id="_SBvDoE00EeyXleny4KBDAA" name="requestFuelStatus()" receiveEvent="_SBwRwE00EeyXleny4KBDAA" sendEvent="_SBvqsE00EeyXleny4KBDAA"/>
+    <message xmi:type="uml:Message" xmi:id="_gctZIFFKEeyg4ZuSxEY4fw" name="sendFuelStatus()" messageSort="reply"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_73CtoE00EeyXleny4KBDAA" name="refuel">
     <lifeline xmi:type="uml:Lifeline" xmi:id="_-xUtcE00EeyXleny4KBDAA" name="Bus/Baggage/Maintenance/Emergency Driver" coveredBy="_dzcS8E07EeyTpNq6XJJzcw _dzbE0E07EeyTpNq6XJJzcw _TGnLkE01EeyXleny4KBDAA _TGnyoE01EeyXleny4KBDAA _krwOkE07EeyTpNq6XJJzcw _krw1oE07EeyTpNq6XJJzcw _rfEVcE07EeyTpNq6XJJzcw _rfEVcU07EeyTpNq6XJJzcw _t1Sl8E07EeyTpNq6XJJzcw _t1Sl8U07EeyTpNq6XJJzcw _9cX3QE01EeyXleny4KBDAA _dzc6AE07EeyTpNq6XJJzcw"/>
