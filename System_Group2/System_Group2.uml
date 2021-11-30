@@ -571,28 +571,28 @@ Step 6: Landside Management transports baggage and passengers to the airplane</b
     <message xmi:type="uml:Message" xmi:id="_Q7nOsEyoEeyAJcn3Jqu6tg" name="4: buyUtils()" messageSort="reply" receiveEvent="_Q7oc0EyoEeyAJcn3Jqu6tg" sendEvent="_Q7n1wEyoEeyAJcn3Jqu6tg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_neMDgE1HEeylrtBNYek5mA" name="provideGateinfo">
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_H9YdQE1JEeylrtBNYek5mA" name="Landside Management" coveredBy="_PiLrcE1JEeylrtBNYek5mA _RQ1loE1JEeylrtBNYek5mA _Pi42EE1JEeylrtBNYek5mA _9ZS-AE1JEeylrtBNYek5mA _PitP4E1JEeylrtBNYek5mA _TkNhAE1KEeylrtBNYek5mA _bNFW4E1KEeylrtBNYek5mA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_H9YdQE1JEeylrtBNYek5mA" name="Landside Management" coveredBy="_PiLrcE1JEeylrtBNYek5mA _RQ1loE1JEeylrtBNYek5mA _Pi42EE1JEeylrtBNYek5mA _9ZS-AE1JEeylrtBNYek5mA _3vK3UU1KEeylrtBNYek5mA _PitP4E1JEeylrtBNYek5mA _TkNhAE1KEeylrtBNYek5mA"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_JVmNYE1JEeylrtBNYek5mA" name="Terminal Management" coveredBy="_PiLEYE1JEeylrtBNYek5mA _RQ0-kE1JEeylrtBNYek5mA _Pi42EU1JEeylrtBNYek5mA _3ulogE1KEeylrtBNYek5mA _9ZSW8E1JEeylrtBNYek5mA _3vK3UU1KEeylrtBNYek5mA _83tT4E1JEeylrtBNYek5mA"/>
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_0KxjgE1KEeylrtBNYek5mA" name="Airside Management" coveredBy="_3umPkE1KEeylrtBNYek5mA _3vK3UE1KEeylrtBNYek5mA _3vH0AE1KEeylrtBNYek5mA"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_PiLEYE1JEeylrtBNYek5mA" name="Message3SendEvent" covered="_JVmNYE1JEeylrtBNYek5mA" message="_PiIoIE1JEeylrtBNYek5mA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_0KxjgE1KEeylrtBNYek5mA" name="Airside Management" coveredBy="_Pi42EU1JEeylrtBNYek5mA _3umPkE1KEeylrtBNYek5mA _3vK3UE1KEeylrtBNYek5mA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_PiLrcE1JEeylrtBNYek5mA" name="Message3ReceiveEvent" covered="_H9YdQE1JEeylrtBNYek5mA" message="_PiIoIE1JEeylrtBNYek5mA"/>
     <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_PitP4E1JEeylrtBNYek5mA" name="BehaviorExecutionSpecification6" covered="_H9YdQE1JEeylrtBNYek5mA" finish="_Pi42EE1JEeylrtBNYek5mA" start="_PiLrcE1JEeylrtBNYek5mA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_PiLEYE1JEeylrtBNYek5mA" name="Message3SendEvent" covered="_JVmNYE1JEeylrtBNYek5mA" message="_PiIoIE1JEeylrtBNYek5mA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RQ0-kE1JEeylrtBNYek5mA" name="Message10SendEvent" covered="_JVmNYE1JEeylrtBNYek5mA" message="_RQ0XgE1JEeylrtBNYek5mA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RQ1loE1JEeylrtBNYek5mA" name="Message10ReceiveEvent" covered="_H9YdQE1JEeylrtBNYek5mA" message="_RQ0XgE1JEeylrtBNYek5mA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Pi42EE1JEeylrtBNYek5mA" name="Message8SendEvent" covered="_H9YdQE1JEeylrtBNYek5mA" message="_Pi4PAE1JEeylrtBNYek5mA"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Pi42EU1JEeylrtBNYek5mA" name="Message8ReceiveEvent" covered="_JVmNYE1JEeylrtBNYek5mA" message="_Pi4PAE1JEeylrtBNYek5mA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Pi42EU1JEeylrtBNYek5mA" name="Message8ReceiveEvent" covered="_0KxjgE1KEeylrtBNYek5mA _JVmNYE1JEeylrtBNYek5mA" message="_Pi4PAE1JEeylrtBNYek5mA"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_83tT4E1JEeylrtBNYek5mA" name="ActionExecutionSpecification13" covered="_JVmNYE1JEeylrtBNYek5mA" finish="_9ZSW8E1JEeylrtBNYek5mA" start="_Pi42EU1JEeylrtBNYek5mA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3ulogE1KEeylrtBNYek5mA" name="Message20SendEvent" covered="_JVmNYE1JEeylrtBNYek5mA" message="_3ulBcE1KEeylrtBNYek5mA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3umPkE1KEeylrtBNYek5mA" name="Message20ReceiveEvent" covered="_0KxjgE1KEeylrtBNYek5mA" message="_3ulBcE1KEeylrtBNYek5mA"/>
-    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_3vH0AE1KEeylrtBNYek5mA" name="BehaviorExecutionSpecification23" covered="_0KxjgE1KEeylrtBNYek5mA" finish="_3vK3UE1KEeylrtBNYek5mA" start="_3umPkE1KEeylrtBNYek5mA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_3vH0AE1KEeylrtBNYek5mA" name="BehaviorExecutionSpecification23" finish="_3vK3UE1KEeylrtBNYek5mA" start="_3umPkE1KEeylrtBNYek5mA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9ZSW8E1JEeylrtBNYek5mA" name="Message15SendEvent" covered="_JVmNYE1JEeylrtBNYek5mA" message="_9ZRv4E1JEeylrtBNYek5mA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3vK3UE1KEeylrtBNYek5mA" name="Message25SendEvent" covered="_0KxjgE1KEeylrtBNYek5mA" message="_3vKQQE1KEeylrtBNYek5mA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9ZS-AE1JEeylrtBNYek5mA" name="Message15ReceiveEvent" covered="_H9YdQE1JEeylrtBNYek5mA" message="_9ZRv4E1JEeylrtBNYek5mA"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3vK3UU1KEeylrtBNYek5mA" name="Message25ReceiveEvent" covered="_JVmNYE1JEeylrtBNYek5mA" message="_3vKQQE1KEeylrtBNYek5mA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3vK3UU1KEeylrtBNYek5mA" name="Message25ReceiveEvent" covered="_JVmNYE1JEeylrtBNYek5mA _H9YdQE1JEeylrtBNYek5mA" message="_3vKQQE1KEeylrtBNYek5mA"/>
     <fragment xmi:type="uml:InteractionUse" xmi:id="_TkNhAE1KEeylrtBNYek5mA" name="InteractionUse17" covered="_H9YdQE1JEeylrtBNYek5mA">
       <refersTo xmi:type="uml:Interaction" href="SubSystem2.uml#_-VD0MEywEeyLgdem-e7wug"/>
     </fragment>
-    <fragment xmi:type="uml:InteractionUse" xmi:id="_bNFW4E1KEeylrtBNYek5mA" name="InteractionUse18" covered="_H9YdQE1JEeylrtBNYek5mA">
+    <fragment xmi:type="uml:InteractionUse" xmi:id="_bNFW4E1KEeylrtBNYek5mA" name="InteractionUse18">
       <refersTo xmi:type="uml:Interaction" href="SubSystem2.uml#_o_gR0E0yEeyXleny4KBDAA"/>
     </fragment>
     <fragment xmi:type="uml:InteractionUse" xmi:id="_5fESME1LEeyZGe5dLh4LrQ" name="InteractionUse27" refersTo="_pVZXoEyVEeySoNHEBsVkaA"/>
@@ -600,7 +600,7 @@ Step 6: Landside Management transports baggage and passengers to the airplane</b
     <message xmi:type="uml:Message" xmi:id="_Pi4PAE1JEeylrtBNYek5mA" name="requestDestination()" messageSort="reply" receiveEvent="_Pi42EU1JEeylrtBNYek5mA" sendEvent="_Pi42EE1JEeylrtBNYek5mA"/>
     <message xmi:type="uml:Message" xmi:id="_RQ0XgE1JEeylrtBNYek5mA" name="requestBaggageTransport()" receiveEvent="_RQ1loE1JEeylrtBNYek5mA" sendEvent="_RQ0-kE1JEeylrtBNYek5mA"/>
     <message xmi:type="uml:Message" xmi:id="_9ZRv4E1JEeylrtBNYek5mA" name="assignGate()" receiveEvent="_9ZS-AE1JEeylrtBNYek5mA" sendEvent="_9ZSW8E1JEeylrtBNYek5mA"/>
-    <message xmi:type="uml:Message" xmi:id="_3ulBcE1KEeylrtBNYek5mA" name="requestDestination()" receiveEvent="_3umPkE1KEeylrtBNYek5mA" sendEvent="_3ulogE1KEeylrtBNYek5mA"/>
-    <message xmi:type="uml:Message" xmi:id="_3vKQQE1KEeylrtBNYek5mA" name="Message25" messageSort="reply" receiveEvent="_3vK3UU1KEeylrtBNYek5mA" sendEvent="_3vK3UE1KEeylrtBNYek5mA"/>
+    <message xmi:type="uml:Message" xmi:id="_3ulBcE1KEeylrtBNYek5mA" name="coordinateBaggageDeposit()" receiveEvent="_3umPkE1KEeylrtBNYek5mA" sendEvent="_3ulogE1KEeylrtBNYek5mA"/>
+    <message xmi:type="uml:Message" xmi:id="_3vKQQE1KEeylrtBNYek5mA" name="provideParkingLocation()" messageSort="reply" receiveEvent="_3vK3UU1KEeylrtBNYek5mA" sendEvent="_3vK3UE1KEeylrtBNYek5mA"/>
   </packagedElement>
 </uml:Model>

@@ -2467,7 +2467,7 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_3vLeYE1KEeylrtBNYek5mA" type="Message_ReplyEdge" source="_0K3qIE1KEeylrtBNYek5mA" target="_JVp3wE1JEeylrtBNYek5mA">
       <children xmi:type="notation:DecorationNode" xmi:id="_3vLeY01KEeylrtBNYek5mA" type="Message_ReplyNameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_3vLeZE1KEeylrtBNYek5mA" x="1" y="-13"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_3vLeZE1KEeylrtBNYek5mA" x="24" y="-13"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_3vLeZU1KEeylrtBNYek5mA" type="Message_ReplyStereotypeLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_3vLeZk1KEeylrtBNYek5mA" x="1" y="-33"/>
