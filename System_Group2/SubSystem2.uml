@@ -520,6 +520,7 @@ Step 10: firetruck driver awaits new orders</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="__q1k0E0zEeyXleny4KBDAA" name="requestFuelStatus"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_tW21IE1JEeylrtBNYek5mA" name="requestDestination"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_3wBoYE1JEeylrtBNYek5mA" name="requestDestination"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LnJsMFIeEeyhStk-XKi7RA" name="recalculateRoute"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_PbeEAEY5EeyzvZaWA2zpUQ" name="contains" memberEnd="_PberEkY5EeyzvZaWA2zpUQ _PbfSIUY5EeyzvZaWA2zpUQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PberEEY5EeyzvZaWA2zpUQ" source="org.eclipse.papyrus">

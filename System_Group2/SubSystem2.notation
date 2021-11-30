@@ -1237,6 +1237,10 @@
           <element xmi:type="uml:Operation" href="SubSystem2.uml#_3wBoYE1JEeylrtBNYek5mA"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_3wjz4U1JEeylrtBNYek5mA"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_LnhfoFIeEeyhStk-XKi7RA" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem2.uml#_LnJsMFIeEeyhStk-XKi7RA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_LnhfoVIeEeyhStk-XKi7RA"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_5pIZG0Y4EeyzvZaWA2zpUQ"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_5pIZHEY4EeyzvZaWA2zpUQ"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_5pIZHUY4EeyzvZaWA2zpUQ"/>
