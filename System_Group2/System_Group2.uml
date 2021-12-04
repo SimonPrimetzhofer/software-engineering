@@ -240,9 +240,6 @@ Step 6: Landside Management transports baggage and passengers to the airplane</b
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_s6wMkEV1EeywAt9CR0nlpw" name="AirportSubsystem"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_OkdNYEZCEeyzvZaWA2zpUQ" name="AirportManagement">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_S6xGUEZCEeyzvZaWA2zpUQ" name="AM">
-      <type xmi:type="uml:Class" href="SubSystem1.uml#_KtWgYEV7EeywAt9CR0nlpw"/>
-    </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_UfQX4EZCEeyzvZaWA2zpUQ" name="LM">
       <type xmi:type="uml:Class" href="SubSystem2.uml#_5pHyAEY4EeyzvZaWA2zpUQ"/>
     </ownedAttribute>
