@@ -1,4 +1,4 @@
-package terminal.model;
+package terminal;
 
 import lombok.*;
 
@@ -10,7 +10,9 @@ import java.util.Date;
 @ToString
 public class Passport {
     @NonNull
-    private final int passportNumber;
+    private final Integer passportNumber;
+    @NonNull
+    private final String issuedFor;
     @NonNull
     private final Date validToDate;
     @NonNull

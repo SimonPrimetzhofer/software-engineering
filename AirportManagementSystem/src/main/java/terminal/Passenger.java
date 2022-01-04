@@ -1,8 +1,9 @@
-package terminal.model;
+package terminal;
 
 import lombok.*;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author Simon Primetzhofer
@@ -25,7 +26,13 @@ public class Passenger {
     @NonNull
     private Passport passport;
 
+    private List<BaggageItem> baggageItems;
+
     public Passport handOverPassport() {
         return passport;
+    }
+
+    public void payExceededFee(int amount) {
+
     }
 }

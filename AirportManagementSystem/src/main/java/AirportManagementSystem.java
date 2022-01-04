@@ -1,9 +1,14 @@
+import lombok.extern.java.Log;
+
+import java.util.logging.Level;
+
 /**
  * @author Simon Primetzhofer
  */
 
+@Log
 public class AirportManagementSystem {
     public static void main(String[] args) {
-        System.out.println("Starting airport management system...");
+        log.log(Level.INFO,"Starting airport management system");
     }
 }

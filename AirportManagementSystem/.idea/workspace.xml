@@ -5,9 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68c266bf-439a-4232-bf2e-86839909e63d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/terminal/model/Passport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/landside/model/Deposit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/landside/model/Gate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/terminal/BaggageItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/terminal/CheckIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/terminal/FlightInformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/terminal/Tag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/terminal/TaggingMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/terminal/CheckInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/model/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/model/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AirportManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirportManagementSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/TerminalManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/TerminalManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/model/CheckIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/model/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/model/Passport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/Passport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../System_Group2/SubSystem3.notation" beforeDir="false" afterPath="$PROJECT_DIR$/../System_Group2/SubSystem3.notation" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../System_Group2/SubSystem3.uml" beforeDir="false" afterPath="$PROJECT_DIR$/../System_Group2/SubSystem3.uml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../System_Group2/SubSystem3_de_AT.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../System_Group2/SubSystem3_de_AT.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +67,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -64,6 +86,44 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="terminal.model" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CheckInTest.performCheckIn" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;terminal.CheckInTest.performCheckIn&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.CheckInTest.performCheckIn" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,7 +133,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1641294221811</updated>
-      <workItem from="1641294223237" duration="3739000" />
+      <workItem from="1641294223237" duration="12480000" />
     </task>
     <servers />
   </component>

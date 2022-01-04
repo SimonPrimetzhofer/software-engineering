@@ -6,7 +6,4 @@ package terminal;
 
 public class TerminalManagement {
 
-    // check-in flight
-
-    // check passport
 }

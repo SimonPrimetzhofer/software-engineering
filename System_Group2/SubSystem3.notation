@@ -565,6 +565,10 @@
           <element xmi:type="uml:Property" href="SubSystem3.uml#_6Y0TMEWAEeyuwuc0dTQ-tQ"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_6ZFY8UWAEeyuwuc0dTQ-tQ"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_m6UL4G18Eey08LdS0d4lJw" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="SubSystem3.uml#_m42zUG18Eey08LdS0d4lJw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_m6UL4W18Eey08LdS0d4lJw"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="__GsusUVsEeyuwuc0dTQ-tQ"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="__GsuskVsEeyuwuc0dTQ-tQ"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="__Gsus0VsEeyuwuc0dTQ-tQ"/>
@@ -790,6 +794,10 @@
         <children xmi:type="notation:Shape" xmi:id="_zdPbEFFbEey8wbtUEHnqmw" type="Operation_ClassOperationLabel">
           <element xmi:type="uml:Operation" href="SubSystem3.uml#_zcdX8FFbEey8wbtUEHnqmw"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_zdPbEVFbEey8wbtUEHnqmw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ynHp4G1_Eey08LdS0d4lJw" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem3.uml#_ymohsG1_Eey08LdS0d4lJw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ynHp4W1_Eey08LdS0d4lJw"/>
         </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_RTi5pkVtEeyuwuc0dTQ-tQ"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_RTi5p0VtEeyuwuc0dTQ-tQ"/>
@@ -1939,7 +1947,7 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_S9B6pEvpEeyHF9epGOU4zg" type="InteractionUse_TypeLabel"/>
           <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_S9B6oUvpEeyHF9epGOU4zg"/>
           <element xmi:type="uml:InteractionUse" href="SubSystem3.uml#_S86l4EvpEeyHF9epGOU4zg"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9B6okvpEeyHF9epGOU4zg" x="584" y="675" width="130" height="142"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9B6okvpEeyHF9epGOU4zg" x="614" y="676" width="130" height="142"/>
         </children>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OisfVEvTEeyOoNG3x3u_Yw"/>
       </children>
@@ -2019,19 +2027,6 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_s1-B0kvZEeyOoNG3x3u_Yw" points="[-1, 0, 525, 0]$[-526, 0, 0, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_s2KPEEvZEeyOoNG3x3u_Yw" id="(0.5,0.5859213250517599)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_s2KPEUvZEeyOoNG3x3u_Yw" id="(0.5,0.5983086680761099)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_s2UnIEvZEeyOoNG3x3u_Yw" type="Message_ReplyEdge" source="_cGGkgEvUEeyOoNG3x3u_Yw" target="_c6eAsEvUEeyOoNG3x3u_Yw">
-      <children xmi:type="notation:DecorationNode" xmi:id="_s2UnI0vZEeyOoNG3x3u_Yw" type="Message_ReplyNameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_s2UnJEvZEeyOoNG3x3u_Yw" x="1" y="-13"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_s2UnJUvZEeyOoNG3x3u_Yw" type="Message_ReplyStereotypeLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_s2UnJkvZEeyOoNG3x3u_Yw" x="1" y="-33"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_s2UnIUvZEeyOoNG3x3u_Yw"/>
-      <element xmi:type="uml:Message" href="SubSystem3.uml#_s2TZAEvZEeyOoNG3x3u_Yw"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_s2UnIkvZEeyOoNG3x3u_Yw" points="[0, 0, -526, 0]$[525, 0, -1, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_s2WcUEvZEeyOoNG3x3u_Yw" id="(0.5,0.7040169133192389)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_s2WcUUvZEeyOoNG3x3u_Yw" id="(0.5,0.6894409937888198)"/>
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_EkEZYEvbEeyOoNG3x3u_Yw" type="PapyrusUMLSequenceDiagram" name="subsystem3-sequence-handOverBaggage" measurementUnit="Pixel">
