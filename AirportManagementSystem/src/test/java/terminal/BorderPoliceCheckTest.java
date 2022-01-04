@@ -1,27 +1,26 @@
 package terminal;
 
-import landside.model.Deposit;
-import landside.model.Gate;
 import lombok.extern.java.Log;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import terminal.model.*;
+import org.junit.jupiter.api.function.Executable;
+import terminal.model.BaggageItem;
+import terminal.model.BorderPoliceCheck;
+import terminal.model.Passenger;
+import terminal.model.Passport;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 @Log
-class CheckInTest {
-
-    private FlightInformation flightInformation;
-    private CheckIn checkIn;
+class BorderPoliceCheckTest {
     private Passport passport;
     private Passenger passenger;
-    private List<BaggageItem> baggageItems;
+    private BorderPoliceCheck borderPoliceCheck;
 
     @BeforeEach
     void setUp() {
@@ -35,21 +34,19 @@ class CheckInTest {
             log.severe("Could not parse Date");
             fail();
         }
-
-        baggageItems = List.of(BaggageItem.of(50.,30.,20., 19.), BaggageItem.of(100., 10., 20., 8.));
         passport = Passport.of(123456789, "Max Mustermann", validTo, "Austria");
-        passenger = Passenger.of("Max", "Mustermann", birthday, passport, baggageItems);
-        flightInformation = FlightInformation.of(6942023, "Eurowings", "Crete", new Date(), 150., Gate.of(), Deposit.of(), 349.99, 149.99, 666.66);
-        checkIn = CheckIn.of(1, new Date(), passenger, flightInformation);
+        passenger = Passenger.of("Max", "Mustermann", birthday, passport, null);
+
+        borderPoliceCheck = BorderPoliceCheck.of(passenger);
     }
 
     @Test
-    void performCheckIn() throws Exception {
-        checkIn.performCheckIn();
+    void performCheck() {
+        assertDoesNotThrow(() -> borderPoliceCheck.performCheck());
     }
 
     @Test
-    void requestPassport() {
+    void checkVisaValidity() {
     }
 
     @Test
@@ -57,22 +54,24 @@ class CheckInTest {
     }
 
     @Test
-    void printTickets() {
+    void checkNationality() {
     }
 
     @Test
-    void getCheckInCounter() {
+    void checkNoWarrant() {
     }
 
     @Test
-    void getCheckInDateTime() {
+    void checkWarrant() {
+
     }
 
     @Test
-    void getPassenger() {
+    void checkNoFees() {
     }
 
     @Test
-    void getPaidFee() {
+    void checkFees() {
+
     }
 }

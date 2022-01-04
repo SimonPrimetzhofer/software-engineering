@@ -1,4 +1,4 @@
-package terminal;
+package terminal.model;
 
 import lombok.Getter;
 import lombok.NonNull;
@@ -34,7 +34,26 @@ public class CheckIn {
 
         if (passenger.getBaggageItems().size() > 0) {
             log.info("Passenger has baggage items!");
+            List<BaggageItem> baggageItems = passenger.handOverBaggage();
+            double overallWeight = 0;
+            boolean exceeded = false;
+            log.info("Now weighing baggage items...");
+            // start weighing
+            for (BaggageItem baggageItem : baggageItems) {
+                overallWeight += weighBaggageItem(baggageItem);
+                exceeded = checkOverallWeightLimit(overallWeight);
+            }
 
+            if (exceeded) {
+                reportWeightLimitExceedance(overallWeight);
+            }
+
+            log.info("Now tagging and forwarding baggage items...");
+            for (BaggageItem baggageItem : baggageItems) {
+                Tag tag = printTag();
+                baggageItem.tagBaggage(tag);
+                forwardBaggage(baggageItem);
+            }
         } else {
             log.fine("Check-In completed without baggage items...");
         }
@@ -65,27 +84,27 @@ public class CheckIn {
         return passenger.getBaggageItems();
     }
 
-    public void weighBaggageItem() {
-
+    public double weighBaggageItem(BaggageItem baggageItem) {
+        return baggageItem.getWeight();
     }
 
-    public void checkOverallWeightLimit() {
-
+    public boolean checkOverallWeightLimit(double overallWeight) {
+        // every passenger is allowed to have 20 kg of baggage in total
+        return overallWeight > 20.;
     }
 
-    public void reportWeightLimitExceedance() {
-
+    public void reportWeightLimitExceedance(double exceededAmount) {
+        log.severe("Weight limit exceeded");
+        // 15€ per exceeded kg
+        passenger.payExceededFee((exceededAmount - 20.) * 15.);
     }
 
-    public void printTag() {
-
-    }
-
-    public void tagBaggage(Tag tag) {
-
+    public Tag printTag() {
+        return TaggingMachine.getTag(flightInformation);
     }
 
     public void forwardBaggage(BaggageItem baggage) {
-
+        // TODO: When Landside Management is ready, deposit baggage
+        log.fine("Depositing baggage item to landside management...");
     }
 }

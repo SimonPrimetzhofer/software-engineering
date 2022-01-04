@@ -1,10 +1,10 @@
-package terminal;
+package terminal.model;
 
 import lombok.*;
 
 import java.util.Date;
 
-@AllArgsConstructor(staticName = "of")
+@RequiredArgsConstructor(staticName = "of")
 @Setter
 @Getter
 @ToString
@@ -17,4 +17,6 @@ public class Passport {
     private final Date validToDate;
     @NonNull
     private String nationality;
+
+    private Visa visa;
 }

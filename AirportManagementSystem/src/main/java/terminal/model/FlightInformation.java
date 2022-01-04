@@ -1,4 +1,4 @@
-package terminal;
+package terminal.model;
 
 
 import landside.model.Deposit;
