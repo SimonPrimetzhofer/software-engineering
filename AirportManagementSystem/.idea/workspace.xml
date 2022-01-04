@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68c266bf-439a-4232-bf2e-86839909e63d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AirportManagementSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/airside/AirsideManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/financial/FinancialManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/landside/LandsideManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/terminal/TerminalManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Milestone2/M2_Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Milestone2/M2_Report.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Milestone2/M2_Report_Group2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Milestone2/M2_Report_Group2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +17,31 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="AirportManagementSystem" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="AirportManagementSystem" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -52,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1641294221811</updated>
-      <workItem from="1641294223237" duration="438000" />
+      <workItem from="1641294223237" duration="1649000" />
     </task>
     <servers />
   </component>
