@@ -2,7 +2,6 @@ package terminal.model;
 
 import lombok.*;
 import lombok.extern.java.Log;
-import terminal.helper.TravelReason;
 
 import java.util.Date;
 import java.util.List;

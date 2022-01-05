@@ -1,9 +1,6 @@
 package terminal.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NonNull;
-import lombok.ToString;
+import lombok.*;
 import terminal.helper.TravelReason;
 
 import java.util.Date;
@@ -11,6 +8,7 @@ import java.util.Date;
 @AllArgsConstructor(staticName = "of")
 @ToString
 @Getter
+@Setter
 public class Visa {
     @NonNull
     private Integer visaNumber;

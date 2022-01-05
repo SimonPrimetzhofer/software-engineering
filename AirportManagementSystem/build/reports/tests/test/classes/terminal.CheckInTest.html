@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">8</div>
+<div class="counter">9</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.092s</div>
+<div class="counter">0.143s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,43 +78,48 @@
 </tr>
 </thead>
 <tr>
-<td class="success">confirmIdentity()</td>
+<td class="success">checkOverallWeightExceedance()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">checkOverallWeightNoExceedance()</td>
 <td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">getCheckInCounter()</td>
-<td class="success">0.001s</td>
+<td class="success">confirmIdentityExpired()</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">getCheckInDateTime()</td>
-<td class="success">0.020s</td>
+<td class="success">confirmIdentityNoMatch()</td>
+<td class="success">0.028s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">getPaidFee()</td>
-<td class="success">0.001s</td>
+<td class="success">confirmIdentityValid()</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getPassenger()</td>
-<td class="success">0.001s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">performCheckIn()</td>
-<td class="success">0.066s</td>
+<td class="success">0.054s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">printTickets()</td>
-<td class="success">0.001s</td>
+<td class="success">printTicket()</td>
+<td class="success">0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">requestPassport()</td>
-<td class="success">0.001s</td>
+<td class="success">0.044s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -122,22 +127,42 @@
 <div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Jän. 04, 2022 11:47:03 PM terminal.model.CheckIn requestPassport
+<pre>Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn requestPassport
 INFO: Requesting passport of Max Mustermann
-Jän. 04, 2022 11:47:03 PM terminal.model.CheckIn performCheckIn
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn requestPassport
+INFO: Requesting passport of Max Mustermann
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn requestPassport
+INFO: Requesting passport of Max Mustermann
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn performCheckIn
 INFO: Passenger has baggage items!
-Jän. 04, 2022 11:47:03 PM terminal.model.CheckIn performCheckIn
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn performCheckIn
 INFO: Now weighing baggage items...
-Jän. 04, 2022 11:47:03 PM terminal.model.CheckIn reportWeightLimitExceedance
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn reportWeightLimitExceedance
 SEVERE: Weight limit exceeded
-Jän. 04, 2022 11:47:03 PM terminal.model.Passenger payExceededFee
+Jän. 05, 2022 9:50:33 AM terminal.model.Passenger payExceededFee
 INFO: Paying fee of 105.0
-Jän. 04, 2022 11:47:03 PM terminal.model.CheckIn performCheckIn
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn performCheckIn
 INFO: Now tagging and forwarding baggage items...
-Jän. 04, 2022 11:47:03 PM terminal.model.TaggingMachine getTag
-INFO: Printing tag for flight FlightInformation(flightNumber=6942023, airline=Eurowings, destination=Crete, departureTime=Tue Jan 04 23:47:03 CET 2022, duration=150.0, gate=Gate(), baggageDeposit=Deposit(), firstClassPrice=349.99, economyClassPrice=149.99, businessClassPrice=666.66)
-Jän. 04, 2022 11:47:03 PM terminal.model.TaggingMachine getTag
-INFO: Printing tag for flight FlightInformation(flightNumber=6942023, airline=Eurowings, destination=Crete, departureTime=Tue Jan 04 23:47:03 CET 2022, duration=150.0, gate=Gate(), baggageDeposit=Deposit(), firstClassPrice=349.99, economyClassPrice=149.99, businessClassPrice=666.66)
+Jän. 05, 2022 9:50:33 AM terminal.model.TaggingMachine getTag
+INFO: Printing tag for flight FlightInformation(flightNumber=6942023, airline=Eurowings, destination=Crete, departureTime=Wed Jan 05 09:50:33 CET 2022, duration=150.0, gate=Gate(), baggageDeposit=Deposit(), firstClassPrice=349.99, economyClassPrice=149.99, businessClassPrice=666.66)
+Jän. 05, 2022 9:50:33 AM terminal.model.TaggingMachine getTag
+INFO: Printing tag for flight FlightInformation(flightNumber=6942023, airline=Eurowings, destination=Crete, departureTime=Wed Jan 05 09:50:33 CET 2022, duration=150.0, gate=Gate(), baggageDeposit=Deposit(), firstClassPrice=349.99, economyClassPrice=149.99, businessClassPrice=666.66)
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn requestPassport
+INFO: Requesting passport of Max Mustermann
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn performCheckIn
+INFO: Passenger has baggage items!
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn performCheckIn
+INFO: Now weighing baggage items...
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn reportWeightLimitExceedance
+SEVERE: Weight limit exceeded
+Jän. 05, 2022 9:50:33 AM terminal.model.Passenger payExceededFee
+INFO: Paying fee of 105.0
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn performCheckIn
+INFO: Now tagging and forwarding baggage items...
+Jän. 05, 2022 9:50:33 AM terminal.model.TaggingMachine getTag
+INFO: Printing tag for flight FlightInformation(flightNumber=6942023, airline=Eurowings, destination=Crete, departureTime=Wed Jan 05 09:50:33 CET 2022, duration=150.0, gate=Gate(), baggageDeposit=Deposit(), firstClassPrice=349.99, economyClassPrice=149.99, businessClassPrice=666.66)
+Jän. 05, 2022 9:50:33 AM terminal.model.TaggingMachine getTag
+INFO: Printing tag for flight FlightInformation(flightNumber=6942023, airline=Eurowings, destination=Crete, departureTime=Wed Jan 05 09:50:33 CET 2022, duration=150.0, gate=Gate(), baggageDeposit=Deposit(), firstClassPrice=349.99, economyClassPrice=149.99, businessClassPrice=666.66)
 </pre>
 </span>
 </div>
@@ -149,7 +174,7 @@ INFO: Printing tag for flight FlightInformation(flightNumber=6942023, airline=Eu
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 04.01.2022, 23:47:03</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 05.01.2022, 09:50:34</p>
 </div>
 </div>
 </body>

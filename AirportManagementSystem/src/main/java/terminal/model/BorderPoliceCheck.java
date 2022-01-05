@@ -34,12 +34,12 @@ public class BorderPoliceCheck extends Check {
         returnPassport();
     }
 
-    public boolean checkVisaValidity(Passport passport) throws Exception {
+    public boolean checkVisaValidity(Passport passport) {
         if (passport.getVisa() == null) {
             log.severe("Passenger has no visa!");
             return false;
         }
-        if (!passport.getVisa().getIssuedFor().equals(passenger)) {
+        if (passport.getVisa().getIssuedFor() != passenger) {
             log.severe("Visa does not match passenger!");
             return false;
         }
@@ -106,8 +106,8 @@ public class BorderPoliceCheck extends Check {
         log.info("No open fees...");
     }
 
-    public void failCheck() {
+    public void failCheck() throws Exception{
         log.severe("Visa is invalid!");
-        throw new Error("Visa is invalid");
+        throw new Exception("Visa is invalid");
     }
 }

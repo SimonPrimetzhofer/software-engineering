@@ -1,30 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="terminal.CheckInTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-01-04T22:47:03" hostname="DESKTOP-MQ3E77S" time="0.098">
+<testsuite name="terminal.CheckInTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2022-01-05T08:50:33" hostname="DESKTOP-MQ3E77S" time="0.154">
   <properties/>
-  <testcase name="getCheckInDateTime()" classname="terminal.CheckInTest" time="0.02"/>
-  <testcase name="printTickets()" classname="terminal.CheckInTest" time="0.001"/>
-  <testcase name="getPassenger()" classname="terminal.CheckInTest" time="0.001"/>
-  <testcase name="requestPassport()" classname="terminal.CheckInTest" time="0.001"/>
-  <testcase name="getPaidFee()" classname="terminal.CheckInTest" time="0.001"/>
-  <testcase name="confirmIdentity()" classname="terminal.CheckInTest" time="0.001"/>
-  <testcase name="performCheckIn()" classname="terminal.CheckInTest" time="0.066"/>
-  <testcase name="getCheckInCounter()" classname="terminal.CheckInTest" time="0.001"/>
+  <testcase name="confirmIdentityNoMatch()" classname="terminal.CheckInTest" time="0.028"/>
+  <testcase name="getPassenger()" classname="terminal.CheckInTest" time="0.003"/>
+  <testcase name="confirmIdentityExpired()" classname="terminal.CheckInTest" time="0.002"/>
+  <testcase name="requestPassport()" classname="terminal.CheckInTest" time="0.044"/>
+  <testcase name="checkOverallWeightExceedance()" classname="terminal.CheckInTest" time="0.004"/>
+  <testcase name="printTicket()" classname="terminal.CheckInTest" time="0.005"/>
+  <testcase name="confirmIdentityValid()" classname="terminal.CheckInTest" time="0.002"/>
+  <testcase name="performCheckIn()" classname="terminal.CheckInTest" time="0.054"/>
+  <testcase name="checkOverallWeightNoExceedance()" classname="terminal.CheckInTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Jän. 04, 2022 11:47:03 PM terminal.model.CheckIn requestPassport
+  <system-err><![CDATA[Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn requestPassport
 INFO: Requesting passport of Max Mustermann
-Jän. 04, 2022 11:47:03 PM terminal.model.CheckIn performCheckIn
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn requestPassport
+INFO: Requesting passport of Max Mustermann
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn requestPassport
+INFO: Requesting passport of Max Mustermann
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn performCheckIn
 INFO: Passenger has baggage items!
-Jän. 04, 2022 11:47:03 PM terminal.model.CheckIn performCheckIn
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn performCheckIn
 INFO: Now weighing baggage items...
-Jän. 04, 2022 11:47:03 PM terminal.model.CheckIn reportWeightLimitExceedance
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn reportWeightLimitExceedance
 SEVERE: Weight limit exceeded
-Jän. 04, 2022 11:47:03 PM terminal.model.Passenger payExceededFee
+Jän. 05, 2022 9:50:33 AM terminal.model.Passenger payExceededFee
 INFO: Paying fee of 105.0
-Jän. 04, 2022 11:47:03 PM terminal.model.CheckIn performCheckIn
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn performCheckIn
 INFO: Now tagging and forwarding baggage items...
-Jän. 04, 2022 11:47:03 PM terminal.model.TaggingMachine getTag
-INFO: Printing tag for flight FlightInformation(flightNumber=6942023, airline=Eurowings, destination=Crete, departureTime=Tue Jan 04 23:47:03 CET 2022, duration=150.0, gate=Gate(), baggageDeposit=Deposit(), firstClassPrice=349.99, economyClassPrice=149.99, businessClassPrice=666.66)
-Jän. 04, 2022 11:47:03 PM terminal.model.TaggingMachine getTag
-INFO: Printing tag for flight FlightInformation(flightNumber=6942023, airline=Eurowings, destination=Crete, departureTime=Tue Jan 04 23:47:03 CET 2022, duration=150.0, gate=Gate(), baggageDeposit=Deposit(), firstClassPrice=349.99, economyClassPrice=149.99, businessClassPrice=666.66)
+Jän. 05, 2022 9:50:33 AM terminal.model.TaggingMachine getTag
+INFO: Printing tag for flight FlightInformation(flightNumber=6942023, airline=Eurowings, destination=Crete, departureTime=Wed Jan 05 09:50:33 CET 2022, duration=150.0, gate=Gate(), baggageDeposit=Deposit(), firstClassPrice=349.99, economyClassPrice=149.99, businessClassPrice=666.66)
+Jän. 05, 2022 9:50:33 AM terminal.model.TaggingMachine getTag
+INFO: Printing tag for flight FlightInformation(flightNumber=6942023, airline=Eurowings, destination=Crete, departureTime=Wed Jan 05 09:50:33 CET 2022, duration=150.0, gate=Gate(), baggageDeposit=Deposit(), firstClassPrice=349.99, economyClassPrice=149.99, businessClassPrice=666.66)
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn requestPassport
+INFO: Requesting passport of Max Mustermann
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn performCheckIn
+INFO: Passenger has baggage items!
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn performCheckIn
+INFO: Now weighing baggage items...
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn reportWeightLimitExceedance
+SEVERE: Weight limit exceeded
+Jän. 05, 2022 9:50:33 AM terminal.model.Passenger payExceededFee
+INFO: Paying fee of 105.0
+Jän. 05, 2022 9:50:33 AM terminal.model.CheckIn performCheckIn
+INFO: Now tagging and forwarding baggage items...
+Jän. 05, 2022 9:50:33 AM terminal.model.TaggingMachine getTag
+INFO: Printing tag for flight FlightInformation(flightNumber=6942023, airline=Eurowings, destination=Crete, departureTime=Wed Jan 05 09:50:33 CET 2022, duration=150.0, gate=Gate(), baggageDeposit=Deposit(), firstClassPrice=349.99, economyClassPrice=149.99, businessClassPrice=666.66)
+Jän. 05, 2022 9:50:33 AM terminal.model.TaggingMachine getTag
+INFO: Printing tag for flight FlightInformation(flightNumber=6942023, airline=Eurowings, destination=Crete, departureTime=Wed Jan 05 09:50:33 CET 2022, duration=150.0, gate=Gate(), baggageDeposit=Deposit(), firstClassPrice=349.99, economyClassPrice=149.99, businessClassPrice=666.66)
 ]]></system-err>
 </testsuite>
