@@ -77,7 +77,7 @@ public class CheckIn {
 
     public String printTicket() {
         log.fine("Printing ticket for flight " + flightInformation.getFlightNumber());
-        return flightInformation.toString();
+        return String.format("Ticket for flight %d to %s", flightInformation.getFlightNumber(), flightInformation.getDestination());
     }
 
     public List<BaggageItem> askForBaggageItems() {

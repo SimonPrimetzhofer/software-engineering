@@ -6,6 +6,7 @@ import terminal.helper.TravelReason;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
 
 /**
@@ -22,13 +23,13 @@ public class Passenger {
     public static final List<String> TRAVEL_REASONS = List.of("Travelling", "Business", "Sport", "Study", "Secret");
 
     @NonNull
-    private final String firstname;
+    private String firstname;
 
     @NonNull
-    private final String lastname;
+    private String lastname;
 
     @NonNull
-    private final Date birthdate;
+    private Date birthdate;
 
     @NonNull
     private Passport passport;
@@ -48,6 +49,10 @@ public class Passenger {
     }
 
     public String reasonAndDurationOfStay() {
-        return TRAVEL_REASONS.stream().findAny().get() + " " + new Random().nextInt(TRAVEL_REASONS.size());
+        Optional<String> reason = TRAVEL_REASONS.stream().findAny();
+        if (reason.isEmpty()) {
+            return null;
+        }
+        return reason.get() + " " + new Random().nextInt(TRAVEL_REASONS.size());
     }
 }

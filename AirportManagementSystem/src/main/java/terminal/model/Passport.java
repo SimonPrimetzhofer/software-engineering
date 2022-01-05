@@ -10,11 +10,11 @@ import java.util.Date;
 @ToString
 public class Passport {
     @NonNull
-    private final Integer passportNumber;
+    private Integer passportNumber;
     @NonNull
-    private final String issuedFor;
+    private String issuedFor;
     @NonNull
-    private final Date validToDate;
+    private Date validToDate;
     @NonNull
     private String nationality;
 

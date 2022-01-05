@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 @Log
 class CheckInTest {
@@ -44,35 +44,66 @@ class CheckInTest {
     }
 
     @Test
-    void performCheckIn() throws Exception {
-        checkIn.performCheckIn();
+    void performCheckIn() {
+        assertDoesNotThrow(() -> checkIn.performCheckIn());
+        try {
+            String ticket = checkIn.performCheckIn();
+            assertEquals(checkIn.printTicket(), String.format("Ticket for flight %d to %s", flightInformation.getFlightNumber(), flightInformation.getDestination()));
+        } catch (Exception ex) {
+            fail();
+        }
     }
 
     @Test
     void requestPassport() {
+        assertNotNull(checkIn.requestPassport());
+        assertSame(checkIn.requestPassport(), passenger.handOverPassport());
     }
 
     @Test
-    void confirmIdentity() {
+    void confirmIdentityValid() {
+        assertDoesNotThrow(() -> checkIn.confirmIdentity(passport));
     }
 
     @Test
-    void printTickets() {
+    void confirmIdentityNoMatch() {
+        passport.setIssuedFor("Maria Mustermann");
+        assertThrows(Exception.class, () -> checkIn.confirmIdentity(passport));
     }
 
     @Test
-    void getCheckInCounter() {
+    void confirmIdentityExpired() {
+        Date validTo = null;
+        SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+        try {
+            validTo = sdf.parse("31.12.2021");
+        } catch (ParseException ex) {
+            log.severe("Could not parse Date");
+            fail();
+        }
+        passport.setValidToDate(validTo);
+        assertThrows(Exception.class, () -> checkIn.confirmIdentity(passport));
     }
 
     @Test
-    void getCheckInDateTime() {
+    void printTicket() {
+        assertEquals(checkIn.printTicket(), String.format("Ticket for flight %d to %s", flightInformation.getFlightNumber(), flightInformation.getDestination()));
+    }
+
+    @Test
+    void checkOverallWeightExceedance() {
+        assertTrue(checkIn.checkOverallWeightLimit(20.1));
+        assertFalse(checkIn.checkOverallWeightLimit(20));
+    }
+
+    @Test
+    void checkOverallWeightNoExceedance() {
+        assertFalse(checkIn.checkOverallWeightLimit(19.9));
     }
 
     @Test
     void getPassenger() {
-    }
-
-    @Test
-    void getPaidFee() {
+        assertNotNull(checkIn.getPassenger());
+        assertSame(checkIn.getPassenger(), passenger);
     }
 }

@@ -5,25 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68c266bf-439a-4232-bf2e-86839909e63d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/terminal/contract/Check.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/terminal/helper/TravelReason.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/terminal/model/BorderPoliceCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/terminal/model/Visa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/terminal/BorderPoliceCheckTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/BaggageItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/model/BaggageItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/CheckIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/model/CheckIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/FlightInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/model/FlightInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/model/Passenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/Passport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/model/Passport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/model/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/TaggingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/model/TaggingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/model/CheckIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/model/CheckIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/model/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/model/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/model/Passport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/model/Passport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/terminal/CheckInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/terminal/CheckInTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../System_Group2/SubSystem3.notation" beforeDir="false" afterPath="$PROJECT_DIR$/../System_Group2/SubSystem3.notation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../System_Group2/SubSystem3.uml" beforeDir="false" afterPath="$PROJECT_DIR$/../System_Group2/SubSystem3.uml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../System_Group2/SubSystem3_de_AT.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../System_Group2/SubSystem3_de_AT.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +75,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -181,6 +168,7 @@
       <updated>1641294221811</updated>
       <workItem from="1641294223237" duration="13362000" />
       <workItem from="1641330483937" duration="5475000" />
+      <workItem from="1641366364673" duration="2015000" />
     </task>
     <servers />
   </component>
