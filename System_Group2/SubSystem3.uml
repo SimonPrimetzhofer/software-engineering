@@ -406,7 +406,7 @@ Step 5: Passenger leaves border police office</body>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </ownedParameter>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_ciqI0G2uEeyrF9M33HSBFw" name="handOverBaggageItems"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ciqI0G2uEeyrF9M33HSBFw" name="handOverBaggage"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_kFiuIEVvEeyuwuc0dTQ-tQ" name="is performed on" visibility="public" memberEnd="_kLY3cEVvEeyuwuc0dTQ-tQ _kLm54EVvEeyuwuc0dTQ-tQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kLTX4EVvEeyuwuc0dTQ-tQ" source="org.eclipse.papyrus">

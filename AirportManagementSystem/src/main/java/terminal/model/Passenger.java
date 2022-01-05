@@ -19,7 +19,7 @@ import java.util.Random;
 @ToString
 public class Passenger {
 
-    public static final List<String> TRAVEL_REASONS = List.of("Travelling", "Business", "Sport", "Study", "Secret");
+    private static final List<String> TRAVEL_REASONS = List.of("Travelling", "Business", "Sport", "Study", "Secret");
 
     @NonNull
     private String firstname;

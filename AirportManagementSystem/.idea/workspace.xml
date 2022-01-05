@@ -4,39 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68c266bf-439a-4232-bf2e-86839909e63d" name="Changes" comment="checkin unittests">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/terminal/contract/Check.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/terminal/contract/Check.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/terminal/helper/TravelReason.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/terminal/helper/TravelReason.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/terminal/model/BorderPoliceCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/terminal/model/BorderPoliceCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/terminal/model/CheckIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/terminal/model/CheckIn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/terminal/model/Passenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/terminal/model/Passenger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/terminal/model/Passport.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/terminal/model/Passport.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/terminal/model/Visa.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/terminal/model/Visa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/terminal/BorderPoliceCheckTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/terminal/BorderPoliceCheckTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/terminal/CheckInTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/terminal/CheckInTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/terminal.CheckInTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/terminal.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/terminal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-terminal.CheckInTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/contract/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/contract/Check.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/helper/TravelReason.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/helper/TravelReason.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/model/BorderPoliceCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/model/BorderPoliceCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/model/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/model/Passenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/terminal/model/Visa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terminal/model/Visa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/terminal/BorderPoliceCheckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/terminal/BorderPoliceCheckTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="68c266bf-439a-4232-bf2e-86839909e63d" name="Changes" comment="checkpassport unittests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,9 +52,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="23ELImaEn97WypDbbQ1AC9IeaPI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -194,7 +159,7 @@
       <updated>1641294221811</updated>
       <workItem from="1641294223237" duration="13362000" />
       <workItem from="1641330483937" duration="5475000" />
-      <workItem from="1641366364673" duration="5303000" />
+      <workItem from="1641366364673" duration="5353000" />
     </task>
     <task id="LOCAL-00001" summary="checkin unittests">
       <created>1641368889064</created>
@@ -203,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641368889064</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="checkpassport unittests">
+      <created>1641372677404</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641372677404</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +195,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="checkin unittests" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkin unittests" />
+    <MESSAGE value="checkpassport unittests" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkpassport unittests" />
   </component>
 </project>
