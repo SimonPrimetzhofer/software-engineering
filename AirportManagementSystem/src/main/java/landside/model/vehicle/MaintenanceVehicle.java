@@ -15,6 +15,8 @@ import lombok.extern.java.Log;
 @Log
 public class MaintenanceVehicle extends Vehicle {
     private boolean hatchClosed;
+    private boolean fuelPumpActive;
+    private boolean airPumpActive;
 
     public void openHatch() {
         hatchClosed = false;
