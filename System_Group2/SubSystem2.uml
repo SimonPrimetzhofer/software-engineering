@@ -314,11 +314,13 @@ Step 10: firetruck driver awaits new orders</body>
     <ownedEnd xmi:type="uml:Property" xmi:id="_dE5AwS90EeySLpI0QUwGkw" name="maintenance-vehicle driver" type="_mRcMsC9wEeySLpI0QUwGkw" association="_dE4ZsC90EeySLpI0QUwGkw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_DEjzwEVfEeybjKjyLz0qtQ" name="FuelDepot">
+    <generalization xmi:type="uml:Generalization" xmi:id="_onShQHCAEey0a_5E5MhILw" general="_0FNykHB_Eey0a_5E5MhILw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_tTN1QEWIEeyH9qy55V0YNw" name="fueltankCapacity">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_EZ-HgEVfEeybjKjyLz0qtQ" name="Gate">
+    <generalization xmi:type="uml:Generalization" xmi:id="_pDOPUHCAEey0a_5E5MhILw" general="_0FNykHB_Eey0a_5E5MhILw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_NQ_BIEWDEey5WIGISipCYg" name="gateNr">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
@@ -330,6 +332,7 @@ Step 10: firetruck driver awaits new orders</body>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_FE7wEEVfEeybjKjyLz0qtQ" name="Deposit">
+    <generalization xmi:type="uml:Generalization" xmi:id="_ph8LoHCAEey0a_5E5MhILw" general="_0FNykHB_Eey0a_5E5MhILw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_WtTxoEWDEey5WIGISipCYg" name="depositNr">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
@@ -344,15 +347,15 @@ Step 10: firetruck driver awaits new orders</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="__ASDAEV_Eey5WIGISipCYg" name="inGarage" visibility="public">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_vWMBUkWCEey5WIGISipCYg" name="destination" type="_5CJjgEY2EeyzvZaWA2zpUQ" association="_vWLaQEWCEey5WIGISipCYg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vWVLQEWCEey5WIGISipCYg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vWaq0EWCEey5WIGISipCYg" value="1"/>
-    </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_nIGwIEWDEey5WIGISipCYg" name="fuel">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_yl-sMEWEEey5WIGISipCYg" name="isReady">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ex-B8HCAEey0a_5E5MhILw" name="destination" type="_0FNykHB_Eey0a_5E5MhILw" association="_ex7lsHCAEey0a_5E5MhILw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ex-B8XCAEey0a_5E5MhILw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ex-B8nCAEey0a_5E5MhILw" value="1"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_MT1KQEyzEey2xa6rLkscgA" name="reportFuelConsumption">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_M_SxoFFfEeyg4ZuSxEY4fw" direction="return">
@@ -470,33 +473,18 @@ Step 10: firetruck driver awaits new orders</body>
     <ownedEnd xmi:type="uml:Property" xmi:id="_0qW3MEViEeybjKjyLz0qtQ" name="maintenancevehicle" type="_n9sz0EVhEeybjKjyLz0qtQ" association="_0qTz4EViEeybjKjyLz0qtQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_0qVpEkViEeybjKjyLz0qtQ" name="staff" type="_ldj84EViEeybjKjyLz0qtQ" association="_0qTz4EViEeybjKjyLz0qtQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_vWLaQEWCEey5WIGISipCYg" name="drives to" memberEnd="_vWMBUkWCEey5WIGISipCYg _vWe8QEWCEey5WIGISipCYg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vWMBUEWCEey5WIGISipCYg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vWMBUUWCEey5WIGISipCYg" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_vWe8QEWCEey5WIGISipCYg" name="vehicle" type="_Gq8roEVfEeybjKjyLz0qtQ" association="_vWLaQEWCEey5WIGISipCYg"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_5CJjgEY2EeyzvZaWA2zpUQ" name="Destination">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_7a91AEY2EeyzvZaWA2zpUQ" name="buildingNr" visibility="public">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_5pHyAEY4EeyzvZaWA2zpUQ" name="LandsideManagement">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_8P0HcEY4EeyzvZaWA2zpUQ" name="vehicles" type="_Gq8roEVfEeybjKjyLz0qtQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MBf3gEY5EeyzvZaWA2zpUQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JB7vEEY5EeyzvZaWA2zpUQ" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_9g1qcEY4EeyzvZaWA2zpUQ" name="destinations" type="_5CJjgEY2EeyzvZaWA2zpUQ">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9g1qcEY4EeyzvZaWA2zpUQ" name="destinations">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MyLGgEY5EeyzvZaWA2zpUQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IOzpAEY5EeyzvZaWA2zpUQ" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_BTOW8EY5EeyzvZaWA2zpUQ" name="employees">
       <type xmi:type="uml:Class" href="System_Group2.uml#_Ue13UEV1EeywAt9CR0nlpw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KD3GIEY5EeyzvZaWA2zpUQ" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_PberEkY5EeyzvZaWA2zpUQ" name="destination" type="_5CJjgEY2EeyzvZaWA2zpUQ" association="_PbeEAEY5EeyzvZaWA2zpUQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PberE0Y5EeyzvZaWA2zpUQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PbfSIEY5EeyzvZaWA2zpUQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_QJoxkkY5EeyzvZaWA2zpUQ" name="vehicle" type="_Gq8roEVfEeybjKjyLz0qtQ" association="_QJoKgEY5EeyzvZaWA2zpUQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QJoxk0Y5EeyzvZaWA2zpUQ"/>
@@ -506,6 +494,10 @@ Step 10: firetruck driver awaits new orders</body>
       <type xmi:type="uml:Class" href="System_Group2.uml#_Ue13UEV1EeywAt9CR0nlpw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TQOvFEY5EeyzvZaWA2zpUQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TQOvFUY5EeyzvZaWA2zpUQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_iHiPkHCAEey0a_5E5MhILw" name="destination" type="_0FNykHB_Eey0a_5E5MhILw" association="_iHhBcHCAEey0a_5E5MhILw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iHiPkXCAEey0a_5E5MhILw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iHiPknCAEey0a_5E5MhILw" value="1"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_qlRsIEyKEeyxf8Jv68VPeA" name="gatherMaintenanceCost"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_snA6YEyKEeyxf8Jv68VPeA" name="provideLandsideCost"/>
@@ -522,12 +514,6 @@ Step 10: firetruck driver awaits new orders</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_3wBoYE1JEeylrtBNYek5mA" name="requestDestination"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_LnJsMFIeEeyhStk-XKi7RA" name="recalculateRoute"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_PbeEAEY5EeyzvZaWA2zpUQ" name="contains" memberEnd="_PberEkY5EeyzvZaWA2zpUQ _PbfSIUY5EeyzvZaWA2zpUQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PberEEY5EeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PberEUY5EeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_PbfSIUY5EeyzvZaWA2zpUQ" name="landsidemanagement" type="_5pHyAEY4EeyzvZaWA2zpUQ" association="_PbeEAEY5EeyzvZaWA2zpUQ"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_QJoKgEY5EeyzvZaWA2zpUQ" name="contains" memberEnd="_QJoxkkY5EeyzvZaWA2zpUQ _QJpYoEY5EeyzvZaWA2zpUQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QJoxkEY5EeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QJoxkUY5EeyzvZaWA2zpUQ" key="nature" value="UML_Nature"/>
@@ -543,9 +529,6 @@ Step 10: firetruck driver awaits new orders</body>
   <packagedElement xmi:type="uml:Realization" xmi:id="_Nm9kAEY6EeyzvZaWA2zpUQ" client="_5pHyAEY4EeyzvZaWA2zpUQ">
     <supplier xmi:type="uml:Interface" href="System_Group2.uml#_s6wMkEV1EeywAt9CR0nlpw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Realization" xmi:id="_tQsqgEY9EeyzvZaWA2zpUQ" client="_FE7wEEVfEeybjKjyLz0qtQ" supplier="_5CJjgEY2EeyzvZaWA2zpUQ"/>
-  <packagedElement xmi:type="uml:Realization" xmi:id="_t-7pgEY9EeyzvZaWA2zpUQ" client="_EZ-HgEVfEeybjKjyLz0qtQ" supplier="_5CJjgEY2EeyzvZaWA2zpUQ"/>
-  <packagedElement xmi:type="uml:Realization" xmi:id="_uiV4kEY9EeyzvZaWA2zpUQ" client="_DEjzwEVfEeybjKjyLz0qtQ" supplier="_5CJjgEY2EeyzvZaWA2zpUQ"/>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_-VD0MEywEeyLgdem-e7wug" name="conductBusToGate">
     <lifeline xmi:type="uml:Lifeline" xmi:id="_OKGaQEyxEeyLgdem-e7wug" name="Landside Management" coveredBy="_chjoAEyxEeyLgdem-e7wug _ciW5QEyxEeyLgdem-e7wug"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_Pgkd8EyxEeyLgdem-e7wug" name="BusDriver" coveredBy="_chjoAUyxEeyLgdem-e7wug _jfK6YEyxEeyLgdem-e7wug _jfK6YUyxEeyLgdem-e7wug _ciWSMEyxEeyLgdem-e7wug _ch_s4EyxEeyLgdem-e7wug"/>
@@ -893,5 +876,23 @@ Step 10: firetruck driver awaits new orders</body>
     <message xmi:type="uml:Message" xmi:id="_UDNY4E1EEeyYo7zM14HCZw" name="startAirPump()" receiveEvent="_UDPOEE1EEeyYo7zM14HCZw" sendEvent="_UDOnAE1EEeyYo7zM14HCZw"/>
     <message xmi:type="uml:Message" xmi:id="_o5uUwE1EEeyYo7zM14HCZw" name="stopAirPump()" receiveEvent="_o5u70E1EEeyYo7zM14HCZw" sendEvent="_o5uUwU1EEeyYo7zM14HCZw"/>
     <message xmi:type="uml:Message" xmi:id="_q7KoEE1EEeyYo7zM14HCZw" name="toggleCompressor()" receiveEvent="_q7LPIU1EEeyYo7zM14HCZw" sendEvent="_q7LPIE1EEeyYo7zM14HCZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0FNykHB_Eey0a_5E5MhILw" name="Destination">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Mic9gHCAEey0a_5E5MhILw" name="buildingNr">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3kBbwHB_Eey0a_5E5MhILw" name="getBuildingNr"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ex7lsHCAEey0a_5E5MhILw" name="drives to" memberEnd="_ex-B8HCAEey0a_5E5MhILw _ex-pAHCAEey0a_5E5MhILw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ex8MwHCAEey0a_5E5MhILw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ex8MwXCAEey0a_5E5MhILw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ex-pAHCAEey0a_5E5MhILw" name="vehicle" type="_Gq8roEVfEeybjKjyLz0qtQ" association="_ex7lsHCAEey0a_5E5MhILw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iHhBcHCAEey0a_5E5MhILw" name="contains" memberEnd="_iHiPkHCAEey0a_5E5MhILw _iHiPk3CAEey0a_5E5MhILw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iHhogHCAEey0a_5E5MhILw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iHhogXCAEey0a_5E5MhILw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_iHiPk3CAEey0a_5E5MhILw" name="landsidemanagement" type="_5pHyAEY4EeyzvZaWA2zpUQ" association="_iHhBcHCAEey0a_5E5MhILw"/>
   </packagedElement>
 </uml:Model>

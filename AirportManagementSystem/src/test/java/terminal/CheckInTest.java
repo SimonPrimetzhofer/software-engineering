@@ -1,7 +1,7 @@
 package terminal;
 
-import landside.model.Deposit;
-import landside.model.Gate;
+import landside.model.destination.Deposit;
+import landside.model.destination.Gate;
 import lombok.extern.java.Log;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

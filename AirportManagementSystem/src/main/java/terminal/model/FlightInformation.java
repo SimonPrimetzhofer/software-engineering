@@ -1,8 +1,8 @@
 package terminal.model;
 
 
-import landside.model.Deposit;
-import landside.model.Gate;
+import landside.model.destination.Deposit;
+import landside.model.destination.Gate;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
