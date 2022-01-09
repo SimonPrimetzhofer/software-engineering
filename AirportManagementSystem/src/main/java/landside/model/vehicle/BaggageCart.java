@@ -8,7 +8,6 @@ import lombok.extern.java.Log;
 /**
  * @author Stefan Haslhofer
  */
-@RequiredArgsConstructor(staticName = "of")
 @Getter
 @Setter
 @Log
@@ -17,6 +16,11 @@ public class BaggageCart extends Vehicle {
     private final int numOfCasesStoreable;
     private boolean hatchClosed;
 
+    public BaggageCart(double maxFuel, int numOfCasesStoreable) {
+        super(maxFuel);
+        this.numOfCasesStoreable = numOfCasesStoreable;
+    }
+
     public void loadPassengers(int p) throws Exception {
         if(!hatchClosed) {
             log.info("Loading baggage...");
@@ -24,7 +28,7 @@ public class BaggageCart extends Vehicle {
                 storedCases = p;
             } else {
                 storedCases = numOfCasesStoreable;
-                throw new Exception("More room needed!");
+                throw new Exception("More room needed");
             }
         }
     }

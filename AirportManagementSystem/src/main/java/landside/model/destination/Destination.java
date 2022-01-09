@@ -1,13 +1,16 @@
 package landside.model.destination;
 
 import lombok.Getter;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 /**
  * @author Stefan Haslhofer
  */
+@RequiredArgsConstructor
 @Getter
 @Setter
-public class Destination {
-    private int buildingNr;
+public abstract class Destination {
+    protected final int buildingNr;
 }

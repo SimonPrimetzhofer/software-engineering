@@ -2398,13 +2398,6 @@
         </children>
         <children xmi:type="notation:Shape" xmi:id="_0K3qIE1KEeylrtBNYek5mA" type="Lifeline_Shape">
           <children xmi:type="notation:DecorationNode" xmi:id="_0K4RME1KEeylrtBNYek5mA" type="Lifeline_NameLabel"/>
-          <children xmi:type="notation:Shape" xmi:id="_3vJCIE1KEeylrtBNYek5mA" type="BehaviorExecutionSpecification_Shape">
-            <children xmi:type="notation:DecorationNode" xmi:id="_3vJCIk1KEeylrtBNYek5mA" type="BehaviorExecutionSpecification_Behavior">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_3vJCI01KEeylrtBNYek5mA" x="18" y="18"/>
-            </children>
-            <element xmi:type="uml:BehaviorExecutionSpecification" href="System_Group2.uml#_3vH0AE1KEeylrtBNYek5mA"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3vJCIU1KEeylrtBNYek5mA" x="70" y="261" width="20" height="61"/>
-          </children>
           <element xmi:type="uml:Lifeline" href="System_Group2.uml#_0KxjgE1KEeylrtBNYek5mA"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0K3qIU1KEeylrtBNYek5mA" x="34" y="10" width="161"/>
         </children>
