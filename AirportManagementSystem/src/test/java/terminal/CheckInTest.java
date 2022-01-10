@@ -36,10 +36,10 @@ class CheckInTest {
             fail();
         }
 
-        baggageItems = List.of(BaggageItem.of(50.,30.,20., 19.), BaggageItem.of(100., 10., 20., 8.));
+        baggageItems = List.of(BaggageItem.of(50., 30., 20., 19.), BaggageItem.of(100., 10., 20., 8.));
         passport = Passport.of(123456789, "Max Mustermann", validTo, "Austria");
         passenger = Passenger.of("Max", "Mustermann", birthday, passport, baggageItems);
-        flightInformation = FlightInformation.of(6942023, "Eurowings", "Crete", new Date(), 150., Gate.of(), Deposit.of(), 349.99, 149.99, 666.66);
+        flightInformation = FlightInformation.of(6942023, "Eurowings", "Crete", new Date(), 150., new Gate(1, 300, 1), new Deposit(3, 4500, 2), 349.99, 149.99, 666.66);
         checkIn = CheckIn.of(1, new Date(), passenger, flightInformation);
     }
 
