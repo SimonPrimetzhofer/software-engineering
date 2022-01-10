@@ -875,6 +875,10 @@
           <element xmi:type="uml:Operation" href="SubSystem2.uml#_fAZcAE1AEeyYo7zM14HCZw"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_fA_R4U1AEeyYo7zM14HCZw"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_JjF8wHJqEeyGj6kFPsYR3A" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem2.uml#_Ji4hYHJqEeyGj6kFPsYR3A"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_JjF8wXJqEeyGj6kFPsYR3A"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_HSM46EVfEeybjKjyLz0qtQ"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_HSM46UVfEeybjKjyLz0qtQ"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_HSM46kVfEeybjKjyLz0qtQ"/>
@@ -1110,10 +1114,6 @@
         <children xmi:type="notation:Shape" xmi:id="_H7WuIEyzEey2xa6rLkscgA" type="Operation_ClassOperationLabel">
           <element xmi:type="uml:Operation" href="SubSystem2.uml#_H6sm0EyzEey2xa6rLkscgA"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_H7WuIUyzEey2xa6rLkscgA"/>
-        </children>
-        <children xmi:type="notation:Shape" xmi:id="_Wl1y4E0yEeyXleny4KBDAA" type="Operation_ClassOperationLabel">
-          <element xmi:type="uml:Operation" href="SubSystem2.uml#_WlgbsE0yEeyXleny4KBDAA"/>
-          <layoutConstraint xmi:type="notation:Location" xmi:id="_Wl1y4U0yEeyXleny4KBDAA"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_gTBigE01EeyXleny4KBDAA" type="Operation_ClassOperationLabel">
           <element xmi:type="uml:Operation" href="SubSystem2.uml#_gSsyYE01EeyXleny4KBDAA"/>
@@ -2257,7 +2257,7 @@
         <children xmi:type="notation:Shape" xmi:id="_-6u1ME1BEeyYo7zM14HCZw" type="InteractionUse_Shape">
           <children xmi:type="notation:DecorationNode" xmi:id="_-6u1M01BEeyYo7zM14HCZw" type="InteractionUse_NameLabel"/>
           <children xmi:type="notation:DecorationNode" xmi:id="_-6u1NE1BEeyYo7zM14HCZw" type="InteractionUse_TypeLabel"/>
-          <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_-6u1MU1BEeyYo7zM14HCZw"/>
+          <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_-6u1MU1BEeyYo7zM14HCZw" diagramLink="_0HZiIHJnEeyGj6kFPsYR3A"/>
           <element xmi:type="uml:InteractionUse" href="SubSystem2.uml#_-6rx4E1BEeyYo7zM14HCZw"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-6u1Mk1BEeyYo7zM14HCZw" x="421" y="194" width="134" height="98"/>
         </children>
@@ -2443,19 +2443,6 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SB738E00EeyXleny4KBDAA" id="(0.5,0.11571428571428571)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SB8fAE00EeyXleny4KBDAA" id="(0.5,0.11571428571428571)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_gcwccFFKEeyg4ZuSxEY4fw" type="Message_ReplyEdge" source="_aRzcYE00EeyXleny4KBDAA" target="_Mh3hoE00EeyXleny4KBDAA">
-      <children xmi:type="notation:DecorationNode" xmi:id="_gcwcc1FKEeyg4ZuSxEY4fw" type="Message_ReplyNameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_gcxDgFFKEeyg4ZuSxEY4fw" x="1" y="-13"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_gcxDgVFKEeyg4ZuSxEY4fw" type="Message_ReplyStereotypeLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_gcxDglFKEeyg4ZuSxEY4fw" x="1" y="-33"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_gcwccVFKEeyg4ZuSxEY4fw"/>
-      <element xmi:type="uml:Message" href="SubSystem2.uml#_gctZIFFKEeyg4ZuSxEY4fw"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gcwcclFKEeyg4ZuSxEY4fw" points="[-1, -7, 390, 0]$[-391, -7, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gc8psFFKEeyg4ZuSxEY4fw" id="(0.008264462809917356,0.9303482587064676)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gc9QwFFKEeyg4ZuSxEY4fw" id="(0.5,0.37285714285714283)"/>
-    </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_9YD0cE00EeyXleny4KBDAA" type="PapyrusUMLSequenceDiagram" name="subsystem2-refuel" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_9YD0cU00EeyXleny4KBDAA" type="Interaction_Shape">
@@ -2630,7 +2617,7 @@
         <children xmi:type="notation:Shape" xmi:id="_uEEW4E09EeyyX4I_jy_gEQ" type="InteractionUse_Shape">
           <children xmi:type="notation:DecorationNode" xmi:id="_uEHaME09EeyyX4I_jy_gEQ" type="InteractionUse_NameLabel"/>
           <children xmi:type="notation:DecorationNode" xmi:id="_uEIBQE09EeyyX4I_jy_gEQ" type="InteractionUse_TypeLabel"/>
-          <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_uEEW4U09EeyyX4I_jy_gEQ"/>
+          <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_uEEW4U09EeyyX4I_jy_gEQ" diagramLink="_9uplsHJmEeyGj6kFPsYR3A"/>
           <element xmi:type="uml:InteractionUse" href="SubSystem2.uml#_uDu_sE09EeyyX4I_jy_gEQ"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uEEW4k09EeyyX4I_jy_gEQ" x="603" y="199" width="148" height="141"/>
         </children>
@@ -3086,5 +3073,15 @@
     <styles xmi:type="notation:StringValueStyle" xmi:id="_zD5KEVIjEey0-Mqv-UqdTQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_zD5KElIjEey0-Mqv-UqdTQ"/>
     <element xmi:type="uml:InteractionUse" href="SubSystem2.uml#_aRxAIE00EeyXleny4KBDAA"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_9uplsHJmEeyGj6kFPsYR3A" type="PapyrusUMLSequenceDiagram" measurementUnit="Pixel">
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_9uplsXJmEeyGj6kFPsYR3A" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_9uplsnJmEeyGj6kFPsYR3A"/>
+    <element xmi:type="uml:InteractionUse" href="SubSystem2.uml#_uDu_sE09EeyyX4I_jy_gEQ"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_0HZiIHJnEeyGj6kFPsYR3A" type="PapyrusUMLSequenceDiagram" measurementUnit="Pixel">
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_0HZiIXJnEeyGj6kFPsYR3A" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_0HZiInJnEeyGj6kFPsYR3A"/>
+    <element xmi:type="uml:InteractionUse" href="SubSystem2.uml#_-6rx4E1BEeyYo7zM14HCZw"/>
   </notation:Diagram>
 </xmi:XMI>

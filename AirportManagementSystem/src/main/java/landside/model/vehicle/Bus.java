@@ -36,15 +36,18 @@ public class Bus extends Vehicle{
 
     public void unloadPassengers() {
         if(!doorsClosed) {
+            log.info("Unload passengers...");
             passengersLoaded = 0;
         }
     }
 
     public void openDoor() {
         doorsClosed = false;
+        log.info("Doors opened");
     }
 
     public void closeDoor() {
         doorsClosed = true;
+        log.info("Doors closed");
     }
 }

@@ -30,14 +30,13 @@ public class MaintenanceVehicle extends Vehicle {
     }
 
     public void openPlaneFuelHatch() {
-        // TODO parkingSpot and plane have to be implemented
-        //if (this.destination instanceof ParkingSpot) {
-        //
-        //}
+        hatchClosed = false;
+        log.info("Plane fuel hatch opened");
     }
 
     public void closePlaneFuelHatch() {
-
+        hatchClosed = true;
+        log.info("Plane fuel hatch closed");
     }
 
     public void reportDefectPump() throws Exception {
@@ -48,16 +47,6 @@ public class MaintenanceVehicle extends Vehicle {
     public double reportFuelUsage() {
         log.info("Used " + (refuelTankCapacity - currentRefillFuel) + " litres of fuel");
         return refuelTankCapacity - currentRefillFuel;
-    }
-
-    public void openHatch() {
-        hatchClosed = false;
-        log.info("Hatch opened");
-    }
-
-    public void closeHatch() {
-        hatchClosed = true;
-        log.info("Hatch closed");
     }
 
     public void startFuelPump(int s) throws Exception {
@@ -74,6 +63,19 @@ public class MaintenanceVehicle extends Vehicle {
     public void stopFuelPump() {
         fuelPumpActive = false;
         log.info("Fuelpump stopped");
+    }
+
+    public double refuelPlane() throws Exception {
+        log.info("Refuel plane");
+        openPlaneFuelHatch();
+        startFuelPump(5);
+        if(pumpDefect) {
+            reportDefectPump();
+        }
+        stopFuelPump();
+        closePlaneFuelHatch();
+
+        return reportFuelUsage();
     }
 
     public void startAirPump() throws Exception {
@@ -97,5 +99,12 @@ public class MaintenanceVehicle extends Vehicle {
         } else {
             log.info("Compressor stopped");
         }
+    }
+
+    public void checkTirePressure() throws Exception {
+        toggleCompressor();
+        startAirPump();
+        stopAirPump();
+        toggleCompressor();
     }
 }

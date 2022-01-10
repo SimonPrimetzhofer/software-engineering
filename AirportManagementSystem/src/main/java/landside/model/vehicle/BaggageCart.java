@@ -21,7 +21,7 @@ public class BaggageCart extends Vehicle {
         this.numOfCasesStoreable = numOfCasesStoreable;
     }
 
-    public void loadPassengers(int p) throws Exception {
+    public void loadBaggage(int p) throws Exception {
         if(!hatchClosed) {
             log.info("Loading baggage...");
             if (p <= numOfCasesStoreable) {
@@ -33,17 +33,20 @@ public class BaggageCart extends Vehicle {
         }
     }
 
-    public void unloadPassengers() {
+    public void unloadBaggage() {
         if(!hatchClosed) {
+            log.info("Unload baggage...");
             storedCases = 0;
         }
     }
 
     public void openHatch() {
         hatchClosed = false;
+        log.info("Baggage hatch opened");
     }
 
     public void closeHatch() {
         hatchClosed = true;
+        log.info("Baggage hatch closed");
     }
 }

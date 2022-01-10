@@ -24,13 +24,15 @@ public class EmergencyVehicle extends Vehicle {
 
     /**
      * refills the water tank
-     *
-     * @return litres of water refilled
      */
-    public double refillWaterTank() {
-        double amount = waterCapacity - extinguishingWater;
+    public void refillWaterTank() {
         this.extinguishingWater = waterCapacity;
-        return amount;
+        log.info("Water tank refilled");
+    }
+
+    public double reportWaterUsage() {
+        log.info("Used " + (waterCapacity - extinguishingWater) + " litres of fuel");
+        return waterCapacity - extinguishingWater;
     }
 
     public void startWaterPump(int s) {
