@@ -348,7 +348,7 @@ Step 10: firetruck driver awaits new orders</body>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_nIGwIEWDEey5WIGISipCYg" name="fuel">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_yl-sMEWEEey5WIGISipCYg" name="isReady">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
@@ -356,6 +356,9 @@ Step 10: firetruck driver awaits new orders</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_ex-B8HCAEey0a_5E5MhILw" name="destination" type="_0FNykHB_Eey0a_5E5MhILw" association="_ex7lsHCAEey0a_5E5MhILw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ex-B8XCAEey0a_5E5MhILw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ex-B8nCAEey0a_5E5MhILw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_J2s4UHGFEeykMtxt1Iyklg" name="maxFuel">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_MT1KQEyzEey2xa6rLkscgA" name="reportFuelConsumption">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_M_SxoFFfEeyg4ZuSxEY4fw" direction="return">
@@ -372,6 +375,9 @@ Step 10: firetruck driver awaits new orders</body>
   <packagedElement xmi:type="uml:Class" xmi:id="_HSLDsEVfEeybjKjyLz0qtQ" name="EmergencyVehicle">
     <generalization xmi:type="uml:Generalization" xmi:id="_M7s4AEVfEeybjKjyLz0qtQ" general="_Gq8roEVfEeybjKjyLz0qtQ"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_u6-2kEWDEey5WIGISipCYg" name="extinguishingWater" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yEej0HGFEeykMtxt1Iyklg" name="waterPumpThroughput">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Tou7QEyzEey2xa6rLkscgA" name="startWaterPump"/>
@@ -417,6 +423,21 @@ Step 10: firetruck driver awaits new orders</body>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_7KxeIEWMEeyH9qy55V0YNw" name="airPressure">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NhpyAHGDEeykMtxt1Iyklg" name="currentRefillFuel">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SDlFEHGDEeykMtxt1Iyklg" name="airPumpThroughput">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_uOXDUHGEEeykMtxt1Iyklg" name="fuelPumpThroughput">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0knawHGEEeykMtxt1Iyklg" name="pumpDefect">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5VOqEHGEEeykMtxt1Iyklg" name="hatchClosed">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_9MxcYE0yEeyXleny4KBDAA" name="startAirPump"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_ADqWsE1DEeyYo7zM14HCZw" name="stopAirPump"/>
@@ -714,18 +735,18 @@ Step 10: firetruck driver awaits new orders</body>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_dzcS8E07EeyTpNq6XJJzcw" name="ActionExecutionSpecification20Start" covered="_-xUtcE00EeyXleny4KBDAA" execution="_dzbE0E07EeyTpNq6XJJzcw"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_dzbE0E07EeyTpNq6XJJzcw" name="ActionExecutionSpecification20" covered="_-xUtcE00EeyXleny4KBDAA" finish="_dzc6AE07EeyTpNq6XJJzcw" start="_dzcS8E07EeyTpNq6XJJzcw"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TGnLkE01EeyXleny4KBDAA" name="Message5SendEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_TGmkgE01EeyXleny4KBDAA"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TGnyoE01EeyXleny4KBDAA" name="Message5ReceiveEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_TGmkgE01EeyXleny4KBDAA"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_krwOkE07EeyTpNq6XJJzcw" name="Message14SendEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_krvAcE07EeyTpNq6XJJzcw"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_krw1oE07EeyTpNq6XJJzcw" name="Message14ReceiveEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_krvAcE07EeyTpNq6XJJzcw"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_rfEVcE07EeyTpNq6XJJzcw" name="Message17SendEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_rfDuYE07EeyTpNq6XJJzcw"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_rfEVcU07EeyTpNq6XJJzcw" name="Message17ReceiveEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_rfDuYE07EeyTpNq6XJJzcw"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_t1Sl8E07EeyTpNq6XJJzcw" name="Message20SendEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_t1R-4E07EeyTpNq6XJJzcw"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_t1Sl8U07EeyTpNq6XJJzcw" name="Message20ReceiveEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_t1R-4E07EeyTpNq6XJJzcw"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9cX3QE01EeyXleny4KBDAA" name="Message18SendEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_9cXQME01EeyXleny4KBDAA"/>
-    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_dzc6AE07EeyTpNq6XJJzcw" name="ActionExecutionSpecification20Finish" covered="_-xUtcE00EeyXleny4KBDAA" execution="_dzbE0E07EeyTpNq6XJJzcw"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9cYeUE01EeyXleny4KBDAA" name="Message18ReceiveEvent" covered="_X1ZO4E01EeyXleny4KBDAA" message="_9cXQME01EeyXleny4KBDAA"/>
     <fragment xmi:type="uml:CombinedFragment" xmi:id="_zeSOwE07EeyTpNq6XJJzcw" name="CombinedFragment23" interactionOperator="alt">
       <operand xmi:type="uml:InteractionOperand" xmi:id="_0g9zwE07EeyTpNq6XJJzcw" name="InteractionOperand2">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TGnyoE01EeyXleny4KBDAA" name="Message5ReceiveEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_TGmkgE01EeyXleny4KBDAA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_krwOkE07EeyTpNq6XJJzcw" name="Message14SendEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_krvAcE07EeyTpNq6XJJzcw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_krw1oE07EeyTpNq6XJJzcw" name="Message14ReceiveEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_krvAcE07EeyTpNq6XJJzcw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_rfEVcE07EeyTpNq6XJJzcw" name="Message17SendEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_rfDuYE07EeyTpNq6XJJzcw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_rfEVcU07EeyTpNq6XJJzcw" name="Message17ReceiveEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_rfDuYE07EeyTpNq6XJJzcw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_t1Sl8E07EeyTpNq6XJJzcw" name="Message20SendEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_t1R-4E07EeyTpNq6XJJzcw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_t1Sl8U07EeyTpNq6XJJzcw" name="Message20ReceiveEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_t1R-4E07EeyTpNq6XJJzcw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9cX3QE01EeyXleny4KBDAA" name="Message18SendEvent" covered="_-xUtcE00EeyXleny4KBDAA" message="_9cXQME01EeyXleny4KBDAA"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_dzc6AE07EeyTpNq6XJJzcw" name="ActionExecutionSpecification20Finish" covered="_-xUtcE00EeyXleny4KBDAA" execution="_dzbE0E07EeyTpNq6XJJzcw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9cYeUE01EeyXleny4KBDAA" name="Message18ReceiveEvent" covered="_X1ZO4E01EeyXleny4KBDAA" message="_9cXQME01EeyXleny4KBDAA"/>
         <guard xmi:type="uml:InteractionConstraint" xmi:id="_0g_o8E07EeyTpNq6XJJzcw" name="guard">
           <specification xmi:type="uml:LiteralString" xmi:id="_857CwE07EeyTpNq6XJJzcw" value="low on fuel"/>
         </guard>
@@ -881,7 +902,6 @@ Step 10: firetruck driver awaits new orders</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_Mic9gHCAEey0a_5E5MhILw" name="buildingNr">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_3kBbwHB_Eey0a_5E5MhILw" name="getBuildingNr"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_ex7lsHCAEey0a_5E5MhILw" name="drives to" memberEnd="_ex-B8HCAEey0a_5E5MhILw _ex-pAHCAEey0a_5E5MhILw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ex8MwHCAEey0a_5E5MhILw" source="org.eclipse.papyrus">
