@@ -58,10 +58,9 @@ Step 5: FME publishes new ticket information</body>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_cTNl0C9sEeya95RNdWV4gg" name="assign employees">
       <ownedComment xmi:type="uml:Comment" xmi:id="_tekX4DWpEeyM6b7kgSNcUA">
         <body>Step 1: FME checks the employee lists of the different managements&#xD;
-Step 2: FME gathers info about the work rate of the other managements&#xD;
-Step 3: FME checks if any employee left the airside or one of the managements work rates is dropping or has dropped&#xD;
-Step 4: FME signs new employees &#xD;
-Step 5: FME assigns these employees to the management</body>
+Step 2: FME checks if any employee left the airside or one of the managements&#xD;
+Step 3: FME signs new employees &#xD;
+Step 4: FME assigns these employees to the management</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_hM7GwC9sEeya95RNdWV4gg" name="manage maintenance">
@@ -259,6 +258,7 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Bz5F0EyhEeyAJcn3Jqu6tg" name="makeContract"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_C6QQ8EyhEeyAJcn3Jqu6tg" name="sendContract"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_DyKJUEyhEeyAJcn3Jqu6tg" name="registerBooking"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_t63l0HMUEey_zLG-2CsnAA" name="hireEmployee"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_W993QEWYEey0q6TXOapbVg" name="contacts" memberEnd="_W9-eUkWYEey0q6TXOapbVg _W-CvwEWYEey0q6TXOapbVg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_W9-eUEWYEey0q6TXOapbVg" source="org.eclipse.papyrus">
@@ -430,7 +430,7 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n2kmAUyREeyAJcn3Jqu6tg" name="Message13ReceiveEvent" covered="_Iy8V4EyREeyAJcn3Jqu6tg" message="_n2j-8EyREeyAJcn3Jqu6tg"/>
         <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_hK9CkEyREeyAJcn3Jqu6tg" name="ActionExecutionSpecification12Finish" covered="_Iy8V4EyREeyAJcn3Jqu6tg" execution="_hK70cEyREeyAJcn3Jqu6tg"/>
         <guard xmi:type="uml:InteractionConstraint" xmi:id="_Nz_LsFFkEeyyJ56jypuNLg" name="guard">
-          <specification xmi:type="uml:LiteralString" xmi:id="_O2UycFFkEeyyJ56jypuNLg" value="workrates changed or less employees"/>
+          <specification xmi:type="uml:LiteralString" xmi:id="_O2UycFFkEeyyJ56jypuNLg" value="less employees"/>
         </guard>
       </operand>
     </fragment>

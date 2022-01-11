@@ -635,6 +635,10 @@
           <element xmi:type="uml:Operation" href="SubSystem5.uml#_DyKJUEyhEeyAJcn3Jqu6tg"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_DyUhYUyhEeyAJcn3Jqu6tg"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_t7JSoHMUEey_zLG-2CsnAA" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="SubSystem5.uml#_t63l0HMUEey_zLG-2CsnAA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_t7JSoXMUEey_zLG-2CsnAA"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_1nqPW0WWEey0q6TXOapbVg"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_1nqPXEWWEey0q6TXOapbVg"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_1nqPXUWWEey0q6TXOapbVg"/>
