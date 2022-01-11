@@ -8,14 +8,14 @@ import overall.AirportSubsystem;
 
 @Getter
 @Setter
-@AllArgsConstructor(staticName = "of")
+@AllArgsConstructor
 public class Employee {
     @NonNull
     private String firstName;
     @NonNull
     private String lastName;
-    @NonNull
-    private String salary;
+
+    private int salary;
     @NonNull
     private AirportSubsystem department;
 }

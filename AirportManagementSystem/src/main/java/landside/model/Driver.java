@@ -1,22 +1,29 @@
 package landside.model;
 
+import financial.model.Employee;
 import landside.model.destination.Destination;
 import landside.model.destination.FuelDepot;
-import landside.model.vehicle.Bus;
 import landside.model.vehicle.EmergencyVehicle;
 import landside.model.vehicle.MaintenanceVehicle;
 import landside.model.vehicle.Vehicle;
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 import lombok.extern.java.Log;
+import overall.AirportSubsystem;
 
 @Getter
 @Setter
 @Log
-public class Driver {
+public class Driver extends Employee {
     private int licenseId;
     private Vehicle vehicle;
     private Destination dest;
+
+    public Driver(@NonNull String firstName, @NonNull String lastName, int salary, @NonNull AirportSubsystem dep,int licenseId) {
+        super(firstName, lastName, salary, dep);
+        this.licenseId = licenseId;
+    }
 
     public void driveToDestination(Destination dest) {
         vehicle.setDestination(dest);

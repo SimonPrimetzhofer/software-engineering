@@ -1,9 +1,9 @@
 package landside;
 
+import financial.model.Employee;
 import landside.helper.Service;
 import landside.model.Driver;
 import landside.model.destination.*;
-import landside.model.vehicle.MaintenanceVehicle;
 import landside.model.vehicle.Vehicle;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -25,8 +25,9 @@ import static landside.helper.Service.MAINTAIN;
 @Getter
 @Log
 public class LandsideManagement extends AirportSubsystem {
-    private List<Vehicle> vehicles = new ArrayList<>();
-    private List<Destination> destinations = new ArrayList<>();
+    public final List<Vehicle> vehicles = new ArrayList<>();
+    public final List<Destination> destinations = new ArrayList<>();
+    public final List<Employee> employees = new ArrayList<>();
     double maintenanceCost;
     double operatingCost;
 

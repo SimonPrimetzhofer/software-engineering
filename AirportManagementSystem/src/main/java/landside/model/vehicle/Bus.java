@@ -1,7 +1,6 @@
 package landside.model.vehicle;
 
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.extern.java.Log;
 

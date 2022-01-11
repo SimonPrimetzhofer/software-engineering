@@ -1,6 +1,9 @@
 package terminal.model;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 
 @RequiredArgsConstructor(staticName = "of")
 @Getter
