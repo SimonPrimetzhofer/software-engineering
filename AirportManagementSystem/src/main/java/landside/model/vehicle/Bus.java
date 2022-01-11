@@ -1,6 +1,7 @@
 package landside.model.vehicle;
 
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 import lombok.extern.java.Log;
 
@@ -12,7 +13,8 @@ import lombok.extern.java.Log;
 @Log
 public class Bus extends Vehicle{
     private int passengersLoaded;
-    private final int numOfSeats;
+    @NonNull
+    private final Integer numOfSeats;
     private boolean doorsClosed;
 
     public Bus(double maxFuel, int numOfSeats) {

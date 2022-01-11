@@ -15,7 +15,9 @@ public class Employee {
     @NonNull
     private String lastName;
 
-    private int salary;
+    @NonNull
+    private Integer salary;
+
     @NonNull
     private AirportSubsystem department;
 }

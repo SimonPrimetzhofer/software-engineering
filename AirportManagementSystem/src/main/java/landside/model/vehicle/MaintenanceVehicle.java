@@ -1,6 +1,7 @@
 package landside.model.vehicle;
 
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 import lombok.extern.java.Log;
 
@@ -17,10 +18,13 @@ public class MaintenanceVehicle extends Vehicle {
     private boolean compressorActive;
     private boolean pumpDefect;
 
-    private final double airPumpThroughput;
-    private final double fuelPumpThroughput;
+    @NonNull
+    private final Double airPumpThroughput;
+    @NonNull
+    private final Double fuelPumpThroughput;
 
-    private int refuelTankCapacity;
+    @NonNull
+    private Integer refuelTankCapacity;
     private int currentRefillFuel;
 
     public MaintenanceVehicle(double maxFuel, double airPumpThroughput, double fuelPumpThroughput) {

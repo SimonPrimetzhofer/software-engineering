@@ -1,6 +1,7 @@
 package landside.model.vehicle;
 
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 import lombok.extern.java.Log;
 
@@ -13,8 +14,10 @@ import lombok.extern.java.Log;
 public class EmergencyVehicle extends Vehicle {
     private double extinguishingWater;
     private boolean waterPumpActive;
-    private final double waterCapacity;
-    private final double waterPumpThroughput;
+    @NonNull
+    private final Double waterCapacity;
+    @NonNull
+    private final Double waterPumpThroughput;
 
     public EmergencyVehicle(double maxFuel, double waterCapacity, double waterPumpThroughput) {
         super(maxFuel);

@@ -10,7 +10,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class FuelDepot extends Destination{
-    private final double fueltankCapacity;
+    @NonNull
+    private final Double fueltankCapacity;
 
     public FuelDepot(double fueltankCapacity, int buildingNr) {
         super(buildingNr);

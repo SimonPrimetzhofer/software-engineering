@@ -10,8 +10,10 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Gate extends Destination {
-    private final int gateNr;
-    private final int passengerCapacity;
+    @NonNull
+    private final Integer gateNr;
+    @NonNull
+    private final Integer passengerCapacity;
 
     private boolean isOpen;
 

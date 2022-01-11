@@ -2,6 +2,7 @@ package landside.model.vehicle;
 
 import landside.model.destination.Destination;
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 import lombok.extern.java.Log;
 
@@ -17,7 +18,8 @@ public class Vehicle {
     protected boolean isReady;
     protected boolean fuelCapClosed;
     protected double fuel;
-    protected final double maxFuel;
+    @NonNull
+    protected final Double maxFuel;
 
     public Vehicle(double maxFuel) {
         this.maxFuel = maxFuel;

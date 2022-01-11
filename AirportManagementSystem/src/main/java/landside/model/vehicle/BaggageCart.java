@@ -1,6 +1,7 @@
 package landside.model.vehicle;
 
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 import lombok.extern.java.Log;
 
@@ -12,7 +13,8 @@ import lombok.extern.java.Log;
 @Log
 public class BaggageCart extends Vehicle {
     private int storedCases;
-    private final int numOfCasesStoreable;
+    @NonNull
+    private final Integer numOfCasesStoreable;
     private boolean hatchClosed;
 
     public BaggageCart(double maxFuel, int numOfCasesStoreable) {

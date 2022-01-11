@@ -12,11 +12,15 @@ import lombok.Setter;
 import lombok.extern.java.Log;
 import overall.AirportSubsystem;
 
+/**
+ * @author Stefan Haslhofer
+ */
 @Getter
 @Setter
 @Log
 public class Driver extends Employee {
-    private int licenseId;
+    @NonNull
+    private Integer licenseId;
     private Vehicle vehicle;
     private Destination dest;
 

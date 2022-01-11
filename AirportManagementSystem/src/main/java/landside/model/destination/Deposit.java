@@ -10,9 +10,11 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Deposit extends Destination{
-    private final int depositNr;
+    @NonNull
+    private final Integer depositNr;
 
-    private final int storageCapacity;
+    @NonNull
+    private final Integer storageCapacity;
 
     private int storedCases;
 
