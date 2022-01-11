@@ -233,6 +233,30 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__JIIgFFdEeyyJ56jypuNLg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__GttsFFdEeyyJ56jypuNLg" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wQtw8HMWEey_zLG-2CsnAA" name="landsideEmployee">
+      <type xmi:type="uml:Class" href="SubSystem2.uml#_ldj84EViEeybjKjyLz0qtQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DclI4HMXEey_zLG-2CsnAA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dc1nkHMXEey_zLG-2CsnAA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_x_tCUHMWEey_zLG-2CsnAA" name="airsideEmployee">
+      <type xmi:type="uml:Class" href="SubSystem1.uml#_15LSYEVwEeywAt9CR0nlpw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F8AYsHMXEey_zLG-2CsnAA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F8PpQHMXEey_zLG-2CsnAA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zVnFUHMWEey_zLG-2CsnAA" name="financialEmployee" type="_1npBMEWWEey0q6TXOapbVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HqZ0MHMXEey_zLG-2CsnAA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HqpEwHMXEey_zLG-2CsnAA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BUJcwHMXEey_zLG-2CsnAA" name="landsideManagement">
+      <type xmi:type="uml:Class" href="SubSystem2.uml#_5pHyAEY4EeyzvZaWA2zpUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_O-jXQHMXEey_zLG-2CsnAA" name="airsideManagement">
+      <type xmi:type="uml:Class" href="SubSystem1.uml#_KtWgYEV7EeywAt9CR0nlpw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZTcHcHMXEey_zLG-2CsnAA" name="financialManagement" type="_rhkogEY4EeyzvZaWA2zpUQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wPSYIHMXEey_zLG-2CsnAA" name="numOfEmployee">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_OCTY4EygEeyAJcn3Jqu6tg" name="getMaintenanceType"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_RhAUYEygEeyAJcn3Jqu6tg" name="getVehicleInfo"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Sp2y0EygEeyAJcn3Jqu6tg" name="sendToInspection"/>

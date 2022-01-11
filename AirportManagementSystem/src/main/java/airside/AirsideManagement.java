@@ -17,5 +17,5 @@ import overall.AirportSubsystem;
 @Getter
 public class AirsideManagement extends AirportSubsystem {
 	ArrayList<Plane> planes = new ArrayList<>();
-	ArrayList<AircraftMarshaller> marshaller = new ArrayList<>();
+	public ArrayList<AircraftMarshaller> marshaller = new ArrayList<>();
 }

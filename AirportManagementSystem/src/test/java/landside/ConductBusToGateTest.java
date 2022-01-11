@@ -1,4 +1,4 @@
-package terminal;
+package landside;
 
 import financial.model.Employee;
 import landside.LandsideManagement;

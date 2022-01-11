@@ -27,7 +27,7 @@ import static landside.helper.Service.MAINTAIN;
 public class LandsideManagement extends AirportSubsystem {
     public final List<Vehicle> vehicles = new ArrayList<>();
     public final List<Destination> destinations = new ArrayList<>();
-    public final List<Employee> employees = new ArrayList<>();
+    public final List<Driver> employees = new ArrayList<>();
     double maintenanceCost;
     double operatingCost;
 
