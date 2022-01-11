@@ -14,14 +14,18 @@ import overall.AirportSubsystem;
 @Setter
 @AllArgsConstructor
 public class Employee {
-    @NonNull
-    private String firstName;
-    @NonNull
-    private String lastName;
+	@NonNull
+	private String firstName;
+	@NonNull
+	private String lastName;
 
-    @NonNull
-    private Integer salary;
+	@NonNull
+	private Integer salary;
 
-    @NonNull
-    private AirportSubsystem department;
+	@NonNull
+	private AirportSubsystem department;
+
+	public String getFullName() {
+		return firstName + " " + lastName;
+	}
 }
