@@ -80,9 +80,8 @@ public class LandsideManagement extends AirportSubsystem {
     }
 
     public void requestFuelStatus(Driver driver) throws Exception {
-
         // refuel vehicle if fuel drops below 20%
-        if (driver.getVehicle().reportFuelConsumption() < driver.getVehicle().getMaxFuel() * 0.2) {
+        if (driver.getVehicle().reportFuelConsumption() > driver.getVehicle().getMaxFuel() * 0.8) {
             log.info("Refueling vehicle...");
             operatingCost += driver.refuel(getFuelDepot()) * Constants.FUEL_PRICE_PER_LITRE;
             log.info("Finished refueling");
