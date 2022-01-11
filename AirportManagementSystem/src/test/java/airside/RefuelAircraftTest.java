@@ -46,7 +46,8 @@ public class RefuelAircraftTest {
 		};
 
 		Vehicle v = new MaintenanceVehicle(1, 2, 3);
-		Driver d = new Driver("Max", "Mustermann", 10000, landside, v, 1);
+		Driver d = new Driver("Max", "Mustermann", 10000, landside, 1);
+		d.setVehicle(v);
 		vehicles.add(v);
 		v.setInGarage(true);
 		d.setVehicle(v);

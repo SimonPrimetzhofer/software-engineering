@@ -11,7 +11,6 @@ import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
 import lombok.extern.java.Log;
-import overall.AirportSubsystem;
 
 /**
  * @author Stefan Haslhofer
@@ -20,25 +19,26 @@ import overall.AirportSubsystem;
 @Setter
 @Log
 public class Driver extends Employee {
-    @NonNull
-    private Integer licenseId;
-    private Vehicle vehicle;
-    private Destination dest;
+	@NonNull
+	private Integer licenseId;
+	private Vehicle vehicle;
+	private Destination dest;
 
-    public Driver(@NonNull String firstName, @NonNull String lastName, int salary, @NonNull LandsideManagement dep, int licenseId) {
-        super(firstName, lastName, salary, dep);
-        this.licenseId = licenseId;
-    }
+	public Driver(@NonNull String firstName, @NonNull String lastName, int salary, @NonNull LandsideManagement dep,
+			int licenseId) {
+		super(firstName, lastName, salary, dep);
+		this.licenseId = licenseId;
+	}
 
-    public Driver(Employee e, int licenseId) {
-        super(e.getFirstName(), e.getLastName(), e.getSalary(), e.getDepartment());
-        this.licenseId = licenseId;
-    }
+	public Driver(Employee e, int licenseId) {
+		super(e.getFirstName(), e.getLastName(), e.getSalary(), e.getDepartment());
+		this.licenseId = licenseId;
+	}
 
-    public void driveToDestination(Destination dest) {
-        vehicle.setDestination(dest);
-        log.info("Driving to destination...");
-    }
+	public void driveToDestination(Destination dest) {
+		vehicle.setDestination(dest);
+		log.info("Driving to destination...");
+	}
 
 	public void driveToGarage() {
 		vehicle.setDestination(null);

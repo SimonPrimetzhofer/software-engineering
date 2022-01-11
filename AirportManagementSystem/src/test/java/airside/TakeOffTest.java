@@ -41,8 +41,8 @@ public class TakeOffTest {
 		};
 		checklist = new ArrayList<Boolean>() {
 			{
-				add(new Boolean(false));
-				add(new Boolean(false));
+				add(false);
+				add(false);
 			}
 		};
 		strips = new ArrayList<Boolean>() {
