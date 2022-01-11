@@ -14,6 +14,10 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @author Kaan Baylan
+ */
+
 class AirlineTest {
 
     private Airline airline;

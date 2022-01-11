@@ -6,6 +6,10 @@ import lombok.Setter;
 
 import java.util.Date;
 
+/**
+ * @author Kaan Baylan
+ */
+
 @Getter
 @Setter
 public class Maintenance {

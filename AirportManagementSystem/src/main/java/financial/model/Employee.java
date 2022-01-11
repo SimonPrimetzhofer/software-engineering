@@ -6,6 +6,10 @@ import lombok.NonNull;
 import lombok.Setter;
 import overall.AirportSubsystem;
 
+/**
+ * @author Kaan Baylan
+ */
+
 @Getter
 @Setter
 @AllArgsConstructor
