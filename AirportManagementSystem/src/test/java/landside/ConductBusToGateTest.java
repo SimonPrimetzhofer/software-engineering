@@ -1,23 +1,18 @@
 package landside;
 
-import financial.model.Employee;
-import landside.LandsideManagement;
 import landside.model.Driver;
 import landside.model.destination.Destination;
 import landside.model.destination.Gate;
 import landside.model.vehicle.Bus;
 import landside.model.vehicle.Vehicle;
-import lombok.extern.java.Log;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@Log
 public class ConductBusToGateTest {
     Vehicle bus;
-    Employee busDriver;
+    Driver busDriver;
     LandsideManagement lm;
     Destination gate;
 
@@ -31,17 +26,74 @@ public class ConductBusToGateTest {
         lm.vehicles.add(bus);
 
         busDriver = new Driver("Max", "Musterfahrer", 2500, lm, 1);
+        busDriver.setVehicle(bus);
         lm.employees.add(busDriver);
     }
 
     @Test
-    void testAssignGate(){
-        lm.assignGate((Driver) busDriver, (Gate) gate);
-        assertEquals(gate, ((Driver) busDriver).getDest());
+    void testAssignGate() {
+        lm.assignGate(busDriver, (Gate) gate);
+        assertEquals(gate, busDriver.getDest());
     }
 
     @Test
     void testDriveToDestination() {
-        driver.driveTo
+        busDriver.driveToDestination(gate);
+        assertEquals(busDriver.getVehicle().getDestination(), gate);
+    }
+
+    @Test
+    void testOpenDoor() {
+        assertTrue(busDriver.getVehicle() instanceof Bus);
+        ((Bus) busDriver.getVehicle()).openDoor();
+        assertFalse(((Bus) busDriver.getVehicle()).isDoorsClosed());
+    }
+
+    @Test
+    void closeOpenDoor() {
+        assertTrue(busDriver.getVehicle() instanceof Bus);
+        ((Bus) busDriver.getVehicle()).openDoor();
+        assertFalse(((Bus) busDriver.getVehicle()).isDoorsClosed());
+    }
+
+    @Test
+    void testLoadPassengers() {
+        ((Bus) busDriver.getVehicle()).closeDoor();
+        assertThrows(Exception.class, () -> ((Bus) busDriver.getVehicle()).loadPassengers(20));
+
+        ((Bus) busDriver.getVehicle()).openDoor();
+
+        assertTrue(busDriver.getVehicle() instanceof Bus);
+        assertDoesNotThrow(() -> ((Bus) busDriver.getVehicle()).loadPassengers(50));
+        assertEquals(((Bus) busDriver.getVehicle()).getPassengersLoaded(), 50);
+    }
+
+    @Test
+    void testUnloadPassengers() {
+        ((Bus) busDriver.getVehicle()).closeDoor();
+        assertThrows(Exception.class, () -> ((Bus) busDriver.getVehicle()).unloadPassengers());
+
+        ((Bus) busDriver.getVehicle()).openDoor();
+
+        assertTrue(busDriver.getVehicle() instanceof Bus);
+        assertDoesNotThrow(() -> ((Bus) busDriver.getVehicle()).unloadPassengers());
+        assertEquals(((Bus) busDriver.getVehicle()).getPassengersLoaded(), 0);
+    }
+
+    @Test
+    void testGetPassengersLoaded() {
+        assertEquals(((Bus) busDriver.getVehicle()).getPassengersLoaded(), 0);
+
+        ((Bus) busDriver.getVehicle()).openDoor();
+        assertDoesNotThrow(() -> ((Bus) busDriver.getVehicle()).loadPassengers(30));
+
+        assertEquals(((Bus) busDriver.getVehicle()).getPassengersLoaded(), 30);
+    }
+
+    @Test
+    void testDriveToGarage() {
+        busDriver.driveToGarage();
+        assertNull(busDriver.getDest());
+        assertTrue(busDriver.getVehicle().isInGarage());
     }
 }

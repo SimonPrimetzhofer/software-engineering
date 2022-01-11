@@ -11,7 +11,7 @@ import lombok.extern.java.Log;
 @Getter
 @Setter
 @Log
-public class Bus extends Vehicle{
+public class Bus extends Vehicle {
     private int passengersLoaded;
     @NonNull
     private final Integer numOfSeats;
@@ -24,7 +24,7 @@ public class Bus extends Vehicle{
 
     public void loadPassengers(int p) throws Exception {
         // only load as many passengers as there are seats only when the door is opened
-        if(!doorsClosed) {
+        if (!doorsClosed) {
             if (p <= numOfSeats) {
                 log.info("Loading passengers...");
                 passengersLoaded = p;
@@ -32,13 +32,17 @@ public class Bus extends Vehicle{
                 passengersLoaded = numOfSeats;
                 throw new Exception("Too few seats available");
             }
+        } else {
+            throw new Exception("Doors are still closed");
         }
     }
 
-    public void unloadPassengers() {
-        if(!doorsClosed) {
+    public void unloadPassengers() throws Exception {
+        if (!doorsClosed) {
             log.info("Unload passengers...");
             passengersLoaded = 0;
+        } else {
+            throw new Exception("Doors are still closed");
         }
     }
 
