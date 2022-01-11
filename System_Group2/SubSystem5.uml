@@ -250,7 +250,6 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_jpm4gEygEeyAJcn3Jqu6tg" name="checkRepairmentCost"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_peNUYEygEeyAJcn3Jqu6tg" name="accountPayment"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_uZYN4EygEeyAJcn3Jqu6tg" name="getLists"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_vI60cEygEeyAJcn3Jqu6tg" name="getWorkrates"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_vzQx8EygEeyAJcn3Jqu6tg" name="signEmps"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_xhWEYEygEeyAJcn3Jqu6tg" name="assignEmps"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_3am90EygEeyAJcn3Jqu6tg" name="scheduleFlight"/>
@@ -415,13 +414,11 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
     <message xmi:type="uml:Message" xmi:id="_BI2YAEyREeyAJcn3Jqu6tg" name="5: publishTicketPrices()" receiveEvent="_BI2YAkyREeyAJcn3Jqu6tg" sendEvent="_BI2YAUyREeyAJcn3Jqu6tg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_FzGgoEyREeyAJcn3Jqu6tg" name="assign employee">
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_Iy8V4EyREeyAJcn3Jqu6tg" name="FME" coveredBy="_LM6d8EyREeyAJcn3Jqu6tg _LM524EyREeyAJcn3Jqu6tg _MQ5qgEyREeyAJcn3Jqu6tg _MQ5qgUyREeyAJcn3Jqu6tg _OsFTgUyREeyAJcn3Jqu6tg _OsFTgkyREeyAJcn3Jqu6tg _LM6d8UyREeyAJcn3Jqu6tg _Wu5TYEyREeyAJcn3Jqu6tg _Nz-koFFkEeyyJ56jypuNLg _hK8bgEyREeyAJcn3Jqu6tg _hK70cEyREeyAJcn3Jqu6tg _jDClkUyREeyAJcn3Jqu6tg _jDDMoEyREeyAJcn3Jqu6tg _n2kmAEyREeyAJcn3Jqu6tg _n2kmAUyREeyAJcn3Jqu6tg _hK9CkEyREeyAJcn3Jqu6tg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Iy8V4EyREeyAJcn3Jqu6tg" name="FME" coveredBy="_LM6d8EyREeyAJcn3Jqu6tg _LM524EyREeyAJcn3Jqu6tg _MQ5qgEyREeyAJcn3Jqu6tg _MQ5qgUyREeyAJcn3Jqu6tg _LM6d8UyREeyAJcn3Jqu6tg _Wu5TYEyREeyAJcn3Jqu6tg _Nz-koFFkEeyyJ56jypuNLg _hK8bgEyREeyAJcn3Jqu6tg _hK70cEyREeyAJcn3Jqu6tg _jDClkUyREeyAJcn3Jqu6tg _jDDMoEyREeyAJcn3Jqu6tg _n2kmAEyREeyAJcn3Jqu6tg _n2kmAUyREeyAJcn3Jqu6tg _hK9CkEyREeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_LM6d8EyREeyAJcn3Jqu6tg" name="ActionExecutionSpecification2Start" covered="_Iy8V4EyREeyAJcn3Jqu6tg" execution="_LM524EyREeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_LM524EyREeyAJcn3Jqu6tg" name="ActionExecutionSpecification2" covered="_Iy8V4EyREeyAJcn3Jqu6tg" finish="_LM6d8UyREeyAJcn3Jqu6tg" start="_LM6d8EyREeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MQ5qgEyREeyAJcn3Jqu6tg" name="Message5SendEvent" covered="_Iy8V4EyREeyAJcn3Jqu6tg" message="_MQ5DcEyREeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MQ5qgUyREeyAJcn3Jqu6tg" name="Message5ReceiveEvent" covered="_Iy8V4EyREeyAJcn3Jqu6tg" message="_MQ5DcEyREeyAJcn3Jqu6tg"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_OsFTgUyREeyAJcn3Jqu6tg" name="Message8SendEvent" covered="_Iy8V4EyREeyAJcn3Jqu6tg" message="_OsFTgEyREeyAJcn3Jqu6tg"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_OsFTgkyREeyAJcn3Jqu6tg" name="Message8ReceiveEvent" covered="_Iy8V4EyREeyAJcn3Jqu6tg" message="_OsFTgEyREeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_LM6d8UyREeyAJcn3Jqu6tg" name="ActionExecutionSpecification2Finish" covered="_Iy8V4EyREeyAJcn3Jqu6tg" execution="_LM524EyREeyAJcn3Jqu6tg"/>
     <fragment xmi:type="uml:CombinedFragment" xmi:id="_Wu5TYEyREeyAJcn3Jqu6tg" name="CombinedFragment11" covered="_Iy8V4EyREeyAJcn3Jqu6tg" interactionOperator="opt">
       <operand xmi:type="uml:InteractionOperand" xmi:id="_Nz-koFFkEeyyJ56jypuNLg" name="InteractionOperand2" covered="_Iy8V4EyREeyAJcn3Jqu6tg">
@@ -438,7 +435,6 @@ Step 5: FME accounts the cost of repariment / new equipment</body>
       </operand>
     </fragment>
     <message xmi:type="uml:Message" xmi:id="_MQ5DcEyREeyAJcn3Jqu6tg" name="1: getLists()" receiveEvent="_MQ5qgUyREeyAJcn3Jqu6tg" sendEvent="_MQ5qgEyREeyAJcn3Jqu6tg"/>
-    <message xmi:type="uml:Message" xmi:id="_OsFTgEyREeyAJcn3Jqu6tg" name="2: getWorkrates()" receiveEvent="_OsFTgkyREeyAJcn3Jqu6tg" sendEvent="_OsFTgUyREeyAJcn3Jqu6tg"/>
     <message xmi:type="uml:Message" xmi:id="_jDClkEyREeyAJcn3Jqu6tg" name="3: signEmps()" receiveEvent="_jDDMoEyREeyAJcn3Jqu6tg" sendEvent="_jDClkUyREeyAJcn3Jqu6tg"/>
     <message xmi:type="uml:Message" xmi:id="_n2j-8EyREeyAJcn3Jqu6tg" name="4: assignEmps()" receiveEvent="_n2kmAUyREeyAJcn3Jqu6tg" sendEvent="_n2kmAEyREeyAJcn3Jqu6tg"/>
   </packagedElement>

@@ -599,10 +599,6 @@
           <element xmi:type="uml:Operation" href="SubSystem5.uml#_uZYN4EygEeyAJcn3Jqu6tg"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_uZnecUygEeyAJcn3Jqu6tg"/>
         </children>
-        <children xmi:type="notation:Shape" xmi:id="_vJElcEygEeyAJcn3Jqu6tg" type="Operation_ClassOperationLabel">
-          <element xmi:type="uml:Operation" href="SubSystem5.uml#_vI60cEygEeyAJcn3Jqu6tg"/>
-          <layoutConstraint xmi:type="notation:Location" xmi:id="_vJElcUygEeyAJcn3Jqu6tg"/>
-        </children>
         <children xmi:type="notation:Shape" xmi:id="_vzai8EygEeyAJcn3Jqu6tg" type="Operation_ClassOperationLabel">
           <element xmi:type="uml:Operation" href="SubSystem5.uml#_vzQx8EygEeyAJcn3Jqu6tg"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_vzai8UygEeyAJcn3Jqu6tg"/>
@@ -1499,19 +1495,6 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MQ7fskyREeyAJcn3Jqu6tg" points="[-10, 0, -10, -60]$[52, 0, 52, -60]$[52, 60, 52, 0]$[-10, 60, -10, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MQ_xIEyREeyAJcn3Jqu6tg" id="(0.5,0.06571428571428571)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MQ_xIUyREeyAJcn3Jqu6tg" id="(0.5,0.09428571428571429)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_OsHvwEyREeyAJcn3Jqu6tg" type="Message_SynchEdge" source="_Iy9kAEyREeyAJcn3Jqu6tg" target="_Iy9kAEyREeyAJcn3Jqu6tg">
-      <children xmi:type="notation:DecorationNode" xmi:id="_OsHvw0yREeyAJcn3Jqu6tg" type="Message_SynchNameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_OsHvxEyREeyAJcn3Jqu6tg" x="-1" y="-49"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_OsHvxUyREeyAJcn3Jqu6tg" type="Message_SynchStereotypeLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_OsHvxkyREeyAJcn3Jqu6tg" x="1" y="-33"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_OsHvwUyREeyAJcn3Jqu6tg"/>
-      <element xmi:type="uml:Message" href="SubSystem5.uml#_OsFTgEyREeyAJcn3Jqu6tg"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OsHvwkyREeyAJcn3Jqu6tg" points="[-10, 0, -10, -60]$[57, 0, 57, -60]$[57, 60, 57, 0]$[0, 60, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OsMoQEyREeyAJcn3Jqu6tg" id="(0.5,0.12285714285714286)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OsMoQUyREeyAJcn3Jqu6tg" id="(0.5,0.15142857142857144)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_jDG3AEyREeyAJcn3Jqu6tg" type="Message_SynchEdge" source="_Iy9kAEyREeyAJcn3Jqu6tg" target="_Iy9kAEyREeyAJcn3Jqu6tg">
       <children xmi:type="notation:DecorationNode" xmi:id="_jDG3A0yREeyAJcn3Jqu6tg" type="Message_SynchNameLabel">

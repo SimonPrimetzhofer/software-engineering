@@ -40,5 +40,8 @@ public class ConductBusToGateTest {
         assertEquals(gate, ((Driver) busDriver).getDest());
     }
 
+    @Test
+    void testDriveToDestination() {
+        driver.driveTo
     }
 }

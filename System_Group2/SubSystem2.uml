@@ -391,9 +391,6 @@ Step 10: firetruck driver awaits new orders</body>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_JH8SgEVfEeybjKjyLz0qtQ" name="BaggageCart">
     <generalization xmi:type="uml:Generalization" xmi:id="_OmzH4EVfEeybjKjyLz0qtQ" general="_Gq8roEVfEeybjKjyLz0qtQ"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_BXVdIEWEEey5WIGISipCYg" name="storedCases">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_QIm5EEWEEey5WIGISipCYg" name="numOfCasesStoreable">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
@@ -527,9 +524,6 @@ Step 10: firetruck driver awaits new orders</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_qlRsIEyKEeyxf8Jv68VPeA" name="gatherMaintenanceCost"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_snA6YEyKEeyxf8Jv68VPeA" name="provideLandsideCost"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_5NA8IEyLEeyxf8Jv68VPeA" name="requestParkingLocation"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_-M7LsEyLEeyxf8Jv68VPeA" name="calculateRessources"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="__bTqYEyLEeyxf8Jv68VPeA" name="calculateRoute"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_BHXjkEyMEeyxf8Jv68VPeA" name="executeRefuel"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_0qCuIEy1EeyeQ6DhCcZ-vQ" name="assignGate"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_1k2wkEy1EeyeQ6DhCcZ-vQ" name="assignPlane"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_2FYqwEy1EeyeQ6DhCcZ-vQ" name="assignBaggageDepot"/>
@@ -537,7 +531,6 @@ Step 10: firetruck driver awaits new orders</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="__q1k0E0zEeyXleny4KBDAA" name="requestFuelStatus"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_tW21IE1JEeylrtBNYek5mA" name="requestDestination"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_3wBoYE1JEeylrtBNYek5mA" name="requestDestination"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_LnJsMFIeEeyhStk-XKi7RA" name="recalculateRoute"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_QJoKgEY5EeyzvZaWA2zpUQ" name="contains" memberEnd="_QJoxkkY5EeyzvZaWA2zpUQ _QJpYoEY5EeyzvZaWA2zpUQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QJoxkEY5EeyzvZaWA2zpUQ" source="org.eclipse.papyrus">
@@ -772,8 +765,8 @@ Step 10: firetruck driver awaits new orders</body>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_ZDNBoE08EeyTpNq6XJJzcw" name="Landside Management" coveredBy="_gueEME08EeyTpNq6XJJzcw _hOV3EE08EeyTpNq6XJJzcw _3_bpQU08EeyTpNq6XJJzcw _6HBn4U08EeyTpNq6XJJzcw _hfB-cE08EeyTpNq6XJJzcw _-ApIUE09EeyyX4I_jy_gEQ _E0eMkE0-EeyyX4I_jy_gEQ"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_aYv4QE08EeyTpNq6XJJzcw" name="Maintenance-Vehicle Driver" coveredBy="_gueEME08EeyTpNq6XJJzcw _hOV3EE08EeyTpNq6XJJzcw _3_cQUE08EeyTpNq6XJJzcw _6HCO8E08EeyTpNq6XJJzcw _3_4VMU08EeyTpNq6XJJzcw _hfB-cE08EeyTpNq6XJJzcw _3_0DwE08EeyTpNq6XJJzcw"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_cMTgkE08EeyTpNq6XJJzcw" name="Firetruck Driver" coveredBy="_gueEME08EeyTpNq6XJJzcw _hOV3EE08EeyTpNq6XJJzcw _hfB-cE08EeyTpNq6XJJzcw _-ApIUU09EeyyX4I_jy_gEQ _E0ezoE0-EeyyX4I_jy_gEQ _-B2pQE09EeyyX4I_jy_gEQ _-BvUgE09EeyyX4I_jy_gEQ"/>
-    <fragment xmi:type="uml:CombinedFragment" xmi:id="_gueEME08EeyTpNq6XJJzcw" name="CombinedFragment4" covered="_ZDNBoE08EeyTpNq6XJJzcw _aYv4QE08EeyTpNq6XJJzcw _cMTgkE08EeyTpNq6XJJzcw">
-      <operand xmi:type="uml:InteractionOperand" xmi:id="_hOV3EE08EeyTpNq6XJJzcw" name="InteractionOperand2" covered="_ZDNBoE08EeyTpNq6XJJzcw _aYv4QE08EeyTpNq6XJJzcw _cMTgkE08EeyTpNq6XJJzcw">
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_gueEME08EeyTpNq6XJJzcw" name="CombinedFragment4" covered="_cMTgkE08EeyTpNq6XJJzcw _aYv4QE08EeyTpNq6XJJzcw _ZDNBoE08EeyTpNq6XJJzcw">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_hOV3EE08EeyTpNq6XJJzcw" name="InteractionOperand2" covered="_cMTgkE08EeyTpNq6XJJzcw _aYv4QE08EeyTpNq6XJJzcw _ZDNBoE08EeyTpNq6XJJzcw">
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3_bpQU08EeyTpNq6XJJzcw" name="Message5SendEvent" covered="_ZDNBoE08EeyTpNq6XJJzcw" message="_3_bpQE08EeyTpNq6XJJzcw"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3_cQUE08EeyTpNq6XJJzcw" name="Message5ReceiveEvent" covered="_aYv4QE08EeyTpNq6XJJzcw" message="_3_bpQE08EeyTpNq6XJJzcw"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_3_0DwE08EeyTpNq6XJJzcw" name="BehaviorExecutionSpecification8" covered="_aYv4QE08EeyTpNq6XJJzcw" finish="_3_4VMU08EeyTpNq6XJJzcw" start="_3_cQUE08EeyTpNq6XJJzcw"/>
@@ -784,7 +777,7 @@ Step 10: firetruck driver awaits new orders</body>
           <specification xmi:type="uml:LiteralString" xmi:id="_oFXR4E0_EeyYo7zM14HCZw" value="maintenance task required"/>
         </guard>
       </operand>
-      <operand xmi:type="uml:InteractionOperand" xmi:id="_hfB-cE08EeyTpNq6XJJzcw" name="InteractionOperand3" covered="_ZDNBoE08EeyTpNq6XJJzcw _aYv4QE08EeyTpNq6XJJzcw _cMTgkE08EeyTpNq6XJJzcw">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_hfB-cE08EeyTpNq6XJJzcw" name="InteractionOperand3" covered="_cMTgkE08EeyTpNq6XJJzcw _aYv4QE08EeyTpNq6XJJzcw _ZDNBoE08EeyTpNq6XJJzcw">
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-ApIUE09EeyyX4I_jy_gEQ" name="Message8SendEvent" covered="_ZDNBoE08EeyTpNq6XJJzcw" message="_-AnTIE09EeyyX4I_jy_gEQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-ApIUU09EeyyX4I_jy_gEQ" name="Message8ReceiveEvent" covered="_cMTgkE08EeyTpNq6XJJzcw" message="_-AnTIE09EeyyX4I_jy_gEQ"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_-BvUgE09EeyyX4I_jy_gEQ" name="BehaviorExecutionSpecification11" covered="_cMTgkE08EeyTpNq6XJJzcw" finish="_-B2pQE09EeyyX4I_jy_gEQ" start="_-ApIUU09EeyyX4I_jy_gEQ"/>
