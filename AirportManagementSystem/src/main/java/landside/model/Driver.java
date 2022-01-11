@@ -1,6 +1,7 @@
 package landside.model;
 
 import financial.model.Employee;
+import landside.LandsideManagement;
 import landside.model.destination.Destination;
 import landside.model.destination.FuelDepot;
 import landside.model.vehicle.EmergencyVehicle;
@@ -24,8 +25,13 @@ public class Driver extends Employee {
     private Vehicle vehicle;
     private Destination dest;
 
-    public Driver(@NonNull String firstName, @NonNull String lastName, int salary, @NonNull AirportSubsystem dep,int licenseId) {
+    public Driver(@NonNull String firstName, @NonNull String lastName, int salary, @NonNull LandsideManagement dep, int licenseId) {
         super(firstName, lastName, salary, dep);
+        this.licenseId = licenseId;
+    }
+
+    public Driver(Employee e, int licenseId) {
+        super(e.getFirstName(), e.getLastName(), e.getSalary(), e.getDepartment());
         this.licenseId = licenseId;
     }
 

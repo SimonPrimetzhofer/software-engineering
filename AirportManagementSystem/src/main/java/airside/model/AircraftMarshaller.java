@@ -2,6 +2,7 @@ package airside.model;
 
 import java.util.ArrayList;
 
+import airside.AirsideManagement;
 import financial.model.Employee;
 import landside.model.destination.ParkingSpot;
 import lombok.Getter;
@@ -19,7 +20,7 @@ public class AircraftMarshaller extends Employee {
 	ArrayList<ParkingSpot> parkingSpots = new ArrayList<>();
 
 	public AircraftMarshaller(@NonNull String firstName, @NonNull String lastName, @NonNull Integer salary,
-			@NonNull AirportSubsystem department, ArrayList<Integer> strips, ArrayList<ParkingSpot> parkingSpots) {
+							  @NonNull AirsideManagement department, ArrayList<Integer> strips, ArrayList<ParkingSpot> parkingSpots) {
 		super(firstName, lastName, salary, department);
 		this.strips = strips;
 		this.parkingSpots = parkingSpots;

@@ -30,9 +30,9 @@ public class FinancialManagementEmployee extends Employee {
     private final AirsideManagement airsideManagement;
     private final FinancialManagement financialManagement;
 
-    private List<Driver> landsideEmployees;
-    private List<AircraftMarshaller> airsideEmployees;
-    private List<FinancialManagementEmployee> financialEmployees;
+    private List<Driver> landsideEmployees = new ArrayList<>();
+    private List<AircraftMarshaller> airsideEmployees = new ArrayList<>();
+    private List<FinancialManagementEmployee> financialEmployees = new ArrayList<>();
 
     private int numOfEmployees;
 
@@ -43,32 +43,34 @@ public class FinancialManagementEmployee extends Employee {
         this.financialManagement = financialManagement;
     }
 
-    private void getLists() {
+    public void getLists() {
         this.landsideEmployees = landsideManagement.employees;
         this.airsideEmployees = airsideManagement.marshaller;
         this.financialEmployees = financialManagement.fmes;
+        numOfEmployees = this.landsideEmployees.size() + this.airsideEmployees.size() + this.financialEmployees.size();
     }
 
-    private void hireEmployee(@NonNull String firstName, @NonNull String lastName, int salary, @NonNull AirportSubsystem dep) {
-        for (; numOfEmployees < this.landsideEmployees.size() + this.airsideEmployees.size() + this.financialEmployees.size(); numOfEmployees++) {
+    public void hireEmployee(@NonNull String firstName, @NonNull String lastName, int salary, @NonNull AirportSubsystem dep, int licenceId) {
+        if (numOfEmployees < this.landsideEmployees.size() + this.airsideEmployees.size() + this.financialEmployees.size()) {
             Employee e = signEmp(firstName, lastName, salary, dep);
-            assignEmps(dep, e);
+            assignEmps(dep, e, licenceId);
+            numOfEmployees++;
         }
     }
 
     /**
      * create new employee
      */
-    private Employee signEmp(@NonNull String firstName, @NonNull String lastName, int salary, @NonNull AirportSubsystem dep) {
+    public Employee signEmp(@NonNull String firstName, @NonNull String lastName, int salary, @NonNull AirportSubsystem dep) {
         return new Employee(firstName, lastName, salary, dep);
     }
 
     /**
      * assign employee to department
      */
-    private void assignEmps(AirportSubsystem dep, Employee e) {
+    public void assignEmps(AirportSubsystem dep, Employee e, int licenseId) {
         if (dep instanceof LandsideManagement) {
-            ((LandsideManagement) dep).employees.add((Driver) e);
+            ((LandsideManagement) dep).employees.add(new Driver(e, 1));
         } else if (dep instanceof AirsideManagement) {
             ((AirsideManagement) dep).marshaller.add((AircraftMarshaller) e);
         } else if (dep instanceof FinancialManagement) {
