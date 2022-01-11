@@ -14,23 +14,51 @@ import airside.model.Pilot;
 import airside.model.Plane;
 import financial.model.Employee;
 import landside.LandsideManagement;
+import landside.model.Driver;
+import landside.model.destination.Destination;
 import landside.model.destination.ParkingSpot;
+import landside.model.vehicle.MaintenanceVehicle;
+import landside.model.vehicle.Vehicle;
 
 public class RefuelAircraftTest {
 	Pilot pilot;
 	CabinCrew cabinCrew;
 	AirsideManagement airside;
 	LandsideManagement landside;
-	ArrayList<Boolean> checklist = (ArrayList<Boolean>) List.of(false, false);
+	ArrayList<Boolean> checklist;
 	ParkingSpot spot;
 	Plane plane;
+
+	public final List<Vehicle> vehicles = new ArrayList<>();
+	public final List<Destination> destinations = new ArrayList<>();
+	public final List<Driver> drivers = new ArrayList<>();
 
 	@BeforeEach
 	void setUp() {
 		airside = new AirsideManagement();
 		landside = new LandsideManagement();
+
+		checklist = new ArrayList<Boolean>() {
+			{
+				add(false);
+				add(false);
+			}
+		};
+
+		Vehicle v = new MaintenanceVehicle(1, 2, 3);
+		Driver d = new Driver("Max", "Mustermann", 10000, landside, v, 1);
+		vehicles.add(v);
+		v.setInGarage(true);
+		d.setVehicle(v);
+		drivers.add(d);
+		landside.employees = drivers;
+
 		pilot = new Pilot("Max", "Mustermann", 10000, airside, checklist);
-		cabinCrew = new CabinCrew((ArrayList<Employee>) List.of(new Employee("Max", "Mustermann", 10000, airside)));
+		cabinCrew = new CabinCrew(new ArrayList<Employee>() {
+			{
+				add(new Employee("Max", "Mustermann", 10000, airside));
+			}
+		});
 		spot = new ParkingSpot(1);
 		plane = new Plane(pilot, cabinCrew);
 	}

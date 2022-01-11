@@ -1,6 +1,7 @@
 package airside.model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import financial.model.Employee;
 import landside.LandsideManagement;
@@ -29,7 +30,7 @@ public class Pilot extends Employee {
 
 	public boolean doChecklist() {
 		log.info("start going through take off checklist");
-		checklist.stream().forEach(s -> s = Boolean.TRUE);
+		Collections.fill(checklist, true);
 		log.info("checklist done");
 		return true;
 	}

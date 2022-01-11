@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Optional;
 
 import airside.model.Plane;
-import financial.model.Employee;
 import landside.helper.Service;
 import landside.model.Driver;
 import landside.model.destination.Deposit;
@@ -20,6 +19,7 @@ import landside.model.vehicle.Vehicle;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.extern.java.Log;
 import overall.AirportSubsystem;
 
@@ -29,74 +29,76 @@ import overall.AirportSubsystem;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
+@Setter
 @Log
 public class LandsideManagement extends AirportSubsystem {
-    public final List<Vehicle> vehicles = new ArrayList<>();
-    public final List<Destination> destinations = new ArrayList<>();
-    public final List<Driver> employees = new ArrayList<>();
-    double maintenanceCost;
-    double operatingCost;
 
-    /**
-     * @return cost of plane-fuel that needs to be refilled
-     */
-    public double gatherMaintenanceCost() {
-        log.info("Current maintenance costs: " + maintenanceCost + "€");
-        return maintenanceCost;
-    }
+	public List<Vehicle> vehicles = new ArrayList<>();
+	public List<Destination> destinations = new ArrayList<>();
+	public List<Driver> employees = new ArrayList<>();
+	double maintenanceCost;
+	double operatingCost;
 
-    public double provideLandsideCost() {
-        // the cost is the maintenance cost + the needed fuel
-        log.info("Current overall costs: " + (operatingCost + maintenanceCost) + "€");
-        return operatingCost + maintenanceCost;
-    }
+	/**
+	 * @return cost of plane-fuel that needs to be refilled
+	 */
+	public double gatherMaintenanceCost() {
+		log.info("Current maintenance costs: " + maintenanceCost + "€");
+		return maintenanceCost;
+	}
 
-    public void assignGate(Driver driver, Gate destination) {
-        log.info("Assigned gate to driver");
-        driver.setDest(destination);
-    }
+	public double provideLandsideCost() {
+		// the cost is the maintenance cost + the needed fuel
+		log.info("Current overall costs: " + (operatingCost + maintenanceCost) + "€");
+		return operatingCost + maintenanceCost;
+	}
 
-    /**
-     * a plane stays on a parking spot
-     */
-    public void assignPlane(Driver driver, ParkingSpot parkingSpot) {
-        log.info("Assigned plane´s parking spot to driver");
-        driver.setDest(parkingSpot);
-    }
+	public void assignGate(Driver driver, Gate destination) {
+		log.info("Assigned gate to driver");
+		driver.setDest(destination);
+	}
 
-    public void assignBaggageDepot(Driver driver, Deposit destination) {
-        log.info("Assigned baggage depot to driver");
-        driver.setDest(destination);
-    }
+	/**
+	 * a plane stays on a parking spot
+	 */
+	public void assignPlane(Driver driver, ParkingSpot parkingSpot) {
+		log.info("Assigned plane´s parking spot to driver");
+		driver.setDest(parkingSpot);
+	}
 
-    public void communicateNeededServices(Driver driver, ParkingSpot parkingSpot, Service service) throws Exception {
-        log.info("Communicating services...");
-        assignPlane(driver, parkingSpot);
-        communicateServices(driver, service);
-    }
+	public void assignBaggageDepot(Driver driver, Deposit destination) {
+		log.info("Assigned baggage depot to driver");
+		driver.setDest(destination);
+	}
 
-    public void communicateServices(Driver driver, Service service) throws Exception {
-        if (service.equals(MAINTAIN)) {
-            log.info("Maintenance task required");
-            maintenanceCost += driver.maintainPlane() * Constants.FUEL_PRICE_PER_LITRE;
-        } else {
-            log.info("Emergency occured");
-            maintenanceCost += driver.reactToEmergency() * Constants.WATER_PRICE_PER_LITRE;
-        }
-    }
+	public void communicateNeededServices(Driver driver, ParkingSpot parkingSpot, Service service) throws Exception {
+		log.info("Communicating services...");
+		assignPlane(driver, parkingSpot);
+		communicateServices(driver, service);
+	}
 
-    public void requestFuelStatus(Driver driver) throws Exception {
-        // refuel vehicle if fuel drops below 20%
-        if (driver.getVehicle().reportFuelConsumption() > driver.getVehicle().getMaxFuel() * 0.8) {
-            log.info("Refueling vehicle...");
-            operatingCost += driver.refuel(getFuelDepot()) * Constants.FUEL_PRICE_PER_LITRE;
-            log.info("Finished refueling");
-        }
-    }
+	public void communicateServices(Driver driver, Service service) throws Exception {
+		if (service.equals(MAINTAIN)) {
+			log.info("Maintenance task required");
+			maintenanceCost += driver.maintainPlane() * Constants.FUEL_PRICE_PER_LITRE;
+		} else {
+			log.info("Emergency occured");
+			maintenanceCost += driver.reactToEmergency() * Constants.WATER_PRICE_PER_LITRE;
+		}
+	}
 
-    public Destination requestDestination(Driver driver) {
-        return driver.getDest();
-    }
+	public void requestFuelStatus(Driver driver) throws Exception {
+		// refuel vehicle if fuel drops below 20%
+		if (driver.getVehicle().reportFuelConsumption() > driver.getVehicle().getMaxFuel() * 0.8) {
+			log.info("Refueling vehicle...");
+			operatingCost += driver.refuel(getFuelDepot()) * Constants.FUEL_PRICE_PER_LITRE;
+			log.info("Finished refueling");
+		}
+	}
+
+	public Destination requestDestination(Driver driver) {
+		return driver.getDest();
+	}
 
     public FuelDepot getFuelDepot() throws Exception {
         Optional<Destination> depot = destinations.stream().filter(d -> d instanceof FuelDepot).findFirst();
@@ -111,9 +113,9 @@ public class LandsideManagement extends AirportSubsystem {
 	 * @author Jonas Reichhardt
 	 */
 	public boolean requestRefuel(Plane plane, ParkingSpot parkingSpot) throws Exception {
-		Driver d = (Driver) employees.stream().filter(
-				x -> ((Driver) x).getVehicle() instanceof MaintenanceVehicle && ((Driver) x).getVehicle().isInGarage())
-				.findFirst().get();
+		Driver d = employees.stream()
+				.filter(x -> x.getVehicle() instanceof MaintenanceVehicle && x.getVehicle().isInGarage()).findFirst()
+				.get();
 		this.communicateNeededServices(d, parkingSpot, MAINTAIN);
 		plane.setCurrentFuel(plane.getMaxFuelCapacity());
 		return true;
