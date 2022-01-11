@@ -1,5 +1,9 @@
 package terminal.contract;
 
+/**
+ * @author Simon Primetzhofer
+ */
+
 public abstract class Check {
     protected boolean checkPassed = true;
 

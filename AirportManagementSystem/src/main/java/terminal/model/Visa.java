@@ -5,6 +5,10 @@ import terminal.helper.TravelReason;
 
 import java.util.Date;
 
+/**
+ * @author Simon Primetzhofer
+ */
+
 @AllArgsConstructor(staticName = "of")
 @ToString
 @Getter

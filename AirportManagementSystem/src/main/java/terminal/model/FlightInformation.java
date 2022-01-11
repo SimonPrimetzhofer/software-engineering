@@ -10,6 +10,10 @@ import lombok.ToString;
 
 import java.util.Date;
 
+/**
+ * @author Simon Primetzhofer
+ */
+
 @AllArgsConstructor(staticName = "of")
 @Setter
 @Getter

@@ -10,6 +10,10 @@ import terminal.contract.Check;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * @author Simon Primetzhofer
+ */
+
 @RequiredArgsConstructor(staticName = "of")
 @ToString
 @Log

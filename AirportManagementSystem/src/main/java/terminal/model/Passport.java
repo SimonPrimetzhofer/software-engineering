@@ -4,6 +4,10 @@ import lombok.*;
 
 import java.util.Date;
 
+/**
+ * @author Simon Primetzhofer
+ */
+
 @RequiredArgsConstructor(staticName = "of")
 @Setter
 @Getter

@@ -5,6 +5,10 @@ import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
+/**
+ * @author Simon Primetzhofer
+ */
+
 @RequiredArgsConstructor(staticName = "of")
 @Getter
 @ToString()

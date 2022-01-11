@@ -51,7 +51,7 @@ class BorderPoliceCheckTest {
 
     @Test
     void performCheck() {
-        assertDoesNotThrow(() -> borderPoliceCheck.performCheck());
+        assertDoesNotThrow(borderPoliceCheck::performCheck);
     }
 
     @Test
@@ -141,22 +141,22 @@ class BorderPoliceCheckTest {
     @Test
     void checkWarrant() {
         passenger.setLastname("Burglar");
-        assertThrows(Exception.class, () -> borderPoliceCheck.checkWarrants());
+        assertThrows(Exception.class, borderPoliceCheck::checkWarrants);
     }
 
     @Test
     void checkNoWarrant() {
-        assertDoesNotThrow(() -> borderPoliceCheck.checkWarrants());
+        assertDoesNotThrow(borderPoliceCheck::checkWarrants);
     }
 
     @Test
     void checkNoFees() {
-        assertDoesNotThrow(() -> borderPoliceCheck.checkFees());
+        assertDoesNotThrow(borderPoliceCheck::checkFees);
     }
 
     @Test
     void checkFees() {
         passenger.setLastname("Speeder");
-        assertThrows(Exception.class, () -> borderPoliceCheck.checkFees());
+        assertThrows(Exception.class, borderPoliceCheck::checkFees);
     }
 }

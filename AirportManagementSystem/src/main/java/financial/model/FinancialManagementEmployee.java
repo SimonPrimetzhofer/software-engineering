@@ -6,14 +6,17 @@ import financial.FinancialManagement;
 import landside.LandsideManagement;
 import landside.model.Driver;
 import lombok.*;
+import lombok.extern.java.Log;
 import overall.AirportSubsystem;
 import terminal.model.FlightInformation;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 @Getter
 @Setter
+@Log
 public class FinancialManagementEmployee extends Employee {
     private List<Maintenance> managedMaintenances = new ArrayList<>();
     private List<FlightInformation> managedFlights = new ArrayList<>();
@@ -67,5 +70,30 @@ public class FinancialManagementEmployee extends Employee {
         } else if (dep instanceof FinancialManagement) {
             ((FinancialManagement) dep).fmes.add((FinancialManagementEmployee) e);
         }
+    }
+
+    public void scheduleFlight(FlightInformation flightInformation) throws Exception {
+        if (!managedFlights.contains(flightInformation)) {
+            log.severe("Cannot schedule not existing flight!");
+            throw new Exception("Flight " + flightInformation + " does not exist!");
+        }
+
+        log.info("Rescheduling flight " + flightInformation);
+
+        calcTicketPrices(flightInformation, new Random().nextInt(2));
+        publishTicketPrices(flightInformation);
+    }
+
+    public void calcTicketPrices(FlightInformation flightInformation, int factor) {
+        log.info("Updating ticket prices due to schedule change...");
+        flightInformation.setEconomyClassPrice(flightInformation.getEconomyClassPrice() * factor);
+        flightInformation.setFirstClassPrice(flightInformation.getFirstClassPrice() * factor);
+        flightInformation.setBusinessClassPrice(flightInformation.getBusinessClassPrice() * factor);
+    }
+
+    public void publishTicketPrices(FlightInformation flightInformation) {
+        log.info("New economy class price: " + flightInformation.getEconomyClassPrice());
+        log.info("New first class price: " + flightInformation.getFirstClassPrice());
+        log.info("New business class price " + flightInformation.getBusinessClassPrice());
     }
 }
