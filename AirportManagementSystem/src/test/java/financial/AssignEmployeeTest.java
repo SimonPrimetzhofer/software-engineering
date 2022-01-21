@@ -27,9 +27,9 @@ public class AssignEmployeeTest {
 
     @BeforeEach
     void setUp() {
-        fm = new FinancialManagement();
-        lm = new LandsideManagement();
-        am = new AirsideManagement();
+        fm = FinancialManagement.of();
+        lm = LandsideManagement.of();
+        am = AirsideManagement.of();
 
         d1 = new Driver("Maxine", "Verstappen", 10000, lm, 1);
         d2 = new Driver("Johny", "Musterfrau", 50000, lm, 2);

@@ -35,8 +35,8 @@ public class RefuelAircraftTest {
 
 	@BeforeEach
 	void setUp() {
-		airside = new AirsideManagement();
-		landside = new LandsideManagement();
+		airside =AirsideManagement.of();
+		landside = LandsideManagement.of();
 
 		checklist = new ArrayList<Boolean>() {
 			{

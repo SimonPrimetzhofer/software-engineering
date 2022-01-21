@@ -18,7 +18,7 @@ public class ConductBusToGateTest {
 
     @BeforeEach
     void setUp() {
-        lm = new LandsideManagement();
+        lm = LandsideManagement.of();
         gate = new Gate(1, 500, 1);
         lm.destinations.add(gate);
 

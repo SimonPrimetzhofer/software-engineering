@@ -27,11 +27,11 @@ import overall.AirportSubsystem;
  * @author Stefan Haslhofer
  */
 @AllArgsConstructor
-@NoArgsConstructor
+@NoArgsConstructor (staticName = "of")
 @Getter
 @Setter
 @Log
-public class LandsideManagement extends AirportSubsystem {
+public class LandsideManagement implements AirportSubsystem {
 
 	public List<Vehicle> vehicles = new ArrayList<>();
 	public List<Destination> destinations = new ArrayList<>();
@@ -115,9 +115,17 @@ public class LandsideManagement extends AirportSubsystem {
 	public boolean requestRefuel(Plane plane, ParkingSpot parkingSpot) throws Exception {
 		Driver d = employees.stream()
 				.filter(x -> x.getVehicle() instanceof MaintenanceVehicle && x.getVehicle().isInGarage()).findFirst()
-				.get();
+				.orElse(null);
 		this.communicateNeededServices(d, parkingSpot, MAINTAIN);
 		plane.setCurrentFuel(plane.getMaxFuelCapacity());
 		return true;
+	}
+
+	public void conductBusToGate() {
+
+	}
+
+	public void conductBaggageCartToDeposit() {
+
 	}
 }

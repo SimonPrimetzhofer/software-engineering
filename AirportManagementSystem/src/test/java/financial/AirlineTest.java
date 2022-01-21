@@ -27,7 +27,7 @@ class AirlineTest {
     @BeforeEach
     void setUp() {
         flightInformation = FlightInformation.of(6942023, "Eurowings", "Crete", new Date(), 150., new Gate(1, 300, 1), new Deposit(3, 4500, 2), 349.99, 149.99, 666.66);
-        fme = new FinancialManagementEmployee("Max", "Mustermann", 4000, new FinancialManagement(), new LandsideManagement(), new AirsideManagement(), new FinancialManagement());
+        fme = new FinancialManagementEmployee("Max", "Mustermann", 4000, FinancialManagement.of(), LandsideManagement.of(), AirsideManagement.of(), FinancialManagement.of());
         fme.getManagedFlights().add(flightInformation);
         airline = Airline.of("Eurowings", fme);
     }

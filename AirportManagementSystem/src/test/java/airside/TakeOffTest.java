@@ -28,7 +28,7 @@ public class TakeOffTest {
 
 	@BeforeEach
 	void setUp() {
-		airside = new AirsideManagement();
+		airside = AirsideManagement.of();
 		var crew = new ArrayList<Employee>() {
 			{
 				add(new Employee("Max", "Mustermann", 10000, airside));

@@ -20,7 +20,7 @@ public class RequestFuelStatusTest {
 
     @BeforeEach
     void setUp() {
-        lm = new LandsideManagement();
+        lm = LandsideManagement.of();
         gate = new Gate(1, 500, 1);
         lm.destinations.add(gate);
         depot = new FuelDepot(15000, 2);
