@@ -62,7 +62,13 @@ public class TerminalManagement implements AirportSubsystem {
         return airsideManagement.provideParkingLocation(flightNo);
     }
 
-    public void assignGate(FlightInformation flight, Gate gate) {
+    public void assignGate(FlightInformation flight, Gate gate) throws Exception {
+        if (flight == null) {
+            throw new Exception("Flight does not exist!");
+        }
+        if (gate == null) {
+            throw new Exception("Gate does not exist!");
+        }
         flight.setGate(gate);
     }
 

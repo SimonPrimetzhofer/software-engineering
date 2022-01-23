@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import lombok.extern.java.Log;
 import terminal.model.FlightInformation;
 
 import java.util.ArrayList;
@@ -17,6 +18,7 @@ import java.util.List;
 @Getter
 @Setter
 @RequiredArgsConstructor(staticName = "of")
+@Log
 public class Airline {
     @NonNull
     private String name;
@@ -46,5 +48,9 @@ public class Airline {
 
     public void sendFlightInfo(FlightInformation flightInformation) throws Exception {
         contactPerson.scheduleFlight(flightInformation);
+    }
+
+    public void payPrice(double overallCost) {
+        log.info("Airline " + name + " is paying cost total cost of " + overallCost);
     }
 }

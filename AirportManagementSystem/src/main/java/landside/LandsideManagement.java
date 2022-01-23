@@ -121,11 +121,11 @@ public class LandsideManagement implements AirportSubsystem {
 		return true;
 	}
 
-	public void conductBusToGate() {
+	public void conductBusToGate(Destination dest) {
 
 	}
 
-	public void conductBaggageCartToDeposit() {
+	public void conductBaggageCartToDeposit(Destination dest) {
 
 	}
 }

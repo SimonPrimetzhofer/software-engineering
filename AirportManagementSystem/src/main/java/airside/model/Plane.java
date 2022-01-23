@@ -19,7 +19,6 @@ public class Plane {
 	CabinCrew cabinCrew;
 
 	public Plane(Pilot pilot, CabinCrew cabinCrew) {
-		// TODO remove random calculation
 		maxFuelCapacity = ThreadLocalRandom.current().nextInt(0, 320000 + 1);
 		currentFuel = ThreadLocalRandom.current().nextInt(0, maxFuelCapacity + 1);
 		tirePressure = ThreadLocalRandom.current().nextDouble(0, 15 + 1);

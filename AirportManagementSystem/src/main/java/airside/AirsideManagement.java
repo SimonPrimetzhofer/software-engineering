@@ -12,6 +12,7 @@ import landside.model.destination.Gate;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import overall.AirportSubsystem;
 import terminal.TerminalManagement;
 import terminal.model.FlightInformation;
@@ -23,6 +24,7 @@ import terminal.model.FlightInformation;
 @NoArgsConstructor(staticName = "of")
 @Getter
 public class AirsideManagement implements AirportSubsystem {
+	@Setter
 	private TerminalManagement terminalManagement;
 	ArrayList<Plane> planes = new ArrayList<>();
 	public ArrayList<AircraftMarshaller> marshaller = new ArrayList<>();

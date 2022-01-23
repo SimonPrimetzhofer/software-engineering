@@ -104,7 +104,6 @@ public class CheckIn {
     }
 
     public void forwardBaggage(BaggageItem baggage) {
-        // TODO: When Landside Management is ready, deposit baggage
         log.fine("Depositing baggage item to landside management...");
     }
 }

@@ -4,11 +4,12 @@ import financial.FinancialManagement;
 import landside.LandsideManagement;
 import landside.model.destination.Destination;
 import landside.model.destination.Gate;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.extern.java.Log;
 import terminal.TerminalManagement;
 import terminal.model.FlightInformation;
 
+import java.util.Iterator;
 import java.util.logging.Level;
 
 /**
@@ -17,12 +18,13 @@ import java.util.logging.Level;
 
 @Log
 @NoArgsConstructor(staticName = "of")
+@Setter
 public class AirportManagementSystem {
 
-    private final AirsideManagement airsideManagement = AirsideManagement.of();
-    private final LandsideManagement landsideManagement = LandsideManagement.of();
-    private final TerminalManagement terminalManagement = TerminalManagement.of();
-    private final FinancialManagement financialManagement = FinancialManagement.of();
+    private AirsideManagement airsideManagement = AirsideManagement.of();
+    private LandsideManagement landsideManagement = LandsideManagement.of();
+    private TerminalManagement terminalManagement = TerminalManagement.of();
+    private FinancialManagement financialManagement = FinancialManagement.of();
 
     public double reportCosts() {
         double runWayCost = airsideManagement.gatherRunwayCost();
@@ -30,27 +32,33 @@ public class AirportManagementSystem {
         double landsideCost = financialManagement.requestLandsideCost();
         double airsideCost = financialManagement.requestAirsideCost();
 
-        financialManagement.billAirlines(landsideCost, airsideCost);
+        financialManagement.billAirlines(airsideCost, landsideCost);
         financialManagement.monitorPayments();
 
         return runWayCost + landsideCost + airsideCost;
     }
 
-    public void provideGateInfo(int flightNo) {
+    public Gate provideGateInfo(int flightNo) throws Exception {
         Destination passengerDest = terminalManagement.requestPassengerTransport();
         Destination baggageDest = terminalManagement.requestBaggageTransport();
 
         Gate gate = terminalManagement.requestDestination(flightNo);
         terminalManagement.assignGate(terminalManagement.getFlightInformation(flightNo),gate);
-        landsideManagement.conductBusToGate();
-        landsideManagement.conductBaggageCartToDeposit();
+        landsideManagement.conductBusToGate(passengerDest);
+        landsideManagement.conductBaggageCartToDeposit(baggageDest);
+
+        return gate;
     }
 
-    public void provideFlightInfo() {
-        terminalManagement.getFlights().stream().map(FlightInformation::getFlightNumber).forEach(flightNo -> {
+    public void provideFlightInfo() throws Exception{
+        for (Iterator<Integer> it = terminalManagement.getFlights().stream().map(FlightInformation::getFlightNumber).iterator(); it.hasNext(); ) {
+            Integer flightNo = it.next();
             FlightInformation flight = airsideManagement.requestFlightInformation(flightNo);
+            if (flight == null) {
+                throw new Exception("Flight does not exist!");
+            }
             terminalManagement.adjustTime(flight);
             terminalManagement.displayFlightInformation(flight);
-        });
+        }
     }
 }
